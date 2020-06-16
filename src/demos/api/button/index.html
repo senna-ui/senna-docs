@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button</title>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core@next/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core@next/dist/ionic/ionic.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core@next/css/ionic.bundle.css"/>
+  <style>
+
+    header {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      margin-bottom: 1.25em;
+      text-transform: uppercase;
+    }
+
+    section {
+      margin-top: 1em;
+      margin-bottom: 2.5em;
+    }
+
+    section:not(.full-width),
+    .full-width > header {
+      padding: 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <header>Colors</header>
+    <sen-button color="success">Success</sen-button>
+    <sen-button color="warning">Warning</sen-button>
+    <sen-button color="danger">Danger</sen-button>
+  </section>
+
+</body>
+</html>

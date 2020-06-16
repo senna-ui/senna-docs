@@ -1,0 +1,7 @@
+@import './base.css';
+@import './senna.css';
+
+@import './pages/index.css';
+@import './pages/components.css';
+@import './pages/guides.css';
+@import './pages/frameworks.css';
