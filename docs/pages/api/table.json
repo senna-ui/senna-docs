@@ -1,0 +1,59 @@
+{
+  "title": "sen-table",
+  "path": "/docs/api/table",
+  "body": [
+    "div",
+    null
+  ],
+  "usage": {},
+  "props": [
+    {
+      "name": "data",
+      "type": "any[]",
+      "mutable": false,
+      "reflectToAttr": false,
+      "docs": "<p>Table data, array of table rows</p>\n",
+      "docsTags": [],
+      "default": "[]",
+      "values": [
+        {
+          "type": "any[]"
+        }
+      ],
+      "optional": false,
+      "required": false
+    },
+    {
+      "name": "headers",
+      "type": "TableHeader[]",
+      "mutable": false,
+      "reflectToAttr": false,
+      "docs": "<p>Table headers</p>\n",
+      "docsTags": [],
+      "default": "[]",
+      "values": [
+        {
+          "type": "TableHeader[]"
+        }
+      ],
+      "optional": false,
+      "required": false
+    }
+  ],
+  "methods": [],
+  "template": "api",
+  "filePath": "./src/components/table/table.tsx",
+  "encapsulation": "shadow",
+  "tag": "sen-table",
+  "docs": "",
+  "docsTags": [],
+  "events": [],
+  "listeners": [],
+  "styles": [],
+  "slots": [],
+  "dependents": [],
+  "dependencies": [],
+  "dependencyGraph": {},
+  "headings": [],
+  "pageClass": "page-api-table"
+}

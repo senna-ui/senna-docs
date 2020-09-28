@@ -1,0 +1,26 @@
+{
+  "title": "sen-button-group",
+  "path": "/docs/api/button-group",
+  "body": [
+    "div",
+    null
+  ],
+  "usage": {},
+  "props": [],
+  "methods": [],
+  "template": "api",
+  "filePath": "./src/components/button-group/button-group.tsx",
+  "encapsulation": "shadow",
+  "tag": "sen-button-group",
+  "docs": "",
+  "docsTags": [],
+  "events": [],
+  "listeners": [],
+  "styles": [],
+  "slots": [],
+  "dependents": [],
+  "dependencies": [],
+  "dependencyGraph": {},
+  "headings": [],
+  "pageClass": "page-api-button-group"
+}

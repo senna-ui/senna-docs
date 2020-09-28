@@ -1,0 +1,1 @@
+import{r as o,h as r}from"./p-2bb7e3b8.js";class t{constructor(r){o(this,r)}render(){return r("slot",null)}}t.style="command-prompt{display:block;white-space:nowrap}command-prompt:before{content:'$ ';color:#fb96f9}";export{t as command_prompt}

@@ -1,0 +1,47 @@
+{
+  "path": "/docs/react",
+  "github": {
+    "path": "src/pages/react.md",
+    "contributors": [],
+    "lastUpdated": "2020-09-28T10:16:51.000Z"
+  },
+  "title": "Senna React",
+  "renderTitle": false,
+  "tableOfContents": false,
+  "meta": {
+    "image": "/docs/assets/img/logo.png",
+    "description": "TODO"
+  },
+  "body": [
+    "div",
+    null,
+    [
+      "h2",
+      {
+        "id": "senna-react"
+      },
+      " ",
+      [
+        "a",
+        {
+          "href": "#senna-react"
+        },
+        "Senna react"
+      ],
+      " "
+    ],
+    " ",
+    [
+      "p",
+      null,
+      "TODO"
+    ]
+  ],
+  "headings": [
+    {
+      "text": "Senna react",
+      "href": "#senna-react"
+    }
+  ],
+  "pageClass": "page-react"
+}

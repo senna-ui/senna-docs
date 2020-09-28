@@ -1,0 +1,1 @@
+import{r as o,h as t}from"./p-2bb7e3b8.js";class a{constructor(t){o(this,t)}render(){return t("slot",null)}}a.style="command-output span.bold a,command-output span.bold{font-family:var(--code-font-family);font-weight:bold;color:#fff}command-output span.green{color:#8ae26e}command-output span.cyan{color:#c3b3f9}command-output span.yellow{color:#fffdb2}";export{a as command_output}

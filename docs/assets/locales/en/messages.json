@@ -1,0 +1,41 @@
+{
+  "brand-framework": "Framework",
+
+  "header-guide": "Guide",
+  "header-components": "Components",
+
+  "menu-intro": "Getting Started",
+  "menu-intro-overview": "Overview",
+
+  "menu-layout": "Layout",
+  "menu-layout-structure": "Structure",
+  "menu-layout-grid": "Responsive Grid",
+
+  "menu-react": "React",
+  "menu-react-overview": "Overview",
+  "menu-react-quickstart": "Quickstart",
+  "menu-react-your-first-app": "Build Your First App",
+  "menu-react-yfa-taking-photos": "Taking Photos",
+  "menu-react-yfa-saving-photos": "Saving Photos",
+  "menu-react-yfa-loading-photos": "Loading Photos",
+  "menu-react-yfa-adding-mobile": "Adding Mobile",
+  "menu-react-yfa-deploying-mobile": "Deploying Mobile",
+  "menu-react-yfa-live-reload": "Live Reload",
+  "menu-react-lifecycle": "Lifecycle",
+  "menu-react-navigation": "Navigation/Routing",
+  "menu-react-config": "Config",
+  "menu-react-platform": "Platform",
+  "menu-react-pwa": "Progressive Web Apps",
+  "menu-react-testing": "Testing",
+
+  "menu-core-concepts": "Core Concepts",
+  "menu-core-concepts-fundamentals": "Fundamentals",
+
+  "menu-contributing": "Contributing",
+  "menu-contributing-how-to-contribute": "How to Contribute",
+  "menu-contributing-coc": "Code of Conduct",
+
+  "menu-api-button": "Button",
+  "menu-api-grid": "Grid",
+  "menu-api-index": "API Index"
+}

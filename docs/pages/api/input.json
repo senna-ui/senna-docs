@@ -1,0 +1,879 @@
+{
+  "title": "sen-input",
+  "path": "/docs/api/input",
+  "body": [
+    "div",
+    null
+  ],
+  "usage": {},
+  "props": [
+    {
+      "name": "accept",
+      "type": "string | undefined",
+      "mutable": false,
+      "attr": "accept",
+      "reflectToAttr": false,
+      "docs": "<p>If the value of the type attribute is <code>&quot;file&quot;</code>, then this attribute will indicate the types of files that the server accepts, otherwise it will be ignored. The value must be a comma-separated list of unique content type specifiers.</p>\n",
+      "docsTags": [],
+      "values": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "undefined"
+        }
+      ],
+      "optional": true,
+      "required": false
+    },
+    {
+      "name": "autocapitalize",
+      "type": "string",
+      "mutable": false,
+      "attr": "autocapitalize",
+      "reflectToAttr": false,
+      "docs": "<p>Indicates whether and how the text value should be automatically capitalized as it is entered/edited by the user.</p>\n",
+      "docsTags": [],
+      "default": "\"off\"",
+      "values": [
+        {
+          "type": "string"
+        }
+      ],
+      "optional": false,
+      "required": false
+    },
+    {
+      "name": "autocomplete",
+      "type": "\"off\" | \"on\" | \"name\" | \"honorific-prefix\" | \"given-name\" | \"additional-name\" | \"family-name\" | \"honorific-suffix\" | \"nickname\" | \"email\" | \"username\" | \"new-password\" | \"current-password\" | \"one-time-code\" | \"organization-title\" | \"organization\" | \"street-address\" | \"address-line1\" | \"address-line2\" | \"address-line3\" | \"address-level4\" | \"address-level3\" | \"address-level2\" | \"address-level1\" | \"country\" | \"country-name\" | \"postal-code\" | \"cc-name\" | \"cc-given-name\" | \"cc-additional-name\" | \"cc-family-name\" | \"cc-number\" | \"cc-exp\" | \"cc-exp-month\" | \"cc-exp-year\" | \"cc-csc\" | \"cc-type\" | \"transaction-currency\" | \"transaction-amount\" | \"language\" | \"bday\" | \"bday-day\" | \"bday-month\" | \"bday-year\" | \"sex\" | \"tel\" | \"tel-country-code\" | \"tel-national\" | \"tel-area-code\" | \"tel-local\" | \"tel-extension\" | \"impp\" | \"url\" | \"photo\"",
+      "mutable": false,
+      "attr": "autocomplete",
+      "reflectToAttr": false,
+      "docs": "<p>Indicates whether the value of the control can be automatically completed by the browser.</p>\n",
+      "docsTags": [],
+      "default": "\"off\"",
+      "values": [
+        {
+          "value": "off",
+          "type": "string"
+        },
+        {
+          "value": "on",
+          "type": "string"
+        },
+        {
+          "value": "name",
+          "type": "string"
+        },
+        {
+          "value": "honorific-prefix",
+          "type": "string"
+        },
+        {
+          "value": "given-name",
+          "type": "string"
+        },
+        {
+          "value": "additional-name",
+          "type": "string"
+        },
+        {
+          "value": "family-name",
+          "type": "string"
+        },
+        {
+          "value": "honorific-suffix",
+          "type": "string"
+        },
+        {
+          "value": "nickname",
+          "type": "string"
+        },
+        {
+          "value": "email",
+          "type": "string"
+        },
+        {
+          "value": "username",
+          "type": "string"
+        },
+        {
+          "value": "new-password",
+          "type": "string"
+        },
+        {
+          "value": "current-password",
+          "type": "string"
+        },
+        {
+          "value": "one-time-code",
+          "type": "string"
+        },
+        {
+          "value": "organization-title",
+          "type": "string"
+        },
+        {
+          "value": "organization",
+          "type": "string"
+        },
+        {
+          "value": "street-address",
+          "type": "string"
+        },
+        {
+          "value": "address-line1",
+          "type": "string"
+        },
+        {
+          "value": "address-line2",
+          "type": "string"
+        },
+        {
+          "value": "address-line3",
+          "type": "string"
+        },
+        {
+          "value": "address-level4",
+          "type": "string"
+        },
+        {
+          "value": "address-level3",
+          "type": "string"
+        },
+        {
+          "value": "address-level2",
+          "type": "string"
+        },
+        {
+          "value": "address-level1",
+          "type": "string"
+        },
+        {
+          "value": "country",
+          "type": "string"
+        },
+        {
+          "value": "country-name",
+          "type": "string"
+        },
+        {
+          "value": "postal-code",
+          "type": "string"
+        },
+        {
+          "value": "cc-name",
+          "type": "string"
+        },
+        {
+          "value": "cc-given-name",
+          "type": "string"
+        },
+        {
+          "value": "cc-additional-name",
+          "type": "string"
+        },
+        {
+          "value": "cc-family-name",
+          "type": "string"
+        },
+        {
+          "value": "cc-number",
+          "type": "string"
+        },
+        {
+          "value": "cc-exp",
+          "type": "string"
+        },
+        {
+          "value": "cc-exp-month",
+          "type": "string"
+        },
+        {
+          "value": "cc-exp-year",
+          "type": "string"
+        },
+        {
+          "value": "cc-csc",
+          "type": "string"
+        },
+        {
+          "value": "cc-type",
+          "type": "string"
+        },
+        {
+          "value": "transaction-currency",
+          "type": "string"
+        },
+        {
+          "value": "transaction-amount",
+          "type": "string"
+        },
+        {
+          "value": "language",
+          "type": "string"
+        },
+        {
+          "value": "bday",
+          "type": "string"
+        },
+        {
+          "value": "bday-day",
+          "type": "string"
+        },
+        {
+          "value": "bday-month",
+          "type": "string"
+        },
+        {
+          "value": "bday-year",
+          "type": "string"
+        },
+        {
+          "value": "sex",
+          "type": "string"
+        },
+        {
+          "value": "tel",
+          "type": "string"
+        },
+        {
+          "value": "tel-country-code",
+          "type": "string"
+        },
+        {
+          "value": "tel-national",
+          "type": "string"
+        },
+        {
+          "value": "tel-area-code",
+          "type": "string"
+        },
+        {
+          "value": "tel-local",
+          "type": "string"
+        },
+        {
+          "value": "tel-extension",
+          "type": "string"
+        },
+        {
+          "value": "impp",
+          "type": "string"
+        },
+        {
+          "value": "url",
+          "type": "string"
+        },
+        {
+          "value": "photo",
+          "type": "string"
+        }
+      ],
+      "optional": false,
+      "required": false
+    },
+    {
+      "name": "autocorrect",
+      "type": "\"off\" | \"on\"",
+      "mutable": false,
+      "attr": "autocorrect",
+      "reflectToAttr": false,
+      "docs": "<p>Whether auto correction should be enabled when the user is entering/editing the text value.</p>\n",
+      "docsTags": [],
+      "default": "\"off\"",
+      "values": [
+        {
+          "value": "off",
+          "type": "string"
+        },
+        {
+          "value": "on",
+          "type": "string"
+        }
+      ],
+      "optional": false,
+      "required": false
+    },
+    {
+      "name": "autofocus",
+      "type": "boolean",
+      "mutable": false,
+      "attr": "autofocus",
+      "reflectToAttr": false,
+      "docs": "<p>This Boolean attribute lets you specify that a form control should have input focus when the page loads.</p>\n",
+      "docsTags": [],
+      "default": "false",
+      "values": [
+        {
+          "type": "boolean"
+        }
+      ],
+      "optional": false,
+      "required": false
+    },
+    {
+      "name": "clearInput",
+      "type": "boolean",
+      "mutable": false,
+      "attr": "clear-input",
+      "reflectToAttr": false,
+      "docs": "<p>If <code>true</code>, a clear icon will appear in the input when there is a value. Clicking it clears the input.</p>\n",
+      "docsTags": [],
+      "default": "false",
+      "values": [
+        {
+          "type": "boolean"
+        }
+      ],
+      "optional": false,
+      "required": false
+    },
+    {
+      "name": "clearOnEdit",
+      "type": "boolean | undefined",
+      "mutable": false,
+      "attr": "clear-on-edit",
+      "reflectToAttr": false,
+      "docs": "<p>If <code>true</code>, the value will be cleared after focus upon edit. Defaults to <code>true</code> when <code>type</code> is <code>&quot;password&quot;</code>, <code>false</code> for all other types.</p>\n",
+      "docsTags": [],
+      "values": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "undefined"
+        }
+      ],
+      "optional": true,
+      "required": false
+    },
+    {
+      "name": "color",
+      "type": "\"danger\" | \"primary\" | \"secondary\" | \"success\" | \"warning\" | undefined",
+      "mutable": false,
+      "attr": "color",
+      "reflectToAttr": false,
+      "docs": "<p>The color to use from your application&#39;s color palette.\nDefault options are: <code>&quot;primary&quot;</code>, <code>&quot;secondary&quot;</code>, <code>&quot;tertiary&quot;</code>, <code>&quot;success&quot;</code>, <code>&quot;warning&quot;</code>, <code>&quot;danger&quot;</code>, <code>&quot;light&quot;</code>, <code>&quot;medium&quot;</code>, and <code>&quot;dark&quot;</code>.\nFor more information on colors, see <stencil-route-link url=/docs/theming/basics >theming</stencil-route-link>.</p>\n",
+      "docsTags": [],
+      "values": [
+        {
+          "value": "danger",
+          "type": "string"
+        },
+        {
+          "value": "primary",
+          "type": "string"
+        },
+        {
+          "value": "secondary",
+          "type": "string"
+        },
+        {
+          "value": "success",
+          "type": "string"
+        },
+        {
+          "value": "warning",
+          "type": "string"
+        },
+        {
+          "type": "undefined"
+        }
+      ],
+      "optional": true,
+      "required": false
+    },
+    {
+      "name": "debounce",
+      "type": "number",
+      "mutable": false,
+      "attr": "debounce",
+      "reflectToAttr": false,
+      "docs": "<p>Set the amount of time, in milliseconds, to wait to trigger the <code>ionChange</code> event after each keystroke.</p>\n",
+      "docsTags": [],
+      "default": "0",
+      "values": [
+        {
+          "type": "number"
+        }
+      ],
+      "optional": false,
+      "required": false
+    },
+    {
+      "name": "disabled",
+      "type": "boolean",
+      "mutable": false,
+      "attr": "disabled",
+      "reflectToAttr": false,
+      "docs": "<p>If <code>true</code>, the user cannot interact with the input.</p>\n",
+      "docsTags": [],
+      "default": "false",
+      "values": [
+        {
+          "type": "boolean"
+        }
+      ],
+      "optional": false,
+      "required": false
+    },
+    {
+      "name": "enterkeyhint",
+      "type": "\"done\" | \"enter\" | \"go\" | \"next\" | \"previous\" | \"search\" | \"send\" | undefined",
+      "mutable": false,
+      "attr": "enterkeyhint",
+      "reflectToAttr": false,
+      "docs": "<p>A hint to the browser for which enter key to display.\nPossible values: <code>&quot;enter&quot;</code>, <code>&quot;done&quot;</code>, <code>&quot;go&quot;</code>, <code>&quot;next&quot;</code>,\n<code>&quot;previous&quot;</code>, <code>&quot;search&quot;</code>, and <code>&quot;send&quot;</code>.</p>\n",
+      "docsTags": [],
+      "values": [
+        {
+          "value": "done",
+          "type": "string"
+        },
+        {
+          "value": "enter",
+          "type": "string"
+        },
+        {
+          "value": "go",
+          "type": "string"
+        },
+        {
+          "value": "next",
+          "type": "string"
+        },
+        {
+          "value": "previous",
+          "type": "string"
+        },
+        {
+          "value": "search",
+          "type": "string"
+        },
+        {
+          "value": "send",
+          "type": "string"
+        },
+        {
+          "type": "undefined"
+        }
+      ],
+      "optional": true,
+      "required": false
+    },
+    {
+      "name": "inputmode",
+      "type": "\"decimal\" | \"email\" | \"none\" | \"numeric\" | \"search\" | \"tel\" | \"text\" | \"url\" | undefined",
+      "mutable": false,
+      "attr": "inputmode",
+      "reflectToAttr": false,
+      "docs": "<p>A hint to the browser for which keyboard to display.\nPossible values: <code>&quot;none&quot;</code>, <code>&quot;text&quot;</code>, <code>&quot;tel&quot;</code>, <code>&quot;url&quot;</code>,\n<code>&quot;email&quot;</code>, <code>&quot;numeric&quot;</code>, <code>&quot;decimal&quot;</code>, and <code>&quot;search&quot;</code>.</p>\n",
+      "docsTags": [],
+      "values": [
+        {
+          "value": "decimal",
+          "type": "string"
+        },
+        {
+          "value": "email",
+          "type": "string"
+        },
+        {
+          "value": "none",
+          "type": "string"
+        },
+        {
+          "value": "numeric",
+          "type": "string"
+        },
+        {
+          "value": "search",
+          "type": "string"
+        },
+        {
+          "value": "tel",
+          "type": "string"
+        },
+        {
+          "value": "text",
+          "type": "string"
+        },
+        {
+          "value": "url",
+          "type": "string"
+        },
+        {
+          "type": "undefined"
+        }
+      ],
+      "optional": true,
+      "required": false
+    },
+    {
+      "name": "max",
+      "type": "string | undefined",
+      "mutable": false,
+      "attr": "max",
+      "reflectToAttr": false,
+      "docs": "<p>The maximum value, which must not be less than its minimum (min attribute) value.</p>\n",
+      "docsTags": [],
+      "values": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "undefined"
+        }
+      ],
+      "optional": true,
+      "required": false
+    },
+    {
+      "name": "maxlength",
+      "type": "number | undefined",
+      "mutable": false,
+      "attr": "maxlength",
+      "reflectToAttr": false,
+      "docs": "<p>If the value of the type attribute is <code>text</code>, <code>email</code>, <code>search</code>, <code>password</code>, <code>tel</code>, or <code>url</code>, this attribute specifies the maximum number of characters that the user can enter.</p>\n",
+      "docsTags": [],
+      "values": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "undefined"
+        }
+      ],
+      "optional": true,
+      "required": false
+    },
+    {
+      "name": "min",
+      "type": "string | undefined",
+      "mutable": false,
+      "attr": "min",
+      "reflectToAttr": false,
+      "docs": "<p>The minimum value, which must not be greater than its maximum (max attribute) value.</p>\n",
+      "docsTags": [],
+      "values": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "undefined"
+        }
+      ],
+      "optional": true,
+      "required": false
+    },
+    {
+      "name": "minlength",
+      "type": "number | undefined",
+      "mutable": false,
+      "attr": "minlength",
+      "reflectToAttr": false,
+      "docs": "<p>If the value of the type attribute is <code>text</code>, <code>email</code>, <code>search</code>, <code>password</code>, <code>tel</code>, or <code>url</code>, this attribute specifies the minimum number of characters that the user can enter.</p>\n",
+      "docsTags": [],
+      "values": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "undefined"
+        }
+      ],
+      "optional": true,
+      "required": false
+    },
+    {
+      "name": "multiple",
+      "type": "boolean | undefined",
+      "mutable": false,
+      "attr": "multiple",
+      "reflectToAttr": false,
+      "docs": "<p>If <code>true</code>, the user can enter more than one value. This attribute applies when the type attribute is set to <code>&quot;email&quot;</code> or <code>&quot;file&quot;</code>, otherwise it is ignored.</p>\n",
+      "docsTags": [],
+      "values": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "undefined"
+        }
+      ],
+      "optional": true,
+      "required": false
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "mutable": false,
+      "attr": "name",
+      "reflectToAttr": false,
+      "docs": "<p>The name of the control, which is submitted with the form data.</p>\n",
+      "docsTags": [],
+      "default": "this.inputId",
+      "values": [
+        {
+          "type": "string"
+        }
+      ],
+      "optional": false,
+      "required": false
+    },
+    {
+      "name": "pattern",
+      "type": "string | undefined",
+      "mutable": false,
+      "attr": "pattern",
+      "reflectToAttr": false,
+      "docs": "<p>A regular expression that the value is checked against. The pattern must match the entire value, not just some subset. Use the title attribute to describe the pattern to help the user. This attribute applies when the value of the type attribute is <code>&quot;text&quot;</code>, <code>&quot;search&quot;</code>, <code>&quot;tel&quot;</code>, <code>&quot;url&quot;</code>, <code>&quot;email&quot;</code>, <code>&quot;date&quot;</code>, or <code>&quot;password&quot;</code>, otherwise it is ignored. When the type attribute is <code>&quot;date&quot;</code>, <code>pattern</code> will only be used in browsers that do not support the <code>&quot;date&quot;</code> input type natively. See <a href=https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date title=undefined>https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date</a> for more information.</p>\n",
+      "docsTags": [],
+      "values": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "undefined"
+        }
+      ],
+      "optional": true,
+      "required": false
+    },
+    {
+      "name": "placeholder",
+      "type": "null | string | undefined",
+      "mutable": false,
+      "attr": "placeholder",
+      "reflectToAttr": false,
+      "docs": "<p>Instructional text that shows before the input has a value.</p>\n",
+      "docsTags": [],
+      "values": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "undefined"
+        }
+      ],
+      "optional": true,
+      "required": false
+    },
+    {
+      "name": "readonly",
+      "type": "boolean",
+      "mutable": false,
+      "attr": "readonly",
+      "reflectToAttr": false,
+      "docs": "<p>If <code>true</code>, the user cannot modify the value.</p>\n",
+      "docsTags": [],
+      "default": "false",
+      "values": [
+        {
+          "type": "boolean"
+        }
+      ],
+      "optional": false,
+      "required": false
+    },
+    {
+      "name": "required",
+      "type": "boolean",
+      "mutable": false,
+      "attr": "required",
+      "reflectToAttr": false,
+      "docs": "<p>If <code>true</code>, the user must fill in a value before submitting a form.</p>\n",
+      "docsTags": [],
+      "default": "false",
+      "values": [
+        {
+          "type": "boolean"
+        }
+      ],
+      "optional": false,
+      "required": false
+    },
+    {
+      "name": "size",
+      "type": "number | undefined",
+      "mutable": false,
+      "attr": "size",
+      "reflectToAttr": false,
+      "docs": "<p>The initial size of the control. This value is in pixels unless the value of the type attribute is <code>&quot;text&quot;</code> or <code>&quot;password&quot;</code>, in which case it is an integer number of characters. This attribute applies only when the <code>type</code> attribute is set to <code>&quot;text&quot;</code>, <code>&quot;search&quot;</code>, <code>&quot;tel&quot;</code>, <code>&quot;url&quot;</code>, <code>&quot;email&quot;</code>, or <code>&quot;password&quot;</code>, otherwise it is ignored.</p>\n",
+      "docsTags": [],
+      "values": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "undefined"
+        }
+      ],
+      "optional": true,
+      "required": false
+    },
+    {
+      "name": "spellcheck",
+      "type": "boolean",
+      "mutable": false,
+      "attr": "spellcheck",
+      "reflectToAttr": false,
+      "docs": "<p>If <code>true</code>, the element will have its spelling and grammar checked.</p>\n",
+      "docsTags": [],
+      "default": "false",
+      "values": [
+        {
+          "type": "boolean"
+        }
+      ],
+      "optional": false,
+      "required": false
+    },
+    {
+      "name": "step",
+      "type": "string | undefined",
+      "mutable": false,
+      "attr": "step",
+      "reflectToAttr": false,
+      "docs": "<p>Works with the min and max attributes to limit the increments at which a value can be set.\nPossible values are: <code>&quot;any&quot;</code> or a positive floating point number.</p>\n",
+      "docsTags": [],
+      "values": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "undefined"
+        }
+      ],
+      "optional": true,
+      "required": false
+    },
+    {
+      "name": "type",
+      "type": "\"date\" | \"email\" | \"number\" | \"password\" | \"search\" | \"tel\" | \"text\" | \"time\" | \"url\"",
+      "mutable": false,
+      "attr": "type",
+      "reflectToAttr": false,
+      "docs": "<p>The type of control to display. The default type is text.</p>\n",
+      "docsTags": [],
+      "default": "\"text\"",
+      "values": [
+        {
+          "value": "date",
+          "type": "string"
+        },
+        {
+          "value": "email",
+          "type": "string"
+        },
+        {
+          "value": "number",
+          "type": "string"
+        },
+        {
+          "value": "password",
+          "type": "string"
+        },
+        {
+          "value": "search",
+          "type": "string"
+        },
+        {
+          "value": "tel",
+          "type": "string"
+        },
+        {
+          "value": "text",
+          "type": "string"
+        },
+        {
+          "value": "time",
+          "type": "string"
+        },
+        {
+          "value": "url",
+          "type": "string"
+        }
+      ],
+      "optional": false,
+      "required": false
+    },
+    {
+      "name": "value",
+      "type": "null | number | string | undefined",
+      "mutable": true,
+      "attr": "value",
+      "reflectToAttr": false,
+      "docs": "<p>The value of the input.</p>\n",
+      "docsTags": [],
+      "default": "\"\"",
+      "values": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "undefined"
+        }
+      ],
+      "optional": true,
+      "required": false
+    }
+  ],
+  "methods": [
+    {
+      "name": "setFocus",
+      "returns": {
+        "type": "Promise<void>",
+        "docs": ""
+      },
+      "signature": "setFocus() => Promise<void>",
+      "parameters": [],
+      "docs": "<p>Sets focus on the specified <code>ion-input</code>. Use this method instead of the global\n<code>input.focus()</code>.</p>\n",
+      "docsTags": []
+    }
+  ],
+  "template": "api",
+  "filePath": "./src/components/input/input.tsx",
+  "encapsulation": "scoped",
+  "tag": "sen-input",
+  "docs": "",
+  "docsTags": [],
+  "events": [
+    {
+      "event": "senChange",
+      "detail": "InputChangeEventDetail",
+      "bubbles": true,
+      "cancelable": true,
+      "composed": true,
+      "docs": "Emitted when input is changed",
+      "docsTags": []
+    },
+    {
+      "event": "senInput",
+      "detail": "KeyboardEvent",
+      "bubbles": true,
+      "cancelable": true,
+      "composed": true,
+      "docs": "Emitted when a keyboard input occurred.",
+      "docsTags": []
+    }
+  ],
+  "listeners": [],
+  "styles": [],
+  "slots": [],
+  "dependents": [],
+  "dependencies": [],
+  "dependencyGraph": {},
+  "headings": [],
+  "pageClass": "page-api-input"
+}

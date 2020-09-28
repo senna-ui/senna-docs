@@ -1,0 +1,52 @@
+{
+  "title": "sen-fieldset",
+  "path": "/docs/api/fieldset",
+  "body": [
+    "div",
+    null
+  ],
+  "usage": {},
+  "props": [
+    {
+      "name": "legend",
+      "type": "string | undefined",
+      "mutable": false,
+      "attr": "legend",
+      "reflectToAttr": false,
+      "docs": "<p>Legend describing the fieldset</p>\n",
+      "docsTags": [],
+      "values": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "undefined"
+        }
+      ],
+      "optional": true,
+      "required": false
+    }
+  ],
+  "methods": [],
+  "template": "api",
+  "filePath": "./src/components/fieldset/fieldset.tsx",
+  "encapsulation": "shadow",
+  "tag": "sen-fieldset",
+  "docs": "",
+  "docsTags": [],
+  "events": [],
+  "listeners": [],
+  "styles": [],
+  "slots": [],
+  "dependents": [],
+  "dependencies": [
+    "sen-grid"
+  ],
+  "dependencyGraph": {
+    "sen-fieldset": [
+      "sen-grid"
+    ]
+  },
+  "headings": [],
+  "pageClass": "page-api-fieldset"
+}

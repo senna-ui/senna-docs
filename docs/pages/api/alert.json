@@ -1,0 +1,63 @@
+{
+  "title": "sen-alert",
+  "path": "/docs/api/alert",
+  "body": [
+    "div",
+    null
+  ],
+  "usage": {},
+  "props": [
+    {
+      "name": "color",
+      "type": "\"danger\" | \"primary\" | \"secondary\" | \"success\" | \"warning\" | undefined",
+      "mutable": false,
+      "attr": "color",
+      "reflectToAttr": false,
+      "docs": "<p>Button variant</p>\n",
+      "docsTags": [],
+      "values": [
+        {
+          "value": "danger",
+          "type": "string"
+        },
+        {
+          "value": "primary",
+          "type": "string"
+        },
+        {
+          "value": "secondary",
+          "type": "string"
+        },
+        {
+          "value": "success",
+          "type": "string"
+        },
+        {
+          "value": "warning",
+          "type": "string"
+        },
+        {
+          "type": "undefined"
+        }
+      ],
+      "optional": true,
+      "required": false
+    }
+  ],
+  "methods": [],
+  "template": "api",
+  "filePath": "./src/components/alert/alert.tsx",
+  "encapsulation": "shadow",
+  "tag": "sen-alert",
+  "docs": "",
+  "docsTags": [],
+  "events": [],
+  "listeners": [],
+  "styles": [],
+  "slots": [],
+  "dependents": [],
+  "dependencies": [],
+  "dependencyGraph": {},
+  "headings": [],
+  "pageClass": "page-api-alert"
+}

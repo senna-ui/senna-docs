@@ -1,0 +1,26 @@
+{
+  "path": "/docs/core-concepts/fundamentals",
+  "github": {
+    "path": "src/pages/core-concepts/fundamentals.md",
+    "contributors": [],
+    "lastUpdated": "2020-09-28T10:16:51.000Z"
+  },
+  "previousText": "",
+  "previousUrl": "",
+  "nextText": "Cross Platform",
+  "nextUrl": "/docs/undefined/core-concepts/cross-platform",
+  "body": [
+    "div",
+    null,
+    [
+      "p",
+      {
+        "class": "intro"
+      },
+      "TODO"
+    ]
+  ],
+  "title": "Core Concepts",
+  "headings": [],
+  "pageClass": "page-core-concepts-fundamentals"
+}

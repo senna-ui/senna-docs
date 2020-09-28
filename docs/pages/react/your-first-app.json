@@ -1,0 +1,47 @@
+{
+  "path": "/docs/react/your-first-app",
+  "github": {
+    "path": "src/pages/react/your-first-app.md",
+    "contributors": [],
+    "lastUpdated": "2020-09-28T10:16:51.000Z"
+  },
+  "previousText": "Quickstart",
+  "previousUrl": "/docs/undefined/react/quickstart",
+  "nextText": "Setup",
+  "nextUrl": "/docs/undefined/react/your-first-app/2-setup",
+  "body": [
+    "div",
+    null,
+    [
+      "p",
+      {
+        "class": "intro"
+      },
+      "TODO"
+    ],
+    " ",
+    [
+      "h2",
+      {
+        "id": "what-we-ll-build"
+      },
+      " ",
+      [
+        "a",
+        {
+          "href": "#what-we-ll-build"
+        },
+        "What We'll Build"
+      ],
+      " "
+    ]
+  ],
+  "title": "Your First Senna App: React",
+  "headings": [
+    {
+      "text": "What We'll Build",
+      "href": "#what-we-ll-build"
+    }
+  ],
+  "pageClass": "page-react-your-first-app"
+}

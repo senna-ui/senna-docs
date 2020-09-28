@@ -1,0 +1,1 @@
+import{r as s,h as t,H as r}from"./p-2bb7e3b8.js";class a{constructor(t){s(this,t),this.selected=!1}hostData(){return{role:"tabpanel",class:{"Tabs-tab":!0}}}__stencil_render(){return t("slot",null)}render(){return t(r,this.hostData(),this.__stencil_render())}}export{a as docs_tab}

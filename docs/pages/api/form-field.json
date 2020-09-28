@@ -1,0 +1,52 @@
+{
+  "title": "sen-form-field",
+  "path": "/docs/api/form-field",
+  "body": [
+    "div",
+    null
+  ],
+  "usage": {},
+  "props": [
+    {
+      "name": "label",
+      "type": "string",
+      "mutable": false,
+      "attr": "label",
+      "reflectToAttr": false,
+      "docs": "<p>Label of the form field</p>\n",
+      "docsTags": [],
+      "default": "\"\"",
+      "values": [
+        {
+          "type": "string"
+        }
+      ],
+      "optional": false,
+      "required": false
+    }
+  ],
+  "methods": [],
+  "template": "api",
+  "filePath": "./src/components/form-field/form-field.tsx",
+  "encapsulation": "shadow",
+  "tag": "sen-form-field",
+  "docs": "",
+  "docsTags": [],
+  "events": [],
+  "listeners": [],
+  "styles": [],
+  "slots": [],
+  "dependents": [],
+  "dependencies": [
+    "sen-row",
+    "sen-col"
+  ],
+  "dependencyGraph": {
+    "sen-form-field": [
+      "sen-row",
+      "sen-col"
+    ]
+  },
+  "headings": [],
+  "pageClass": "page-api-form-field"
+}

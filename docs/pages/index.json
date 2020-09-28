@@ -1,0 +1,31 @@
+{
+  "path": "/docs/index",
+  "github": {
+    "path": "src/pages/index.md",
+    "contributors": [],
+    "lastUpdated": "2020-09-28T10:16:51.000Z"
+  },
+  "title": "Senna UI",
+  "meta": {
+    "image": "/docs/assets/img/meta/open-graph.png",
+    "description": "TODO"
+  },
+  "tableOfContents": false,
+  "demoUrl": "https://demo-url/",
+  "demoSourceUrl": "https://demo-source-url/",
+  "nextText": "Environment Setup",
+  "nextUrl": "/docs/undefined/intro/environment",
+  "body": [
+    "div",
+    null,
+    [
+      "p",
+      {
+        "class": "intro"
+      },
+      "TODO"
+    ]
+  ],
+  "headings": [],
+  "pageClass": "page-index"
+}

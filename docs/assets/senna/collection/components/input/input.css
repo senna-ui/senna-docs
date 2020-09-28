@@ -1,0 +1,16 @@
+:host {
+  display: contents;
+}
+:host input {
+  box-sizing: border-box;
+  padding: 4px 6.4px;
+  font-size: 13px;
+  font-family: var(--sen-font-family, "Source Sans Pro", Helvetica, sans-serif);
+  border: 0 solid #E9E6E6;
+  background: #E9E6E6;
+  line-height: 1em;
+}
+:host input[type=text] {
+  display: block;
+  width: 100%;
+}

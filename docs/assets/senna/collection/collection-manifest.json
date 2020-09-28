@@ -1,0 +1,22 @@
+{
+  "entries": [
+    "./components/alert/alert.js",
+    "./components/app/app.js",
+    "./components/button/button.js",
+    "./components/button-group/button-group.js",
+    "./components/col/col.js",
+    "./components/fieldset/fieldset.js",
+    "./components/form-field/form-field.js",
+    "./components/grid/grid.js",
+    "./components/input/input.js",
+    "./components/row/row.js",
+    "./components/table/table.js"
+  ],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "1.12.2",
+    "typescriptVersion": "3.8.3"
+  },
+  "collections": [],
+  "bundles": []
+}

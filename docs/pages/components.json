@@ -1,0 +1,53 @@
+{
+  "path": "/docs/components",
+  "github": {
+    "path": "src/pages/components.md",
+    "contributors": [],
+    "lastUpdated": "2020-09-28T10:16:51.000Z"
+  },
+  "tableOfContents": false,
+  "body": [
+    "div",
+    null,
+    [
+      "p",
+      {
+        "class": "intro"
+      },
+      "Senna apps are made of high-level building blocks called Components, which allow you to quickly construct the UI for your app. Senna comes stock with a number of components, including cards, lists, and tabs. Once you’re familiar with the basics, refer to the ",
+      [
+        "stencil-route-link",
+        {
+          "url": "/docs/api"
+        },
+        "API Index"
+      ],
+      " for a complete list of each component and sub-component."
+    ],
+    " ",
+    [
+      "docs-cards",
+      null,
+      " ",
+      [
+        "docs-card",
+        {
+          "header": "Button",
+          "href": "/docs/api/button",
+          "icon": "/docs/assets/icons/component-button-icon.png"
+        },
+        " ",
+        [
+          "p",
+          null,
+          "Buttons let your users take action. They're an essential way to interact with and navigate through an app."
+        ],
+        " "
+      ],
+      " "
+    ]
+  ],
+  "title": "UI Components",
+  "headings": [],
+  "pageClass": "page-components"
+}

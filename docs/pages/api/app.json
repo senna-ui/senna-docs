@@ -1,0 +1,26 @@
+{
+  "title": "sen-app",
+  "path": "/docs/api/app",
+  "body": [
+    "div",
+    null
+  ],
+  "usage": {},
+  "props": [],
+  "methods": [],
+  "template": "api",
+  "filePath": "./src/components/app/app.tsx",
+  "encapsulation": "shadow",
+  "tag": "sen-app",
+  "docs": "",
+  "docsTags": [],
+  "events": [],
+  "listeners": [],
+  "styles": [],
+  "slots": [],
+  "dependents": [],
+  "dependencies": [],
+  "dependencyGraph": {},
+  "headings": [],
+  "pageClass": "page-api-app"
+}

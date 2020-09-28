@@ -1,0 +1,108 @@
+:host {
+  /**
+   * @prop --sen-grid-columns: The number of total Columns in the Grid
+   * @prop --sen-grid-column-padding: Padding for the Column
+   * @prop --sen-grid-column-padding-xs: Padding for the Column on xs screens and up
+   * @prop --sen-grid-column-padding-sm: Padding for the Column on sm screens and up
+   * @prop --sen-grid-column-padding-md: Padding for the Column on md screens and up
+   * @prop --sen-grid-column-padding-lg: Padding for the Column on lg screens and up
+   * @prop --sen-grid-column-padding-xl: Padding for the Column on xl screens and up
+   */
+  padding-left: var(--sen-grid-column-padding-xs, 5px);
+  padding-right: var(--sen-grid-column-padding-xs, 5px);
+  padding-top: var(--sen-grid-column-padding-xs, 5px);
+  padding-bottom: var(--sen-grid-column-padding-xs, 5px);
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  box-sizing: border-box;
+  position: relative;
+  flex-basis: 0;
+  flex-grow: 1;
+  width: 100%;
+  max-width: 100%;
+  min-height: 1px;
+}
+@supports (margin-inline-start: 0) or (-webkit-margin-start: 0) {
+  :host {
+    padding-left: unset;
+    padding-right: unset;
+    -webkit-padding-start: var(--sen-grid-column-padding-xs, 5px);
+    padding-inline-start: var(--sen-grid-column-padding-xs, 5px);
+    -webkit-padding-end: var(--sen-grid-column-padding-xs, 5px);
+    padding-inline-end: var(--sen-grid-column-padding-xs, 5px);
+  }
+}
+@media (min-width: 576px) {
+  :host {
+    padding-left: var(--sen-grid-column-padding-sm, 5px);
+    padding-right: var(--sen-grid-column-padding-sm, 5px);
+    padding-top: var(--sen-grid-column-padding-sm, 5px);
+    padding-bottom: var(--sen-grid-column-padding-sm, 5px);
+  }
+  @supports (margin-inline-start: 0) or (-webkit-margin-start: 0) {
+    :host {
+      padding-left: unset;
+      padding-right: unset;
+      -webkit-padding-start: var(--sen-grid-column-padding-sm, 5px);
+      padding-inline-start: var(--sen-grid-column-padding-sm, 5px);
+      -webkit-padding-end: var(--sen-grid-column-padding-sm, 5px);
+      padding-inline-end: var(--sen-grid-column-padding-sm, 5px);
+    }
+  }
+}
+@media (min-width: 768px) {
+  :host {
+    padding-left: var(--sen-grid-column-padding-md, 5px);
+    padding-right: var(--sen-grid-column-padding-md, 5px);
+    padding-top: var(--sen-grid-column-padding-md, 5px);
+    padding-bottom: var(--sen-grid-column-padding-md, 5px);
+  }
+  @supports (margin-inline-start: 0) or (-webkit-margin-start: 0) {
+    :host {
+      padding-left: unset;
+      padding-right: unset;
+      -webkit-padding-start: var(--sen-grid-column-padding-md, 5px);
+      padding-inline-start: var(--sen-grid-column-padding-md, 5px);
+      -webkit-padding-end: var(--sen-grid-column-padding-md, 5px);
+      padding-inline-end: var(--sen-grid-column-padding-md, 5px);
+    }
+  }
+}
+@media (min-width: 992px) {
+  :host {
+    padding-left: var(--sen-grid-column-padding-lg, 5px);
+    padding-right: var(--sen-grid-column-padding-lg, 5px);
+    padding-top: var(--sen-grid-column-padding-lg, 5px);
+    padding-bottom: var(--sen-grid-column-padding-lg, 5px);
+  }
+  @supports (margin-inline-start: 0) or (-webkit-margin-start: 0) {
+    :host {
+      padding-left: unset;
+      padding-right: unset;
+      -webkit-padding-start: var(--sen-grid-column-padding-lg, 5px);
+      padding-inline-start: var(--sen-grid-column-padding-lg, 5px);
+      -webkit-padding-end: var(--sen-grid-column-padding-lg, 5px);
+      padding-inline-end: var(--sen-grid-column-padding-lg, 5px);
+    }
+  }
+}
+@media (min-width: 1200px) {
+  :host {
+    padding-left: var(--sen-grid-column-padding-xl, 5px);
+    padding-right: var(--sen-grid-column-padding-xl, 5px);
+    padding-top: var(--sen-grid-column-padding-xl, 5px);
+    padding-bottom: var(--sen-grid-column-padding-xl, 5px);
+  }
+  @supports (margin-inline-start: 0) or (-webkit-margin-start: 0) {
+    :host {
+      padding-left: unset;
+      padding-right: unset;
+      -webkit-padding-start: var(--sen-grid-column-padding-xl, 5px);
+      padding-inline-start: var(--sen-grid-column-padding-xl, 5px);
+      -webkit-padding-end: var(--sen-grid-column-padding-xl, 5px);
+      padding-inline-end: var(--sen-grid-column-padding-xl, 5px);
+    }
+  }
+}
