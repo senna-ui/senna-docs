@@ -23,7 +23,7 @@ const getAPIPages = async (): Promise<Page[]> => {
       title,
       path,
       ...demoUrl,
-      body: markdownRenderer(readme, path),
+      body: markdownRenderer(readme || '', path),
       usage: renderUsage(usage, path),
       props: renderDocsKey(props, path),
       methods: renderDocsKey(methods, path),

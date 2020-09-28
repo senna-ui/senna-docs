@@ -1,9 +1,7 @@
 {
   "extends": ["tslint-ionic-rules/strict", "tslint-react"],
   "linterOptions": {
-    "exclude": [
-      "**/*.json"
-    ]
+    "exclude": ["**/*.json"]
   },
   "rules": {
     "no-conditional-assignment": false,

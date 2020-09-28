@@ -59,7 +59,7 @@ const start = () => {
 }
 
 throng({
-  workers: process.env.WEB_CONCURRENCY ? 
+  workers: process.env.WEB_CONCURRENCY ?
     parseInt(process.env.WEB_CONCURRENCY, 10) : 1,
   lifetime: Infinity
 }, start)
