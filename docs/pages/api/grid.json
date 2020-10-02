@@ -439,7 +439,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -699,7 +699,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -847,7 +847,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -995,7 +995,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -1087,7 +1087,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -1123,7 +1123,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -1725,7 +1725,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -1817,7 +1817,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -1909,7 +1909,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -2143,7 +2143,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -2319,7 +2319,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -2553,7 +2553,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -2927,7 +2927,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -3047,7 +3047,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -3365,7 +3365,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -3465,7 +3465,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -3565,7 +3565,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -3665,7 +3665,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -3821,7 +3821,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -3921,7 +3921,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -4021,7 +4021,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -4121,7 +4121,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -4277,7 +4277,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -4321,7 +4321,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -4413,7 +4413,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -5294,7 +5294,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -5650,7 +5650,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -5846,7 +5846,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -6042,7 +6042,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -6158,7 +6158,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -6194,7 +6194,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -7000,7 +7000,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -7116,7 +7116,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -7232,7 +7232,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -7538,7 +7538,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -7774,7 +7774,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -8080,7 +8080,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -8586,7 +8586,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -8742,7 +8742,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -9168,7 +9168,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -9292,7 +9292,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -9416,7 +9416,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -9540,7 +9540,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -9744,7 +9744,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -9868,7 +9868,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -9992,7 +9992,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -10116,7 +10116,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -10320,7 +10320,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -10364,7 +10364,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
@@ -10480,7 +10480,7 @@
                 [
                   "span",
                   {
-                    "class": "token punctuation"
+                    "class": "token punctuation attr-equals"
                   },
                   "="
                 ],
