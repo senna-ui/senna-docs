@@ -1,0 +1,215 @@
+{
+  "title": "sen-card",
+  "path": "/docs/api/card",
+  "body": [
+    "div",
+    null,
+    [
+      "h2",
+      {
+        "id": "css-custom-properties"
+      },
+      " ",
+      [
+        "a",
+        {
+          "href": "#css-custom-properties"
+        },
+        "CSS Custom Properties"
+      ],
+      " "
+    ],
+    " ",
+    [
+      "table",
+      null,
+      " ",
+      [
+        "thead",
+        null,
+        " ",
+        [
+          "tr",
+          null,
+          " ",
+          [
+            "th",
+            null,
+            "Name"
+          ],
+          " ",
+          [
+            "th",
+            null,
+            "Default"
+          ],
+          " ",
+          [
+            "th",
+            null,
+            "Description"
+          ],
+          " "
+        ],
+        " "
+      ],
+      " ",
+      [
+        "tbody",
+        null,
+        [
+          "tr",
+          null,
+          " ",
+          [
+            "td",
+            null,
+            [
+              "code",
+              null,
+              "--card-border-color"
+            ]
+          ],
+          " ",
+          [
+            "td",
+            null,
+            [
+              "code",
+              null,
+              "#DEDCDC"
+            ]
+          ],
+          " ",
+          [
+            "td",
+            null,
+            "outer border color"
+          ],
+          " "
+        ],
+        " ",
+        [
+          "tr",
+          null,
+          " ",
+          [
+            "td",
+            null,
+            [
+              "code",
+              null,
+              "--card-border-radius"
+            ]
+          ],
+          " ",
+          [
+            "td",
+            null,
+            [
+              "code",
+              null,
+              "0"
+            ]
+          ],
+          " ",
+          [
+            "td",
+            null,
+            "border radius"
+          ],
+          " "
+        ],
+        " ",
+        [
+          "tr",
+          null,
+          " ",
+          [
+            "td",
+            null,
+            [
+              "code",
+              null,
+              "--card-padding"
+            ]
+          ],
+          " ",
+          [
+            "td",
+            null,
+            [
+              "code",
+              null,
+              "8px"
+            ]
+          ],
+          " ",
+          [
+            "td",
+            null,
+            "the inner padding"
+          ],
+          " "
+        ],
+        " ",
+        [
+          "tr",
+          null,
+          " ",
+          [
+            "td",
+            null,
+            [
+              "code",
+              null,
+              "--card-margin"
+            ]
+          ],
+          " ",
+          [
+            "td",
+            null,
+            [
+              "code",
+              null,
+              "8px"
+            ]
+          ],
+          " ",
+          [
+            "td",
+            null,
+            "the outer margin"
+          ],
+          " "
+        ],
+        " "
+      ]
+    ]
+  ],
+  "usage": {},
+  "props": [],
+  "methods": [],
+  "template": "api",
+  "filePath": "./src/components/card/card.tsx",
+  "encapsulation": "shadow",
+  "tag": "sen-card",
+  "docs": "",
+  "docsTags": [],
+  "events": [],
+  "listeners": [],
+  "styles": [],
+  "slots": [],
+  "parts": [],
+  "dependents": [],
+  "dependencies": [],
+  "dependencyGraph": {},
+  "headings": [
+    {
+      "text": "CSS Custom Properties",
+      "href": "#css-custom-properties"
+    }
+  ],
+  "pageClass": "page-api-card"
+}

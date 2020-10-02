@@ -99,6 +99,7 @@
   "listeners": [],
   "styles": [],
   "slots": [],
+  "parts": [],
   "dependents": [
     "sen-form-field"
   ],

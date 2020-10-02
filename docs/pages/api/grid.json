@@ -10792,6 +10792,7 @@
     }
   ],
   "slots": [],
+  "parts": [],
   "dependents": [
     "sen-fieldset"
   ],

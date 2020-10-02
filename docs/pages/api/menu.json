@@ -1,0 +1,50 @@
+{
+  "title": "sen-menu",
+  "path": "/docs/api/menu",
+  "body": [
+    "div",
+    null
+  ],
+  "usage": {},
+  "props": [
+    {
+      "name": "items",
+      "type": "MenuItem[]",
+      "mutable": false,
+      "reflectToAttr": false,
+      "docs": "<p>Menu items</p>\n",
+      "docsTags": [],
+      "default": "[]",
+      "values": [
+        {
+          "type": "MenuItem[]"
+        }
+      ],
+      "optional": false,
+      "required": false
+    }
+  ],
+  "methods": [],
+  "template": "api",
+  "filePath": "./src/components/menu/menu.tsx",
+  "encapsulation": "shadow",
+  "tag": "sen-menu",
+  "docs": "",
+  "docsTags": [],
+  "events": [],
+  "listeners": [],
+  "styles": [],
+  "slots": [],
+  "parts": [],
+  "dependents": [],
+  "dependencies": [
+    "sen-menu-item"
+  ],
+  "dependencyGraph": {
+    "sen-menu": [
+      "sen-menu-item"
+    ]
+  },
+  "headings": [],
+  "pageClass": "page-api-menu"
+}

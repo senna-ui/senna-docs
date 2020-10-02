@@ -1,0 +1,27 @@
+{
+  "title": "sen-card-actions",
+  "path": "/docs/api/card-actions",
+  "body": [
+    "div",
+    null
+  ],
+  "usage": {},
+  "props": [],
+  "methods": [],
+  "template": "api",
+  "filePath": "./src/components/card-actions/card-actions.tsx",
+  "encapsulation": "shadow",
+  "tag": "sen-card-actions",
+  "docs": "",
+  "docsTags": [],
+  "events": [],
+  "listeners": [],
+  "styles": [],
+  "slots": [],
+  "parts": [],
+  "dependents": [],
+  "dependencies": [],
+  "dependencyGraph": {},
+  "headings": [],
+  "pageClass": "page-api-card-actions"
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typeahead</title>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@senna-ui/core@dev/dist/senna/senna.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@senna-ui/core@dev/dist/senna/senna.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@senna-ui/core@dev/dist/senna/senna.css" />
+  <style>
+    body {
+      font-family: "Source Sans Pro", Helvetica, sans-serif;
+      font-size: 13px;
+    }
+    header {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      margin-bottom: 1.25em;
+      text-transform: uppercase;
+    }
+
+    section {
+      margin-top: 1em;
+      margin-bottom: 2.5em;
+    }
+
+    section:not(.full-width),
+    .full-width > header {
+      padding: 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <header>Example</header>
+    <sen-typeahead id="typeahead" />
+  </section>
+  <script>
+    var el = document.getElementById('typeahead')
+    el.options = [{id: 123, label: 'Item 1'}, {id: 234, label: 'Other Item'}]
+  </script>
+
+</body>
+</html>

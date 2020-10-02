@@ -1,0 +1,88 @@
+{
+  "title": "sen-typeahead",
+  "path": "/docs/api/typeahead",
+  "demoUrl": "/docs/demos/api/typeahead/index.html",
+  "demoSourceUrl": "https://github.com/senna-ui/senna-docs/tree/master/src/demos/api/typeahead/index.html",
+  "body": [
+    "div",
+    null
+  ],
+  "usage": {},
+  "props": [
+    {
+      "name": "options",
+      "type": "TypeaheadOption[]",
+      "mutable": false,
+      "reflectToAttr": false,
+      "docs": "<p>Options to display in typeahead</p>\n",
+      "docsTags": [],
+      "default": "[]",
+      "values": [
+        {
+          "type": "TypeaheadOption[]"
+        }
+      ],
+      "optional": false,
+      "required": false
+    },
+    {
+      "name": "value",
+      "type": "string",
+      "mutable": true,
+      "attr": "value",
+      "reflectToAttr": true,
+      "docs": "<p>The value of the input.</p>\n",
+      "docsTags": [],
+      "default": "\"\"",
+      "values": [
+        {
+          "type": "string"
+        }
+      ],
+      "optional": false,
+      "required": false
+    }
+  ],
+  "methods": [],
+  "template": "api",
+  "filePath": "./src/components/typeahead/typeahead.tsx",
+  "encapsulation": "shadow",
+  "tag": "sen-typeahead",
+  "docs": "",
+  "docsTags": [],
+  "events": [
+    {
+      "event": "senChange",
+      "detail": "OptionSelectedEvent",
+      "bubbles": true,
+      "cancelable": true,
+      "composed": true,
+      "docs": "Emitted when input is changed",
+      "docsTags": []
+    },
+    {
+      "event": "senInput",
+      "detail": "KeyboardEvent",
+      "bubbles": true,
+      "cancelable": true,
+      "composed": true,
+      "docs": "Emitted when a keyboard input occurred.",
+      "docsTags": []
+    }
+  ],
+  "listeners": [],
+  "styles": [],
+  "slots": [],
+  "parts": [],
+  "dependents": [],
+  "dependencies": [
+    "sen-input"
+  ],
+  "dependencyGraph": {
+    "sen-typeahead": [
+      "sen-input"
+    ]
+  },
+  "headings": [],
+  "pageClass": "page-api-typeahead"
+}

@@ -871,9 +871,16 @@
   "listeners": [],
   "styles": [],
   "slots": [],
-  "dependents": [],
+  "parts": [],
+  "dependents": [
+    "sen-typeahead"
+  ],
   "dependencies": [],
-  "dependencyGraph": {},
+  "dependencyGraph": {
+    "sen-typeahead": [
+      "sen-input"
+    ]
+  },
   "headings": [],
   "pageClass": "page-api-input"
 }

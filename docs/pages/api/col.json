@@ -599,6 +599,7 @@
     }
   ],
   "slots": [],
+  "parts": [],
   "dependents": [
     "sen-form-field"
   ],

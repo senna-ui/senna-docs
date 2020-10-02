@@ -10,6 +10,9 @@
  <url><loc>https://senna-ui.com/docs/api/button</loc></url>
  <url><loc>https://senna-ui.com/docs/api/button-group</loc></url>
  <url><loc>https://senna-ui.com/docs/api/card</loc></url>
+ <url><loc>https://senna-ui.com/docs/api/card-actions</loc></url>
+ <url><loc>https://senna-ui.com/docs/api/card-body</loc></url>
+ <url><loc>https://senna-ui.com/docs/api/card-title</loc></url>
  <url><loc>https://senna-ui.com/docs/api/col</loc></url>
  <url><loc>https://senna-ui.com/docs/api/container</loc></url>
  <url><loc>https://senna-ui.com/docs/api/fieldset</loc></url>
@@ -17,9 +20,12 @@
  <url><loc>https://senna-ui.com/docs/api/grid</loc></url>
  <url><loc>https://senna-ui.com/docs/api/input</loc></url>
  <url><loc>https://senna-ui.com/docs/api/loading</loc></url>
+ <url><loc>https://senna-ui.com/docs/api/menu</loc></url>
+ <url><loc>https://senna-ui.com/docs/api/menu-item</loc></url>
  <url><loc>https://senna-ui.com/docs/api/row</loc></url>
  <url><loc>https://senna-ui.com/docs/api/table</loc></url>
  <url><loc>https://senna-ui.com/docs/api/tabs</loc></url>
+ <url><loc>https://senna-ui.com/docs/api/typeahead</loc></url>
  <url><loc>https://senna-ui.com/docs/core-concepts/cross-platform</loc></url>
  <url><loc>https://senna-ui.com/docs/core-concepts/fundamentals</loc></url>
  <url><loc>https://senna-ui.com/docs/developing/previewing</loc></url>

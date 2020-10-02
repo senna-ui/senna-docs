@@ -1,0 +1,77 @@
+{
+  "title": "sen-menu-item",
+  "path": "/docs/api/menu-item",
+  "body": [
+    "div",
+    null
+  ],
+  "usage": {},
+  "props": [
+    {
+      "name": "active",
+      "type": "boolean",
+      "mutable": false,
+      "attr": "active",
+      "reflectToAttr": false,
+      "docs": "<p>Active state</p>\n",
+      "docsTags": [],
+      "default": "false",
+      "values": [
+        {
+          "type": "boolean"
+        }
+      ],
+      "optional": false,
+      "required": false
+    },
+    {
+      "name": "value",
+      "type": "any",
+      "mutable": false,
+      "attr": "value",
+      "reflectToAttr": false,
+      "docs": "<p>Value to emit when clicked</p>\n",
+      "docsTags": [],
+      "values": [
+        {
+          "type": "any"
+        }
+      ],
+      "optional": false,
+      "required": false
+    }
+  ],
+  "methods": [],
+  "template": "api",
+  "filePath": "./src/components/menu-item/menu-item.tsx",
+  "encapsulation": "shadow",
+  "tag": "sen-menu-item",
+  "docs": "",
+  "docsTags": [],
+  "events": [
+    {
+      "event": "senInput",
+      "detail": "any",
+      "bubbles": true,
+      "cancelable": true,
+      "composed": true,
+      "docs": "Emitted when a keyboard input occurred.",
+      "docsTags": []
+    }
+  ],
+  "listeners": [],
+  "styles": [],
+  "slots": [],
+  "parts": [],
+  "dependents": [
+    "sen-menu"
+  ],
+  "dependencies": [],
+  "dependencyGraph": {
+    "sen-menu": [
+      "sen-menu-item"
+    ]
+  },
+  "headings": [],
+  "pageClass": "page-api-menu-item"
+}

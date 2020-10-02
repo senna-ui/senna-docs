@@ -37,5 +37,7 @@
 
   "menu-api-button": "Button",
   "menu-api-grid": "Grid",
-  "menu-api-index": "API Index"
+  "menu-api-index": "API Index",
+  "menu-api-forms": "Forms",
+  "menu-api-layout": "Layout"
 }

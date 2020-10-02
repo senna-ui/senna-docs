@@ -36,6 +36,7 @@
   "listeners": [],
   "styles": [],
   "slots": [],
+  "parts": [],
   "dependents": [],
   "dependencies": [
     "sen-row",
