@@ -1,5 +1,5 @@
 export default {
-    title: "Alert",
+  title: "Alert",
 };
 export const Default = () => `
   <sen-alert color="info">

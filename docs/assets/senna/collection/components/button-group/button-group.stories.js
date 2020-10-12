@@ -1,5 +1,5 @@
 export default {
-    title: "Button Group",
+  title: "Button Group",
 };
 export const Default = () => `
   <sen-button-group>

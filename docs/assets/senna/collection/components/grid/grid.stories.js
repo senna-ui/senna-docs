@@ -1,5 +1,5 @@
 export default {
-    title: "Grid",
+  title: "Grid",
 };
 export const Default = () => `
 <sen-grid>

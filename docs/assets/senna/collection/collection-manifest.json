@@ -4,18 +4,26 @@
     "./components/app/app.js",
     "./components/button/button.js",
     "./components/button-group/button-group.js",
+    "./components/card/card.js",
+    "./components/card-actions/card-actions.js",
+    "./components/card-body/card-body.js",
+    "./components/card-title/card-title.js",
     "./components/col/col.js",
     "./components/fieldset/fieldset.js",
     "./components/form-field/form-field.js",
     "./components/grid/grid.js",
     "./components/input/input.js",
+    "./components/menu/menu.js",
+    "./components/menu-item/menu-item.js",
     "./components/row/row.js",
-    "./components/table/table.js"
+    "./components/table/table.js",
+    "./components/text/text.js",
+    "./components/typeahead/typeahead.js"
   ],
   "compiler": {
     "name": "@stencil/core",
-    "version": "1.12.2",
-    "typescriptVersion": "3.8.3"
+    "version": "2.0.3",
+    "typescriptVersion": "4.0.2"
   },
   "collections": [],
   "bundles": []

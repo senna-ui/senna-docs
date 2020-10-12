@@ -5,7 +5,41 @@
   "demoSourceUrl": "https://github.com/senna-ui/senna-docs/tree/master/src/demos/api/button/index.html",
   "body": [
     "div",
-    null
+    null,
+    [
+      "p",
+      {
+        "class": "codepen intro",
+        "data-height": "309",
+        "data-theme-id": "dark",
+        "data-default-tab": "html,result",
+        "data-user": "casaper",
+        "data-slug-hash": "bGpXKWx",
+        "data-pen-title": "Senna-UI Button Example"
+      },
+      " ",
+      [
+        "span",
+        null,
+        [
+          "a",
+          {
+            "href": "https://codepen.io/casaper/pen/bGpXKWx"
+          },
+          " Senna-UI Button Example on CodePen"
+        ],
+        " "
+      ],
+      " "
+    ],
+    " ",
+    [
+      "template",
+      {
+        "async": "",
+        "src": "https://static.codepen.io/assets/embed/ei.js"
+      }
+    ]
   ],
   "usage": {},
   "props": [
@@ -94,7 +128,44 @@
   "filePath": "./src/components/button/button.tsx",
   "encapsulation": "shadow",
   "tag": "sen-button",
-  "docs": "",
+  "docs": [
+    "div",
+    null,
+    [
+      "p",
+      {
+        "class": "codepen",
+        "data-height": "309",
+        "data-theme-id": "dark",
+        "data-default-tab": "html,result",
+        "data-user": "casaper",
+        "data-slug-hash": "bGpXKWx",
+        "data-pen-title": "Senna-UI Button Example"
+      },
+      "\n  ",
+      [
+        "span",
+        null,
+        [
+          "a",
+          {
+            "href": "https://codepen.io/casaper/pen/bGpXKWx"
+          },
+          "\n  Senna-UI Button Example on CodePen"
+        ],
+        " "
+      ],
+      "\n"
+    ],
+    "\n",
+    [
+      "template",
+      {
+        "async": "",
+        "src": "https://static.codepen.io/assets/embed/ei.js"
+      }
+    ]
+  ],
   "docsTags": [],
   "events": [],
   "listeners": [],

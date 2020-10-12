@@ -1,7 +1,7 @@
 declare const _default: {
-    title: string;
+  title: string;
 };
 export default _default;
-export declare const Text: () => any;
-export declare const Checkbox: () => any;
-export declare const Radio: () => any;
+export declare const Text: () => string;
+export declare const Checkbox: () => string;
+export declare const Radio: () => string;

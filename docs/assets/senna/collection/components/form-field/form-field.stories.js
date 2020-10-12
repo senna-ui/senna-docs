@@ -1,5 +1,5 @@
 export default {
-    title: "Forms/Field",
+  title: "Forms/Field",
 };
 export const Default = () => `
   <sen-form-field label="First name">

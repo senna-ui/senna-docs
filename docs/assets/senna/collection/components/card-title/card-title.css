@@ -1,0 +1,17 @@
+:host {
+  flex: 0 0 100%;
+}
+:host h1 {
+  font-weight: 700;
+  font-size: 22.75px;
+}
+@media (min-width: 768px) {
+  :host h1 {
+    font-size: 26px;
+  }
+}
+@media (min-width: 992px) {
+  :host h1 {
+    font-size: 32.5px;
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "title": "sen-text",
+  "path": "/docs/api/text",
+  "body": [
+    "div",
+    null
+  ],
+  "usage": {},
+  "props": [
+    {
+      "name": "align",
+      "type": "\"center\" | \"justify\" | \"left\" | \"right\"",
+      "mutable": false,
+      "attr": "align",
+      "reflectToAttr": false,
+      "docs": "<p><a href=https://developer.mozilla.org/en-US/docs/Web/CSS/text-align >Text align</a></p>\n",
+      "docsTags": [],
+      "default": "\"left\"",
+      "values": [
+        {
+          "value": "center",
+          "type": "string"
+        },
+        {
+          "value": "justify",
+          "type": "string"
+        },
+        {
+          "value": "left",
+          "type": "string"
+        },
+        {
+          "value": "right",
+          "type": "string"
+        }
+      ],
+      "optional": false,
+      "required": false
+    },
+    {
+      "name": "letterSpacing",
+      "type": "string",
+      "mutable": false,
+      "attr": "letter-spacing",
+      "reflectToAttr": false,
+      "docs": "<p><a href=https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing >Leter spacing</a></p>\n",
+      "docsTags": [],
+      "default": "\"normal\"",
+      "values": [
+        {
+          "type": "string"
+        }
+      ],
+      "optional": false,
+      "required": false
+    },
+    {
+      "name": "tag",
+      "type": "\"h1\" | \"h2\" | \"h3\" | \"h4\" | \"h5\" | \"h6\" | \"p\"",
+      "mutable": false,
+      "attr": "tag",
+      "reflectToAttr": false,
+      "docs": "<p>Element Tag</p>\n",
+      "docsTags": [],
+      "default": "'p'",
+      "values": [
+        {
+          "value": "h1",
+          "type": "string"
+        },
+        {
+          "value": "h2",
+          "type": "string"
+        },
+        {
+          "value": "h3",
+          "type": "string"
+        },
+        {
+          "value": "h4",
+          "type": "string"
+        },
+        {
+          "value": "h5",
+          "type": "string"
+        },
+        {
+          "value": "h6",
+          "type": "string"
+        },
+        {
+          "value": "p",
+          "type": "string"
+        }
+      ],
+      "optional": false,
+      "required": false
+    },
+    {
+      "name": "textTransform",
+      "type": "\"capitalize\" | \"full-width\" | \"lowercase\" | \"none\" | \"uppercase\"",
+      "mutable": false,
+      "attr": "text-transform",
+      "reflectToAttr": false,
+      "docs": "<p><a href=https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform >Text transform</a></p>\n",
+      "docsTags": [],
+      "default": "\"none\"",
+      "values": [
+        {
+          "value": "capitalize",
+          "type": "string"
+        },
+        {
+          "value": "full-width",
+          "type": "string"
+        },
+        {
+          "value": "lowercase",
+          "type": "string"
+        },
+        {
+          "value": "none",
+          "type": "string"
+        },
+        {
+          "value": "uppercase",
+          "type": "string"
+        }
+      ],
+      "optional": false,
+      "required": false
+    },
+    {
+      "name": "weight",
+      "type": "\"bold\" | \"light\" | \"regular\"",
+      "mutable": false,
+      "attr": "weight",
+      "reflectToAttr": false,
+      "docs": "<p>Font weight</p>\n",
+      "docsTags": [],
+      "default": "\"regular\"",
+      "values": [
+        {
+          "value": "bold",
+          "type": "string"
+        },
+        {
+          "value": "light",
+          "type": "string"
+        },
+        {
+          "value": "regular",
+          "type": "string"
+        }
+      ],
+      "optional": false,
+      "required": false
+    }
+  ],
+  "methods": [],
+  "template": "api",
+  "filePath": "./src/components/text/text.tsx",
+  "encapsulation": "shadow",
+  "tag": "sen-text",
+  "docs": [
+    "div",
+    null,
+    "Text typography component"
+  ],
+  "docsTags": [],
+  "events": [],
+  "listeners": [],
+  "styles": [],
+  "slots": [],
+  "parts": [],
+  "dependents": [],
+  "dependencies": [],
+  "dependencyGraph": {},
+  "headings": [],
+  "pageClass": "page--docs-api-text"
+}

@@ -5,7 +5,7 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "./stencil-public-runtime";
-import { AutocompleteTypes, Color, InputChangeEventDetail, TableHeaders, TextFieldTypes, } from "./interface";
+import { AutocompleteTypes, Color, FontWeight, InputChangeEventDetail, MenuItem, OptionSelectedEvent, TableHeaders, TextAlign, TextFieldTypes, TextTag, TextTransform, TypeaheadOption } from "./interface";
 export namespace Components {
     interface SenAlert {
         /**
@@ -30,6 +30,14 @@ export namespace Components {
         "disabled": boolean;
     }
     interface SenButtonGroup {
+    }
+    interface SenCard {
+    }
+    interface SenCardActions {
+    }
+    interface SenCardBody {
+    }
+    interface SenCardTitle {
     }
     interface SenCol {
         /**
@@ -191,11 +199,24 @@ export namespace Components {
         /**
           * A hint to the browser for which enter key to display. Possible values: `"enter"`, `"done"`, `"go"`, `"next"`, `"previous"`, `"search"`, and `"send"`.
          */
-        "enterkeyhint"?: "enter" | "done" | "go" | "next" | "previous" | "search" | "send";
+        "enterkeyhint"?: | "enter"
+    | "done"
+    | "go"
+    | "next"
+    | "previous"
+    | "search"
+    | "send";
         /**
           * A hint to the browser for which keyboard to display. Possible values: `"none"`, `"text"`, `"tel"`, `"url"`, `"email"`, `"numeric"`, `"decimal"`, and `"search"`.
          */
-        "inputmode"?: "none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search";
+        "inputmode"?: | "none"
+    | "text"
+    | "tel"
+    | "url"
+    | "email"
+    | "numeric"
+    | "decimal"
+    | "search";
         /**
           * The maximum value, which must not be less than its minimum (min attribute) value.
          */
@@ -261,6 +282,22 @@ export namespace Components {
          */
         "value"?: string | number | null;
     }
+    interface SenMenu {
+        /**
+          * Menu items
+         */
+        "items": MenuItem[];
+    }
+    interface SenMenuItem {
+        /**
+          * Active state
+         */
+        "active": boolean;
+        /**
+          * Value to emit when clicked
+         */
+        "value": any;
+    }
     interface SenRow {
     }
     interface SenTable {
@@ -272,6 +309,38 @@ export namespace Components {
           * Table headers
          */
         "headers": TableHeaders;
+    }
+    interface SenText {
+        /**
+          * [Text align](https://developer.mozilla.org/en-US/docs/Web/CSS/text-align)
+         */
+        "align": TextAlign | "justify";
+        /**
+          * [Leter spacing](https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing)
+         */
+        "letterSpacing": string;
+        /**
+          * Element Tag
+         */
+        "tag": TextTag;
+        /**
+          * [Text transform](https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform)
+         */
+        "textTransform": TextTransform;
+        /**
+          * Font weight
+         */
+        "weight": FontWeight;
+    }
+    interface SenTypeahead {
+        /**
+          * Options to display in typeahead
+         */
+        "options": TypeaheadOption[];
+        /**
+          * The value of the input.
+         */
+        "value": string;
     }
 }
 declare global {
@@ -298,6 +367,30 @@ declare global {
     var HTMLSenButtonGroupElement: {
         prototype: HTMLSenButtonGroupElement;
         new (): HTMLSenButtonGroupElement;
+    };
+    interface HTMLSenCardElement extends Components.SenCard, HTMLStencilElement {
+    }
+    var HTMLSenCardElement: {
+        prototype: HTMLSenCardElement;
+        new (): HTMLSenCardElement;
+    };
+    interface HTMLSenCardActionsElement extends Components.SenCardActions, HTMLStencilElement {
+    }
+    var HTMLSenCardActionsElement: {
+        prototype: HTMLSenCardActionsElement;
+        new (): HTMLSenCardActionsElement;
+    };
+    interface HTMLSenCardBodyElement extends Components.SenCardBody, HTMLStencilElement {
+    }
+    var HTMLSenCardBodyElement: {
+        prototype: HTMLSenCardBodyElement;
+        new (): HTMLSenCardBodyElement;
+    };
+    interface HTMLSenCardTitleElement extends Components.SenCardTitle, HTMLStencilElement {
+    }
+    var HTMLSenCardTitleElement: {
+        prototype: HTMLSenCardTitleElement;
+        new (): HTMLSenCardTitleElement;
     };
     interface HTMLSenColElement extends Components.SenCol, HTMLStencilElement {
     }
@@ -329,6 +422,18 @@ declare global {
         prototype: HTMLSenInputElement;
         new (): HTMLSenInputElement;
     };
+    interface HTMLSenMenuElement extends Components.SenMenu, HTMLStencilElement {
+    }
+    var HTMLSenMenuElement: {
+        prototype: HTMLSenMenuElement;
+        new (): HTMLSenMenuElement;
+    };
+    interface HTMLSenMenuItemElement extends Components.SenMenuItem, HTMLStencilElement {
+    }
+    var HTMLSenMenuItemElement: {
+        prototype: HTMLSenMenuItemElement;
+        new (): HTMLSenMenuItemElement;
+    };
     interface HTMLSenRowElement extends Components.SenRow, HTMLStencilElement {
     }
     var HTMLSenRowElement: {
@@ -341,18 +446,38 @@ declare global {
         prototype: HTMLSenTableElement;
         new (): HTMLSenTableElement;
     };
+    interface HTMLSenTextElement extends Components.SenText, HTMLStencilElement {
+    }
+    var HTMLSenTextElement: {
+        prototype: HTMLSenTextElement;
+        new (): HTMLSenTextElement;
+    };
+    interface HTMLSenTypeaheadElement extends Components.SenTypeahead, HTMLStencilElement {
+    }
+    var HTMLSenTypeaheadElement: {
+        prototype: HTMLSenTypeaheadElement;
+        new (): HTMLSenTypeaheadElement;
+    };
     interface HTMLElementTagNameMap {
         "sen-alert": HTMLSenAlertElement;
         "sen-app": HTMLSenAppElement;
         "sen-button": HTMLSenButtonElement;
         "sen-button-group": HTMLSenButtonGroupElement;
+        "sen-card": HTMLSenCardElement;
+        "sen-card-actions": HTMLSenCardActionsElement;
+        "sen-card-body": HTMLSenCardBodyElement;
+        "sen-card-title": HTMLSenCardTitleElement;
         "sen-col": HTMLSenColElement;
         "sen-fieldset": HTMLSenFieldsetElement;
         "sen-form-field": HTMLSenFormFieldElement;
         "sen-grid": HTMLSenGridElement;
         "sen-input": HTMLSenInputElement;
+        "sen-menu": HTMLSenMenuElement;
+        "sen-menu-item": HTMLSenMenuItemElement;
         "sen-row": HTMLSenRowElement;
         "sen-table": HTMLSenTableElement;
+        "sen-text": HTMLSenTextElement;
+        "sen-typeahead": HTMLSenTypeaheadElement;
     }
 }
 declare namespace LocalJSX {
@@ -379,6 +504,14 @@ declare namespace LocalJSX {
         "disabled"?: boolean;
     }
     interface SenButtonGroup {
+    }
+    interface SenCard {
+    }
+    interface SenCardActions {
+    }
+    interface SenCardBody {
+    }
+    interface SenCardTitle {
     }
     interface SenCol {
         /**
@@ -540,11 +673,24 @@ declare namespace LocalJSX {
         /**
           * A hint to the browser for which enter key to display. Possible values: `"enter"`, `"done"`, `"go"`, `"next"`, `"previous"`, `"search"`, and `"send"`.
          */
-        "enterkeyhint"?: "enter" | "done" | "go" | "next" | "previous" | "search" | "send";
+        "enterkeyhint"?: | "enter"
+    | "done"
+    | "go"
+    | "next"
+    | "previous"
+    | "search"
+    | "send";
         /**
           * A hint to the browser for which keyboard to display. Possible values: `"none"`, `"text"`, `"tel"`, `"url"`, `"email"`, `"numeric"`, `"decimal"`, and `"search"`.
          */
-        "inputmode"?: "none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search";
+        "inputmode"?: | "none"
+    | "text"
+    | "tel"
+    | "url"
+    | "email"
+    | "numeric"
+    | "decimal"
+    | "search";
         /**
           * The maximum value, which must not be less than its minimum (min attribute) value.
          */
@@ -614,6 +760,26 @@ declare namespace LocalJSX {
          */
         "value"?: string | number | null;
     }
+    interface SenMenu {
+        /**
+          * Menu items
+         */
+        "items"?: MenuItem[];
+    }
+    interface SenMenuItem {
+        /**
+          * Active state
+         */
+        "active"?: boolean;
+        /**
+          * Emitted when a keyboard input occurred.
+         */
+        "onSenInput"?: (event: CustomEvent<any>) => void;
+        /**
+          * Value to emit when clicked
+         */
+        "value"?: any;
+    }
     interface SenRow {
     }
     interface SenTable {
@@ -626,18 +792,66 @@ declare namespace LocalJSX {
          */
         "headers"?: TableHeaders;
     }
+    interface SenText {
+        /**
+          * [Text align](https://developer.mozilla.org/en-US/docs/Web/CSS/text-align)
+         */
+        "align"?: TextAlign | "justify";
+        /**
+          * [Leter spacing](https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing)
+         */
+        "letterSpacing"?: string;
+        /**
+          * Element Tag
+         */
+        "tag"?: TextTag;
+        /**
+          * [Text transform](https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform)
+         */
+        "textTransform"?: TextTransform;
+        /**
+          * Font weight
+         */
+        "weight"?: FontWeight;
+    }
+    interface SenTypeahead {
+        /**
+          * Emitted when input is changed
+         */
+        "onSenChange"?: (event: CustomEvent<OptionSelectedEvent>) => void;
+        /**
+          * Emitted when a keyboard input occurred.
+         */
+        "onSenInput"?: (event: CustomEvent<KeyboardEvent>) => void;
+        /**
+          * Options to display in typeahead
+         */
+        "options"?: TypeaheadOption[];
+        /**
+          * The value of the input.
+         */
+        "value"?: string;
+    }
     interface IntrinsicElements {
         "sen-alert": SenAlert;
         "sen-app": SenApp;
         "sen-button": SenButton;
         "sen-button-group": SenButtonGroup;
+        "sen-card": SenCard;
+        "sen-card-actions": SenCardActions;
+        "sen-card-body": SenCardBody;
+        "sen-card-title": SenCardTitle;
         "sen-col": SenCol;
         "sen-fieldset": SenFieldset;
         "sen-form-field": SenFormField;
         "sen-grid": SenGrid;
         "sen-input": SenInput;
+        "sen-menu": SenMenu;
+        "sen-menu-item": SenMenuItem;
         "sen-row": SenRow;
         "sen-table": SenTable;
+        "sen-text": SenText;
+        "sen-typeahead": SenTypeahead;
     }
 }
 export { LocalJSX as JSX };
@@ -648,13 +862,21 @@ declare module "@stencil/core" {
             "sen-app": LocalJSX.SenApp & JSXBase.HTMLAttributes<HTMLSenAppElement>;
             "sen-button": LocalJSX.SenButton & JSXBase.HTMLAttributes<HTMLSenButtonElement>;
             "sen-button-group": LocalJSX.SenButtonGroup & JSXBase.HTMLAttributes<HTMLSenButtonGroupElement>;
+            "sen-card": LocalJSX.SenCard & JSXBase.HTMLAttributes<HTMLSenCardElement>;
+            "sen-card-actions": LocalJSX.SenCardActions & JSXBase.HTMLAttributes<HTMLSenCardActionsElement>;
+            "sen-card-body": LocalJSX.SenCardBody & JSXBase.HTMLAttributes<HTMLSenCardBodyElement>;
+            "sen-card-title": LocalJSX.SenCardTitle & JSXBase.HTMLAttributes<HTMLSenCardTitleElement>;
             "sen-col": LocalJSX.SenCol & JSXBase.HTMLAttributes<HTMLSenColElement>;
             "sen-fieldset": LocalJSX.SenFieldset & JSXBase.HTMLAttributes<HTMLSenFieldsetElement>;
             "sen-form-field": LocalJSX.SenFormField & JSXBase.HTMLAttributes<HTMLSenFormFieldElement>;
             "sen-grid": LocalJSX.SenGrid & JSXBase.HTMLAttributes<HTMLSenGridElement>;
             "sen-input": LocalJSX.SenInput & JSXBase.HTMLAttributes<HTMLSenInputElement>;
+            "sen-menu": LocalJSX.SenMenu & JSXBase.HTMLAttributes<HTMLSenMenuElement>;
+            "sen-menu-item": LocalJSX.SenMenuItem & JSXBase.HTMLAttributes<HTMLSenMenuItemElement>;
             "sen-row": LocalJSX.SenRow & JSXBase.HTMLAttributes<HTMLSenRowElement>;
             "sen-table": LocalJSX.SenTable & JSXBase.HTMLAttributes<HTMLSenTableElement>;
+            "sen-text": LocalJSX.SenText & JSXBase.HTMLAttributes<HTMLSenTextElement>;
+            "sen-typeahead": LocalJSX.SenTypeahead & JSXBase.HTMLAttributes<HTMLSenTypeaheadElement>;
         }
     }
 }

@@ -1,0 +1,14 @@
+:host {
+  --card-border-color: #DEDCDC;
+  --card-border-radius: 0;
+  --card-padding: 8px;
+  --card-margin: 8px;
+}
+:host article {
+  display: flex;
+  flex-wrap: wrap;
+  padding: var(--card-padding);
+  margin: var(--card-margin);
+  border: 1px solid var(--card-border-color);
+  border-radius: var(--card-border-radius);
+}

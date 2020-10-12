@@ -5,7 +5,7 @@
 }
 :host button {
   color: #fff;
-  background: #ea3c20;
+  background: var(--btn-primary-bg, #3B5F97);
   border-radius: 3px;
   border-width: 0;
   padding: 4px 8px;
@@ -16,15 +16,24 @@
   border-top-right-radius: var(--border-right-radius);
   border-bottom-right-radius: var(--border-right-radius);
 }
-:host button.btn-secondary {
+:host button[disabled] {
+  opacity: 0.4;
+}
+:host .btn-primary {
+  background: #3B5F97;
+}
+:host .btn-secondary {
   background: #6C6A6A;
 }
-:host button.btn-warning {
+:host .btn-success {
+  background: #28a745;
+}
+:host .btn-warning {
   background: #ffc107;
 }
-:host button.btn-danger {
+:host .btn-danger {
   background: #ea3c20;
 }
-:host.btn-secondary {
-  background: #6C6A6A;
+:host .btn-info {
+  background: #17a2b8;
 }
