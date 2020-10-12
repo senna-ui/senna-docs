@@ -105,5 +105,5 @@
   "dependencies": [],
   "dependencyGraph": {},
   "headings": [],
-  "pageClass": "page-api-button"
+  "pageClass": "page--docs-api-button"
 }

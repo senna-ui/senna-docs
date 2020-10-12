@@ -115,5 +115,5 @@
       "href": "#row-alignment"
     }
   ],
-  "pageClass": "page-api-row"
+  "pageClass": "page--docs-api-row"
 }

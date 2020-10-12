@@ -3,12 +3,12 @@
   "github": {
     "path": "src/pages/intro/first-app.md",
     "contributors": [],
-    "lastUpdated": "2020-10-02T14:04:30.000Z"
+    "lastUpdated": "2020-10-12T19:50:55.000Z"
   },
   "previousText": "Concepts",
-  "previousUrl": "/docs/undefined/core-concepts/fundamentals",
+  "previousUrl": "/docs/core-concepts/fundamentals",
   "nextText": "What Are Progressive Web Apps",
-  "nextUrl": "/docs/undefined/core-concepts/what-are-progressive-web-apps",
+  "nextUrl": "/docs/core-concepts/what-are-progressive-web-apps",
   "tableOfContents": false,
   "body": [
     "div",
@@ -62,5 +62,5 @@
   ],
   "title": "Build Your First App Tutorial",
   "headings": [],
-  "pageClass": "page-intro-first-app"
+  "pageClass": "page--docs-intro-first-app"
 }

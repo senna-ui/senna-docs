@@ -3,7 +3,7 @@
   "github": {
     "path": "src/pages/index.md",
     "contributors": [],
-    "lastUpdated": "2020-10-02T14:04:30.000Z"
+    "lastUpdated": "2020-10-12T19:50:55.000Z"
   },
   "title": "Senna UI",
   "meta": {
@@ -14,7 +14,7 @@
   "demoUrl": "https://demo-url/",
   "demoSourceUrl": "https://demo-source-url/",
   "nextText": "Environment Setup",
-  "nextUrl": "/docs/undefined/intro/environment",
+  "nextUrl": "/docs/intro/environment",
   "body": [
     "div",
     null,
@@ -27,5 +27,5 @@
     ]
   ],
   "headings": [],
-  "pageClass": "page-index"
+  "pageClass": "page--docs-index"
 }

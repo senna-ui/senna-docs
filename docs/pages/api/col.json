@@ -615,5 +615,5 @@
       "href": "#column-alignment"
     }
   ],
-  "pageClass": "page-api-col"
+  "pageClass": "page--docs-api-col"
 }

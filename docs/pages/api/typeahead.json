@@ -84,5 +84,5 @@
     ]
   },
   "headings": [],
-  "pageClass": "page-api-typeahead"
+  "pageClass": "page--docs-api-typeahead"
 }

@@ -211,5 +211,5 @@
       "href": "#css-custom-properties"
     }
   ],
-  "pageClass": "page-api-card"
+  "pageClass": "page--docs-api-card"
 }

@@ -3,7 +3,7 @@
   "github": {
     "path": "src/pages/components.md",
     "contributors": [],
-    "lastUpdated": "2020-10-02T14:04:30.000Z"
+    "lastUpdated": "2020-10-12T19:50:55.000Z"
   },
   "tableOfContents": false,
   "body": [
@@ -49,5 +49,5 @@
   ],
   "title": "UI Components",
   "headings": [],
-  "pageClass": "page-components"
+  "pageClass": "page--docs-components"
 }

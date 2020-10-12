@@ -3,14 +3,14 @@
   "github": {
     "path": "src/pages/layout/grid.md",
     "contributors": [],
-    "lastUpdated": "2020-10-02T14:04:30.000Z"
+    "lastUpdated": "2020-10-12T19:50:55.000Z"
   },
   "initialTab": "preview",
   "inlineHtmlPreviews": true,
   "previousText": "Structure",
-  "previousUrl": "/docs/undefined/layout/structure",
+  "previousUrl": "/docs/layout/structure",
   "nextText": "Global Stylesheets",
-  "nextUrl": "/docs/undefined/layout/global-stylesheets",
+  "nextUrl": "/docs/layout/global-stylesheets",
   "contributors": [
     "brandyscarney"
   ],
@@ -13633,5 +13633,5 @@
       "href": "#customizing-the-grid"
     }
   ],
-  "pageClass": "page-layout-grid"
+  "pageClass": "page--docs-layout-grid"
 }

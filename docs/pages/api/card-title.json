@@ -23,5 +23,5 @@
   "dependencies": [],
   "dependencyGraph": {},
   "headings": [],
-  "pageClass": "page-api-card-title"
+  "pageClass": "page--docs-api-card-title"
 }

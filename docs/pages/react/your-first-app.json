@@ -3,12 +3,12 @@
   "github": {
     "path": "src/pages/react/your-first-app.md",
     "contributors": [],
-    "lastUpdated": "2020-10-02T14:04:30.000Z"
+    "lastUpdated": "2020-10-12T19:50:55.000Z"
   },
   "previousText": "Quickstart",
-  "previousUrl": "/docs/undefined/react/quickstart",
+  "previousUrl": "/docs/react/quickstart",
   "nextText": "Setup",
-  "nextUrl": "/docs/undefined/react/your-first-app/2-setup",
+  "nextUrl": "/docs/react/your-first-app/2-setup",
   "body": [
     "div",
     null,
@@ -43,5 +43,5 @@
       "href": "#what-we-ll-build"
     }
   ],
-  "pageClass": "page-react-your-first-app"
+  "pageClass": "page--docs-react-your-first-app"
 }

@@ -32,7 +32,9 @@
  <url><loc>https://senna-ui.com/docs/enterprise/camera</loc></url>
  <url><loc>https://senna-ui.com/docs/enterprise/identity-vault</loc></url>
  <url><loc>https://senna-ui.com/docs/intro/cli</loc></url>
+ <url><loc>https://senna-ui.com/docs/intro/environment</loc></url>
  <url><loc>https://senna-ui.com/docs/layout/css-utilities</loc></url>
+ <url><loc>https://senna-ui.com/docs/layout/global-stylesheets</loc></url>
  <url><loc>https://senna-ui.com/docs/layout/grid</loc></url>
  <url><loc>https://senna-ui.com/docs/layout/structure</loc></url>
  <url><loc>https://senna-ui.com/docs/lifecycle/angular</loc></url>
@@ -42,8 +44,4 @@
  <url><loc>https://senna-ui.com/docs/reference/glossary</loc></url>
  <url><loc>https://senna-ui.com/docs/theming/advanced</loc></url>
  <url><loc>https://senna-ui.com/docs/theming/basics</loc></url>
- <url><loc>https://senna-ui.com/docs/undefined/core-concepts/cross-platform</loc></url>
- <url><loc>https://senna-ui.com/docs/undefined/intro/environment</loc></url>
- <url><loc>https://senna-ui.com/docs/undefined/layout/global-stylesheets</loc></url>
- <url><loc>https://senna-ui.com/docs/undefined/layout/structure</loc></url>
 </urlset>
