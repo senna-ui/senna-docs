@@ -1,7 +1,9 @@
 import en from './assets/locales/en/messages.json';
+import { Locale } from './definitions';
+import { pathLocalePrefixRegex } from './utils';
 
-const MESSAGES_ALL: any = {
-  'en': en
+export const MESSAGES_ALL: any = {
+  [Locale.EN]: en
 };
 
 export class DocsLocalization {
@@ -9,8 +11,7 @@ export class DocsLocalization {
   private readonly bundle: { [id: string]: string };
 
   constructor() {
-    const prefix = /^\/docs\/([a-z]{2}\b)?/;
-    const regexRes = prefix.exec(window.location.pathname);
+    const regexRes = pathLocalePrefixRegex.exec(window.location.pathname);
     const language = regexRes ? regexRes[1] : null;
     this.locale = language && MESSAGES_ALL.hasOwnProperty(language) ? language : 'en';
     this.bundle = MESSAGES_ALL[this.locale];

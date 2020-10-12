@@ -3,7 +3,7 @@ import fs from 'fs-extra';
 import Listr from 'listr';
 import { resolve } from 'path';
 
-import { slugify } from '../../src/utils';
+import { localeFromPath, pathLocalePrefixRegex, slugify } from '../../src/utils';
 
 import { convertHtmlToHypertextData } from './html-to-hypertext-data';
 import API from './page-types/api';
@@ -83,18 +83,16 @@ const patchBody = (page: Page): Page => {
   }));
 
   // remove /docs/ and language tag
-  const prefix = /^\/docs\/([a-z]{2}\b)?/;
-  const pageClass = `page-${slugify(page.path.replace(prefix, ''))}`;
-
-  const [, language] = prefix.exec(page.path) || 'en';
+  const pageClass = `page-${slugify(page.path.replace(pathLocalePrefixRegex, ''))}`;
+  const language = localeFromPath(page.path);
   if (language !== 'en') {
     if (page.previousUrl) {
-      page.previousUrl = page.previousUrl.replace(prefix, `/docs/${language}/`);
+      page.previousUrl = page.previousUrl.replace(pathLocalePrefixRegex, `/docs/${language}/`);
     }
     if (page.nextUrl) {
-      page.nextUrl = page.nextUrl.replace(prefix, `/docs/${language}/`);
+      page.nextUrl = page.nextUrl.replace(pathLocalePrefixRegex, `/docs/${language}/`);
     }
-  }
+   }
 
   return {
     ...page,
