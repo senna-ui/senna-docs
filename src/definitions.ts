@@ -19,3 +19,7 @@ export type MenuItem = [string, string];
 export interface MenuItems {
   [key: string]: string | MenuItems | MenuItem[];
 }
+
+export enum Locale {
+  EN = 'en'
+}

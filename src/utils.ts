@@ -1,3 +1,5 @@
+import { Locale } from './definitions';
+
 export const slugify = (text: string) =>
   text.toLowerCase().replace(/[^\w]+/g, '-');
 
@@ -20,4 +22,13 @@ export const debounce = (fn: (...args: any[]) => any, wait: number) => {
     clearTimeout(scheduled);
     scheduled = setTimeout(fn, wait, ...args);
   };
+};
+
+export const pathLocalePrefixRegex = new RegExp(
+  `^\\/docs\\/((${Object.values(Locale).join('|')})\b)\\/?`
+);
+export const localeFromPath = (path: string): string => {
+  const regexRes = pathLocalePrefixRegex.exec(path);
+  const locale = regexRes ? regexRes[1] : null;
+  return locale || 'en';
 };
