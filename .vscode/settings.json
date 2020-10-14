@@ -1,6 +1,4 @@
 {
   "editor.formatOnSave": false,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.tslint": true
-  }
+  "eslint.codeActionsOnSave.mode": "problems"
 }
