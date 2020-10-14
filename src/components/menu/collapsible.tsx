@@ -4,7 +4,7 @@ import { DownArrow } from '../../icons';
 
 @Component({
   tag: 'docs-menu-collapsible',
-  styleUrl: 'collapsible.css'
+  styleUrl: 'collapsible.css',
 })
 export class DocsMenuCollapsible {
   @Prop() heading!: string;
@@ -16,7 +16,7 @@ export class DocsMenuCollapsible {
       class: 'docs-menu-collapsible--status-open',
       role: 'button',
       tabindex: '0',
-      'aria-label': 'Collapsible Menu'
+      'aria-label': 'Collapsible Menu',
     };
   }
 
@@ -30,16 +30,13 @@ export class DocsMenuCollapsible {
 
   render() {
     return [
-      <a
-        onClick={() => this.toggle()}
-        class={`docs-menu-collapsible__title`}
-      >
+      <a onClick={() => this.toggle()} class={'docs-menu-collapsible__title'}>
         {this.heading}
-        <DownArrow/>
+        <DownArrow />
       </a>,
       <div class="docs-menu-collapsible__contents">
-        <slot/>
-      </div>
+        <slot />
+      </div>,
     ];
   }
 }

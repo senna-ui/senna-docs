@@ -1,15 +1,13 @@
 import glob from 'fast-glob';
-import frontMatter, { FrontMatterResult } from 'front-matter';
+import type { FrontMatterResult } from 'front-matter';
+import frontMatter from 'front-matter';
 import fs from 'fs-extra';
 import moment from 'moment';
 import simplegit from 'simple-git/promise';
 
 import * as GITHUB_COMMITS from '../../data/github-commits.json';
-import {
-  PAGES_DIR,
-  Page,
-  buildPages
-} from '../index';
+import type { Page } from '../index';
+import { PAGES_DIR, buildPages } from '../index';
 import markdownRenderer from '../markdown-renderer';
 
 // ingored by git
@@ -17,7 +15,7 @@ import markdownRenderer from '../markdown-renderer';
 
 export default {
   title: 'Build static pages',
-  task: (_: any, status: any) => buildPages(getStaticPages, status)
+  task: (_: any, status: any) => buildPages(getStaticPages, status),
 };
 
 const getStaticPages = async (): Promise<Page[]> => {
@@ -28,7 +26,7 @@ const getStaticPages = async (): Promise<Page[]> => {
 export const getMarkdownPaths = (cwd: string): Promise<string[]> =>
   glob('**/*.md', {
     absolute: true,
-    cwd
+    cwd,
   });
 
 export interface ToStaticPageOptions {
@@ -39,7 +37,7 @@ export const toPage = async (path: string, { prod = true }: ToStaticPageOptions 
   return {
     path: path.replace(PAGES_DIR, '/docs').replace(/\.md$/i, ''),
     github: prod ? await getGitHubData(path) : null,
-    ...renderMarkdown(await readMarkdown(path))
+    ...renderMarkdown(await readMarkdown(path)),
   };
 };
 
@@ -48,13 +46,13 @@ const renderMarkdown = (markdown: string) => {
 
   return {
     ...attributes,
-    body: markdownRenderer(body)
+    body: markdownRenderer(body),
   };
 };
 
 const readMarkdown = (path: string): Promise<string> =>
   fs.readFile(path, {
-    encoding: 'utf8'
+    encoding: 'utf8',
   });
 
 const getGitHubData = async (filePath: string) => {
@@ -65,28 +63,36 @@ const getGitHubData = async (filePath: string) => {
     return {
       path,
       contributors,
-      lastUpdated
+      lastUpdated,
     };
   } catch (error) {
     console.warn(error);
     return {
       path,
       contributors: [],
-      lastUpdated: new Date('2019-01-23').toISOString()
+      lastUpdated: new Date('2019-01-23').toISOString(),
     };
   }
 };
 
 const getFileContributors = async (filename: string) => {
-  return simplegit().log({ file: filename }).then(status => ({
-      contributors: Array.from(new Set(status.all.map(commit => {
-        const commits: { [key: string]: any } = GITHUB_COMMITS;
-        // only add the user ID if we can find it based on the commit hash
-        return commits[commit.hash] ? commits[commit.hash].id : null;
-      // filter out null users
-      }).filter(user => !!user))),
-      // tslint:disable-next-line
-      lastUpdated: status.latest ? moment(status.latest.date, 'YYYY-MM-DD HH-mm-ss ZZ').toISOString() : null
-    })
-  );
+  return simplegit()
+    .log({ file: filename })
+    .then(status => ({
+      contributors: Array.from(
+        new Set(
+          status.all
+            .map(commit => {
+              const commits: { [key: string]: any } = GITHUB_COMMITS;
+              // only add the user ID if we can find it based on the commit hash
+              return commits[commit.hash] ? commits[commit.hash].id : null;
+              // filter out null users
+            })
+            .filter(user => !!user)
+        )
+      ),
+      lastUpdated: status.latest
+        ? moment(status.latest.date, 'YYYY-MM-DD HH-mm-ss ZZ').toISOString()
+        : null,
+    }));
 };

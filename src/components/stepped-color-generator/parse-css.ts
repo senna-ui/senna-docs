@@ -8,7 +8,9 @@ export const generateSteppedColors = (background = '#ffffff', text = '#000000') 
     const step = i + '0';
     const amount = i / 100.0;
 
-    steps += `  --sen-color-step-${step}: <code-color mode="md" value="${color.mix(text, amount).hex}"></code-color>;`;
+    steps += `  --sen-color-step-${step}: <code-color mode="md" value="${
+      color.mix(text, amount).hex
+    }"></code-color>;`;
     if (i < 95) {
       steps += '\n';
     }

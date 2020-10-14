@@ -2,11 +2,20 @@ import { Build, Component, Element, State, h } from '@stencil/core';
 
 @Component({
   tag: 'color-accordion',
-  styleUrl: 'color-accordion.css'
+  styleUrl: 'color-accordion.css',
 })
 export class ColorAccordion {
-
-  colors = ['primary', 'secondary', 'tertiary', 'success', 'warning', 'danger', 'dark', 'medium', 'light'];
+  colors = [
+    'primary',
+    'secondary',
+    'tertiary',
+    'success',
+    'warning',
+    'danger',
+    'dark',
+    'medium',
+    'light',
+  ];
 
   @State() activeColor = '';
 
@@ -25,21 +34,27 @@ export class ColorAccordion {
       return null;
     }
     const listItems = this.colors.map(color => {
-      const isActive = (this.activeColor === color) ? true : false;
+      const isActive = this.activeColor === color ? true : false;
 
-      const baseColor = getComputedStyle(this.el).getPropertyValue(`--sen-color-${color}`);
-      const shadeColor = getComputedStyle(this.el).getPropertyValue(`--sen-color-${color}-shade`);
-      const tintColor = getComputedStyle(this.el).getPropertyValue(`--sen-color-${color}-tint`);
+      const baseColor = getComputedStyle(this.el).getPropertyValue(
+        `--sen-color-${color}`
+      );
+      const shadeColor = getComputedStyle(this.el).getPropertyValue(
+        `--sen-color-${color}-shade`
+      );
+      const tintColor = getComputedStyle(this.el).getPropertyValue(
+        `--sen-color-${color}-tint`
+      );
 
       return (
         <li
           class={{
             'color-menu-item': true,
-            'color-menu-item-active': isActive
+            'color-menu-item-active': isActive,
           }}
           style={{
             'background-color': `var(--sen-color-${color})`,
-            'color': `var(--sen-color-${color}-contrast)`
+            color: `var(--sen-color-${color}-contrast)`,
           }}
         >
           <div class="color-menu-text" onClick={() => this.toggleActiveColor(color)}>
@@ -47,10 +62,33 @@ export class ColorAccordion {
             <div class="color-menu-value">{baseColor}</div>
           </div>
 
-          <svg width="10px" height="6px" viewBox="0 0 10 6" version="1.1" xmlns="http://www.w3.org/2000/svg">
-            <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-              <g id="Desktop-HD" transform="translate(-1025.000000, -335.000000)" stroke="currentColor" stroke-width="2">
-                <polyline id="arrow" transform="translate(1030.000000, 338.000000) rotate(90.000000) translate(-1030.000000, -338.000000) " points="1028 334 1032 338.020022 1028 342"></polyline>
+          <svg
+            width="10px"
+            height="6px"
+            viewBox="0 0 10 6"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g
+              id="Welcome"
+              stroke="none"
+              stroke-width="1"
+              fill="none"
+              fill-rule="evenodd"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <g
+                id="Desktop-HD"
+                transform="translate(-1025.000000, -335.000000)"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline
+                  id="arrow"
+                  transform="translate(1030.000000, 338.000000) rotate(90.000000) translate(-1030.000000, -338.000000) "
+                  points="1028 334 1032 338.020022 1028 342"
+                ></polyline>
               </g>
             </g>
           </svg>
@@ -60,24 +98,24 @@ export class ColorAccordion {
               class="color-submenu-item"
               style={{
                 'background-color': `var(--sen-color-${color}-shade)`,
-                'color': `var(--sen-color-${color}-contrast)`
+                color: `var(--sen-color-${color}-contrast)`,
               }}
             >
               <div class="color-menu-text">
                 Shade
-              <div class="color-menu-value">{shadeColor}</div>
+                <div class="color-menu-value">{shadeColor}</div>
               </div>
             </li>
             <li
               class="color-submenu-item"
               style={{
                 'background-color': `var(--sen-color-${color}-tint)`,
-                'color': `var(--sen-color-${color}-contrast)`
+                color: `var(--sen-color-${color}-contrast)`,
               }}
             >
               <div class="color-menu-text">
                 Tint
-              <div class="color-menu-value">{tintColor}</div>
+                <div class="color-menu-value">{tintColor}</div>
               </div>
             </li>
           </ul>
@@ -85,10 +123,6 @@ export class ColorAccordion {
       );
     });
 
-    return (
-      <ul class="color-menu">
-        {listItems}
-      </ul>
-    );
+    return <ul class="color-menu">{listItems}</ul>;
   }
 }

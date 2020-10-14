@@ -1,13 +1,14 @@
 import { Build, Component, Element, Prop, h } from '@stencil/core';
 
-import { MenuItem, MenuItems } from '../../definitions';
+import type { MenuItem, MenuItems } from '../../definitions';
+
 import { l10n } from '../../l10n';
 
 import { link } from './link';
 
 @Component({
   tag: 'docs-nav',
-  styleUrl: 'nav.css'
+  styleUrl: 'nav.css',
 })
 export class DocsNav {
   @Element() el!: HTMLElement;
@@ -25,7 +26,11 @@ export class DocsNav {
       case 'string':
         // Go ahead...git blame...I know you want TWO :-)
         if (id.match(/menu-native-[ce]e-show-all/)) {
-         return <li style={{ 'font-style': 'italic' }} key={item}>{this.toLink(item)}</li>;
+          return (
+            <li style={{ 'font-style': 'italic' }} key={item}>
+              {this.toLink(item)}
+            </li>
+          );
         }
         return <li key={item}>{this.toLink(item)}</li>;
       case 'object':
@@ -33,37 +38,36 @@ export class DocsNav {
       default:
         return null;
     }
-  }
+  };
 
   toSection = ([id, value]: [string, MenuItems], level: number) => {
     const text = l10n.getString(id);
     const items = this.normalizeItems(value);
     return (
       <section>
-        {id !== '' && text !== undefined ? <header class="Nav-header">{text}</header> : null}
-        <ul
-          class="Nav-subnav"
-          style={{ '--level': `${level}` }}
-        >
+        {id !== '' && text !== undefined ? (
+          <header class="Nav-header">{text}</header>
+        ) : null}
+        <ul class="Nav-subnav" style={{ '--level': `${level}` }}>
           {items.map(item => this.toItem(item, level))}
         </ul>
       </section>
     );
-  }
+  };
 
   setScroll = () => {
     const activeLink = this.el.querySelector('.Nav-link--active');
 
     if (activeLink) {
       activeLink.scrollIntoView({
-        block: 'center'
+        block: 'center',
       });
     } else {
-      this.el.offsetParent ?
-      this.el.offsetParent.scrollIntoView() :
-      this.el.scrollIntoView();
+      this.el.offsetParent
+        ? this.el.offsetParent.scrollIntoView()
+        : this.el.scrollIntoView();
     }
-  }
+  };
 
   componentDidLoad() {
     if (Build.isBrowser) {
@@ -73,7 +77,7 @@ export class DocsNav {
 
   hostData() {
     return {
-      'role': 'navigation'
+      role: 'navigation',
     };
   }
 

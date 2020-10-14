@@ -4,7 +4,7 @@ import { Angular, JavaScript, React, Vue } from '../../icons';
 import { useLocalStorage } from '../../local-storage';
 
 @Component({
-  tag: 'framework-select'
+  tag: 'framework-select',
 })
 export class DocsMenu {
   @Prop() toggleClickFn?: (e: Event) => void;
@@ -13,31 +13,28 @@ export class DocsMenu {
   getFramework: () => string | null;
   setFramework: (framework: string) => void;
 
-  frameworks = [
-    'React',
-    'Angular',
-    'JavaScript',
-    'Vue'
-  ];
+  frameworks = ['React', 'Angular', 'JavaScript', 'Vue'];
 
   frameworkIcons: any = {
     Angular,
     JavaScript,
     React,
-    Vue
+    Vue,
   };
 
   constructor() {
-    const [
-      getFramework,
-      setFramework
-    ] = useLocalStorage('ionic-docs:framework', this.frameworks[0]);
+    const [getFramework, setFramework] = useLocalStorage(
+      'ionic-docs:framework',
+      this.frameworks[0]
+    );
     this.getFramework = getFramework;
     this.setFramework = setFramework;
   }
 
   componentDidLoad() {
-    const selected: NodeListOf<HTMLElement> = this.el.querySelectorAll('.Select-option--selected');
+    const selected: NodeListOf<HTMLElement> = this.el.querySelectorAll(
+      '.Select-option--selected'
+    );
     selected.forEach(menuItem => {
       if (this.getFramework() !== menuItem.innerText) {
         menuItem.classList.remove('Select-option--selected');
@@ -49,11 +46,11 @@ export class DocsMenu {
     const Icon = framework !== null ? this.frameworkIcons[framework] : null;
     return (
       <div class="FrameworkSelect-framework">
-        <Icon class="FrameworkSelect-icon"/>
+        <Icon class="FrameworkSelect-icon" />
         <span>{framework}</span>
       </div>
     );
-  }
+  };
 
   render() {
     return (

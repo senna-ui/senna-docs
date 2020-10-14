@@ -1,10 +1,10 @@
 import { Component, Prop, h } from '@stencil/core';
 
-import { ReferenceKeys } from '../../definitions';
+import type { ReferenceKeys } from '../../definitions';
 
 @Component({
   tag: 'docs-reference',
-  styleUrl: 'reference.css'
+  styleUrl: 'reference.css',
 })
 export class DocsReference {
   @Prop() data!: any[];
@@ -33,15 +33,11 @@ export class DocsReference {
             );
           }
         })}
-      </tbody>
+      </tbody>,
     ];
-  }
+  };
 
   render() {
-    return (
-      <table>
-        {this.data.map(this.toItem)}
-      </table>
-    );
+    return <table>{this.data.map(this.toItem)}</table>;
   }
 }

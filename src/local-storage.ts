@@ -23,7 +23,6 @@ const setItem = (key: string, value: string): string | null => {
 };
 
 const notify = (key: string, value: string) => {
-  // tslint:disable-next-line
   if (window && typeof window.dispatchEvent === 'function') {
     const detail = { key, value };
     window.dispatchEvent(new CustomEvent('local-storage', { detail }));
@@ -33,17 +32,13 @@ const notify = (key: string, value: string) => {
 type LocalStorageGetter = () => string | null;
 type LocalStorageSetter = (value: string) => string | null;
 
-export const useLocalStorage = (key: string, defaultValue?: string): [
-  LocalStorageGetter,
-  LocalStorageSetter
-] => {
-
+export const useLocalStorage = (
+  key: string,
+  defaultValue?: string
+): [LocalStorageGetter, LocalStorageSetter] => {
   if (defaultValue !== undefined && getItem(key) === null) {
     setItem(key, defaultValue);
   }
 
-  return [
-    () => getItem(key),
-    (value: string) => setItem(key, value)
-  ];
+  return [() => getItem(key), (value: string) => setItem(key, value)];
 };

@@ -1,8 +1,9 @@
-import { Component, Event, EventEmitter, Prop, State, Watch, h } from '@stencil/core';
+import type { EventEmitter } from '@stencil/core';
+import { Component, Event, Prop, State, Watch, h } from '@stencil/core';
 
 @Component({
   tag: 'docs-select',
-  styleUrl: 'select.css'
+  styleUrl: 'select.css',
 })
 export class DocsSelect {
   private dropdown!: any;
@@ -10,11 +11,12 @@ export class DocsSelect {
   @State() selected!: string | null;
   @Prop({ mutable: true }) options!: string[];
   @Prop() initializer!: (options: string[]) => string | null;
-  @Prop() optionRenderer: (option: string | null) => any = (option: string | null) => option;
+  @Prop() optionRenderer: (option: string | null) => any = (option: string | null) =>
+    option;
 
   select = (option: string) => {
     this.selected = option;
-  }
+  };
 
   @Event() selection!: EventEmitter<string>;
 
@@ -27,7 +29,7 @@ export class DocsSelect {
     const isSelected = this.selected === option;
     const classNames = {
       'Select-option': true,
-      'Select-option--selected': isSelected
+      'Select-option--selected': isSelected,
     };
 
     const handleClick = () => {
@@ -54,7 +56,7 @@ export class DocsSelect {
         {this.optionRenderer(option)}
       </div>
     );
-  }
+  };
 
   componentWillLoad() {
     this.selected = this.initializer(this.options);
@@ -63,15 +65,17 @@ export class DocsSelect {
   hostData() {
     return {
       class: {
-        'Select': true
-      }
+        Select: true,
+      },
     };
   }
 
   render() {
     return (
       <docs-dropdown
-        ref={el => { this.dropdown = el; }}
+        ref={el => {
+          this.dropdown = el;
+        }}
         label={this.optionRenderer(this.selected)}
       >
         {this.options.map(this.toOption)}

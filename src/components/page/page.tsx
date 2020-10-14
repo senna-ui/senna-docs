@@ -1,13 +1,14 @@
 import { Component, Prop, State, Watch, h } from '@stencil/core';
-import { RouterHistory } from '@stencil/router';
 
-import { Page } from '../../definitions';
+import type { RouterHistory } from '@stencil/router';
+
+import type { Page } from '../../definitions';
 
 import templates from './templates';
 
 @Component({
   tag: 'docs-page',
-  styleUrl: 'page.css'
+  styleUrl: 'page.css',
 })
 export class DocsPage {
   @Prop() history!: RouterHistory;
@@ -22,7 +23,9 @@ export class DocsPage {
 
   @Watch('path')
   fetchPage(path: string | null, oldPath?: string) {
-    if (path === null || path === oldPath) { return; }
+    if (path === null || path === oldPath) {
+      return;
+    }
     path = /^\/docs\/pages\/[a-z]{2}\.json$/.test(path)
       ? path.replace('.json', '/index.json')
       : path;
@@ -33,22 +36,24 @@ export class DocsPage {
   }
 
   validateFetch = (response: Response) => {
-    if (!response.ok) { throw response; }
+    if (!response.ok) {
+      throw response;
+    }
     return response.json();
-  }
+  };
 
   handleNewPage = (page: Page) => {
     this.badFetch = null;
     this.page = page;
-  }
+  };
 
   handleBadFetch = (error: Response) => {
     this.badFetch = error;
     this.page = {
       title: error.statusText,
-      body: null
+      body: null,
     };
-  }
+  };
 
   @Watch('page')
   setScrollPosition() {
@@ -73,7 +78,7 @@ export class DocsPage {
       title: document.head.querySelectorAll('.meta-title'),
       description: document.head.querySelectorAll('.meta-description'),
       url: document.head.querySelectorAll('.meta-url, link[rel="canonical"]'),
-      image: document.head.querySelectorAll('.meta-image')
+      image: document.head.querySelectorAll('.meta-image'),
     };
 
     const updateMeta = (els: any, update: any) => {
@@ -97,25 +102,31 @@ export class DocsPage {
 
     // Canonical URL
     updateMeta(metaEls.url, (oldVal: string) => {
-      const uri = '\/docs\/';
+      const uri = '/docs/';
       const path = location.pathname.split(uri)[1];
       return oldVal.split(uri)[0] + uri + path;
     });
 
     // Description
-    updateMeta(metaEls.description, () => meta.description ||
-      'Senna is an enterprise UI framework for designers and developers. Build complex applications with great user experience.');
+    updateMeta(
+      metaEls.description,
+      () =>
+        meta.description ||
+        'Senna is an enterprise UI framework for designers and developers. Build complex applications with great user experience.'
+    );
 
     // Sharing Image
-    updateMeta(metaEls.image, () => meta.image ||
-      'https://senna-ui.com/docs/assets/img/logo.png');
+    updateMeta(
+      metaEls.image,
+      () => meta.image || 'https://senna-ui.com/docs/assets/img/logo.png'
+    );
   }
 
   hostData() {
     return {
       class: {
-        [this.page.pageClass]: typeof this.page.pageClass === 'string'
-      }
+        [this.page.pageClass]: typeof this.page.pageClass === 'string',
+      },
     };
   }
 
@@ -131,14 +142,12 @@ export class DocsPage {
 
     const content = [
       <main class={hasDemo ? 'has-demo' : 'no-demo'}>
-        <Template page={page}/>
-      </main>
+        <Template page={page} />
+      </main>,
     ];
 
     if (hasDemo) {
-      content.push(
-        <docs-demo url={page.demoUrl} source={page.demoSourceUrl}/>
-      );
+      content.push(<docs-demo url={page.demoUrl} source={page.demoSourceUrl} />);
     }
 
     return content;

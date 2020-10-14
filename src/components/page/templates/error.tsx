@@ -22,7 +22,7 @@ const getHelpfulTitle = (response: Response) => {
 const getHelpfulMessage = (response: Response) => {
   switch (response.status) {
     case 404:
-      return 'Sorry, we couldn\'t find that page.';
+      return "Sorry, we couldn't find that page.";
     default:
       return 'Sorry, something went wrong.';
   }
@@ -41,5 +41,5 @@ const appropriateEmoji = [
   '🙃',
   '🤕',
   '🤯',
-  '😫'
+  '😫',
 ];

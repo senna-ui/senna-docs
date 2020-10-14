@@ -2,7 +2,7 @@ import { Component, Host, Prop, h } from '@stencil/core';
 
 @Component({
   tag: 'docs-codepen',
-  shadow: true
+  shadow: true,
 })
 export class CodePen {
   @Prop() user!: string;
@@ -22,7 +22,7 @@ export class CodePen {
         data-default-tab={this.defaultTab}
         data-user={this.user}
         data-slug-hash={this.slug}
-        data-preview={(this.preview) ? 'true' : 'false'}
+        data-preview={this.preview ? 'true' : 'false'}
         data-pen-title={this.penTitle}
         no-prerender
       >

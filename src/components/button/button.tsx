@@ -2,7 +2,7 @@ import { Component, Prop, h } from '@stencil/core';
 
 @Component({
   tag: 'docs-button',
-  styleUrl: 'button.css'
+  styleUrl: 'button.css',
 })
 export class DocsButton {
   @Prop() href?: string;
@@ -15,21 +15,21 @@ export class DocsButton {
       if (isInternal) {
         return (
           <stencil-route-link url={this.href}>
-            <slot/>
+            <slot />
           </stencil-route-link>
         );
       }
 
       return (
         <a href={this.href}>
-          <slot/>
+          <slot />
         </a>
       );
     }
 
     return (
       <button>
-        <slot/>
+        <slot />
       </button>
     );
   }

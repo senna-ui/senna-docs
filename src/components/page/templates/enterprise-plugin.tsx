@@ -14,21 +14,36 @@ export default (props: { [key: string]: any }) => {
       <h1>{page.title}</h1>
       <h4>v{page.version}</h4>
       <div class="page-meta">
-        <docs-table-of-contents links={headings.concat([{ 'href': '#previous-versions', text: 'Other Versions' }])} basepath={page.path}/>
+        <docs-table-of-contents
+          links={headings.concat([
+            { href: '#previous-versions', text: 'Other Versions' },
+          ])}
+          basepath={page.path}
+        />
         <internal-ad></internal-ad>
       </div>
 
-      <section class="markdown-content">
-        {toHypertext(h, page.body)}
-      </section>
+      <section class="markdown-content">{toHypertext(h, page.body)}</section>
       <section id="previous-versions">
-      <h2>Other Versions</h2>
-      <ul>
-      <li><stencil-route-link url={`/docs/enterprise/${pluginId}`}>Latest</stencil-route-link></li>
-      {otherVersions.filter((v: any) => v !== page.minor).map((version: any) => (
-        <li><stencil-route-link url={`/docs/enterprise/${pluginId}/${version}/${pluginId}`}>{version}</stencil-route-link></li>
-      ))}
-    </ul>
+        <h2>Other Versions</h2>
+        <ul>
+          <li>
+            <stencil-route-link url={`/docs/enterprise/${pluginId}`}>
+              Latest
+            </stencil-route-link>
+          </li>
+          {otherVersions
+            .filter((v: any) => v !== page.minor)
+            .map((version: any) => (
+              <li>
+                <stencil-route-link
+                  url={`/docs/enterprise/${pluginId}/${version}/${pluginId}`}
+                >
+                  {version}
+                </stencil-route-link>
+              </li>
+            ))}
+        </ul>
       </section>
     </article>
   );

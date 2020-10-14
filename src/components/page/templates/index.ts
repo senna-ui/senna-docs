@@ -4,8 +4,8 @@ import defaultTemplate from './default';
 import error from './error';
 
 export default {
-  'default': defaultTemplate,
+  default: defaultTemplate,
   'api-index': apiIndex,
-  'api': api,
-  'error': error,
+  api: api,
+  error: error,
 };

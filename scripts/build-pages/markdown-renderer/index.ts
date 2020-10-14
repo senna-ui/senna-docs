@@ -1,4 +1,5 @@
 import marked from 'marked';
+
 import { resolve } from 'url';
 
 import code from './code';
@@ -11,7 +12,7 @@ const isV3 = /^\/docs\/v3\//;
 const renderer = new marked.Renderer();
 renderer.heading = heading;
 renderer.code = code;
-renderer.link = function(href: string | null, title: string | null, text: string) {
+renderer.link = function (href: string | null, title: string | null, text: string) {
   const { baseUrl } = this.options;
 
   if (baseUrl !== undefined && href !== null) {
@@ -19,12 +20,13 @@ renderer.link = function(href: string | null, title: string | null, text: string
   }
 
   if (href !== null && isInternal.test(href) && !isV3.test(href)) {
-    return `<stencil-route-link url=${href} ${title !== null ? `anchorTitle=${title}` : ''}>${text}</stencil-route-link>`;
+    const anchorTitle = title ? `anchorTitle=${title}` : '';
+    return `<stencil-route-link url=${href} ${anchorTitle}>${text}</stencil-route-link>`;
   }
 
   return `<a href=${href} ${title !== null ? `title=${title}` : ''}>${text}</a>`;
 };
 
-export default (markdown: string, baseUrl?: string) => {
+export default (markdown: string, baseUrl?: string): string => {
   return marked(markdown, { baseUrl, renderer });
 };

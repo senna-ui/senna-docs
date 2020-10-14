@@ -1,16 +1,16 @@
 import { Locale } from './definitions';
 
-export const slugify = (text: string) =>
+export const slugify = (text: string): string =>
   text.toLowerCase().replace(/[^\w]+/g, '-');
 
-export const sample = (array: any[]) =>
+export const sample = (array: any[]): any =>
   array[Math.floor(Math.random() * array.length)];
 
 export const keyBy = (
   array: any[],
   keyMap: (item: any) => string,
   valMap?: (item: any) => any
-) =>
+): Record<string, any> =>
   array.reduce((obj, item) => {
     obj[keyMap(item)] = valMap ? valMap(item) : item;
     return obj;

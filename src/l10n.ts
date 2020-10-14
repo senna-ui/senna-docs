@@ -3,7 +3,7 @@ import { Locale } from './definitions';
 import { pathLocalePrefixRegex } from './utils';
 
 export const MESSAGES_ALL: any = {
-  [Locale.EN]: en
+  [Locale.EN]: en,
 };
 
 export class DocsLocalization {
@@ -13,7 +13,7 @@ export class DocsLocalization {
   constructor() {
     const regexRes = pathLocalePrefixRegex.exec(window.location.pathname);
     const language = regexRes ? regexRes[1] : null;
-    this.locale = language && MESSAGES_ALL.hasOwnProperty(language) ? language : 'en';
+    this.locale = language && Boolean(MESSAGES_ALL[language]) ? language : 'en';
     this.bundle = MESSAGES_ALL[this.locale];
   }
 

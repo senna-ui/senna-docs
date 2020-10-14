@@ -4,7 +4,7 @@ import { Outbound } from '../../icons';
 
 @Component({
   tag: 'docs-item',
-  styleUrl: 'item.css'
+  styleUrl: 'item.css',
 })
 export class DocsItem {
   @Prop() href?: string;
@@ -17,7 +17,7 @@ export class DocsItem {
     return {
       class: {
         'Item-rounded': this.rounded,
-      }
+      },
     };
   }
 
@@ -26,25 +26,23 @@ export class DocsItem {
     const isOutbound = typeof this.href !== 'undefined' ? /^http/.test(this.href) : false;
     const header = (
       <header class="Item-header">
-        {this.header} {isOutbound ? <Outbound/> : null}
+        {this.header} {isOutbound ? <Outbound /> : null}
       </header>
     );
 
     const content = [
-      this.icon && <img src={this.icon} class="Item-icon"/>,
+      this.icon && <img src={this.icon} class="Item-icon" />,
       <div class="Item-container">
         {this.ionicon && <ion-icon name={this.ionicon} class="Item-ionicon"></ion-icon>}
         {header}
-        <div class="Item-content"><slot/></div>
-      </div>
+        <div class="Item-content">
+          <slot />
+        </div>
+      </div>,
     ];
 
     if (isStatic) {
-      return (
-        <div class="Item">
-          {content}
-        </div>
-      );
+      return <div class="Item">{content}</div>;
     }
 
     if (isOutbound) {

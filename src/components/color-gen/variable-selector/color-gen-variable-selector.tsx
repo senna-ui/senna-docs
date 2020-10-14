@@ -1,4 +1,5 @@
-import { Component, Event, EventEmitter, Prop, State, h } from '@stencil/core';
+import type { EventEmitter } from '@stencil/core';
+import { Component, Event, Prop, State, h } from '@stencil/core';
 
 @Component({
   tag: 'color-gen-variable-selector',
@@ -6,7 +7,6 @@ import { Component, Event, EventEmitter, Prop, State, h } from '@stencil/core';
   // shadow: true
 })
 export class VariableSelector {
-
   @Prop() name!: string;
   @Prop() property?: string;
   @Prop() editable = true;
@@ -37,7 +37,7 @@ export class VariableSelector {
     this.name = name;
     this.nameChange.emit({
       name: this.name,
-      value: this.value
+      value: this.value,
     });
   }
 
@@ -55,12 +55,14 @@ export class VariableSelector {
       return;
     }
 
-    if (input.matches('[type="text"]') && val.length !== 7) { return; }
+    if (input.matches('[type="text"]') && val.length !== 7) {
+      return;
+    }
 
     this.value = val;
     this.colorChange.emit({
       property: this.property,
-      value: this.value
+      value: this.value,
     });
   }
 
@@ -85,12 +87,12 @@ export class VariableSelector {
   }
 
   isValidName(str: string) {
-    return /^[A-Z\-\_]+$/i.test(str);
+    return /^[A-Z\-_]+$/i.test(str);
   }
 
   validateName() {
     const isValidName = this.isValidName(this.name);
-    this.showNameError = (isValidName && this.name.length > 0) ? false : true;
+    this.showNameError = isValidName && this.name.length > 0 ? false : true;
   }
 
   isValidHex(str: string | undefined): boolean {
@@ -99,7 +101,10 @@ export class VariableSelector {
 
   validateValue() {
     const isValidHex = this.isValidHex(this.value);
-    this.showValueError = (isValidHex && typeof this.value !== 'undefined' && this.value.length === 7) ? false : true;
+    this.showValueError =
+      isValidHex && typeof this.value !== 'undefined' && this.value.length === 7
+        ? false
+        : true;
   }
 
   render() {
@@ -111,17 +116,17 @@ export class VariableSelector {
         class={{
           'color-selector': true,
           'color-selector--name-error': this.showNameError,
-          'color-selector--value-error': this.showValueError
+          'color-selector--value-error': this.showValueError,
         }}
       >
         <div class="color-selector__name">
-          <i class="color-selector__swatch" style={{ 'backgroundColor': this.value }}></i>
-          { (this.isNew) ?
+          <i class="color-selector__swatch" style={{ backgroundColor: this.value }}></i>
+          {this.isNew ? (
             <div
               class={{
                 'color-selector__input': true,
                 'color-selector__input-name': true,
-                'color-selector__input--focused': this.isNameInputFocused
+                'color-selector__input--focused': this.isNameInputFocused,
               }}
             >
               <input
@@ -132,24 +137,35 @@ export class VariableSelector {
                 onBlur={ev => this.onNameInputBlur(ev)}
               />
             </div>
-            : <span>{this.name}</span>
-          }
-          {this.showNameError ?
-              <span class="color-selector__error">Please enter a valid name without special characters.</span>
-            : ''}
+          ) : (
+            <span>{this.name}</span>
+          )}
+          {this.showNameError ? (
+            <span class="color-selector__error">
+              Please enter a valid name without special characters.
+            </span>
+          ) : (
+            ''
+          )}
         </div>
-        {(this.editable)
-        ?
+        {this.editable ? (
           <div class="color-selector__form-group">
             <div
               class={{
                 'color-selector__input': true,
                 'color-selector__input-value': true,
-                'color-selector__input--focused': this.isValueInputFocused
+                'color-selector__input--focused': this.isValueInputFocused,
               }}
-              onClick={ev => { if (this.isParentOpen) { ev.stopPropagation(); } }}
+              onClick={ev => {
+                if (this.isParentOpen) {
+                  ev.stopPropagation();
+                }
+              }}
             >
-              <div class="color-selector__color-wrap" style={{ 'backgroundColor': this.value }}>
+              <div
+                class="color-selector__color-wrap"
+                style={{ backgroundColor: this.value }}
+              >
                 <input
                   type="color"
                   value={this.value}
@@ -166,17 +182,20 @@ export class VariableSelector {
               />
             </div>
 
-            {this.showValueError ?
-              <span class="color-selector__error">Please enter a valid six digit hex code.</span>
-            : ''}
+            {this.showValueError ? (
+              <span class="color-selector__error">
+                Please enter a valid six digit hex code.
+              </span>
+            ) : (
+              ''
+            )}
           </div>
-        :
+        ) : (
           <div class="color-selector__hex">
             <span>{this.value}</span>
           </div>
-        }
-
-      </div>
+        )}
+      </div>,
     ];
   }
 }

@@ -2,7 +2,7 @@ import { Component, Prop, h } from '@stencil/core';
 
 @Component({
   tag: 'file-tree-directory',
-  styleUrl: 'file-tree-directory.css'
+  styleUrl: 'file-tree-directory.css',
 })
 export class FileTreeDirectory {
   @Prop() collapsed = false;
@@ -12,7 +12,7 @@ export class FileTreeDirectory {
     return {
       class: {
         ['directory']: true,
-        [`collapsed`]: this.collapsed,
+        ['collapsed']: this.collapsed,
       },
     };
   }
@@ -20,10 +20,11 @@ export class FileTreeDirectory {
   render() {
     return [
       <div class="name">{this.name}/</div>,
-      this.collapsed ? null :
+      this.collapsed ? null : (
         <div class="children">
           <slot />
-        </div>,
+        </div>
+      ),
     ];
   }
 }

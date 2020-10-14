@@ -1,6 +1,6 @@
 import { h } from '@stencil/core';
 
-export default () => <docs-nav items={items}/>;
+export default () => <docs-nav items={items} />;
 
 const items = {
   'menu-api-button': {
@@ -27,5 +27,5 @@ const items = {
   },
   'menu-api-typography': {
     'sen-text': '/docs/api/text',
-  }
+  },
 };

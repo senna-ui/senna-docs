@@ -1,11 +1,5 @@
-import {
-  Component,
-  Element,
-  Listen,
-  Prop,
-  State,
-  h
-} from '@stencil/core';
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
+import { Component, Element, Listen, Prop, State, h } from '@stencil/core';
 import 'ionicons';
 
 import { Book, Close, ForwardArrow, Search } from '../../icons';
@@ -13,7 +7,7 @@ import { Book, Close, ForwardArrow, Search } from '../../icons';
 @Component({
   tag: 'senna-search',
   styleUrl: 'search.css',
-  shadow: false
+  shadow: false,
 })
 export class IonicSearch {
   @Element() el!: HTMLElement;
@@ -25,6 +19,7 @@ export class IonicSearch {
   @State() results: any[] | null = null;
   @State() nonDocsResults: any[] | null = null;
   @State() nonDocsResultsActive = false;
+  // eslint-disable-next-line @typescript-eslint/ban-types
   @State() dragStyles!: {};
   @State() searchTimeout!: NodeJS.Timeout;
   // @State() pane: HTMLDivElement;
@@ -45,10 +40,11 @@ export class IonicSearch {
         `${api}engines/suggest.json?q=${query}&engine_key=${key}`,
       click: (query: string, doc_id: string) =>
         `${api}analytics/pc.json?q=${query}&doc_id=${doc_id}&engine_key=${key}`,
-      search: (query: string) => // &per_page=1&page=1
-        `${api}engines/search.json?q=${query}&engine_key=${key}`
+      search: (
+        query: string // &per_page=1&page=1
+      ) => `${api}engines/search.json?q=${query}&engine_key=${key}`,
     };
-  }
+  };
 
   constructor() {
     this.urls = this.URLS();
@@ -56,11 +52,7 @@ export class IonicSearch {
 
   @Listen('keydown', { target: 'window' })
   handleKeyDown(ev: KeyboardEvent) {
-    if (
-      ev.key === '/' ||
-      ev.code === 'Slash' ||
-      (ev.metaKey && ev.key === 'k')
-    ) {
+    if (ev.key === '/' || ev.code === 'Slash' || (ev.metaKey && ev.key === 'k')) {
       this.activate();
     }
   }
@@ -76,9 +68,13 @@ export class IonicSearch {
 
     this.active = true;
     this.el.classList.add('active');
-    setTimeout(() => {
-      this.el.querySelector('input')?.focus();
-    }, 220, this);
+    setTimeout(
+      () => {
+        this.el.querySelector('input')?.focus();
+      },
+      220,
+      this
+    );
   }
 
   close() {
@@ -88,12 +84,16 @@ export class IonicSearch {
 
     const input = this.el.querySelector('input');
     input?.blur();
-    setTimeout(() => {
-      if (input) {
-        input.value = '';
-      }
-      this.results = this.nonDocsResults = this.highlightIndex = null;
-    }, 220, this);
+    setTimeout(
+      () => {
+        if (input) {
+          input.value = '';
+        }
+        this.results = this.nonDocsResults = this.highlightIndex = null;
+      },
+      220,
+      this
+    );
   }
 
   async onKeyUp(ev: KeyboardEvent) {
@@ -107,7 +107,7 @@ export class IonicSearch {
       return;
     }
 
-    const el = (ev.target as HTMLInputElement);
+    const el = ev.target as HTMLInputElement;
 
     if (el.value.length < 3) {
       this.results = this.nonDocsResults = this.highlightIndex = null;
@@ -120,9 +120,11 @@ export class IonicSearch {
     const res = await resp.json();
     this.pending--;
     this.results = res.records.page.filter(
-      (item: any) => item.url.indexOf('\/docs\/') !== -1);
+      (item: any) => item.url.indexOf('/docs/') !== -1
+    );
     this.nonDocsResults = res.records.page.filter(
-      (item: any) => item.url.indexOf('\/docs\/') === -1);
+      (item: any) => item.url.indexOf('/docs/') === -1
+    );
     this.highlightIndex = null;
 
     clearTimeout(this.searchTimeout);
@@ -137,9 +139,10 @@ export class IonicSearch {
   }
 
   touchStart(ev: TouchEvent) {
-    this.screenHeight = window.innerHeight
-      || document.documentElement.clientHeight
-      || document.body.clientHeight;
+    this.screenHeight =
+      window.innerHeight ||
+      document.documentElement.clientHeight ||
+      document.body.clientHeight;
     const y = ev.touches?.item(0)?.screenY;
     this.startY = typeof y !== 'undefined' ? Math.round(y) : 0;
   }
@@ -147,12 +150,16 @@ export class IonicSearch {
   touchMove(ev: TouchEvent) {
     ev.preventDefault();
     const y = ev.touches?.item(0)?.screenY;
-    this.dragY = typeof y !== 'undefined' && this.dragY !== null && this.startY !== null && this.screenHeight !== null ? Math.max(0, Math.round(
-      (this.dragY - this.startY) / this.screenHeight * 100
-    )) : 0;
+    this.dragY =
+      typeof y !== 'undefined' &&
+      this.dragY !== null &&
+      this.startY !== null &&
+      this.screenHeight !== null
+        ? Math.max(0, Math.round(((this.dragY - this.startY) / this.screenHeight) * 100))
+        : 0;
     this.dragStyles = {
       transitionDuration: '.1s',
-      transform: `translate3d(0, ${this.dragY}%, 0)`
+      transform: `translate3d(0, ${this.dragY}%, 0)`,
     };
     // window.requestAnimationFrame(()=> {
     //   const scale = ((3 * this.dragY / 100) + 97) / 100;
@@ -175,7 +182,9 @@ export class IonicSearch {
   }
 
   keyNavigation(ev: KeyboardEvent) {
-    if (!this.results) { return; }
+    if (!this.results) {
+      return;
+    }
 
     if (ev.key === 'ArrowUp') {
       ev.preventDefault();
@@ -189,13 +198,13 @@ export class IonicSearch {
       ev.preventDefault();
       if (this.highlightIndex === null) {
         this.highlightIndex = 0;
-      } else if (this.highlightIndex < this.results.length + (this.nonDocsResults ? this.nonDocsResults.length : 0) - 1) {
+      } else if (
+        this.highlightIndex <
+        this.results.length + (this.nonDocsResults ? this.nonDocsResults.length : 0) - 1
+      ) {
         this.highlightIndex++;
 
-        if (
-          this.highlightIndex >= this.results.length &&
-          !this.nonDocsResultsActive
-        ) {
+        if (this.highlightIndex >= this.results.length && !this.nonDocsResultsActive) {
           this.nonDocsResultsActive = true;
         }
       }
@@ -219,37 +228,117 @@ export class IonicSearch {
         <div class="Search__Defaults__Section">
           <h4>Getting Started</h4>
           <ul>
-            <li><a href="/docs/intro/cli"><Book/><strong>Installation Guide</strong> | Installation</a></li>
-            <li><a href="/docs/developing/previewing"><Book/><strong>Running an App</strong> | Building</a></li>
-            <li><a href="/docs/layout/structure"><Book/><strong>App Structure</strong> | Layout</a></li>
-            <li><a href="/docs/theming/basics"><Book/><strong>Theming Basics</strong> | Theming</a></li>
+            <li>
+              <a href="/docs/intro/cli">
+                <Book />
+                <strong>Installation Guide</strong> | Installation
+              </a>
+            </li>
+            <li>
+              <a href="/docs/developing/previewing">
+                <Book />
+                <strong>Running an App</strong> | Building
+              </a>
+            </li>
+            <li>
+              <a href="/docs/layout/structure">
+                <Book />
+                <strong>App Structure</strong> | Layout
+              </a>
+            </li>
+            <li>
+              <a href="/docs/theming/basics">
+                <Book />
+                <strong>Theming Basics</strong> | Theming
+              </a>
+            </li>
           </ul>
         </div>
         <div class="Search__Defaults__Section">
           <h4>Common topics</h4>
           <ul>
-            <li><a href="/docs/angular/testing"><Book/><strong>Testing</strong> | Building</a></li>
-            <li><a href="/docs/core-concepts/cross-platform#storage"><Book/><strong>Storage</strong> | Building</a></li>
-            <li><a href="/docs/lifecycle/angular"><Book/><strong>Life Cycle Events</strong> | Angular</a></li>
-            <li><a href="/docs/navigation/angular"><Book/><strong>Navigation</strong> | Angular</a></li>
+            <li>
+              <a href="/docs/angular/testing">
+                <Book />
+                <strong>Testing</strong> | Building
+              </a>
+            </li>
+            <li>
+              <a href="/docs/core-concepts/cross-platform#storage">
+                <Book />
+                <strong>Storage</strong> | Building
+              </a>
+            </li>
+            <li>
+              <a href="/docs/lifecycle/angular">
+                <Book />
+                <strong>Life Cycle Events</strong> | Angular
+              </a>
+            </li>
+            <li>
+              <a href="/docs/navigation/angular">
+                <Book />
+                <strong>Navigation</strong> | Angular
+              </a>
+            </li>
           </ul>
         </div>
         <div class="Search__Defaults__Section">
           <h4>UI Components</h4>
           <ul>
-            <li><a href="/docs/api/button"><Book/><strong>ion-button</strong> | Buttons</a></li>
-            <li><a href="/docs/api/card"><Book/><strong>ion-card</strong> | Cards</a></li>
-            <li><a href="/docs/api/loading"><Book/><strong>ion-loading</strong> | Progress Indicators</a></li>
-            <li><a href="/docs/api/tabs"><Book/><strong>ion-tabs</strong> | Tabs</a></li>
+            <li>
+              <a href="/docs/api/button">
+                <Book />
+                <strong>ion-button</strong> | Buttons
+              </a>
+            </li>
+            <li>
+              <a href="/docs/api/card">
+                <Book />
+                <strong>ion-card</strong> | Cards
+              </a>
+            </li>
+            <li>
+              <a href="/docs/api/loading">
+                <Book />
+                <strong>ion-loading</strong> | Progress Indicators
+              </a>
+            </li>
+            <li>
+              <a href="/docs/api/tabs">
+                <Book />
+                <strong>ion-tabs</strong> | Tabs
+              </a>
+            </li>
           </ul>
         </div>
         <div class="Search__Defaults__Section">
           <h4>Native</h4>
           <ul>
-            <li><a href="/docs/enterprise/camera"><Book/><strong>Camera</strong> | Native EE</a></li>
-            <li><a href="/docs/enterprise/identity-vault"><Book/><strong>Identity Vault</strong> | Native EE</a></li>
-            <li><a href="/docs/native/firebase"><Book/><strong>Firebase</strong> | Native CE</a></li>
-            <li><a href="/docs/native/barcode-scanner"><Book/><strong>Barcode Scanner</strong> | Native CE</a></li>
+            <li>
+              <a href="/docs/enterprise/camera">
+                <Book />
+                <strong>Camera</strong> | Native EE
+              </a>
+            </li>
+            <li>
+              <a href="/docs/enterprise/identity-vault">
+                <Book />
+                <strong>Identity Vault</strong> | Native EE
+              </a>
+            </li>
+            <li>
+              <a href="/docs/native/firebase">
+                <Book />
+                <strong>Firebase</strong> | Native CE
+              </a>
+            </li>
+            <li>
+              <a href="/docs/native/barcode-scanner">
+                <Book />
+                <strong>Barcode Scanner</strong> | Native CE
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -261,15 +350,20 @@ export class IonicSearch {
       <div
         class={`search-box${this.active ? ' active' : ''}`}
         style={this.dragStyles}
-        onTouchMove={e => this.results && this.results.length > 5 ?
-        null : e.preventDefault()}
+        onTouchMove={e =>
+          this.results && this.results.length > 5 ? null : e.preventDefault()
+        }
         onKeyDown={ev => this.keyNavigation(ev)}
       >
-        <input type="text" onKeyUp={ev => this.onKeyUp(ev)} placeholder="Search Ionic.."/>
+        <input
+          type="text"
+          onKeyUp={ev => this.onKeyUp(ev)}
+          placeholder="Search Ionic.."
+        />
 
-        <Search class={`search-static ${this.active ? ' active' : ''}`}/>
+        <Search class={`search-static ${this.active ? ' active' : ''}`} />
 
-        {this.mobile && !this.isFirefox() ?
+        {this.mobile && !this.isFirefox() ? (
           <div
             class="mobile-close"
             onClick={() => this.close()}
@@ -277,24 +371,24 @@ export class IonicSearch {
             onTouchMove={ev => this.touchMove(ev)}
             onTouchEnd={() => this.touchEnd()}
           >
-            <Close/>
+            <Close />
           </div>
-          :
+        ) : (
           <ion-icon
             class={`close ${this.active ? ' active' : ''}`}
             name="close"
             onClick={() => this.close()}
           />
-        }
+        )}
 
         <div class={`slot ${this.results === null ? '' : 'hidden'}`}>
           {this.getDefaultContent()}
         </div>
 
-        {this.results !== null ?
+        {this.results !== null ? (
           <div class="SearchResults">
             <ul>
-              {this.results.map((result, i) =>
+              {this.results.map((result, i) => (
                 <li>
                   <a
                     onClick={ev => this.resultClick(result, ev)}
@@ -303,45 +397,55 @@ export class IonicSearch {
                     data-id={result.id}
                     class={i === this.highlightIndex ? 'active' : ''}
                   >
-                    <Book/>
+                    <Book />
                     <strong>{result.title}</strong>
                     <span innerHTML={result.highlight.sections}></span>
                   </a>
                 </li>
-              )}
-              {this.results.length === 0 ?
-                <li><span class="no-results">No results</span></li>
-              : null}
+              ))}
+              {this.results.length === 0 ? (
+                <li>
+                  <span class="no-results">No results</span>
+                </li>
+              ) : null}
             </ul>
 
             <div class={`SearchMore ${this.nonDocsResultsActive ? 'active' : ''}`}>
-              {this.nonDocsResults && this.nonDocsResults.length !== 0 ? [
-                <a
-                  class="SearchMore__link"
-                  onClick={() => this.nonDocsResultsActive = !this.nonDocsResultsActive}
-                >
-                  {this.nonDocsResults.length} Results outside docs <ForwardArrow/>
-                </a>,
-                <ul class="SearchMore__list">
-                  {this.nonDocsResults.map((result, i) =>
-                    <li>
-                      <a
-                        onClick={ev => this.resultClick(result, ev)}
-                        href={result.url}
-                        title={result.title}
-                        data-id={result.id}
-                        class={i + this.results!.length === this.highlightIndex ? 'active' : ''}
-                      >
-                        <strong>{result.title}</strong>
-                        <span innerHTML={result.highlight.sections}></span>
-                      </a>
-                    </li>
-                  )}
-                </ul>
-              ] : null}
+              {this.nonDocsResults && this.nonDocsResults.length !== 0
+                ? [
+                    <a
+                      class="SearchMore__link"
+                      onClick={() =>
+                        (this.nonDocsResultsActive = !this.nonDocsResultsActive)
+                      }
+                    >
+                      {this.nonDocsResults.length} Results outside docs <ForwardArrow />
+                    </a>,
+                    <ul class="SearchMore__list">
+                      {this.nonDocsResults.map((result, i) => (
+                        <li>
+                          <a
+                            onClick={ev => this.resultClick(result, ev)}
+                            href={result.url}
+                            title={result.title}
+                            data-id={result.id}
+                            class={
+                              i + this.results!.length === this.highlightIndex
+                                ? 'active'
+                                : ''
+                            }
+                          >
+                            <strong>{result.title}</strong>
+                            <span innerHTML={result.highlight.sections}></span>
+                          </a>
+                        </li>
+                      ))}
+                    </ul>,
+                  ]
+                : null}
             </div>
           </div>
-        : null}
+        ) : null}
 
         {this.pending > 0 ? <span class="searching"></span> : null}
       </div>,
@@ -353,7 +457,7 @@ export class IonicSearch {
         />
 
         <div class="SearchBtn__lg" onClick={() => this.activate()}>
-          <Search class="SearchBtn__lg__icon"/>
+          <Search class="SearchBtn__lg__icon" />
           <span class="SearchBtn__lg__text">Search docs</span>
           <span class="SearchBtn__lg__key">/</span>
         </div>
@@ -362,7 +466,7 @@ export class IonicSearch {
       <div
         class={`backdrop ${this.active ? 'active' : null}`}
         onClick={() => this.close()}
-      />
+      />,
     ];
   }
 }

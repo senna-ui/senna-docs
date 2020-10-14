@@ -1,11 +1,13 @@
-
 export const toHypertext = (h: any, data: any) => {
   const args = [];
   for (let i = 0; i < data.length; i++) {
     let arg = data[i];
-    if (i === 0 && typeof arg === 'string' && tagBlacklist.includes(arg.toLowerCase().trim())) {
+    if (
+      i === 0 &&
+      typeof arg === 'string' &&
+      tagBlacklist.includes(arg.toLowerCase().trim())
+    ) {
       arg = 'template';
-
     } else if (i === 1 && arg) {
       const attrs: any = {};
       Object.keys(arg).forEach(key => {
@@ -15,7 +17,6 @@ export const toHypertext = (h: any, data: any) => {
         }
       });
       arg = attrs;
-
     } else if (i > 1) {
       if (Array.isArray(arg)) {
         arg = toHypertext(h, arg);
@@ -23,6 +24,7 @@ export const toHypertext = (h: any, data: any) => {
     }
     args.push(arg);
   }
+  // eslint-disable-next-line prefer-spread
   return h.apply(null, args);
 };
 

@@ -3,10 +3,8 @@ import Listr from 'listr';
 import buildApiReference from './api-reference';
 import buildSearchIndex from './search-index';
 
-const tasks = new Listr([
-  buildApiReference,
-  buildSearchIndex,
-],
+const tasks = new Listr(
+  [buildApiReference, buildSearchIndex]
   // { renderer: 'verbose' }
 );
 

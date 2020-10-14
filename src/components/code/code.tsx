@@ -4,7 +4,7 @@ import { CheckmarkSoft } from '../../icons';
 
 @Component({
   tag: 'docs-code',
-  styleUrl: 'code.css'
+  styleUrl: 'code.css',
 })
 export class DocsCode {
   @Element() el!: HTMLElement;
@@ -15,7 +15,7 @@ export class DocsCode {
     this.showCopyConfirmation = true;
 
     const codeEl = this.el.querySelector('code');
-    const codeText = codeEl && codeEl.textContent || '';
+    const codeText = codeEl?.textContent || '';
 
     const el = document.createElement('textarea');
     el.value = codeText;
@@ -36,15 +36,24 @@ export class DocsCode {
     // Only show copy button if the area is not a shell script.
     return (
       <Host>
-        { !['shell', 'bash', 'sh'].includes(this.language) ?
-          <div class={{ 'code-text__copy': true, 'show-confirmation': this.showCopyConfirmation }} >
-            <a class="code-text__copy-link" onClick={this.copyCodeText.bind(this)}>Copy</a>
+        {!['shell', 'bash', 'sh'].includes(this.language) ? (
+          <div
+            class={{
+              'code-text__copy': true,
+              'show-confirmation': this.showCopyConfirmation,
+            }}
+          >
+            <a class="code-text__copy-link" onClick={this.copyCodeText.bind(this)}>
+              Copy
+            </a>
             <span class="code-text__copy-confirmation">
               {CheckmarkSoft({ height: '26px', width: '26px' })}
               Copied
             </span>
           </div>
-        : '' }
+        ) : (
+          ''
+        )}
       </Host>
     );
   }

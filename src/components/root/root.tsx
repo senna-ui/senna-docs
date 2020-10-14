@@ -1,9 +1,10 @@
-import { Build, Component, Event, EventEmitter, State, Watch, h } from '@stencil/core';
-import { LocationSegments, RouterHistory } from '@stencil/router';
+import type { EventEmitter } from '@stencil/core';
+import { Build, Component, Event, State, Watch, h } from '@stencil/core';
+import type { LocationSegments, RouterHistory } from '@stencil/router';
 
 @Component({
   tag: 'docs-root',
-  styleUrl: 'root.css'
+  styleUrl: 'root.css',
 })
 export class DocsRoot {
   history: RouterHistory | null = null;
@@ -15,11 +16,13 @@ export class DocsRoot {
       this.history = history;
       this.history.listen(this.newPage.bind(this));
     }
-  }
+  };
 
   @Event() pageChanged!: EventEmitter;
   newPage(location: LocationSegments) {
-    (window as any).gtag('config', 'UA-XXX-1', { 'page_path': location.pathname + location.search });
+    (window as any).gtag('config', 'UA-XXX-1', {
+      page_path: location.pathname + location.search,
+    });
     this.pageChanged.emit(location);
   }
 
@@ -32,29 +35,29 @@ export class DocsRoot {
 
   toggleMenu = () => {
     this.isMenuToggled = !this.isMenuToggled;
-  }
+  };
 
   handlePageClick = () => {
     if (this.isSmallViewport() && this.isMenuToggled) {
       this.isMenuToggled = false;
     }
-  }
+  };
 
   isSmallViewport() {
-    return matchMedia && matchMedia('(max-width: 768px)').matches;
+    return matchMedia('(max-width: 768px)')?.matches;
   }
 
   render() {
     const layout = {
-      'Layout': true,
-      'is-menu-toggled': this.isMenuToggled
+      Layout: true,
+      'is-menu-toggled': this.isMenuToggled,
     };
 
     return (
       <stencil-router class={layout}>
-        <stencil-route style={{ display: 'none' }} routeRender={this.setHistory}/>
-        <docs-header toggleClickFn={this.toggleMenu}/>
-        <docs-menu toggleClickFn={this.toggleMenu}/>
+        <stencil-route style={{ display: 'none' }} routeRender={this.setHistory} />
+        <docs-header toggleClickFn={this.toggleMenu} />
+        <docs-menu toggleClickFn={this.toggleMenu} />
         <stencil-route
           url="/docs/:page*"
           routeRender={props => (

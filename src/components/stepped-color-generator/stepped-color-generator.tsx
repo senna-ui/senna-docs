@@ -6,7 +6,7 @@ import { generateSteppedColors } from './parse-css';
 
 @Component({
   tag: 'stepped-color-generator',
-  styleUrl: 'stepped-color-generator.css'
+  styleUrl: 'stepped-color-generator.css',
 })
 export class ColorGenerator {
   @State() cssText = DEFAULT_CSS_TEXT;
@@ -29,8 +29,7 @@ export class ColorGenerator {
 
     const steppedColors = generateSteppedColors(background, text);
 
-    this.cssText =
-`:root {
+    this.cssText = `:root {
   --ion-background-color: <code-color mode="md" value="${background}"></code-color>;
   --ion-background-color-rgb: <code-color mode="md" value="${background}" display="${backgroundColor.toList()}"></code-color>;
 
@@ -49,13 +48,20 @@ ${steppedColors}
   render() {
     return [
       <div class="stepped-color-pickers">
-        <color-gen-variable-selector id="background" name="Background" value={this.backgroundColor}></color-gen-variable-selector>
-        <color-gen-variable-selector id="text" name="Text" value={this.textColor}></color-gen-variable-selector>
+        <color-gen-variable-selector
+          id="background"
+          name="Background"
+          value={this.backgroundColor}
+        ></color-gen-variable-selector>
+        <color-gen-variable-selector
+          id="text"
+          name="Text"
+          value={this.textColor}
+        ></color-gen-variable-selector>
       </div>,
-      <color-gen-css-text cssText={this.cssText}></color-gen-css-text>
+      <color-gen-css-text cssText={this.cssText}></color-gen-css-text>,
     ];
   }
-
 }
 
 const DEFAULT_CSS_TEXT = `

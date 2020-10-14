@@ -1,6 +1,8 @@
-import { components } from '@senna-ui/docs/core.json';
 import { outputJson } from 'fs-extra';
+
 import { resolve } from 'path';
+
+import { components } from '@senna-ui/docs/core.json';
 
 const OUTPUT_PATH = resolve(
   __dirname,
@@ -9,10 +11,10 @@ const OUTPUT_PATH = resolve(
 
 const reference = components.map((component: any) => [
   component.tag,
-  `/docs/api/${component.tag.slice(4)}`
+  `/docs/api/${component.tag.slice(4)}`,
 ]);
 
 export default {
   title: 'Build API reference data',
-  task: () => outputJson(OUTPUT_PATH, reference, { spaces: 2 })
+  task: () => outputJson(OUTPUT_PATH, reference, { spaces: 2 }),
 };

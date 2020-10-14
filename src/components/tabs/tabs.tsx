@@ -2,7 +2,7 @@ import { Component, Element, Listen, Prop, State, h } from '@stencil/core';
 
 @Component({
   tag: 'docs-tabs',
-  styleUrl: 'tabs.css'
+  styleUrl: 'tabs.css',
 })
 export class DocsTabs {
   @Prop() listenFor?: string;
@@ -43,7 +43,7 @@ export class DocsTabs {
     const isSelected = this.selected === tab;
     const buttonClass = {
       'Tabs-button': true,
-      'is-selected': isSelected
+      'is-selected': isSelected,
     };
 
     return (
@@ -56,23 +56,21 @@ export class DocsTabs {
         {label}
       </button>
     );
-  }
+  };
 
   hostData() {
     return {
       role: 'tablist',
       class: {
-        'Tabs': true
-      }
+        Tabs: true,
+      },
     };
   }
 
   render() {
     return [
-      <header class="Tabs-header">
-        {this.tabs.map(this.toTabButton)}
-      </header>,
-      <slot/>
+      <header class="Tabs-header">{this.tabs.map(this.toTabButton)}</header>,
+      <slot />,
     ];
   }
 }
