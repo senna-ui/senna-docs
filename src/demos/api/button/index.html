@@ -7,14 +7,6 @@
   <script type="module" src="https://cdn.jsdelivr.net/npm/@senna-ui/core@dev/dist/senna/senna.esm.js"></script>
   <script nomodule src="https://cdn.jsdelivr.net/npm/@senna-ui/core@dev/dist/senna/senna.js"></script>
   <style>
-    header {
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 0.05em;
-      margin-bottom: 1.25em;
-      text-transform: uppercase;
-    }
-
     section {
       margin-top: 1em;
       margin-bottom: 2.5em;
@@ -28,10 +20,36 @@
 </head>
 <body>
   <section>
-    <header>Colors</header>
+    <header>
+      <h1>Buttons</h1>
+    </header>
+    <p>Default:</p>
+    <sen-button>My button</sen-button>
+    <sen-button disabled>My button disabled</sen-button>
+    <p>Primary: </p>
+    <sen-button color="primary">Primary</sen-button>
+    &nbsp;
+    <sen-button color="primary" disabled>Primary disabled</sen-button>
+    <p>Secondary: </p>
+    <sen-button color="secondary">Secondary</sen-button>
+    &nbsp;
+    <sen-button color="secondary" disabled>Secondary disabled</sen-button>
+    <p>Success: </p>
     <sen-button color="success">Success</sen-button>
+    &nbsp;
+    <sen-button color="success" disabled>Success disabled</sen-button>
+    <p>Info: </p>
+    <sen-button color="info">Info</sen-button>
+    &nbsp;
+    <sen-button color="info" disabled>Info disabled</sen-button>
+    <p>Warning: </p>
     <sen-button color="warning">Warning</sen-button>
+    &nbsp;
+    <sen-button color="warning" disabled>Warning disabled</sen-button>
+    <p>Danger: </p>
     <sen-button color="danger">Danger</sen-button>
+    &nbsp;
+    <sen-button color="danger" disabled>Danger disabled</sen-button>
   </section>
 
 </body>
