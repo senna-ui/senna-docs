@@ -1,8 +1,10 @@
 import fs from 'fs-extra';
-import { join, resolve } from 'path';
+
+import type { JsonDocsTag } from '@senna-ui/docs';
 
 import { components } from '@senna-ui/docs/core.json';
 
+import type { DocsMenu, DocsDemoUrls, DocsCodePen } from '../../../src/definitions';
 import type { Page } from '../index';
 import { buildPages } from '../index';
 import markdownRenderer from '../markdown-renderer';
@@ -12,17 +14,16 @@ export default {
   task: () => buildPages(getAPIPages),
 };
 
-const getAPIPages = async (): Promise<Page[]> => {
+export const getAPIPages = async (): Promise<Page[]> => {
   const pages = components.map(
     async (component): Promise<Page> => {
       const title = component.tag;
       const path = `/docs/api/${title.slice(4)}`;
-      const demoUrl = await getDemoUrl(component);
       const { readme, usage, props, methods, ...contents } = component;
       return {
         title,
         path,
-        ...demoUrl,
+        ...getDocsTagsValues(component),
         body: markdownRenderer(readme || '', path),
         usage: renderUsage(usage, path),
         props: renderDocsKey(props, path),
@@ -32,7 +33,13 @@ const getAPIPages = async (): Promise<Page[]> => {
       };
     }
   );
-  return Promise.all(pages);
+  const allPages = await Promise.all(pages);
+  await fs.promises.writeFile(
+    'src/api-menu.json',
+    JSON.stringify(allPages.map(({ title, path, menu }) => ({ title, path, menu }))),
+    { flag: 'w' }
+  );
+  return allPages;
 };
 
 const renderUsage = (usage: any, baseUrl: any): Record<string, string> =>
@@ -50,17 +57,56 @@ const renderDocsKey = (
     docs: markdownRenderer(item.docs, baseUrl),
   }));
 
-const DEMOS_PATH = resolve(__dirname, '../../../src/demos');
+const getDocsTagsValues = ({
+  docsTags,
+  demo: paramDemo,
+  codePen,
+  codePenLinks = null,
+  menu: paramMenu,
+}: {
+  docsTags: JsonDocsTag[];
+  demo?: DocsDemoUrls;
+  codePen?: DocsCodePen;
+  codePenLinks?: DocsCodePen[] | null;
+  menu?: DocsMenu;
+  [key: string]: any;
+}): {
+  demo?: DocsDemoUrls;
+  codePenLinks?: DocsCodePen[];
+  menu?: DocsMenu;
+} => {
+  const menu = paramMenu || getDocsTagJson<DocsMenu>('docsMenu', docsTags);
+  const demo = codePenToDemoUrls({ docsTags, codePen }) || paramDemo;
+  const penLinks =
+    codePenLinks || getDocsTagJson<DocsCodePen[]>('docsCodePenLinks', docsTags, '[]');
+  return {
+    demo,
+    ...(penLinks ? { codePenLinks: (penLinks as any)?.filter((i: any) => i) } : {}),
+    menu,
+  };
+};
 
-const getDemoUrl = async (
-  component: any
-): Promise<{ demoUrl?: string; demoSourceUrl?: string }> => {
-  const demoPath = `api/${component.tag.slice(4)}/index.html`;
-  if (await fs.pathExists(join(DEMOS_PATH, demoPath))) {
-    return {
-      demoUrl: `/docs/demos/${demoPath}`,
-      demoSourceUrl: `https://github.com/senna-ui/senna-docs/tree/master/src/demos/${demoPath}`,
-    };
+const getDocsTagJson = <T>(
+  propName: string,
+  docsTags: JsonDocsTag[],
+  fallback = 'null'
+): T => JSON.parse(docsTags.find(({ name }) => name === propName)?.text || fallback) as T;
+
+const codePenToDemoUrls = ({
+  docsTags = [],
+  codePen,
+}: {
+  docsTags?: JsonDocsTag[];
+  codePen?: DocsCodePen;
+}): DocsDemoUrls | undefined => {
+  const { user, id, text } =
+    codePen || getDocsTagJson<DocsCodePen>('docsCodePen', docsTags) || {};
+  if (!user || !id) {
+    return undefined;
   }
-  return {};
+  return {
+    url: `https://codepen.io/${user}/embed/${id}?height=265&theme-id=light&default-tab=result`,
+    source: `https://codepen.io/${user}/pen/${id}?editors=1000`,
+    text,
+  };
 };

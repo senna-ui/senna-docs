@@ -30,8 +30,12 @@ export class DocsMenu {
       </stencil-route-switch>,
       <stencil-route-switch scrollTopOffset={0} class="Menu">
         <stencil-route
-          url="/docs/:lang([a-z]{2})?/(components|api)"
+          url="/docs/:lang(en|de)?/components"
           routeRender={componentsTemplate}
+        />
+        <stencil-route
+          url="/docs/:lang(en|de)?/api"
+          routeRender={() => <docs-api-nav />}
         />
         <stencil-route routeRender={mainTemplate} />
       </stencil-route-switch>,

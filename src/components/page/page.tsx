@@ -15,7 +15,7 @@ export class DocsPage {
   @Prop() path!: string;
   @Prop({ context: 'isServer' }) private isServer?: boolean;
   @State() badFetch?: Response | null;
-  @State() page: Page = { title: null, body: null };
+  @State() page: Page = { title: undefined, body: undefined };
 
   componentWillLoad() {
     return this.fetchPage(this.path);
@@ -51,7 +51,7 @@ export class DocsPage {
     this.badFetch = error;
     this.page = {
       title: error.statusText,
-      body: null,
+      body: undefined,
     };
   };
 
@@ -132,24 +132,22 @@ export class DocsPage {
 
   render() {
     const { page } = this;
-    const hasDemo = typeof page.demoUrl === 'string';
 
     if (this.badFetch) {
       return templates.error(this.badFetch);
     }
 
-    const Template = (templates as any)[page.template] || templates.default;
+    const Template = (templates as any)[page.template || 'default'];
 
     const content = [
-      <main class={hasDemo ? 'has-demo' : 'no-demo'}>
+      <main class={page.demo?.url ? 'has-demo' : 'no-demo'}>
         <Template page={page} />
       </main>,
     ];
 
-    if (hasDemo) {
-      content.push(<docs-demo url={page.demoUrl} source={page.demoSourceUrl} />);
+    if (page.demo?.url) {
+      content.push(<docs-demo url={page.demo.url} source={page.demo.source || ''} />);
     }
-
     return content;
   }
 }
