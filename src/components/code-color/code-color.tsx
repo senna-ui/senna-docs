@@ -2,7 +2,7 @@ import { Component, Prop, h } from '@stencil/core';
 
 @Component({
   tag: 'code-color',
-  styleUrl: 'code-color.css'
+  styleUrl: 'code-color.css',
 })
 export class ColorBlock {
   @Prop() value!: string;
@@ -16,10 +16,10 @@ export class ColorBlock {
       <span
         class="code-color-block"
         style={{
-          'background-color': this.value
+          'background-color': this.value,
         }}
       />,
-      <code class="code-color-value">{display}</code>
+      <code class="code-color-value">{display}</code>,
     ];
   }
 }

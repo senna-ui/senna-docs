@@ -42,16 +42,12 @@ export default (props: { [key: string]: any }) => {
     <article>
       <h1>{page.title}</h1>
       <div class="page-meta">
-        <docs-table-of-contents links={headings} basepath={page.path}/>
+        <docs-table-of-contents links={headings} basepath={page.path} />
         <internal-ad></internal-ad>
       </div>
-      <section class="summary intro">
-        {toHypertext(h, page.summary)}
-      </section>
+      <section class="summary intro">{toHypertext(h, page.summary)}</section>
       {renderUsage(page)}
-      <section class="description">
-        {toHypertext(h, page.body)}
-      </section>
+      <section class="description">{toHypertext(h, page.body)}</section>
       {examples}
       {inputs}
       {options}
@@ -65,9 +61,13 @@ const renderUsage = (command: any) => {
     <command-line>
       <command-prompt>
         {command.title}
-        { command.inputs.length > 0 ?
-          ` ${command.inputs.map((input: any) => input.required ? `<${input.name}>` : `[<${input.name}>]`).join(' ')} ` :
-          ' ' }
+        {command.inputs.length > 0
+          ? ` ${command.inputs
+              .map((input: any) =>
+                input.required ? `<${input.name}>` : `[<${input.name}>]`
+              )
+              .join(' ')} `
+          : ' '}
         [options]
       </command-prompt>
     </command-line>
@@ -136,8 +136,12 @@ const renderOptionList = (options: any[] = []) => {
       keys={{
         Head: option => renderOptionSpec(option),
         Description: option => <div innerHTML={option.summary} />,
-        Aliases: option => option.aliases.length > 0 ? option.aliases.map((alias: any) => <code>-{alias}</code>) : null,
-        Default: option => option.default && option.type === 'string' ? option.default : null
+        Aliases: option =>
+          option.aliases.length > 0
+            ? option.aliases.map((alias: any) => <code>-{alias}</code>)
+            : null,
+        Default: option =>
+          option.default && option.type === 'string' ? option.default : null,
       }}
     />
   );
@@ -146,12 +150,13 @@ const renderOptionList = (options: any[] = []) => {
 const renderOptionSpec = (option: any) => {
   return (
     <a href={`#option-${option.name}`} id={`option-${option.name}`}>
-      --{option.type === 'boolean' && option.default === true ? `no-${option.name}` : option.name}
-      { option.type === 'string' ?
-        <span class="option-spec">
-          {`=<${option.spec.value}>`}
-        </span> :
-        null }
+      --
+      {option.type === 'boolean' && option.default === true
+        ? `no-${option.name}`
+        : option.name}
+      {option.type === 'string' ? (
+        <span class="option-spec">{`=<${option.spec.value}>`}</span>
+      ) : null}
     </a>
   );
 };
@@ -167,9 +172,9 @@ const renderExamples = (examples = []) => {
         <a href="#examples">Examples</a>
       </h2>
       <command-line nobuttons>
-      { examples.map(command => (
-        <command-prompt>{command}</command-prompt>)
-      )}
+        {examples.map(command => (
+          <command-prompt>{command}</command-prompt>
+        ))}
       </command-line>
     </section>
   );

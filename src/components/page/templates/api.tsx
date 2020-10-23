@@ -20,65 +20,61 @@ export default (props: { [key: string]: any }) => {
   if (usage) {
     headings.push({
       text: 'Usage',
-      href: '#usage'
+      href: '#usage',
     });
   }
 
   if (properties) {
     headings.push({
       text: 'Properties',
-      href: '#properties'
+      href: '#properties',
     });
   }
 
   if (events) {
     headings.push({
       text: 'Events',
-      href: '#events'
+      href: '#events',
     });
   }
 
   if (methods) {
     headings.push({
       text: 'Methods',
-      href: '#methods'
+      href: '#methods',
     });
   }
 
   if (parts) {
     headings.push({
       text: 'CSS Shadow Parts',
-      href: '#css-shadow-parts'
+      href: '#css-shadow-parts',
     });
   }
 
   if (customProps) {
     headings.push({
       text: 'CSS Custom Properties',
-      href: '#css-custom-properties'
+      href: '#css-custom-properties',
     });
   }
 
   if (slots) {
     headings.push({
       text: 'Slots',
-      href: '#slots'
+      href: '#slots',
     });
   }
 
   return (
     <article>
       {encapsulation}
-      <h1>
-        {page.title}
-      </h1>
+      <h1>{page.title}</h1>
       <div class="page-meta">
-        <docs-table-of-contents links={headings} basepath={page.path}/>
+        <docs-table-of-contents links={headings} basepath={page.path} />
         <internal-ad></internal-ad>
       </div>
-      <section class="markdown-content">
-        {toHypertext(h, page.body)}
-      </section>
+      <section class="markdown-content">{toHypertext(h, page.body)}</section>
       {usage}
       {properties}
       {events}
@@ -98,7 +94,9 @@ const renderEncapsulation = (encapsulation = {}) => {
   const path = `/docs/reference/glossary#${encapsulation}`;
 
   return (
-    <a href={path} class="page-heading-encapsulation">{encapsulation}</a>
+    <a href={path} class="page-heading-encapsulation">
+      {encapsulation}
+    </a>
   );
 };
 
@@ -117,14 +115,11 @@ const renderUsage = (usage: { [key: string]: string } = {}, path: string) => {
         <a href="#usage">Usage</a>
       </h2>
       <docs-tabs key={path} listen-for="senna-docs:framework">
-          {keys.map(key =>
-            <docs-tab
-              tab={key}
-              selected={framework === key.toLowerCase()}
-            >
-              {toHypertext(h, usage[key])}
-            </docs-tab>
-          )}
+        {keys.map(key => (
+          <docs-tab tab={key} selected={framework === key.toLowerCase()}>
+            {toHypertext(h, usage[key])}
+          </docs-tab>
+        ))}
       </docs-tabs>
     </section>
   );
@@ -144,10 +139,10 @@ const renderProperties = (properties = []) => {
         data={properties}
         keys={{
           Head: prop => prop.name,
-          Description: prop => <div innerHTML={prop.docs}/>,
-          Attribute: prop => prop.attr ? <code>{prop.attr}</code> : null,
+          Description: prop => <div innerHTML={prop.docs} />,
+          Attribute: prop => (prop.attr ? <code>{prop.attr}</code> : null),
           Type: prop => <code>{prop.type}</code>,
-          Default: prop => prop.default ? <code>{prop.default}</code> : null
+          Default: prop => (prop.default ? <code>{prop.default}</code> : null),
         }}
       />
     </section>
@@ -174,7 +169,9 @@ const renderEvents = (events: any[] = []) => {
         <tbody>
           {events.map(event => (
             <tr>
-              <td><code>{event.event}</code></td>
+              <td>
+                <code>{event.event}</code>
+              </td>
               <td>{event.docs}</td>
             </tr>
           ))}
@@ -198,8 +195,8 @@ const renderMethods = (methods: any[] = []) => {
         data={methods}
         keys={{
           Head: method => method.name,
-          Description: method => <div innerHTML={method.docs}/>,
-          Signature: method => <code>{method.signature}</code>
+          Description: method => <div innerHTML={method.docs} />,
+          Signature: method => <code>{method.signature}</code>,
         }}
       />
     </section>
@@ -226,7 +223,9 @@ const renderParts = (parts: any[] = []) => {
         <tbody>
           {parts.map(prop => (
             <tr>
-              <td><code>{prop.name}</code></td>
+              <td>
+                <code>{prop.name}</code>
+              </td>
               <td>{prop.docs}</td>
             </tr>
           ))}
@@ -256,7 +255,9 @@ const renderCustomProps = (customProps: any[] = []) => {
         <tbody>
           {customProps.map(prop => (
             <tr>
-              <td><code>{prop.name}</code></td>
+              <td>
+                <code>{prop.name}</code>
+              </td>
               <td>{prop.docs}</td>
             </tr>
           ))}

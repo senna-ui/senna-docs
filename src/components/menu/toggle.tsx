@@ -4,18 +4,18 @@ import { Menu } from '../../icons';
 
 @Component({
   tag: 'docs-menu-toggle',
-  styleUrl: 'toggle.css'
+  styleUrl: 'toggle.css',
 })
 export class DocsMenuToggle {
   hostData() {
     return {
       role: 'button',
       tabindex: '0',
-      'aria-label': 'Toggle Menu'
+      'aria-label': 'Toggle Menu',
     };
   }
 
   render() {
-    return <Menu/>;
+    return <Menu />;
   }
 }

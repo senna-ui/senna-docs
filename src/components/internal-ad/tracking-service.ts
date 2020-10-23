@@ -23,15 +23,13 @@ export const trackClick = (adId: string, event?: MouseEvent) => {
 
 const googleAnalyticsTrack = (type: 'Click' | 'View', adId: string) => {
   if (!(window as any)['gtag']) {
-    console.warn(
-      'Unable to track Google Analytics event, gtag not found', type, adId
-    );
+    console.warn('Unable to track Google Analytics event, gtag not found', type, adId);
     return;
   }
 
   (window as any)['gtag']('event', `Docs ad - ${type} - ${adId}`, {
-    'event_category': `Docs ad - ${type}`,
-    'event_label': adId
+    event_category: `Docs ad - ${type}`,
+    event_label: adId,
   });
 };
 

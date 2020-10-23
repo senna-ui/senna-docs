@@ -1,22 +1,17 @@
 import { Component, Prop, h } from '@stencil/core';
 
-import { Page } from '../../definitions';
+import type { Page } from '../../definitions';
 import { BackArrow, ForwardArrow } from '../../icons';
 
 @Component({
   tag: 'docs-pagination',
-  styleUrl: 'pagination.css'
+  styleUrl: 'pagination.css',
 })
 export class DocsPagination {
   @Prop() page: Page = { title: null, body: null };
 
   render() {
-    const {
-      previousText,
-      previousUrl,
-      nextText,
-      nextUrl
-    } = this.page;
+    const { previousText, previousUrl, nextText, nextUrl } = this.page;
 
     const shouldShowPrevious = previousText && previousUrl;
     const shouldShowNext = nextText && nextUrl;
@@ -33,7 +28,7 @@ export class DocsPagination {
         >
           <div class="paggination__title">Previous</div>
           <div class="paggination__text">
-            <BackArrow/>
+            <BackArrow />
             <span>{previousText}</span>
           </div>
         </stencil-route-link>
@@ -42,16 +37,11 @@ export class DocsPagination {
 
     if (shouldShowNext) {
       links.push(
-        <stencil-route-link
-          url={nextUrl}
-          key="next"
-          class="next"
-          anchorTitle={nextText}
-        >
+        <stencil-route-link url={nextUrl} key="next" class="next" anchorTitle={nextText}>
           <div class="paggination__title">Next</div>
           <div class="paggination__text">
             <span>{nextText}</span>
-            <ForwardArrow/>
+            <ForwardArrow />
           </div>
         </stencil-route-link>
       );

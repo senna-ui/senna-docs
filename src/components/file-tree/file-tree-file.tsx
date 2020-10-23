@@ -2,7 +2,7 @@ import { Component, Prop, h } from '@stencil/core';
 
 @Component({
   tag: 'file-tree-file',
-  styleUrl: 'file-tree-file.css'
+  styleUrl: 'file-tree-file.css',
 })
 export class FileTreeFile {
   @Prop() name!: string;
@@ -23,8 +23,6 @@ export class FileTreeFile {
   }
 
   render() {
-    return (
-      <div class="name">{this.name}</div>
-    );
+    return <div class="name">{this.name}</div>;
   }
 }

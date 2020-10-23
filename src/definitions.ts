@@ -21,5 +21,5 @@ export interface MenuItems {
 }
 
 export enum Locale {
-  EN = 'en'
+  EN = 'en',
 }

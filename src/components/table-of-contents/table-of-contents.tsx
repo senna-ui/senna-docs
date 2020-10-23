@@ -1,6 +1,6 @@
 import { Component, Listen, Prop, State, Watch, h } from '@stencil/core';
 
-import { Link } from '../../definitions';
+import type { Link } from '../../definitions';
 
 interface ItemOffset {
   id: string;
@@ -9,7 +9,7 @@ interface ItemOffset {
 
 @Component({
   tag: 'docs-table-of-contents',
-  styleUrl: 'table-of-contents.css'
+  styleUrl: 'table-of-contents.css',
 })
 export class DocsTableOfContents {
   @Prop() links: Link[] = [];
@@ -21,12 +21,15 @@ export class DocsTableOfContents {
 
   @Listen('scroll', { target: 'window', passive: true })
   function() {
-    if (this.pageWidth < 1234) { return; }
+    if (this.pageWidth < 1234) {
+      return;
+    }
     requestAnimationFrame(() => {
-      const itemIndex = this.itemOffsets.findIndex(item => item.topOffset > window.scrollY);
+      const itemIndex = this.itemOffsets.findIndex(
+        item => item.topOffset > window.scrollY
+      );
       if (
         itemIndex === 0 ||
-        // tslint:disable-next-line
         this.itemOffsets[this.itemOffsets.length - 1] === undefined
       ) {
         this.selectedId = null;
@@ -44,10 +47,11 @@ export class DocsTableOfContents {
     requestAnimationFrame(() => {
       this.pageWidth = document.body.offsetWidth;
       this.itemOffsets = this.links.map(link => {
+        // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
         const item = document.getElementById(link.href.substring(1))!;
         return {
           id: link.href,
-          topOffset: item.getBoundingClientRect().top + window.scrollY
+          topOffset: item.getBoundingClientRect().top + window.scrollY,
         };
       });
     });
@@ -59,15 +63,16 @@ export class DocsTableOfContents {
 
   toItem = ({ text, href }: Link) => {
     return (
-    <li>
-      <stencil-route-link
-        url={`${this.basepath}${href}`}
-        class={`Nav-link ${this.selectedId === href ? 'selected' : ''}`}
-      >
-        {text}
-      </stencil-route-link>
-    </li>
-  ); }
+      <li>
+        <stencil-route-link
+          url={`${this.basepath}${href}`}
+          class={`Nav-link ${this.selectedId === href ? 'selected' : ''}`}
+        >
+          {text}
+        </stencil-route-link>
+      </li>
+    );
+  };
 
   render() {
     if (this.links.length < 1) {
@@ -78,7 +83,7 @@ export class DocsTableOfContents {
       <strong class="Nav-header">{this.label}</strong>,
       <nav>
         <ul class="Nav-subnav">{this.links.map(this.toItem)}</ul>
-      </nav>
+      </nav>,
     ];
   }
 }

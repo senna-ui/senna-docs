@@ -1,10 +1,11 @@
-import { Component, Element, JSX, Listen, Method, Prop, State, h } from '@stencil/core';
+import type { JSX } from '@stencil/core';
+import { Component, Element, Listen, Method, Prop, State, h } from '@stencil/core';
 
 import { DownArrow } from '../../icons';
 
 @Component({
   tag: 'docs-dropdown',
-  styleUrl: 'dropdown.css'
+  styleUrl: 'dropdown.css',
 })
 export class DocsDropdown {
   @Prop() align: 'left' | 'right' | 'center' = 'left';
@@ -53,10 +54,10 @@ export class DocsDropdown {
     return {
       tabindex: '0',
       class: {
-        'Dropdown': true,
+        Dropdown: true,
         [`Dropdown--${this.align}`]: true,
-        'is-open': this.isOpen
-      }
+        'is-open': this.isOpen,
+      },
     };
   }
 
@@ -71,23 +72,17 @@ export class DocsDropdown {
         onClick={this.toggle.bind(this)}
       >
         <span class="Dropdown-button-label">{this.label}</span>
-        {Icon ? <Icon class="Dropdown-icon"/> : null}
-        <DownArrow class="Dropdown-arrow"/>
+        {Icon ? <Icon class="Dropdown-icon" /> : null}
+        <DownArrow class="Dropdown-arrow" />
       </button>
     );
 
     const panel = (
-      <div
-        role="menu"
-        class="Dropdown-panel"
-      >
-        <slot/>
+      <div role="menu" class="Dropdown-panel">
+        <slot />
       </div>
     );
 
-    return [
-      button,
-      panel
-    ];
+    return [button, panel];
   }
 }

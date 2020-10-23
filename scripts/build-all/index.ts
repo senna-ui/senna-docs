@@ -7,12 +7,12 @@ const tasks = new Listr({ collapse: false } as any);
 
 tasks.add({
   title: 'Data',
-  task: () => buildData
+  task: () => buildData,
 });
 
 tasks.add({
   title: 'Pages',
-  task: () => buildPages
+  task: () => buildPages,
 });
 
 tasks.run().catch(err => {

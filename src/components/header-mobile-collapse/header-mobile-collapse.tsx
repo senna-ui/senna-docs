@@ -5,10 +5,9 @@ import { MoreDots } from '../../icons';
 @Component({
   tag: 'header-mobile-collapse',
   styleUrl: 'header-mobile-collapse.css',
-  shadow: false
+  shadow: false,
 })
 export class HeaderMobileCollapse {
-
   @Prop() darkMode = true;
 
   @State() mobileDropdownActive = false;
@@ -33,8 +32,9 @@ export class HeaderMobileCollapse {
   }
 
   componentDidLoad() {
-    // tslint:disable-next-line
-    if (!this.el.before) { return; }
+    if (!this.el.before) {
+      return;
+    }
 
     this.el.before(this.getTriggerEl());
     this.init();
@@ -44,28 +44,33 @@ export class HeaderMobileCollapse {
   }
 
   init() {
-    this.observer = new IntersectionObserver(entries => {
-      if (this.queued) { return; }
+    this.observer = new IntersectionObserver(
+      entries => {
+        if (this.queued) {
+          return;
+        }
 
-      // no intersection with screen
-      if (!this.stuck && entries[0].intersectionRatio === 0) {
-        this.queued = true;
-        requestAnimationFrame(() => {
-          this.el.classList.add('sub-header--stuck');
-          this.stuck = true;
-          this.queued = false;
-        });
+        // no intersection with screen
+        if (!this.stuck && entries[0].intersectionRatio === 0) {
+          this.queued = true;
+          requestAnimationFrame(() => {
+            this.el.classList.add('sub-header--stuck');
+            this.stuck = true;
+            this.queued = false;
+          });
 
-      // fully intersects with screen
-      } else if (this.stuck && entries[0].intersectionRatio === 1) {
-        this.queued = true;
-        requestAnimationFrame(() => {
-          this.el.classList.remove('sub-header--stuck');
-          this.stuck = false;
-          this.queued = false;
-        });
-      }
-    }, { threshold: [0, 1] });
+          // fully intersects with screen
+        } else if (this.stuck && entries[0].intersectionRatio === 1) {
+          this.queued = true;
+          requestAnimationFrame(() => {
+            this.el.classList.remove('sub-header--stuck');
+            this.stuck = false;
+            this.queued = false;
+          });
+        }
+      },
+      { threshold: [0, 1] }
+    );
 
     const headerEl = document.getElementById('sub-header__trigger');
 
@@ -74,7 +79,9 @@ export class HeaderMobileCollapse {
       setTimeout(() => {
         this.el.classList.add('sub-header--initialized');
         const navBar = document.querySelector('.navbar-default');
-        if (navBar) { navBar.classList.add('navbar--not-fixed'); }
+        if (navBar) {
+          navBar.classList.add('navbar--not-fixed');
+        }
       }, 405);
     }
   }
@@ -84,21 +91,15 @@ export class HeaderMobileCollapse {
   }
 
   render() {
-    return ([
-      <div
-        class="header-mobile-collapse__backdrop"
-        onClick={() => this.deactivate()}
-      />,
+    return [
+      <div class="header-mobile-collapse__backdrop" onClick={() => this.deactivate()} />,
       <senna-search></senna-search>,
-      <a
-        class="sub-header__mobile-toggle"
-        onClick={() => this.handleMobileToggleClick()}
-      >
-        <MoreDots/>
+      <a class="sub-header__mobile-toggle" onClick={() => this.handleMobileToggleClick()}>
+        <MoreDots />
       </a>,
       <div class="header-mobile-collapse__content">
-        <slot/>
-      </div>
-    ]);
+        <slot />
+      </div>,
+    ];
   }
 }

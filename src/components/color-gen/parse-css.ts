@@ -1,7 +1,13 @@
-import { Color, RGB } from './color';
-import { COLOR_VARS, ColorVariable } from './color-variables';
+import type { RGB } from './color';
+import { Color } from './color';
+import type { ColorVariable } from './color-variables';
+import { COLOR_VARS } from './color-variables';
 
-export const generateColor = (name: string, property: string, value: string): ColorVariable => {
+export const generateColor = (
+  name: string,
+  property: string,
+  value: string
+): ColorVariable => {
   const color = new Color(value);
   const contrast = color.contrast();
   const tint = color.tint();
@@ -33,7 +39,7 @@ export const convertCssToColors = (cssText: string) => {
     };
 
     const color: ColorVariable = { ...colorVar };
-    const keys = Object.keys(attrMap) as any as (keyof typeof attrMap)[];
+    const keys = (Object.keys(attrMap) as any) as (keyof typeof attrMap)[];
     for (const key of keys) {
       color[key] = parseColorVar(colorVar.property + attrMap[key], cssText);
     }
@@ -44,7 +50,11 @@ export const convertCssToColors = (cssText: string) => {
   return colors;
 };
 
-export const updateCssText = (colorAttr: string, cssText: string, newColorValue?: string) => {
+export const updateCssText = (
+  colorAttr: string,
+  cssText: string,
+  newColorValue?: string
+) => {
   if (typeof newColorValue === 'undefined') {
     return cssText;
   }

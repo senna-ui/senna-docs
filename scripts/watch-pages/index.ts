@@ -1,5 +1,7 @@
 import chokidar from 'chokidar';
+
 import ora from 'ora';
+
 import { resolve } from 'path';
 
 import { buildStaticPage } from '../build-pages';

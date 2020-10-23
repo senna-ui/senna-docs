@@ -4,7 +4,7 @@ import { generateColor } from '../color-gen/parse-css';
 
 @Component({
   tag: 'new-color-generator',
-  styleUrl: 'new-color-generator.css'
+  styleUrl: 'new-color-generator.css',
 })
 export class ColorGenerator {
   @State() cssText = DEFAULT_CSS_TEXT;
@@ -33,8 +33,7 @@ export class ColorGenerator {
 
     const color = generateColor(name, selector, value);
 
-    this.cssText =
-`:root {
+    this.cssText = `:root {
   --sen-color-${name}: <code-color mode="md" value="${color.value}"></code-color>;
   --sen-color-${name}-rgb: <code-color mode="md" value="${color.value}" display="${color.valueRgb}"></code-color>;
   --sen-color-${name}-contrast: <code-color mode="md" value="${color.contrast}"></code-color>;
@@ -61,11 +60,15 @@ ${selector} {
 
   render() {
     return [
-      <color-gen-variable-selector id="base" is-new="true" name={this.name} value={this.value}></color-gen-variable-selector>,
-      <color-gen-css-text header={false} cssText={this.cssText}></color-gen-css-text>
+      <color-gen-variable-selector
+        id="base"
+        is-new="true"
+        name={this.name}
+        value={this.value}
+      ></color-gen-variable-selector>,
+      <color-gen-css-text header={false} cssText={this.cssText}></color-gen-css-text>,
     ];
   }
-
 }
 
 const DEFAULT_CSS_TEXT = `

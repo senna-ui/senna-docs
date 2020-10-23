@@ -1,7 +1,7 @@
 import { Component, Prop, h } from '@stencil/core';
 
 @Component({
-  tag: 'docs-tab'
+  tag: 'docs-tab',
 })
 export class DocsTab {
   @Prop({ reflectToAttr: true }) tab!: string;
@@ -11,12 +11,12 @@ export class DocsTab {
     return {
       role: 'tabpanel',
       class: {
-        'Tabs-tab': true
-      }
+        'Tabs-tab': true,
+      },
     };
   }
 
   render() {
-    return <slot/>;
+    return <slot />;
   }
 }

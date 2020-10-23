@@ -1,12 +1,14 @@
 import Prism from 'prismjs';
-const loadLanguages = require('prismjs/components/'); // tslint:disable-line
+
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const loadLanguages = require('prismjs/components/');
 
 export default (code: string, info?: string) => {
-  const [lang] = info !== undefined ? info.split(/\s+/).map(s => s.toLowerCase()) : [null];
+  const [lang] =
+    typeof info === 'undefined' ? [null] : info.split(/\s+/).map(s => s.toLowerCase());
   const isShell = lang !== null ? shells.includes(lang) : false;
   const language = isShell ? 'shell' : lang;
 
-  // tslint:disable-next-line
   if (!language || Prism.languages[language] === undefined) {
     return `
 <docs-code language=${language}>
@@ -22,30 +24,19 @@ export default (code: string, info?: string) => {
 `;
 };
 
-loadLanguages([
-  'bash',
-  'json',
-  'tsx',
-  'typescript',
-  'scss'
-]);
+loadLanguages(['bash', 'json', 'tsx', 'typescript', 'scss']);
 
 // `shell` is an alias of `bash`, so we have to extend `bash`.
-Prism.languages.bash['prompt'] = /^\s*[\$#]\s+/gm;
+Prism.languages.bash['prompt'] = /^\s*[$#]\s+/gm;
 
-const shells = [
-  'shell',
-  'bash',
-  'sh'
-];
+const shells = ['shell', 'bash', 'sh'];
 
-const escape = (code: string) =>
-  code.replace(/[&<>"']/g, char => escapeMap[char]);
+const escape = (code: string) => code.replace(/[&<>"']/g, char => escapeMap[char]);
 
-const escapeMap: { [key: string]: string; } = {
+const escapeMap: { [key: string]: string } = {
   '&': '&amp;',
   '<': '&lt;',
   '>': '&gt;',
   '"': '&quot;',
-  '\'': '&#39;'
+  "'": '&#39;',
 };

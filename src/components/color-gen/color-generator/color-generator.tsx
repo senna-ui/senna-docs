@@ -1,15 +1,15 @@
-import { Component, Element, Event, EventEmitter, Listen, State, h } from '@stencil/core';
+import type { EventEmitter } from '@stencil/core';
+import { Component, Element, Event, Listen, State, h } from '@stencil/core';
 
-import { ColorVariable } from '../color-variables';
+import type { ColorVariable } from '../color-variables';
 import { convertCssToColors, generateColor, updateCssText } from '../parse-css';
 
 @Component({
   tag: 'color-generator',
   styleUrl: 'color-generator.css',
-  shadow: true
+  shadow: true,
 })
 export class ColorGenerator {
-
   @Element() el!: HTMLElement;
   @Event() demoMessage!: EventEmitter;
   @State() colors: ColorVariable[] = [];
@@ -34,9 +34,13 @@ export class ColorGenerator {
       shade: '-shade',
       tint: '-tint',
     };
-    const keys = Object.keys(attrMap) as any as (keyof typeof attrMap)[];
+    const keys = (Object.keys(attrMap) as any) as (keyof typeof attrMap)[];
     for (const key of keys) {
-      this.cssText = updateCssText(colorProperty + attrMap[key], this.cssText, genColor[key]);
+      this.cssText = updateCssText(
+        colorProperty + attrMap[key],
+        this.cssText,
+        genColor[key]
+      );
     }
 
     this.demoMessage.emit({ cssText: this.cssText });
@@ -59,17 +63,16 @@ export class ColorGenerator {
 
   componentDidLoad() {
     this.demoMessage.emit({
-      cssText: this.cssText
+      cssText: this.cssText,
     });
   }
 
   render() {
     return [
       <color-gen-select-colors colors={this.colors}></color-gen-select-colors>,
-      <color-gen-css-text cssText={this.cssText}></color-gen-css-text>
+      <color-gen-css-text cssText={this.cssText}></color-gen-css-text>,
     ];
   }
-
 }
 
 const DEFAULT_CSS_TEXT = `

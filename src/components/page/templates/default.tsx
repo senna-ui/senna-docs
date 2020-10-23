@@ -10,7 +10,7 @@ export default (props: { [key: string]: any }) => {
       {page.renderTitle !== false ? <h1>{page.title}</h1> : null}
       {page.tableOfContents !== false ? (
         <div class="page-meta">
-          <docs-table-of-contents links={page.headings} basepath={page.path}/>
+          <docs-table-of-contents links={page.headings} basepath={page.path} />
           <internal-ad></internal-ad>
         </div>
       ) : null}
