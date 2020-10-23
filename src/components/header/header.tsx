@@ -49,11 +49,11 @@ export class DocsHeader {
               >
                 {l10n.getString('header-guide')}
               </stencil-route-link>
-              <stencil-route-link
-                url="/docs/components"
-                urlMatch={['/docs/api', '/docs/components']}
-              >
+              {/*<stencil-route-link url="/docs/components" urlMatch={['/docs/components']}>
                 {l10n.getString('header-components')}
+              </stencil-route-link>*/}
+              <stencil-route-link url="/docs/api" urlMatch={['/docs/api']}>
+                API
               </stencil-route-link>
             </div>
           </nav>

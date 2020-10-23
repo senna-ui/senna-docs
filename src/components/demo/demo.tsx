@@ -6,7 +6,7 @@ import { Component, Listen, Prop, h } from '@stencil/core';
 })
 export class DocsDemo {
   @Prop() url!: string;
-  @Prop() source!: string;
+  @Prop() source = '';
 
   iframe!: HTMLIFrameElement;
   iframeLoaded = false;
@@ -34,6 +34,9 @@ export class DocsDemo {
   };
 
   renderSourceLink() {
+    if (!this.source.length) {
+      return null;
+    }
     return (
       <a href={this.source} class="docs-demo-source" target="_blank" title="Demo Source">
         <ion-icon name="open" /> View Source

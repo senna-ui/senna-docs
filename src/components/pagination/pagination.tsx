@@ -8,7 +8,7 @@ import { BackArrow, ForwardArrow } from '../../icons';
   styleUrl: 'pagination.css',
 })
 export class DocsPagination {
-  @Prop() page: Page = { title: null, body: null };
+  @Prop() page: Page = { title: undefined, body: undefined };
 
   render() {
     const { previousText, previousUrl, nextText, nextUrl } = this.page;

@@ -52,6 +52,8 @@ export namespace Components {
         "contributors": string[];
         "link": (contributor: string) => string;
     }
+    interface DocsApiNav {
+    }
     interface DocsButton {
         "href"?: string;
         "round": boolean;
@@ -246,6 +248,12 @@ declare global {
     var HTMLContributorListElement: {
         prototype: HTMLContributorListElement;
         new (): HTMLContributorListElement;
+    };
+    interface HTMLDocsApiNavElement extends Components.DocsApiNav, HTMLStencilElement {
+    }
+    var HTMLDocsApiNavElement: {
+        prototype: HTMLDocsApiNavElement;
+        new (): HTMLDocsApiNavElement;
     };
     interface HTMLDocsButtonElement extends Components.DocsButton, HTMLStencilElement {
     }
@@ -452,6 +460,7 @@ declare global {
         "command-output": HTMLCommandOutputElement;
         "command-prompt": HTMLCommandPromptElement;
         "contributor-list": HTMLContributorListElement;
+        "docs-api-nav": HTMLDocsApiNavElement;
         "docs-button": HTMLDocsButtonElement;
         "docs-card": HTMLDocsCardElement;
         "docs-cards": HTMLDocsCardsElement;
@@ -533,6 +542,8 @@ declare namespace LocalJSX {
         "contributors"?: string[];
         "link"?: (contributor: string) => string;
     }
+    interface DocsApiNav {
+    }
     interface DocsButton {
         "href"?: string;
         "round"?: boolean;
@@ -562,7 +573,7 @@ declare namespace LocalJSX {
         "user": string;
     }
     interface DocsDemo {
-        "source": string;
+        "source"?: string;
         "url": string;
     }
     interface DocsDropdown {
@@ -666,6 +677,7 @@ declare namespace LocalJSX {
         "command-output": CommandOutput;
         "command-prompt": CommandPrompt;
         "contributor-list": ContributorList;
+        "docs-api-nav": DocsApiNav;
         "docs-button": DocsButton;
         "docs-card": DocsCard;
         "docs-cards": DocsCards;
@@ -716,6 +728,7 @@ declare module "@stencil/core" {
             "command-output": LocalJSX.CommandOutput & JSXBase.HTMLAttributes<HTMLCommandOutputElement>;
             "command-prompt": LocalJSX.CommandPrompt & JSXBase.HTMLAttributes<HTMLCommandPromptElement>;
             "contributor-list": LocalJSX.ContributorList & JSXBase.HTMLAttributes<HTMLContributorListElement>;
+            "docs-api-nav": LocalJSX.DocsApiNav & JSXBase.HTMLAttributes<HTMLDocsApiNavElement>;
             "docs-button": LocalJSX.DocsButton & JSXBase.HTMLAttributes<HTMLDocsButtonElement>;
             "docs-card": LocalJSX.DocsCard & JSXBase.HTMLAttributes<HTMLDocsCardElement>;
             "docs-cards": LocalJSX.DocsCards & JSXBase.HTMLAttributes<HTMLDocsCardsElement>;

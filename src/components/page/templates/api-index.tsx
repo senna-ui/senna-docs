@@ -1,6 +1,6 @@
 import { h } from '@stencil/core';
 
-import components from '../data/api-reference.json';
+import apiMenu from '../../../api-menu.json';
 import { toHypertext } from '../to-hypertext';
 
 const listStyle = {
@@ -15,9 +15,9 @@ export default (props: { [key: string]: any }) => {
       <section class="markdown-content">{toHypertext(h, props.page.body)}</section>
       <hr />
       <ul style={listStyle}>
-        {components.map(([name, href]) => (
-          <li key={name}>
-            <stencil-route-link url={href}>{name}</stencil-route-link>
+        {apiMenu.map(({ title, path }: { title: string; path: string }) => (
+          <li key={path}>
+            <stencil-route-link url={path}>{title}</stencil-route-link>
           </li>
         ))}
       </ul>
