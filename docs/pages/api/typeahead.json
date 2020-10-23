@@ -1,8 +1,8 @@
 {
   "title": "sen-typeahead",
   "path": "/docs/api/typeahead",
-  "demoUrl": "/docs/demos/api/typeahead/index.html",
-  "demoSourceUrl": "https://github.com/senna-ui/senna-docs/tree/master/src/demos/api/typeahead/index.html",
+  "codePenLinks": [],
+  "menu": null,
   "body": [
     "div",
     null

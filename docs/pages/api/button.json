@@ -1,8 +1,8 @@
 {
   "title": "sen-button",
   "path": "/docs/api/button",
-  "demoUrl": "/docs/demos/api/button/index.html",
-  "demoSourceUrl": "https://github.com/senna-ui/senna-docs/tree/master/src/demos/api/button/index.html",
+  "codePenLinks": [],
+  "menu": null,
   "body": [
     "div",
     null,

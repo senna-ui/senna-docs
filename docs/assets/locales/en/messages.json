@@ -36,9 +36,14 @@
   "menu-contributing-coc": "Code of Conduct",
 
   "menu-api-button": "Button",
+  "menu-api-buttons": "Buttons",
+  "menu-api-app": "App",
+  "menu-api-app-menu": "Menu",
   "menu-api-grid": "Grid",
-  "menu-api-index": "API Index",
   "menu-api-forms": "Forms",
   "menu-api-layout": "Layout",
-  "menu-api-typography": "Typography"
+  "menu-api-layout-card": "Card",
+  "menu-api-layout-grid": "Grid system",
+  "menu-api-typography": "Typography",
+  "menu-api-index": "API Index"
 }
