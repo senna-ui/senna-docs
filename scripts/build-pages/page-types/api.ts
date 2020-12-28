@@ -90,7 +90,16 @@ const getDocsTagJson = <T>(
   propName: string,
   docsTags: JsonDocsTag[],
   fallback = 'null'
-): T => JSON.parse(docsTags.find(({ name }) => name === propName)?.text || fallback) as T;
+): T => {
+  try {
+    return JSON.parse(
+      docsTags.find(({ name }) => name === propName)?.text || fallback
+    ) as T;
+  } catch (e) {
+    console.error('Error parsing JSON in doc tag:', propName, docsTags);
+    throw e;
+  }
+};
 
 const codePenToDemoUrls = ({
   docsTags = [],

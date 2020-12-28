@@ -48,7 +48,8 @@ export class ApiNav {
     if (subGroupKey === 'ungrouped') {
       return subGroup.map(item => this.item(item));
     }
-    const text = l10n.getString(`menu-api-${key}-${subGroupKey}`);
+    const keyName = `menu-api-${key}-${subGroupKey}`;
+    const text = l10n.getString(keyName) || keyName;
     return (
       <li key={key + subGroupKey}>
         <section>
@@ -72,19 +73,25 @@ export class ApiNav {
       }[]
     >
   ) {
-    const text = l10n.getString(`menu-api-${key}`);
+    const keyName = `menu-api-${key}`;
+    const text = l10n.getString(keyName) || keyName;
+    const children =
+      key === 'ungrouped'
+        ? Object.values(group)
+            .reduce((a, b) => a.concat(b), [])
+            .map(item => this.item(item))
+        : Object.entries(group).map(([subGroupKey, subGroup]) =>
+            this.renderSubGroup(key, subGroupKey, subGroup)
+          );
+    if (children.length === 0) {
+      return null;
+    }
     return (
       <li key={key}>
         <section>
-          {text !== undefined ? <header class="Nav-header">{text}</header> : null}
+          {children && <header class="Nav-header">{text}</header>}
           <ul class="Nav-subnav" style={{ '--level': '1' }}>
-            {key === 'ungrouped'
-              ? Object.values(group)
-                  .reduce((a, b) => a.concat(b), [])
-                  .map(item => this.item(item))
-              : Object.entries(group).map(([subGroupKey, subGroup]) =>
-                  this.renderSubGroup(key, subGroupKey, subGroup)
-                )}
+            {children}
           </ul>
         </section>
       </li>
@@ -92,7 +99,7 @@ export class ApiNav {
   }
 
   render() {
-    const { ungrouped, ...grouped } = this.grouped;
+    const { ungrouped = [], ...grouped } = this.grouped;
     const entries = [['ungrouped', ungrouped], ...Object.entries(grouped)];
     return (
       <ul class="Nav">{entries.map(([key, group]) => this.renderGroup(key, group))}</ul>

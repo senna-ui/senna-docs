@@ -131,9 +131,6 @@ export const updatePageHtmlToHypertext = (page: Page): Page => {
 };
 
 const writePage = (page: Page): Promise<void> => {
-  if (listrStatus?._task?.output !== 'Writing Pages') {
-    listrStatus.output = 'Writing Pages';
-  }
   return fs.outputJson(toFilePath(page.path), page, {
     spaces: 2,
   });
