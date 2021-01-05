@@ -3,7 +3,7 @@
   "github": {
     "path": "src/pages/react/overview.md",
     "contributors": [],
-    "lastUpdated": "2020-10-23T08:16:38.000Z"
+    "lastUpdated": "2021-01-05T10:30:56.000Z"
   },
   "nextText": "Quickstart",
   "nextUrl": "/docs/react/quickstart",
@@ -15,7 +15,109 @@
       {
         "class": "intro"
       },
-      "TODO"
+      "TODO\nOverview"
+    ],
+    " ",
+    [
+      "h1",
+      {
+        "id": "installation"
+      },
+      " ",
+      [
+        "a",
+        {
+          "href": "#installation"
+        },
+        "Installation"
+      ],
+      " "
+    ],
+    " ",
+    [
+      "p",
+      null,
+      "Senna UI React is available as an ",
+      [
+        "a",
+        {
+          "href": "https://www.npmjs.com/package/@senna-ui/react"
+        },
+        "npm package"
+      ],
+      " To install and save in your ",
+      [
+        "code",
+        null,
+        "package.json"
+      ],
+      " dependencies, run:"
+    ],
+    " ",
+    [
+      "docs-code",
+      {
+        "language": "shell"
+      },
+      " ",
+      [
+        "pre",
+        null,
+        [
+          "code",
+          null,
+          "// with ",
+          [
+            "span",
+            {
+              "class": "token function"
+            },
+            "npm"
+          ],
+          "\n",
+          [
+            "span",
+            {
+              "class": "token function"
+            },
+            "npm"
+          ],
+          " ",
+          [
+            "span",
+            {
+              "class": "token function"
+            },
+            "install"
+          ],
+          " @senna-ui/react\n\n// with ",
+          [
+            "span",
+            {
+              "class": "token function"
+            },
+            "yarn"
+          ],
+          "\n",
+          [
+            "span",
+            {
+              "class": "token function"
+            },
+            "yarn"
+          ],
+          " ",
+          [
+            "span",
+            {
+              "class": "token function"
+            },
+            "add"
+          ],
+          " @senna-ui/react"
+        ]
+      ],
+      " "
     ]
   ],
   "title": "Senna React Overview",

@@ -3,10 +3,10 @@
   "github": {
     "path": "src/pages/react.md",
     "contributors": [],
-    "lastUpdated": "2020-10-23T08:16:38.000Z"
+    "lastUpdated": "2021-01-05T10:30:56.000Z"
   },
   "title": "Senna React",
-  "renderTitle": false,
+  "renderTitle": true,
   "tableOfContents": false,
   "meta": {
     "image": "/docs/assets/img/logo.png",
@@ -18,15 +18,15 @@
     [
       "h2",
       {
-        "id": "senna-react"
+        "id": "installation"
       },
       " ",
       [
         "a",
         {
-          "href": "#senna-react"
+          "href": "#installation"
         },
-        "Senna react"
+        "Installation"
       ],
       " "
     ],
@@ -34,13 +34,692 @@
     [
       "p",
       null,
-      "TODO"
+      "Senna UI React is available as an ",
+      [
+        "a",
+        {
+          "href": "https://www.npmjs.com/package/@senna-ui/react"
+        },
+        "npm package"
+      ],
+      " To install and save in your ",
+      [
+        "code",
+        null,
+        "package.json"
+      ],
+      " dependencies, run:"
+    ],
+    " ",
+    [
+      "docs-code",
+      {
+        "language": "shell"
+      },
+      " ",
+      [
+        "pre",
+        null,
+        [
+          "code",
+          null,
+          "// with ",
+          [
+            "span",
+            {
+              "class": "token function"
+            },
+            "npm"
+          ],
+          [
+            "span",
+            {
+              "class": "token prompt"
+            },
+            "\n$ "
+          ],
+          [
+            "span",
+            {
+              "class": "token function"
+            },
+            "npm"
+          ],
+          " ",
+          [
+            "span",
+            {
+              "class": "token function"
+            },
+            "install"
+          ],
+          " @senna-ui/react\n\n// with ",
+          [
+            "span",
+            {
+              "class": "token function"
+            },
+            "yarn"
+          ],
+          [
+            "span",
+            {
+              "class": "token prompt"
+            },
+            "\n$ "
+          ],
+          [
+            "span",
+            {
+              "class": "token function"
+            },
+            "yarn"
+          ],
+          " ",
+          [
+            "span",
+            {
+              "class": "token function"
+            },
+            "add"
+          ],
+          " @senna-ui/react"
+        ]
+      ],
+      " "
+    ],
+    " ",
+    [
+      "h2",
+      {
+        "id": "usage"
+      },
+      " ",
+      [
+        "a",
+        {
+          "href": "#usage"
+        },
+        "Usage"
+      ],
+      " "
+    ],
+    " ",
+    [
+      "docs-code",
+      {
+        "language": "js"
+      },
+      " ",
+      [
+        "pre",
+        null,
+        [
+          "code",
+          null,
+          [
+            "span",
+            {
+              "class": "token keyword"
+            },
+            "import"
+          ],
+          " React ",
+          [
+            "span",
+            {
+              "class": "token keyword"
+            },
+            "from"
+          ],
+          " ",
+          [
+            "span",
+            {
+              "class": "token string"
+            },
+            "'react'"
+          ],
+          [
+            "span",
+            {
+              "class": "token punctuation"
+            },
+            ";"
+          ],
+          "\n",
+          [
+            "span",
+            {
+              "class": "token keyword"
+            },
+            "import"
+          ],
+          " ReactDOM ",
+          [
+            "span",
+            {
+              "class": "token keyword"
+            },
+            "from"
+          ],
+          " ",
+          [
+            "span",
+            {
+              "class": "token string"
+            },
+            "'react-dom'"
+          ],
+          [
+            "span",
+            {
+              "class": "token punctuation"
+            },
+            ";"
+          ],
+          "\n",
+          [
+            "span",
+            {
+              "class": "token keyword"
+            },
+            "import"
+          ],
+          " ",
+          [
+            "span",
+            {
+              "class": "token punctuation"
+            },
+            "{"
+          ],
+          "\n  SenApp",
+          [
+            "span",
+            {
+              "class": "token punctuation"
+            },
+            ","
+          ],
+          "\n  SenButton",
+          [
+            "span",
+            {
+              "class": "token punctuation"
+            },
+            ","
+          ],
+          "\n",
+          [
+            "span",
+            {
+              "class": "token punctuation"
+            },
+            "}"
+          ],
+          " ",
+          [
+            "span",
+            {
+              "class": "token keyword"
+            },
+            "from"
+          ],
+          " ",
+          [
+            "span",
+            {
+              "class": "token string"
+            },
+            "\"@senna-ui/react\""
+          ],
+          [
+            "span",
+            {
+              "class": "token punctuation"
+            },
+            ";"
+          ],
+          [
+            "span",
+            {
+              "class": "token punctuation"
+            },
+            ";"
+          ],
+          "\n\n",
+          [
+            "span",
+            {
+              "class": "token keyword"
+            },
+            "function"
+          ],
+          " ",
+          [
+            "span",
+            {
+              "class": "token function"
+            },
+            "App"
+          ],
+          [
+            "span",
+            {
+              "class": "token punctuation"
+            },
+            "("
+          ],
+          [
+            "span",
+            {
+              "class": "token punctuation"
+            },
+            ")"
+          ],
+          " ",
+          [
+            "span",
+            {
+              "class": "token punctuation"
+            },
+            "{"
+          ],
+          "\n  ",
+          [
+            "span",
+            {
+              "class": "token keyword"
+            },
+            "const"
+          ],
+          " ",
+          [
+            "span",
+            {
+              "class": "token function-variable function"
+            },
+            "sayHello"
+          ],
+          " ",
+          [
+            "span",
+            {
+              "class": "token operator"
+            },
+            "="
+          ],
+          " ",
+          [
+            "span",
+            {
+              "class": "token punctuation"
+            },
+            "("
+          ],
+          [
+            "span",
+            {
+              "class": "token punctuation"
+            },
+            ")"
+          ],
+          " ",
+          [
+            "span",
+            {
+              "class": "token operator"
+            },
+            "=>"
+          ],
+          " console",
+          [
+            "span",
+            {
+              "class": "token punctuation"
+            },
+            "."
+          ],
+          [
+            "span",
+            {
+              "class": "token function"
+            },
+            "log"
+          ],
+          [
+            "span",
+            {
+              "class": "token punctuation"
+            },
+            "("
+          ],
+          [
+            "span",
+            {
+              "class": "token string"
+            },
+            "\"Hello from Senna!\""
+          ],
+          [
+            "span",
+            {
+              "class": "token punctuation"
+            },
+            ")"
+          ],
+          "\n  ",
+          [
+            "span",
+            {
+              "class": "token keyword"
+            },
+            "return"
+          ],
+          " ",
+          [
+            "span",
+            {
+              "class": "token punctuation"
+            },
+            "("
+          ],
+          "\n    ",
+          [
+            "span",
+            {
+              "class": "token operator"
+            },
+            "<"
+          ],
+          "SenApp",
+          [
+            "span",
+            {
+              "class": "token operator"
+            },
+            ">"
+          ],
+          "\n      ",
+          [
+            "span",
+            {
+              "class": "token operator"
+            },
+            "<"
+          ],
+          "SenButton onClick",
+          [
+            "span",
+            {
+              "class": "token operator"
+            },
+            "="
+          ],
+          [
+            "span",
+            {
+              "class": "token punctuation"
+            },
+            "{"
+          ],
+          "sayHello",
+          [
+            "span",
+            {
+              "class": "token punctuation"
+            },
+            "}"
+          ],
+          [
+            "span",
+            {
+              "class": "token operator"
+            },
+            ">"
+          ],
+          "Hello Senna",
+          [
+            "span",
+            {
+              "class": "token operator"
+            },
+            "<"
+          ],
+          [
+            "span",
+            {
+              "class": "token operator"
+            },
+            "/"
+          ],
+          "SenButton",
+          [
+            "span",
+            {
+              "class": "token operator"
+            },
+            ">"
+          ],
+          "\n    ",
+          [
+            "span",
+            {
+              "class": "token operator"
+            },
+            "<"
+          ],
+          [
+            "span",
+            {
+              "class": "token operator"
+            },
+            "/"
+          ],
+          "SenApp",
+          [
+            "span",
+            {
+              "class": "token operator"
+            },
+            ">"
+          ],
+          "\n  ",
+          [
+            "span",
+            {
+              "class": "token punctuation"
+            },
+            ")"
+          ],
+          [
+            "span",
+            {
+              "class": "token punctuation"
+            },
+            ";"
+          ],
+          "\n",
+          [
+            "span",
+            {
+              "class": "token punctuation"
+            },
+            "}"
+          ],
+          "\n\nReactDOM",
+          [
+            "span",
+            {
+              "class": "token punctuation"
+            },
+            "."
+          ],
+          [
+            "span",
+            {
+              "class": "token function"
+            },
+            "render"
+          ],
+          [
+            "span",
+            {
+              "class": "token punctuation"
+            },
+            "("
+          ],
+          [
+            "span",
+            {
+              "class": "token operator"
+            },
+            "<"
+          ],
+          "App ",
+          [
+            "span",
+            {
+              "class": "token operator"
+            },
+            "/"
+          ],
+          [
+            "span",
+            {
+              "class": "token operator"
+            },
+            ">"
+          ],
+          [
+            "span",
+            {
+              "class": "token punctuation"
+            },
+            ","
+          ],
+          " document",
+          [
+            "span",
+            {
+              "class": "token punctuation"
+            },
+            "."
+          ],
+          [
+            "span",
+            {
+              "class": "token function"
+            },
+            "querySelector"
+          ],
+          [
+            "span",
+            {
+              "class": "token punctuation"
+            },
+            "("
+          ],
+          [
+            "span",
+            {
+              "class": "token string"
+            },
+            "'#app'"
+          ],
+          [
+            "span",
+            {
+              "class": "token punctuation"
+            },
+            ")"
+          ],
+          [
+            "span",
+            {
+              "class": "token punctuation"
+            },
+            ")"
+          ],
+          [
+            "span",
+            {
+              "class": "token punctuation"
+            },
+            ";"
+          ]
+        ]
+      ],
+      " "
+    ],
+    " ",
+    [
+      "h2",
+      {
+        "id": "naming-conventions"
+      },
+      " ",
+      [
+        "a",
+        {
+          "href": "#naming-conventions"
+        },
+        "Naming Conventions"
+      ],
+      " "
+    ],
+    " ",
+    [
+      "p",
+      null,
+      "Senna UI uses camelcased adaptions of the native web component names documented in the ",
+      [
+        "stencil-route-link",
+        {
+          "url": "/docs/api/"
+        },
+        "API documentation"
+      ],
+      ". \nMeaning ",
+      [
+        "code",
+        null,
+        "<sen-app>"
+      ],
+      " becomes ",
+      [
+        "code",
+        null,
+        "<SenApp>"
+      ],
+      " in React and ",
+      [
+        "code",
+        null,
+        "<sen-input clear-input>"
+      ],
+      " becomes ",
+      [
+        "code",
+        null,
+        "<SenInput clearInput >"
+      ],
+      " "
     ]
   ],
   "headings": [
     {
-      "text": "Senna react",
-      "href": "#senna-react"
+      "text": "Installation",
+      "href": "#installation"
+    },
+    {
+      "text": "Usage",
+      "href": "#usage"
+    },
+    {
+      "text": "Naming Conventions",
+      "href": "#naming-conventions"
     }
   ],
   "pageClass": "page--docs-react"

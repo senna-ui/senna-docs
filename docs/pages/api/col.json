@@ -1,8 +1,15 @@
 {
   "title": "sen-col",
   "path": "/docs/api/col",
+  "demo": {
+    "url": "https://codepen.io/senna-ui/embed/eYdydGJ?height=265&theme-id=light&default-tab=result",
+    "source": "https://codepen.io/senna-ui/pen/eYdydGJ?editors=1000"
+  },
   "codePenLinks": [],
-  "menu": null,
+  "menu": {
+    "group": "layout",
+    "subGroup": "grid"
+  },
   "body": [
     "div",
     null,
@@ -553,7 +560,16 @@
     null,
     "Columns are cellular components of the [grid](../grid) system and go inside of a [row](../row).\nThey will expand to fill their row. All content within a grid should go inside of a column.\n\nSee [Grid Layout](/docs/layout/grid) for more information."
   ],
-  "docsTags": [],
+  "docsTags": [
+    {
+      "text": "{ \"user\": \"senna-ui\", \"id\": \"eYdydGJ\" }",
+      "name": "docsCodePen"
+    },
+    {
+      "text": "{ \"group\": \"layout\", \"subGroup\": \"grid\" }",
+      "name": "docsMenu"
+    }
+  ],
   "events": [],
   "listeners": [
     {

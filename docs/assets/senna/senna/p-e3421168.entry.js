@@ -1,1 +1,0 @@
-import{r as t,h as s,H as r}from"./p-0466bc77.js";const o=class{constructor(s){t(this,s)}render(){return s(r,{class:"btn-group"},s("slot",null))}};o.style=":host{display:flex}::slotted(sen-button:first-child){--border-right-radius:0}::slotted(sen-button:last-child){--border-left-radius:0}";export{o as sen_button_group}

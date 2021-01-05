@@ -1,0 +1,1 @@
+import{r as s,h as t,H as o}from"./p-940be83a.js";const n=class{constructor(t){s(this,t)}render(){return t(o,null,t("p",null,t("slot",null)))}};n.style=":host{display:block;flex:0 0 100%}:host p{font-size:11.375px}@media (min-width: 768px){:host p{font-size:13px}}@media (min-width: 992px){:host p{font-size:16.25px}}";export{n as sen_card_body}

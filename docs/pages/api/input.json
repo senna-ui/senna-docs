@@ -1,8 +1,15 @@
 {
   "title": "sen-input",
   "path": "/docs/api/input",
+  "demo": {
+    "url": "https://codepen.io/senna-ui/embed/qBapaVj?height=265&theme-id=light&default-tab=result",
+    "source": "https://codepen.io/senna-ui/pen/qBapaVj?editors=1000"
+  },
   "codePenLinks": [],
-  "menu": null,
+  "menu": {
+    "group": "forms",
+    "subGroup": "input"
+  },
   "body": [
     "div",
     null
@@ -849,7 +856,16 @@
   "encapsulation": "scoped",
   "tag": "sen-input",
   "docs": "",
-  "docsTags": [],
+  "docsTags": [
+    {
+      "text": "{ \"user\": \"senna-ui\", \"id\": \"qBapaVj\" }",
+      "name": "docsCodePen"
+    },
+    {
+      "text": "{ \"group\": \"forms\", \"subGroup\": \"input\" }",
+      "name": "docsMenu"
+    }
+  ],
   "events": [
     {
       "event": "senChange",

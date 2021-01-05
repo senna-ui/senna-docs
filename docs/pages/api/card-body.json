@@ -1,13 +1,151 @@
 {
   "title": "sen-card-body",
   "path": "/docs/api/card-body",
+  "demo": {
+    "url": "https://codepen.io/senna-ui/embed/wvzpgoe?height=265&theme-id=light&default-tab=result",
+    "source": "https://codepen.io/senna-ui/pen/wvzpgoe?editors=1000"
+  },
   "codePenLinks": [],
-  "menu": null,
+  "menu": {
+    "group": "card"
+  },
   "body": [
     "div",
     null
   ],
-  "usage": {},
+  "usage": {
+    "example": [
+      "div",
+      null,
+      [
+        "docs-code",
+        {
+          "language": "html"
+        },
+        "\n  ",
+        [
+          "pre",
+          null,
+          [
+            "code",
+            null,
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "<"
+                ],
+                "sen-card"
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ],
+            "\n  ",
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "<"
+                ],
+                "sen-card-body"
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ],
+            "\n    Some card body content\n  ",
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "</"
+                ],
+                "sen-card-body"
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ],
+            "\n",
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "</"
+                ],
+                "sen-card"
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ]
+          ]
+        ],
+        "\n"
+      ]
+    ]
+  },
   "props": [],
   "methods": [],
   "template": "api",
@@ -15,7 +153,16 @@
   "encapsulation": "shadow",
   "tag": "sen-card-body",
   "docs": "",
-  "docsTags": [],
+  "docsTags": [
+    {
+      "text": "{ \"user\": \"senna-ui\", \"id\": \"wvzpgoe\" }",
+      "name": "docsCodePen"
+    },
+    {
+      "text": "{ \"group\": \"card\" }",
+      "name": "docsMenu"
+    }
+  ],
   "events": [],
   "listeners": [],
   "styles": [],

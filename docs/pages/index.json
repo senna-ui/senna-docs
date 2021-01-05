@@ -3,18 +3,16 @@
   "github": {
     "path": "src/pages/index.md",
     "contributors": [],
-    "lastUpdated": "2020-10-23T08:16:38.000Z"
+    "lastUpdated": "2021-01-05T10:30:56.000Z"
   },
   "title": "Senna UI",
   "meta": {
     "image": "/docs/assets/img/meta/open-graph.png",
-    "description": "TODO"
+    "description": "Senna UI is a design system and UI framework to build high-quality, high-productivity user interfaces."
   },
   "tableOfContents": false,
-  "demoUrl": "https://demo-url/",
-  "demoSourceUrl": "https://demo-source-url/",
-  "nextText": "Environment Setup",
-  "nextUrl": "/docs/intro/environment",
+  "nextText": "First steps with React",
+  "nextUrl": "/docs/react",
   "body": [
     "div",
     null,
@@ -23,9 +21,125 @@
       {
         "class": "intro"
       },
-      "TODO"
+      "Senna UI is a design system and UI framework to build high-quality, high-productivity user interfaces."
+    ],
+    " ",
+    [
+      "p",
+      {
+        "class": "intro"
+      },
+      "It is built around three core principles:"
+    ],
+    " ",
+    [
+      "ul",
+      null,
+      " ",
+      [
+        "li",
+        null,
+        [
+          "strong",
+          null,
+          "Speed"
+        ],
+        ": Focus on keyboard input, high performance and good support for shortcuts"
+      ],
+      " ",
+      [
+        "li",
+        null,
+        [
+          "strong",
+          null,
+          "Overview"
+        ],
+        ": Greater UI density gives room for more information on available screen real estate. Multi-context views empower users to view relevant information on one screen."
+      ],
+      " ",
+      [
+        "li",
+        null,
+        [
+          "strong",
+          null,
+          "Discoverability"
+        ],
+        ": Powerful built-in search allows easy discovery of functionality and quick navigation. The UI actively assists new users with built-in documentation & constant feedback."
+      ],
+      " "
+    ],
+    " ",
+    [
+      "h2",
+      {
+        "id": "based-on-web-standards"
+      },
+      " ",
+      [
+        "a",
+        {
+          "href": "#based-on-web-standards"
+        },
+        "Based on Web Standards"
+      ],
+      " "
+    ],
+    " ",
+    [
+      "p",
+      null,
+      "Senna UI is based on ",
+      [
+        "a",
+        {
+          "href": "https://www.webcomponents.org/introduction"
+        },
+        "Web Components"
+      ],
+      " for great performance and robust styling."
+    ],
+    " ",
+    [
+      "h2",
+      {
+        "id": "framework-compatibility"
+      },
+      " ",
+      [
+        "a",
+        {
+          "href": "#framework-compatibility"
+        },
+        "Framework Compatibility"
+      ],
+      " "
+    ],
+    " ",
+    [
+      "p",
+      null,
+      "Senna UI at the moment can be used standalone with pure Javascript or with React (",
+      [
+        "a",
+        {
+          "href": "https://www.npmjs.com/package/@senna-ui/react"
+        },
+        "@senna-ui/react"
+      ],
+      "). Support for Angular and Vue is on the roadmap. "
     ]
   ],
-  "headings": [],
+  "headings": [
+    {
+      "text": "Based on Web Standards",
+      "href": "#based-on-web-standards"
+    },
+    {
+      "text": "Framework Compatibility",
+      "href": "#framework-compatibility"
+    }
+  ],
   "pageClass": "page--docs-index"
 }

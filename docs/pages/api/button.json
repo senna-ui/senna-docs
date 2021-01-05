@@ -1,47 +1,287 @@
 {
   "title": "sen-button",
   "path": "/docs/api/button",
+  "demo": {
+    "url": "https://codepen.io/senna-ui/embed/YzGYNEW?height=265&theme-id=light&default-tab=result",
+    "source": "https://codepen.io/senna-ui/pen/YzGYNEW?editors=1000"
+  },
   "codePenLinks": [],
-  "menu": null,
+  "menu": {
+    "group": "buttons"
+  },
   "body": [
     "div",
-    null,
-    [
-      "p",
-      {
-        "class": "codepen intro",
-        "data-height": "309",
-        "data-theme-id": "dark",
-        "data-default-tab": "html,result",
-        "data-user": "casaper",
-        "data-slug-hash": "bGpXKWx",
-        "data-pen-title": "Senna-UI Button Example"
-      },
-      " ",
-      [
-        "span",
-        null,
-        [
-          "a",
-          {
-            "href": "https://codepen.io/casaper/pen/bGpXKWx"
-          },
-          " Senna-UI Button Example on CodePen"
-        ],
-        " "
-      ],
-      " "
-    ],
-    " ",
-    [
-      "template",
-      {
-        "async": "",
-        "src": "https://static.codepen.io/assets/embed/ei.js"
-      }
-    ]
+    null
   ],
-  "usage": {},
+  "usage": {
+    "examples": [
+      "div",
+      null,
+      [
+        "docs-code",
+        {
+          "language": "html"
+        },
+        "\n  ",
+        [
+          "pre",
+          null,
+          [
+            "code",
+            null,
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "<"
+                ],
+                "sen-button"
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ],
+            "Default",
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "</"
+                ],
+                "sen-button"
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ],
+            "\n\n",
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "<"
+                ],
+                "sen-button"
+              ],
+              " ",
+              [
+                "span",
+                {
+                  "class": "token attr-name"
+                },
+                "color"
+              ],
+              [
+                "span",
+                {
+                  "class": "token attr-value"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation attr-equals"
+                  },
+                  "="
+                ],
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "\""
+                ],
+                "primary",
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "\""
+                ]
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ],
+            "Primary",
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "</"
+                ],
+                "sen-button"
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ],
+            "\n\n",
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "<"
+                ],
+                "sen-button"
+              ],
+              " ",
+              [
+                "span",
+                {
+                  "class": "token attr-name"
+                },
+                "color"
+              ],
+              [
+                "span",
+                {
+                  "class": "token attr-value"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation attr-equals"
+                  },
+                  "="
+                ],
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "\""
+                ],
+                "primary",
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "\""
+                ]
+              ],
+              " ",
+              [
+                "span",
+                {
+                  "class": "token attr-name"
+                },
+                "disabled"
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ],
+            "Primary",
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "</"
+                ],
+                "sen-button"
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ]
+          ]
+        ],
+        "\n"
+      ]
+    ]
+  },
   "props": [
     {
       "name": "buttonType",
@@ -121,6 +361,25 @@
       ],
       "optional": false,
       "required": false
+    },
+    {
+      "name": "icon",
+      "type": "string | undefined",
+      "mutable": false,
+      "attr": "icon",
+      "reflectToAttr": false,
+      "docs": "<p>Icon to show</p>\n",
+      "docsTags": [],
+      "values": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "undefined"
+        }
+      ],
+      "optional": true,
+      "required": false
     }
   ],
   "methods": [],
@@ -128,53 +387,42 @@
   "filePath": "./src/components/button/button.tsx",
   "encapsulation": "shadow",
   "tag": "sen-button",
-  "docs": [
-    "div",
-    null,
-    [
-      "p",
-      {
-        "class": "codepen",
-        "data-height": "309",
-        "data-theme-id": "dark",
-        "data-default-tab": "html,result",
-        "data-user": "casaper",
-        "data-slug-hash": "bGpXKWx",
-        "data-pen-title": "Senna-UI Button Example"
-      },
-      "\n  ",
-      [
-        "span",
-        null,
-        [
-          "a",
-          {
-            "href": "https://codepen.io/casaper/pen/bGpXKWx"
-          },
-          "\n  Senna-UI Button Example on CodePen"
-        ],
-        " "
-      ],
-      "\n"
-    ],
-    "\n",
-    [
-      "template",
-      {
-        "async": "",
-        "src": "https://static.codepen.io/assets/embed/ei.js"
-      }
-    ]
+  "docs": "",
+  "docsTags": [
+    {
+      "text": "{ \"user\": \"senna-ui\", \"id\": \"YzGYNEW\" }",
+      "name": "docsCodePen"
+    },
+    {
+      "text": "{ \"group\": \"buttons\" }",
+      "name": "docsMenu"
+    }
   ],
-  "docsTags": [],
   "events": [],
   "listeners": [],
-  "styles": [],
+  "styles": [
+    {
+      "name": "--border-left-radius",
+      "annotation": "prop",
+      "docs": "Border radius of left bottom and top edge - default `3px`"
+    },
+    {
+      "name": "--border-right-radius",
+      "annotation": "prop",
+      "docs": "Border radius of right bottom and top edge - default `3px`"
+    }
+  ],
   "slots": [],
   "parts": [],
   "dependents": [],
-  "dependencies": [],
-  "dependencyGraph": {},
+  "dependencies": [
+    "sen-icon"
+  ],
+  "dependencyGraph": {
+    "sen-button": [
+      "sen-icon"
+    ]
+  },
   "headings": [],
   "pageClass": "page--docs-api-button"
 }

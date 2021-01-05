@@ -1,6 +1,8 @@
 import { ComponentInterface } from "../../stencil-public-runtime";
+/**
+ * @docsMenu { "group": "app" }
+ */
 export declare class App implements ComponentInterface {
   el: HTMLSenAppElement;
-  componentWillLoad(): void;
   render(): any;
 }

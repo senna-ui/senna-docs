@@ -12,6 +12,7 @@
     "./components/fieldset/fieldset.js",
     "./components/form-field/form-field.js",
     "./components/grid/grid.js",
+    "./components/icon/icon.js",
     "./components/input/input.js",
     "./components/menu/menu.js",
     "./components/menu-item/menu-item.js",

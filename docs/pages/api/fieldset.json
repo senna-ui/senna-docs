@@ -1,8 +1,15 @@
 {
   "title": "sen-fieldset",
   "path": "/docs/api/fieldset",
+  "demo": {
+    "url": "https://codepen.io/senna-ui/embed/qBapaVj?height=265&theme-id=light&default-tab=result",
+    "source": "https://codepen.io/senna-ui/pen/qBapaVj?editors=1000"
+  },
   "codePenLinks": [],
-  "menu": null,
+  "menu": {
+    "group": "forms",
+    "subGroup": "fieldset"
+  },
   "body": [
     "div",
     null
@@ -35,7 +42,16 @@
   "encapsulation": "shadow",
   "tag": "sen-fieldset",
   "docs": "",
-  "docsTags": [],
+  "docsTags": [
+    {
+      "text": "{ \"user\": \"senna-ui\", \"id\": \"qBapaVj\" }",
+      "name": "docsCodePen"
+    },
+    {
+      "text": "{ \"group\": \"forms\", \"subGroup\": \"fieldset\" }",
+      "name": "docsMenu"
+    }
+  ],
   "events": [],
   "listeners": [],
   "styles": [],

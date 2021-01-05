@@ -1,4 +1,4 @@
-import { r as registerInstance, h, H as Host } from './index-4e24c24c.js';
+import { r as registerInstance, h, H as Host } from './index-b3859636.js';
 
 const cardTitleCss = ":host{flex:0 0 100%}:host h1{font-weight:700;font-size:22.75px}@media (min-width: 768px){:host h1{font-size:26px}}@media (min-width: 992px){:host h1{font-size:32.5px}}";
 

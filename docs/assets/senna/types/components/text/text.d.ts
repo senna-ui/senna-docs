@@ -1,7 +1,7 @@
 import { ComponentInterface } from "../../stencil-public-runtime";
 import { FontWeight, TextAlign, TextTag, TextTransform } from "../../interface";
 /**
- * Text typography component
+ * @docsMenu { "group": "typography" }
  */
 export declare class Text implements ComponentInterface {
   /**

@@ -1,1 +1,0 @@
-import{r as t,h as s,H as e}from"./p-0466bc77.js";const n=class{constructor(s){t(this,s)}render(){return s(e,null,s("header",null,s("h1",null,s("slot",null))))}};n.style=":host{flex:0 0 100%}:host h1{font-weight:700;font-size:22.75px}@media (min-width: 768px){:host h1{font-size:26px}}@media (min-width: 992px){:host h1{font-size:32.5px}}";export{n as sen_card_title}

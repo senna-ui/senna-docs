@@ -1,4 +1,9 @@
 import { Component, Host, Prop, h } from "@stencil/core";
+/**
+ *
+ * @docsCodePen { "user": "senna-ui", "id": "eYdydGJ" }
+ * @docsMenu { "group": "layout", "subGroup": "grid" }
+ */
 export class Grid {
   constructor() {
     /**

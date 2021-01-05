@@ -2,7 +2,7 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-const index = require('./index-77ed5089.js');
+const index = require('./index-6de7b0c3.js');
 
 const menuItemCss = ":host{display:block}a{cursor:pointer;display:block;padding:var(--sen-spacer, 8px);color:var(--sen-menu-item-color, #fff);background:var(--sen-menu-item-bg, #494444);margin-bottom:1px}a:hover{background:var(--sen-menu-item-hover-bg, #6C6A6A)}a.active{color:var(--sen-menu-item-active-color, #DEDCDC)}";
 

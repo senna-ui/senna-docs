@@ -6,6 +6,7 @@
 
   "menu-intro": "Getting Started",
   "menu-intro-overview": "Overview",
+  "menu-intro-react": "First steps with React",
 
   "menu-layout": "Layout",
   "menu-layout-structure": "Structure",
@@ -41,9 +42,18 @@
   "menu-api-app-menu": "Menu",
   "menu-api-grid": "Grid",
   "menu-api-forms": "Forms",
+  "menu-api-forms-fieldset": "Fieldset",
+  "menu-api-forms-input": "Input",
+  "menu-api-forms-formField": "Form Field",
   "menu-api-layout": "Layout",
   "menu-api-layout-card": "Card",
   "menu-api-layout-grid": "Grid system",
   "menu-api-typography": "Typography",
-  "menu-api-index": "API Index"
+  "menu-api-index": "API Index",
+  "menu-api-alert": "Alert",
+  "menu-api-card": "Card",
+  "menu-api-navigation": "Navigation",
+  "menu-api-navigation-menu": "Menu",
+  "menu-api-table": "Table",
+  "menu-api-icons": "Icons"
 }

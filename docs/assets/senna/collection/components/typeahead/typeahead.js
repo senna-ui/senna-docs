@@ -6,6 +6,9 @@ function getHighlightedText(text, highlight) {
     parts.map((part, i) => h("span", { key: i, class: part.toLowerCase() === highlight.toLowerCase() ? 'highlight' : '' }, part)),
     " ");
 }
+/**
+ * @docsMenu { "group": "forms", "subGroup": "input" }
+ */
 export class Typeahead {
   constructor() {
     /**

@@ -1,4 +1,8 @@
 import { Component, Host, h } from "@stencil/core";
+/**
+ * @docsCodePen { "user": "senna-ui", "id": "wvzpgoe" }
+ * @docsMenu { "group": "card" }
+ */
 export class CardTitle {
   render() {
     return (h(Host, null,

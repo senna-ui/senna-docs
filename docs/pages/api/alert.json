@@ -1,13 +1,334 @@
 {
   "title": "sen-alert",
   "path": "/docs/api/alert",
+  "demo": {
+    "url": "https://codepen.io/senna-ui/embed/MWjrJEz?height=265&theme-id=light&default-tab=result",
+    "source": "https://codepen.io/senna-ui/pen/MWjrJEz?editors=1000"
+  },
   "codePenLinks": [],
-  "menu": null,
+  "menu": {
+    "group": "alert"
+  },
   "body": [
     "div",
     null
   ],
-  "usage": {},
+  "usage": {
+    "danger": [
+      "div",
+      null,
+      [
+        "docs-code",
+        {
+          "language": "html"
+        },
+        "\n  ",
+        [
+          "pre",
+          null,
+          [
+            "code",
+            null,
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "<"
+                ],
+                "sen-alert"
+              ],
+              " ",
+              [
+                "span",
+                {
+                  "class": "token attr-name"
+                },
+                "color"
+              ],
+              [
+                "span",
+                {
+                  "class": "token attr-value"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation attr-equals"
+                  },
+                  "="
+                ],
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "\""
+                ],
+                "danger",
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "\""
+                ]
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ],
+            "\n  Some dangerous alert text.\n",
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "</"
+                ],
+                "sen-alert"
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ]
+          ]
+        ],
+        "\n"
+      ]
+    ],
+    "title": [
+      "div",
+      null,
+      [
+        "docs-code",
+        {
+          "language": "html"
+        },
+        "\n  ",
+        [
+          "pre",
+          null,
+          [
+            "code",
+            null,
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "<"
+                ],
+                "sen-alert"
+              ],
+              " ",
+              [
+                "span",
+                {
+                  "class": "token attr-name"
+                },
+                "color"
+              ],
+              [
+                "span",
+                {
+                  "class": "token attr-value"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation attr-equals"
+                  },
+                  "="
+                ],
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "\""
+                ],
+                "info",
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "\""
+                ]
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ],
+            "\n  ",
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "<"
+                ],
+                "span"
+              ],
+              " ",
+              [
+                "span",
+                {
+                  "class": "token attr-name"
+                },
+                "slot"
+              ],
+              [
+                "span",
+                {
+                  "class": "token attr-value"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation attr-equals"
+                  },
+                  "="
+                ],
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "\""
+                ],
+                "title",
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "\""
+                ]
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ],
+            "\n    Warning\n  ",
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "</"
+                ],
+                "span"
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ],
+            "\n  Some warning text text.\n",
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "</"
+                ],
+                "sen-alert"
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ]
+          ]
+        ],
+        "\n"
+      ]
+    ]
+  },
   "props": [
     {
       "name": "color",
@@ -51,8 +372,21 @@
   "filePath": "./src/components/alert/alert.tsx",
   "encapsulation": "shadow",
   "tag": "sen-alert",
-  "docs": "",
-  "docsTags": [],
+  "docs": [
+    "div",
+    null,
+    "Docs page options"
+  ],
+  "docsTags": [
+    {
+      "text": "{ \"user\": \"senna-ui\", \"id\": \"MWjrJEz\" }",
+      "name": "docsCodePen"
+    },
+    {
+      "text": "{ \"group\": \"alert\" }",
+      "name": "docsMenu"
+    }
+  ],
   "events": [],
   "listeners": [],
   "styles": [],

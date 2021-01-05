@@ -2,7 +2,7 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-const index = require('./index-77ed5089.js');
+const index = require('./index-6de7b0c3.js');
 
 const textCss = ":host p{font-size:13px}:host h1{font-size:33.8px}:host h2{font-size:27.3px}:host h3{font-size:23.4px}:host h4{font-size:18.2px}:host h5{font-size:15.6px}:host h6{font-size:14.3px}:host .font-weight-light{font-weight:300}:host .font-weight-regular{font-weight:500}:host .font-weight-bold{font-weight:700}:host .text-align-left{text-align:left}:host .text-align-right{text-align:right}:host .text-align-center{text-align:center}:host .text-align-justify{text-align:justify}";
 

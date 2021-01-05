@@ -2,7 +2,10 @@
   "title": "sen-menu-item",
   "path": "/docs/api/menu-item",
   "codePenLinks": [],
-  "menu": null,
+  "menu": {
+    "group": "navigation",
+    "subGroup": "menu"
+  },
   "body": [
     "div",
     null
@@ -49,7 +52,12 @@
   "encapsulation": "shadow",
   "tag": "sen-menu-item",
   "docs": "",
-  "docsTags": [],
+  "docsTags": [
+    {
+      "text": "{ \"group\": \"navigation\", \"subGroup\": \"menu\" }",
+      "name": "docsMenu"
+    }
+  ],
   "events": [
     {
       "event": "senInput",

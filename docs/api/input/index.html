@@ -30,14 +30,15 @@ svg*/.icon-inner.sc-ion-icon,.ionicon.sc-ion-icon,svg.sc-ion-icon{display:block;
 <style sty-id="sc-docs-page">.Error{-ms-flex-align:center;align-items:center;background-color:var(--offset-background);color:var(--text-color--light);display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;-ms-flex-pack:center;justify-content:center;line-height:1;white-space:nowrap}.Error.full-screen{padding-bottom:3rem}.Error>*{margin:10px}.Error h1,.Error div{color:inherit;font-size:3rem}.Error div{text-shadow:3px 3px 3px rgba(0,0,0,0.1)}.Error p{font-size:18px}docs-page{display:grid;font-size:16px;grid-template-columns:1fr minmax(0, var(--page-width, 720px)) 1fr;line-height:2;margin-left:var(--page-margin-left);margin-top:var(--header-height);overflow-x:hidden;-webkit-transform:var(--page-transform, none);transform:var(--page-transform, none);-webkit-transition:-webkit-transform 200ms cubic-bezier(0.2, 1, 0.2, 1);transition:-webkit-transform 200ms cubic-bezier(0.2, 1, 0.2, 1);transition:transform 200ms cubic-bezier(0.2, 1, 0.2, 1);transition:transform 200ms cubic-bezier(0.2, 1, 0.2, 1), -webkit-transform 200ms cubic-bezier(0.2, 1, 0.2, 1)}@media (min-width: 1234px){docs-page{grid-template-columns:1fr minmax(0, var(--page-width, 720px)) 3fr}}@media (min-width: 1800px){docs-page{grid-template-columns:1fr minmax(0, var(--page-width, 720px)) 1fr 240px}}docs-page>main{position:relative;grid-column:2;margin-bottom:3rem;padding:var(--page-padding, 2rem 3rem);position:relative}docs-page docs-demo{margin-right:auto}docs-page docs-pagination{grid-column:1 / -1}docs-page .full-screen{grid-column:1 / -1;height:calc(100vh - var(--header-height));margin-bottom:0;overflow:hidden;padding:0}docs-page .page-heading-encapsulation{text-transform:uppercase;background:transparent;color:#2d4665;border:1px solid #dee3ea;border-radius:14px;height:24px;padding:2px 8px;font-weight:600;font-size:10px;line-height:14px;display:-ms-inline-flexbox;display:inline-flex;-ms-flex-align:center;align-items:center;-ms-flex-item-align:center;align-self:center;justify-self:flex-end;letter-spacing:0.08em;float:right}docs-page .page-heading-encapsulation:hover{border-color:#92a1b3}docs-page h1{display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between;margin-top:2rem;margin-bottom:1rem}docs-page h2 a[href^="#"],docs-page h3 a[href^="#"],docs-page h4 a[href^="#"],docs-page h5 a[href^="#"],docs-page h6 a[href^="#"]{color:inherit;position:relative}docs-page h2 a[href^="#"]:before,docs-page h3 a[href^="#"]:before,docs-page h4 a[href^="#"]:before,docs-page h5 a[href^="#"]:before,docs-page h6 a[href^="#"]:before{content:"#";opacity:0;padding-right:5px;position:absolute;right:100%;-webkit-transition:opacity 100ms ease;transition:opacity 100ms ease}docs-page h2 a[href^="#"]:hover:before,docs-page h3 a[href^="#"]:hover:before,docs-page h4 a[href^="#"]:hover:before,docs-page h5 a[href^="#"]:hover:before,docs-page h6 a[href^="#"]:hover:before{opacity:1}docs-page h2 code,docs-page h3 code,docs-page h4 code,docs-page h5 code,docs-page h6 code{background:none;font-size:inherit}docs-page aside{float:right;margin-left:20px;margin-bottom:20px}@media (min-width: 1234px){docs-page main.no-demo .page-meta{position:fixed;right:0;top:100px;width:240px;-webkit-transition:.2s transform ease;transition:.2s transform ease}docs-header.hidden~stencil-route docs-page main.no-demo .page-meta{-webkit-transform:translateY(-60px);transform:translateY(-60px)}}docs-page main.has-demo .page-meta internal-ad{display:none}</style>
 <style sty-id="sc-docs-table-of-contents">docs-table-of-contents{display:block;font-size:13px;margin-bottom:2rem}docs-table-of-contents .Nav-header{color:var(--text-color--lighter);font-size:0.75em;font-weight:800;letter-spacing:1px;text-transform:uppercase;padding-left:0}docs-table-of-contents ul{padding:0;list-style:none;line-height:1.23em}docs-table-of-contents .Nav-link{padding-left:0;margin-left:0}docs-table-of-contents a{color:inherit;display:inline-block;-webkit-transition:.2s color, .3s transform ease-out;transition:.2s color, .3s transform ease-out}docs-table-of-contents .Nav-link.selected a{color:var(--accent-color);-webkit-transform:translateX(2px);transform:translateX(2px)}</style>
 <style sty-id="sc-docs-reference">docs-reference{display:block;margin:1rem 0}docs-reference h3{font-family:var(--code-font-family);font-size:1.25rem;margin:2rem 0 1rem;padding:0}docs-reference a{font-weight:inherit}docs-reference a:before{display:none}docs-reference thead tr{background-color:var(--offset-background)}docs-reference tbody tr{background-color:#ffffff !important}docs-reference tbody th{vertical-align:top}docs-reference tbody p{line-height:2}docs-reference p:first-child{margin-top:0}docs-reference p:last-child{margin-bottom:0}</style>
-<link rel=modulepreload href="/docs/build/p-4029b489.js">
+<style sty-id="sc-docs-demo">docs-demo{padding-top:56px}.docs-demo-device{--device-padding:1rem;--device-width:344px;--device-height:704px;--device-frame-width:12px;padding:var(--device-padding);position:-webkit-sticky;position:sticky;top:0}.docs-demo-mode-toggle{-ms-flex-align:center;align-items:center;display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;margin:1rem auto 0;width:128px;height:28px;background:#ecf0f5;border-radius:18px}.docs-demo-mode-toggle button{background-color:transparent;border:none;border-radius:16px;color:#5b708b;cursor:pointer;font-family:var(--font-family);font-size:11px;letter-spacing:-0.02em;width:calc(50% - 2px);line-height:21px;padding-top:2px;-webkit-transition:200ms background-color ease, 200ms color ease;transition:200ms background-color ease, 200ms color ease}.docs-demo-mode-toggle button:focus,.docs-demo-mode-toggle button:active{outline:none}.docs-demo-mode-toggle button.is-selected{background-color:white;color:black;font-weight:600;-webkit-box-shadow:0px 2px 3px rgba(0, 16, 46, 0.15);box-shadow:0px 2px 3px rgba(0, 16, 46, 0.15)}.docs-demo-device>figure{margin:0;background-size:contain;background-repeat:no-repeat;-webkit-box-shadow:0px 2px 8px rgba(2, 8, 20, 0.1), 0px 8px 16px rgba(2, 8, 20, 0.08);box-shadow:0px 2px 8px rgba(2, 8, 20, 0.1), 0px 8px 16px rgba(2, 8, 20, 0.08);width:var(--device-width);height:var(--device-height);overflow:hidden;position:relative;z-index:1}.docs-demo-device>figure>iframe{position:absolute;top:0;left:0;margin:var(--device-frame-width);width:calc(100% - var(--device-frame-width) * 2);height:calc(100% - var(--device-frame-width) * 2);border:none;overflow:hidden;-webkit-mask-image:-webkit-radial-gradient(white, black);z-index:1}.docs-demo-device.ios figure{background-image:url("/docs/assets/img/iphone-device-skin.png");border-radius:54px}.docs-demo-device.ios>figure>iframe{border-radius:38px}.docs-demo-device.md figure{background-image:url("/docs/assets/img/android-device-skin.png");border-radius:44px}.docs-demo-device.md>figure>iframe{border-radius:32px}.docs-demo-device.ios figure:after{background-color:rgba(0,0,0,0.5);border-radius:2px;bottom:18px;content:"";display:none;height:4px;left:50%;position:absolute;-webkit-transform:translateX(-50%);transform:translateX(-50%);width:35%;z-index:1}.docs-demo-device__ios-notch{display:none;fill:#090a0d;left:50%;position:absolute;top:12px;-webkit-transform:translateX(-50%);transform:translateX(-50%);width:165px;z-index:2}.docs-demo-device.ios .docs-demo-device__ios-notch,.docs-demo-device.ios figure:after{display:block}.docs-demo-device__md-bar{display:none}.docs-demo-device.md .docs-demo-device__md-bar{display:block;fill:rgba(125, 125, 125, 0.3);padding:0.5rem 2.2rem;position:relative;width:100%;z-index:2;top:12px}.docs-demo-source{-ms-flex-align:center;align-items:center;display:-ms-flexbox;display:flex;font-size:13px;-ms-flex-pack:center;justify-content:center}.docs-demo-source>ion-icon{margin-right:5px}@media (max-width: 1160px){.docs-demo-device,.docs-demo-mode-toggle,.docs-demo-source{display:none}}</style>
+<link rel=modulepreload href="/docs/build/p-e6a89600.js">
 <link rel=modulepreload href="/docs/build/p-15480173.js">
 <link rel=modulepreload href="/docs/build/p-2bb7e3b8.js">
-<link rel=modulepreload href="/docs/build/p-3093d9c8.entry.js">
+<link rel=modulepreload href="/docs/build/p-3362486b.entry.js">
 <link rel=modulepreload href="/docs/build/p-810552fb.js">
 <link rel=modulepreload href="/docs/build/p-4df5b20c.entry.js">
 <link rel=modulepreload href="/docs/build/p-74129357.entry.js">
-<script type=module src="/docs/build/p-4029b489.js" data-stencil data-resources-url="/docs/build/"
+<script type=module src="/docs/build/p-e6a89600.js" data-stencil data-resources-url="/docs/build/"
 data-stencil-namespace=app></script>
 <script nomodule src="/docs/build/app.js" data-stencil></script>
 <link rel=stylesheet href="/docs/build/p-362812d6.css">
@@ -233,8 +234,8 @@ c-id=16.0.0.0><path d="M64 384h384v-42.666H64V384zm0-106.666h384v-42.667H64v42.6
 c-id=16.1.1.0></path></svg></docs-menu-toggle><stencil-route-link class=hydrated c-id=15.2.1.1 s-id=17><!--r.17--><!--o.15.3--><a
 class="link-active" href="/docs/" c-id=17.0.0.0><!--s.17.1.1.0.--><svg width=115 height=19 viewBox="0 0 115 19"
 fill=none class=MenuLogo c-id=15.3.2.0><path d="M13.3646 11.88C14.2766 12.024 14.5886 12.528 14.5886 13.032C14.5886 13.848 14.0126 14.424 11.9006 14.424C10.8446 14.424 10.1006 14.304 9.59663 14.064C9.11663 13.8 8.90063 13.416 8.87663 12.84H0.716625C0.740625 17.88 6.42863 18.6 11.6366 18.6C19.2446 18.6 22.6526 16.632 22.6526 12.456C22.6526 9.552 20.5406 7.968 17.1326 7.464L9.04463 6.264C8.37263 6.168 8.15663 5.856 8.15663 5.376C8.15663 4.656 8.85263 4.152 10.8686 4.152C11.6126 4.152 12.3806 4.248 12.9806 4.512C13.6046 4.752 14.0126 5.184 14.0126 5.88H21.8846C21.6446 2.256 18.5006 0.263999 10.8686 0.263999C5.30063 0.263999 0.956625 1.464 0.956625 5.904C0.956625 8.304 2.32463 10.224 5.63663 10.728L13.3646 11.88ZM24.8826 18H43.0986V13.824H31.6506V11.52H42.2826V7.344H31.6506V5.04H43.0986V0.863999H24.8826V18ZM45.3201 18H51.8001V8.4H51.8481L59.0481 18H66.4641V0.863999H59.9841V10.368H59.9121L53.0481 0.863999H45.3201V18ZM69.7654 18H76.2454V8.4H76.2934L83.4934 18H90.9094V0.863999H84.4294V10.368H84.3574L77.4934 0.863999H69.7654V18ZM105.251 11.856H101.171L103.187 6.048H103.235L105.251 11.856ZM91.7627 18H98.9627L99.6827 16.032H106.739L107.459 18H114.659L107.363 0.863999H99.0587L91.7627 18Z"
-fill=#FF2800 c-id=15.4.3.0></path></svg></a></stencil-route-link></header><stencil-route-switch group="1456-6669-9164-6149"
-class=hydrated c-id=15.5.0.1 s-id=18><!--r.18--><!--o.15.6--><!--s.18.0.0.0.--><stencil-route group="1456-6669-9164-6149"
+fill=#FF2800 c-id=15.4.3.0></path></svg></a></stencil-route-link></header><stencil-route-switch group="3145-5560-9676-0939"
+class=hydrated c-id=15.5.0.1 s-id=18><!--r.18--><!--o.15.6--><!--s.18.0.0.0.--><stencil-route group="3145-5560-9676-0939"
 class=hydrated c-id=15.6.1.0 s-id=19><!--r.19--><section class=MenuControls c-id=15.7.2.0><framework-select
 class=hydrated c-id=15.8.3.0 s-id=20><!--r.20--><docs-select class="FrameworkSelect Select hydrated" c-id=20.0.0.0
 s-id=21><!--r.21--><docs-dropdown tabindex=0 class="Dropdown Dropdown--left hydrated" c-id=21.0.0.0 s-id=22><!--r.22--><!--o.21.1--><!--o.21.9--><!--o.21.16--><!--o.21.23--><button
@@ -263,253 +264,290 @@ class="Select-option" role=menuitemradio aria-checked=false tabindex=0 c-id=21.2
 c-id=21.24.2.0><svg viewBox="0 0 14 13" fill=none class="FrameworkSelect-icon" c-id=21.25.3.0><path d="M8.618 0L7 3.005 5.382 0H0l7 13 7-13H8.618z"
 fill=#4DB684 c-id=21.26.4.0></path><path d="M8.618 0L7 3.005 5.382 0h-2.58L7 7.8 11.198 0h-2.58z" fill=#36495D
 c-id=21.27.4.1></path></svg><span c-id=21.28.3.1><!--t.21.29.4.0-->Vue</span></div></div></div></docs-dropdown></docs-select></framework-select></section></stencil-route></stencil-route-switch><stencil-route-switch
-class="Menu hydrated" group="6855-4301-1530-9349" c-id=15.9.0.2 s-id=23><!--r.23--><!--o.15.10--><!--o.15.11--><!--o.15.12--><!--s.23.0.0.0.--><stencil-route
-class=hydrated group="6855-4301-1530-9349" c-id=15.10.1.0 s-id=24 style="display: none;"><!--r.24--></stencil-route><stencil-route
-group="6855-4301-1530-9349" class=hydrated c-id=15.11.1.1 s-id=25><!--r.25--><docs-api-nav class=hydrated
-c-id=25.0.0.0 s-id=26><!--r.26--><ul class=Nav c-id=26.0.0.0><li c-id=26.1.1.0><section c-id=26.2.2.0><ul
-class="Nav-subnav" c-id=26.3.3.0 style="--level: 1;"><li c-id=26.4.4.0><stencil-route-link class=hydrated
-c-id=26.5.5.0 s-id=27><!--r.27--><!--o.26.6--><a class="Nav-link" href="/docs/api/alert" c-id=27.0.0.0><!--s.27.1.1.0.--><span
-c-id=26.6.6.0><!--t.26.7.7.0-->sen-alert</span></a></stencil-route-link></li><li c-id=26.8.4.1><stencil-route-link
-class=hydrated c-id=26.9.5.0 s-id=28><!--r.28--><!--o.26.10--><a class="Nav-link" href="/docs/api/app"
-c-id=28.0.0.0><!--s.28.1.1.0.--><span c-id=26.10.6.0><!--t.26.11.7.0-->sen-app</span></a></stencil-route-link></li><li
-c-id=26.12.4.2><stencil-route-link class=hydrated c-id=26.13.5.0 s-id=29><!--r.29--><!--o.26.14--><a
-class="Nav-link" href="/docs/api/button" c-id=29.0.0.0><!--s.29.1.1.0.--><span c-id=26.14.6.0><!--t.26.15.7.0-->sen-button</span></a></stencil-route-link></li><li
-c-id=26.16.4.3><stencil-route-link class=hydrated c-id=26.17.5.0 s-id=30><!--r.30--><!--o.26.18--><a
-class="Nav-link" href="/docs/api/button-group" c-id=30.0.0.0><!--s.30.1.1.0.--><span c-id=26.18.6.0><!--t.26.19.7.0-->sen-button-group</span></a></stencil-route-link></li><li
-c-id=26.20.4.4><stencil-route-link class=hydrated c-id=26.21.5.0 s-id=31><!--r.31--><!--o.26.22--><a
-class="Nav-link" href="/docs/api/card" c-id=31.0.0.0><!--s.31.1.1.0.--><span c-id=26.22.6.0><!--t.26.23.7.0-->sen-card</span></a></stencil-route-link></li><li
-c-id=26.24.4.5><stencil-route-link class=hydrated c-id=26.25.5.0 s-id=32><!--r.32--><!--o.26.26--><a
-class="Nav-link" href="/docs/api/card-actions" c-id=32.0.0.0><!--s.32.1.1.0.--><span c-id=26.26.6.0><!--t.26.27.7.0-->sen-card-actions</span></a></stencil-route-link></li><li
-c-id=26.28.4.6><stencil-route-link class=hydrated c-id=26.29.5.0 s-id=33><!--r.33--><!--o.26.30--><a
-class="Nav-link" href="/docs/api/card-body" c-id=33.0.0.0><!--s.33.1.1.0.--><span c-id=26.30.6.0><!--t.26.31.7.0-->sen-card-body</span></a></stencil-route-link></li><li
-c-id=26.32.4.7><stencil-route-link class=hydrated c-id=26.33.5.0 s-id=34><!--r.34--><!--o.26.34--><a
-class="Nav-link" href="/docs/api/card-title" c-id=34.0.0.0><!--s.34.1.1.0.--><span c-id=26.34.6.0><!--t.26.35.7.0-->sen-card-title</span></a></stencil-route-link></li><li
-c-id=26.36.4.8><stencil-route-link class=hydrated c-id=26.37.5.0 s-id=35><!--r.35--><!--o.26.38--><a
-class="Nav-link" href="/docs/api/col" c-id=35.0.0.0><!--s.35.1.1.0.--><span c-id=26.38.6.0><!--t.26.39.7.0-->sen-col</span></a></stencil-route-link></li><li
-c-id=26.40.4.9><stencil-route-link class=hydrated c-id=26.41.5.0 s-id=36><!--r.36--><!--o.26.42--><a
-class="Nav-link" href="/docs/api/fieldset" c-id=36.0.0.0><!--s.36.1.1.0.--><span c-id=26.42.6.0><!--t.26.43.7.0-->sen-fieldset</span></a></stencil-route-link></li><li
-c-id=26.44.4.10><stencil-route-link class=hydrated c-id=26.45.5.0 s-id=37><!--r.37--><!--o.26.46--><a
-class="Nav-link" href="/docs/api/form-field" c-id=37.0.0.0><!--s.37.1.1.0.--><span c-id=26.46.6.0><!--t.26.47.7.0-->sen-form-field</span></a></stencil-route-link></li><li
-c-id=26.48.4.11><stencil-route-link class=hydrated c-id=26.49.5.0 s-id=38><!--r.38--><!--o.26.50--><a
-class="Nav-link" href="/docs/api/grid" c-id=38.0.0.0><!--s.38.1.1.0.--><span c-id=26.50.6.0><!--t.26.51.7.0-->sen-grid</span></a></stencil-route-link></li><li
-c-id=26.52.4.12><stencil-route-link class=hydrated c-id=26.53.5.0 s-id=39><!--r.39--><!--o.26.54--><a
-class="Nav-link--active Nav-link" href="/docs/api/input" c-id=39.0.0.0><!--s.39.1.1.0.--><span c-id=26.54.6.0><!--t.26.55.7.0-->sen-input</span></a></stencil-route-link></li><li
-c-id=26.56.4.13><stencil-route-link class=hydrated c-id=26.57.5.0 s-id=40><!--r.40--><!--o.26.58--><a
-class="Nav-link" href="/docs/api/menu" c-id=40.0.0.0><!--s.40.1.1.0.--><span c-id=26.58.6.0><!--t.26.59.7.0-->sen-menu</span></a></stencil-route-link></li><li
-c-id=26.60.4.14><stencil-route-link class=hydrated c-id=26.61.5.0 s-id=41><!--r.41--><!--o.26.62--><a
-class="Nav-link" href="/docs/api/menu-item" c-id=41.0.0.0><!--s.41.1.1.0.--><span c-id=26.62.6.0><!--t.26.63.7.0-->sen-menu-item</span></a></stencil-route-link></li><li
-c-id=26.64.4.15><stencil-route-link class=hydrated c-id=26.65.5.0 s-id=42><!--r.42--><!--o.26.66--><a
-class="Nav-link" href="/docs/api/row" c-id=42.0.0.0><!--s.42.1.1.0.--><span c-id=26.66.6.0><!--t.26.67.7.0-->sen-row</span></a></stencil-route-link></li><li
-c-id=26.68.4.16><stencil-route-link class=hydrated c-id=26.69.5.0 s-id=43><!--r.43--><!--o.26.70--><a
-class="Nav-link" href="/docs/api/table" c-id=43.0.0.0><!--s.43.1.1.0.--><span c-id=26.70.6.0><!--t.26.71.7.0-->sen-table</span></a></stencil-route-link></li><li
-c-id=26.72.4.17><stencil-route-link class=hydrated c-id=26.73.5.0 s-id=44><!--r.44--><!--o.26.74--><a
-class="Nav-link" href="/docs/api/text" c-id=44.0.0.0><!--s.44.1.1.0.--><span c-id=26.74.6.0><!--t.26.75.7.0-->sen-text</span></a></stencil-route-link></li><li
-c-id=26.76.4.18><stencil-route-link class=hydrated c-id=26.77.5.0 s-id=45><!--r.45--><!--o.26.78--><a
-class="Nav-link" href="/docs/api/typeahead" c-id=45.0.0.0><!--s.45.1.1.0.--><span c-id=26.78.6.0><!--t.26.79.7.0-->sen-typeahead</span></a></stencil-route-link></li></ul></section></li></ul></docs-api-nav></stencil-route><stencil-route
-class=hydrated group="6855-4301-1530-9349" c-id=15.12.1.2 s-id=46 style="display: none;"><!--r.46--></stencil-route></stencil-route-switch></docs-menu><stencil-route
-class=hydrated c-id=1.4.1.3 s-id=47><!--r.47--><docs-page class="page--docs-api-input hydrated" c-id=47.0.0.0
-s-id=48><!--r.48--><main class="no-demo" c-id=48.0.0.0><article c-id=48.1.1.0><a href="/docs/reference/glossary#scoped"
-class="page-heading-encapsulation" c-id=48.2.2.0><!--t.48.3.3.0-->scoped</a><h1 c-id=48.4.2.1><!--t.48.5.3.0-->sen-input</h1><div
-class="page-meta" c-id=48.6.2.2><docs-table-of-contents class=hydrated c-id=48.7.3.0 s-id=49><!--r.49--><strong
-class="Nav-header" c-id=49.0.0.0><!--t.49.1.1.0-->Contents</strong><nav c-id=49.2.0.1><ul class="Nav-subnav"
-c-id=49.3.1.0><li c-id=49.4.2.0><stencil-route-link class="Nav-link hydrated" c-id=49.5.3.0 s-id=50><!--r.50--><!--o.49.6--><a
-href="/docs/api/input#properties" c-id=50.0.0.0><!--s.50.1.1.0.--><!--t.49.6.4.0-->Properties</a></stencil-route-link></li><li
-c-id=49.7.2.1><stencil-route-link class="Nav-link hydrated" c-id=49.8.3.0 s-id=51><!--r.51--><!--o.49.9--><a
-href="/docs/api/input#events" c-id=51.0.0.0><!--s.51.1.1.0.--><!--t.49.9.4.0-->Events</a></stencil-route-link></li><li
-c-id=49.10.2.2><stencil-route-link class="Nav-link hydrated" c-id=49.11.3.0 s-id=52><!--r.52--><!--o.49.12--><a
-href="/docs/api/input#methods" c-id=52.0.0.0><!--s.52.1.1.0.--><!--t.49.12.4.0-->Methods</a></stencil-route-link></li></ul></nav></docs-table-of-contents><internal-ad
-c-id=48.8.3.1></internal-ad></div><section class="markdown-content" c-id=48.9.2.3><div c-id=48.10.3.0></div></section><section
-c-id=48.11.2.4><h2 id=properties c-id=48.12.3.0><a href=#properties c-id=48.13.4.0><!--t.48.14.5.0-->Properties</a></h2><docs-reference
-class=hydrated c-id=48.15.3.1 s-id=53><!--r.53--><table c-id=53.0.0.0><thead c-id=53.1.1.0><tr c-id=53.2.2.0><th
-colspan=2 c-id=53.3.3.0><h3 c-id=53.4.4.0><!--t.53.5.5.0-->accept</h3></th></tr></thead><tbody c-id=53.6.1.1><tr
-c-id=53.7.2.0><th c-id=53.8.3.0><!--t.53.9.4.0-->Description</th><td c-id=53.10.3.1><div c-id=53.11.4.0><p>If the value of the type attribute is
+class="Menu hydrated" group="5261-7098-2227-3230" c-id=15.9.0.2 s-id=23><!--r.23--><!--o.15.10--><!--o.15.11--><!--o.15.12--><!--s.23.0.0.0.--><stencil-route
+class=hydrated group="5261-7098-2227-3230" c-id=15.10.1.0 s-id=24 style="display: none;"><!--r.24--></stencil-route><stencil-route
+group="5261-7098-2227-3230" class=hydrated c-id=15.11.1.1 s-id=25><!--r.25--><docs-api-nav class=hydrated
+c-id=25.0.0.0 s-id=26><!--r.26--><ul class=Nav c-id=26.0.0.0><li c-id=26.1.1.0><section c-id=26.2.2.0><header
+class="Nav-header" c-id=26.3.3.0><!--t.26.4.4.0-->Alert</header><ul class="Nav-subnav" c-id=26.5.3.1
+style="--level: 1;"><li c-id=26.6.4.0><stencil-route-link class=hydrated c-id=26.7.5.0 s-id=27><!--r.27--><!--o.26.8--><a
+class="Nav-link" href="/docs/api/alert" c-id=27.0.0.0><!--s.27.1.1.0.--><span c-id=26.8.6.0><!--t.26.9.7.0-->sen-alert</span></a></stencil-route-link></li></ul></section></li><li
+c-id=26.10.1.1><section c-id=26.11.2.0><header class="Nav-header" c-id=26.12.3.0><!--t.26.13.4.0-->App</header><ul
+class="Nav-subnav" c-id=26.14.3.1 style="--level: 1;"><li c-id=26.15.4.0><stencil-route-link class=hydrated
+c-id=26.16.5.0 s-id=28><!--r.28--><!--o.26.17--><a class="Nav-link" href="/docs/api/app" c-id=28.0.0.0><!--s.28.1.1.0.--><span
+c-id=26.17.6.0><!--t.26.18.7.0-->sen-app</span></a></stencil-route-link></li></ul></section></li><li
+c-id=26.19.1.2><section c-id=26.20.2.0><header class="Nav-header" c-id=26.21.3.0><!--t.26.22.4.0-->Buttons</header><ul
+class="Nav-subnav" c-id=26.23.3.1 style="--level: 1;"><li c-id=26.24.4.0><stencil-route-link class=hydrated
+c-id=26.25.5.0 s-id=29><!--r.29--><!--o.26.26--><a class="Nav-link" href="/docs/api/button" c-id=29.0.0.0><!--s.29.1.1.0.--><span
+c-id=26.26.6.0><!--t.26.27.7.0-->sen-button</span></a></stencil-route-link></li><li c-id=26.28.4.1><stencil-route-link
+class=hydrated c-id=26.29.5.0 s-id=30><!--r.30--><!--o.26.30--><a class="Nav-link" href="/docs/api/button-group"
+c-id=30.0.0.0><!--s.30.1.1.0.--><span c-id=26.30.6.0><!--t.26.31.7.0-->sen-button-group</span></a></stencil-route-link></li></ul></section></li><li
+c-id=26.32.1.3><section c-id=26.33.2.0><header class="Nav-header" c-id=26.34.3.0><!--t.26.35.4.0-->Card</header><ul
+class="Nav-subnav" c-id=26.36.3.1 style="--level: 1;"><li c-id=26.37.4.0><stencil-route-link class=hydrated
+c-id=26.38.5.0 s-id=31><!--r.31--><!--o.26.39--><a class="Nav-link" href="/docs/api/card" c-id=31.0.0.0><!--s.31.1.1.0.--><span
+c-id=26.39.6.0><!--t.26.40.7.0-->sen-card</span></a></stencil-route-link></li><li c-id=26.41.4.1><stencil-route-link
+class=hydrated c-id=26.42.5.0 s-id=32><!--r.32--><!--o.26.43--><a class="Nav-link" href="/docs/api/card-actions"
+c-id=32.0.0.0><!--s.32.1.1.0.--><span c-id=26.43.6.0><!--t.26.44.7.0-->sen-card-actions</span></a></stencil-route-link></li><li
+c-id=26.45.4.2><stencil-route-link class=hydrated c-id=26.46.5.0 s-id=33><!--r.33--><!--o.26.47--><a
+class="Nav-link" href="/docs/api/card-body" c-id=33.0.0.0><!--s.33.1.1.0.--><span c-id=26.47.6.0><!--t.26.48.7.0-->sen-card-body</span></a></stencil-route-link></li><li
+c-id=26.49.4.3><stencil-route-link class=hydrated c-id=26.50.5.0 s-id=34><!--r.34--><!--o.26.51--><a
+class="Nav-link" href="/docs/api/card-title" c-id=34.0.0.0><!--s.34.1.1.0.--><span c-id=26.51.6.0><!--t.26.52.7.0-->sen-card-title</span></a></stencil-route-link></li></ul></section></li><li
+c-id=26.53.1.4><section c-id=26.54.2.0><header class="Nav-header" c-id=26.55.3.0><!--t.26.56.4.0-->Layout</header><ul
+class="Nav-subnav" c-id=26.57.3.1 style="--level: 1;"><li c-id=26.58.4.0><section c-id=26.59.5.0><header
+class="Nav-header-2" c-id=26.60.6.0><!--t.26.61.7.0-->Grid system</header><ul class="Nav-subnav" c-id=26.62.6.1
+style="--level: 2;"><li c-id=26.63.7.0><stencil-route-link class=hydrated c-id=26.64.8.0 s-id=35><!--r.35--><!--o.26.65--><a
+class="Nav-link" href="/docs/api/col" c-id=35.0.0.0><!--s.35.1.1.0.--><span c-id=26.65.9.0><!--t.26.66.10.0-->sen-col</span></a></stencil-route-link></li><li
+c-id=26.67.7.1><stencil-route-link class=hydrated c-id=26.68.8.0 s-id=36><!--r.36--><!--o.26.69--><a
+class="Nav-link" href="/docs/api/grid" c-id=36.0.0.0><!--s.36.1.1.0.--><span c-id=26.69.9.0><!--t.26.70.10.0-->sen-grid</span></a></stencil-route-link></li><li
+c-id=26.71.7.2><stencil-route-link class=hydrated c-id=26.72.8.0 s-id=37><!--r.37--><!--o.26.73--><a
+class="Nav-link" href="/docs/api/row" c-id=37.0.0.0><!--s.37.1.1.0.--><span c-id=26.73.9.0><!--t.26.74.10.0-->sen-row</span></a></stencil-route-link></li></ul></section></li></ul></section></li><li
+c-id=26.75.1.5><section c-id=26.76.2.0><header class="Nav-header" c-id=26.77.3.0><!--t.26.78.4.0-->Forms</header><ul
+class="Nav-subnav" c-id=26.79.3.1 style="--level: 1;"><li c-id=26.80.4.0><section c-id=26.81.5.0><header
+class="Nav-header-2" c-id=26.82.6.0><!--t.26.83.7.0-->Fieldset</header><ul class="Nav-subnav" c-id=26.84.6.1
+style="--level: 2;"><li c-id=26.85.7.0><stencil-route-link class=hydrated c-id=26.86.8.0 s-id=38><!--r.38--><!--o.26.87--><a
+class="Nav-link" href="/docs/api/fieldset" c-id=38.0.0.0><!--s.38.1.1.0.--><span c-id=26.87.9.0><!--t.26.88.10.0-->sen-fieldset</span></a></stencil-route-link></li></ul></section></li><li
+c-id=26.89.4.1><section c-id=26.90.5.0><header class="Nav-header-2" c-id=26.91.6.0><!--t.26.92.7.0-->Form Field</header><ul
+class="Nav-subnav" c-id=26.93.6.1 style="--level: 2;"><li c-id=26.94.7.0><stencil-route-link class=hydrated
+c-id=26.95.8.0 s-id=39><!--r.39--><!--o.26.96--><a class="Nav-link" href="/docs/api/form-field" c-id=39.0.0.0><!--s.39.1.1.0.--><span
+c-id=26.96.9.0><!--t.26.97.10.0-->sen-form-field</span></a></stencil-route-link></li></ul></section></li><li
+c-id=26.98.4.2><section c-id=26.99.5.0><header class="Nav-header-2" c-id=26.100.6.0><!--t.26.101.7.0-->Input</header><ul
+class="Nav-subnav" c-id=26.102.6.1 style="--level: 2;"><li c-id=26.103.7.0><stencil-route-link class=hydrated
+c-id=26.104.8.0 s-id=40><!--r.40--><!--o.26.105--><a class="Nav-link--active Nav-link" href="/docs/api/input"
+c-id=40.0.0.0><!--s.40.1.1.0.--><span c-id=26.105.9.0><!--t.26.106.10.0-->sen-input</span></a></stencil-route-link></li><li
+c-id=26.107.7.1><stencil-route-link class=hydrated c-id=26.108.8.0 s-id=41><!--r.41--><!--o.26.109--><a
+class="Nav-link" href="/docs/api/typeahead" c-id=41.0.0.0><!--s.41.1.1.0.--><span c-id=26.109.9.0><!--t.26.110.10.0-->sen-typeahead</span></a></stencil-route-link></li></ul></section></li></ul></section></li><li
+c-id=26.111.1.6><section c-id=26.112.2.0><header class="Nav-header" c-id=26.113.3.0><!--t.26.114.4.0-->Icons</header><ul
+class="Nav-subnav" c-id=26.115.3.1 style="--level: 1;"><li c-id=26.116.4.0><stencil-route-link class=hydrated
+c-id=26.117.5.0 s-id=42><!--r.42--><!--o.26.118--><a class="Nav-link" href="/docs/api/icon" c-id=42.0.0.0><!--s.42.1.1.0.--><span
+c-id=26.118.6.0><!--t.26.119.7.0-->sen-icon</span></a></stencil-route-link></li></ul></section></li><li
+c-id=26.120.1.7><section c-id=26.121.2.0><header class="Nav-header" c-id=26.122.3.0><!--t.26.123.4.0-->Navigation</header><ul
+class="Nav-subnav" c-id=26.124.3.1 style="--level: 1;"><li c-id=26.125.4.0><section c-id=26.126.5.0><header
+class="Nav-header-2" c-id=26.127.6.0><!--t.26.128.7.0-->Menu</header><ul class="Nav-subnav" c-id=26.129.6.1
+style="--level: 2;"><li c-id=26.130.7.0><stencil-route-link class=hydrated c-id=26.131.8.0 s-id=43><!--r.43--><!--o.26.132--><a
+class="Nav-link" href="/docs/api/menu" c-id=43.0.0.0><!--s.43.1.1.0.--><span c-id=26.132.9.0><!--t.26.133.10.0-->sen-menu</span></a></stencil-route-link></li><li
+c-id=26.134.7.1><stencil-route-link class=hydrated c-id=26.135.8.0 s-id=44><!--r.44--><!--o.26.136--><a
+class="Nav-link" href="/docs/api/menu-item" c-id=44.0.0.0><!--s.44.1.1.0.--><span c-id=26.136.9.0><!--t.26.137.10.0-->sen-menu-item</span></a></stencil-route-link></li></ul></section></li></ul></section></li><li
+c-id=26.138.1.8><section c-id=26.139.2.0><header class="Nav-header" c-id=26.140.3.0><!--t.26.141.4.0-->Table</header><ul
+class="Nav-subnav" c-id=26.142.3.1 style="--level: 1;"><li c-id=26.143.4.0><stencil-route-link class=hydrated
+c-id=26.144.5.0 s-id=45><!--r.45--><!--o.26.145--><a class="Nav-link" href="/docs/api/table" c-id=45.0.0.0><!--s.45.1.1.0.--><span
+c-id=26.145.6.0><!--t.26.146.7.0-->sen-table</span></a></stencil-route-link></li></ul></section></li><li
+c-id=26.147.1.9><section c-id=26.148.2.0><header class="Nav-header" c-id=26.149.3.0><!--t.26.150.4.0-->Typography</header><ul
+class="Nav-subnav" c-id=26.151.3.1 style="--level: 1;"><li c-id=26.152.4.0><stencil-route-link class=hydrated
+c-id=26.153.5.0 s-id=46><!--r.46--><!--o.26.154--><a class="Nav-link" href="/docs/api/text" c-id=46.0.0.0><!--s.46.1.1.0.--><span
+c-id=26.154.6.0><!--t.26.155.7.0-->sen-text</span></a></stencil-route-link></li></ul></section></li></ul></docs-api-nav></stencil-route><stencil-route
+class=hydrated group="5261-7098-2227-3230" c-id=15.12.1.2 s-id=47 style="display: none;"><!--r.47--></stencil-route></stencil-route-switch></docs-menu><stencil-route
+class=hydrated c-id=1.4.1.3 s-id=48><!--r.48--><docs-page class="page--docs-api-input hydrated" c-id=48.0.0.0
+s-id=49><!--r.49--><main class="has-demo" c-id=49.0.0.0><article c-id=49.1.1.0><a href="/docs/reference/glossary#scoped"
+class="page-heading-encapsulation" c-id=49.2.2.0><!--t.49.3.3.0-->scoped</a><h1 c-id=49.4.2.1><!--t.49.5.3.0-->sen-input</h1><div
+class="page-meta" c-id=49.6.2.2><docs-table-of-contents class=hydrated c-id=49.7.3.0 s-id=50><!--r.50--><strong
+class="Nav-header" c-id=50.0.0.0><!--t.50.1.1.0-->Contents</strong><nav c-id=50.2.0.1><ul class="Nav-subnav"
+c-id=50.3.1.0><li c-id=50.4.2.0><stencil-route-link class="Nav-link hydrated" c-id=50.5.3.0 s-id=51><!--r.51--><!--o.50.6--><a
+href="/docs/api/input#properties" c-id=51.0.0.0><!--s.51.1.1.0.--><!--t.50.6.4.0-->Properties</a></stencil-route-link></li><li
+c-id=50.7.2.1><stencil-route-link class="Nav-link hydrated" c-id=50.8.3.0 s-id=52><!--r.52--><!--o.50.9--><a
+href="/docs/api/input#events" c-id=52.0.0.0><!--s.52.1.1.0.--><!--t.50.9.4.0-->Events</a></stencil-route-link></li><li
+c-id=50.10.2.2><stencil-route-link class="Nav-link hydrated" c-id=50.11.3.0 s-id=53><!--r.53--><!--o.50.12--><a
+href="/docs/api/input#methods" c-id=53.0.0.0><!--s.53.1.1.0.--><!--t.50.12.4.0-->Methods</a></stencil-route-link></li></ul></nav></docs-table-of-contents><internal-ad
+c-id=49.8.3.1></internal-ad></div><section class="markdown-content" c-id=49.9.2.3><div c-id=49.10.3.0></div></section><section
+c-id=49.11.2.4><h2 id=properties c-id=49.12.3.0><a href=#properties c-id=49.13.4.0><!--t.49.14.5.0-->Properties</a></h2><docs-reference
+class=hydrated c-id=49.15.3.1 s-id=54><!--r.54--><table c-id=54.0.0.0><thead c-id=54.1.1.0><tr c-id=54.2.2.0><th
+colspan=2 c-id=54.3.3.0><h3 c-id=54.4.4.0><!--t.54.5.5.0-->accept</h3></th></tr></thead><tbody c-id=54.6.1.1><tr
+c-id=54.7.2.0><th c-id=54.8.3.0><!--t.54.9.4.0-->Description</th><td c-id=54.10.3.1><div c-id=54.11.4.0><p>If the value of the type attribute is
 <code>"file"</code>, then this attribute will indicate the types of files that the server accepts, otherwise it will be ignored. The value must be a comma-separated list of unique content type specifiers.</p></div></td></tr><tr
-c-id=53.12.2.1><th c-id=53.13.3.0><!--t.53.14.4.0-->Attribute</th><td c-id=53.15.3.1><code c-id=53.16.4.0><!--t.53.17.5.0-->accept</code></td></tr><tr
-c-id=53.18.2.2><th c-id=53.19.3.0><!--t.53.20.4.0-->Type</th><td c-id=53.21.3.1><code c-id=53.22.4.0><!--t.53.23.5.0-->string | undefined</code></td></tr></tbody><thead
-c-id=53.24.1.2><tr c-id=53.25.2.0><th colspan=2 c-id=53.26.3.0><h3 c-id=53.27.4.0><!--t.53.28.5.0-->autocapitalize</h3></th></tr></thead><tbody
-c-id=53.29.1.3><tr c-id=53.30.2.0><th c-id=53.31.3.0><!--t.53.32.4.0-->Description</th><td c-id=53.33.3.1><div
-c-id=53.34.4.0><p>Indicates whether and how the text value should be automatically capitalized as it is entered/edited by the user.</p></div></td></tr><tr
-c-id=53.35.2.1><th c-id=53.36.3.0><!--t.53.37.4.0-->Attribute</th><td c-id=53.38.3.1><code c-id=53.39.4.0><!--t.53.40.5.0-->autocapitalize</code></td></tr><tr
-c-id=53.41.2.2><th c-id=53.42.3.0><!--t.53.43.4.0-->Type</th><td c-id=53.44.3.1><code c-id=53.45.4.0><!--t.53.46.5.0-->string</code></td></tr><tr
-c-id=53.47.2.3><th c-id=53.48.3.0><!--t.53.49.4.0-->Default</th><td c-id=53.50.3.1><code c-id=53.51.4.0><!--t.53.52.5.0-->"off"</code></td></tr></tbody><thead
-c-id=53.53.1.4><tr c-id=53.54.2.0><th colspan=2 c-id=53.55.3.0><h3 c-id=53.56.4.0><!--t.53.57.5.0-->autocomplete</h3></th></tr></thead><tbody
-c-id=53.58.1.5><tr c-id=53.59.2.0><th c-id=53.60.3.0><!--t.53.61.4.0-->Description</th><td c-id=53.62.3.1><div
-c-id=53.63.4.0><p>Indicates whether the value of the control can be automatically completed by the browser.</p></div></td></tr><tr
-c-id=53.64.2.1><th c-id=53.65.3.0><!--t.53.66.4.0-->Attribute</th><td c-id=53.67.3.1><code c-id=53.68.4.0><!--t.53.69.5.0-->autocomplete</code></td></tr><tr
-c-id=53.70.2.2><th c-id=53.71.3.0><!--t.53.72.4.0-->Type</th><td c-id=53.73.3.1><code c-id=53.74.4.0><!--t.53.75.5.0-->"off" | "on" | "name" | "honorific-prefix" | "given-name" | "additional-name" | "family-name" | "honorific-suffix" | "nickname" | "email" | "username" | "new-password" | "current-password" | "one-time-code" | "organization-title" | "organization" | "street-address" | "address-line1" | "address-line2" | "address-line3" | "address-level4" | "address-level3" | "address-level2" | "address-level1" | "country" | "country-name" | "postal-code" | "cc-name" | "cc-given-name" | "cc-additional-name" | "cc-family-name" | "cc-number" | "cc-exp" | "cc-exp-month" | "cc-exp-year" | "cc-csc" | "cc-type" | "transaction-currency" | "transaction-amount" | "language" | "bday" | "bday-day" | "bday-month" | "bday-year" | "sex" | "tel" | "tel-country-code" | "tel-national" | "tel-area-code" | "tel-local" | "tel-extension" | "impp" | "url" | "photo"</code></td></tr><tr
-c-id=53.76.2.3><th c-id=53.77.3.0><!--t.53.78.4.0-->Default</th><td c-id=53.79.3.1><code c-id=53.80.4.0><!--t.53.81.5.0-->"off"</code></td></tr></tbody><thead
-c-id=53.82.1.6><tr c-id=53.83.2.0><th colspan=2 c-id=53.84.3.0><h3 c-id=53.85.4.0><!--t.53.86.5.0-->autocorrect</h3></th></tr></thead><tbody
-c-id=53.87.1.7><tr c-id=53.88.2.0><th c-id=53.89.3.0><!--t.53.90.4.0-->Description</th><td c-id=53.91.3.1><div
-c-id=53.92.4.0><p>Whether auto correction should be enabled when the user is entering/editing the text value.</p></div></td></tr><tr
-c-id=53.93.2.1><th c-id=53.94.3.0><!--t.53.95.4.0-->Attribute</th><td c-id=53.96.3.1><code c-id=53.97.4.0><!--t.53.98.5.0-->autocorrect</code></td></tr><tr
-c-id=53.99.2.2><th c-id=53.100.3.0><!--t.53.101.4.0-->Type</th><td c-id=53.102.3.1><code c-id=53.103.4.0><!--t.53.104.5.0-->"off" | "on"</code></td></tr><tr
-c-id=53.105.2.3><th c-id=53.106.3.0><!--t.53.107.4.0-->Default</th><td c-id=53.108.3.1><code c-id=53.109.4.0><!--t.53.110.5.0-->"off"</code></td></tr></tbody><thead
-c-id=53.111.1.8><tr c-id=53.112.2.0><th colspan=2 c-id=53.113.3.0><h3 c-id=53.114.4.0><!--t.53.115.5.0-->autofocus</h3></th></tr></thead><tbody
-c-id=53.116.1.9><tr c-id=53.117.2.0><th c-id=53.118.3.0><!--t.53.119.4.0-->Description</th><td c-id=53.120.3.1><div
-c-id=53.121.4.0><p>This Boolean attribute lets you specify that a form control should have input focus when the page loads.</p></div></td></tr><tr
-c-id=53.122.2.1><th c-id=53.123.3.0><!--t.53.124.4.0-->Attribute</th><td c-id=53.125.3.1><code c-id=53.126.4.0><!--t.53.127.5.0-->autofocus</code></td></tr><tr
-c-id=53.128.2.2><th c-id=53.129.3.0><!--t.53.130.4.0-->Type</th><td c-id=53.131.3.1><code c-id=53.132.4.0><!--t.53.133.5.0-->boolean</code></td></tr><tr
-c-id=53.134.2.3><th c-id=53.135.3.0><!--t.53.136.4.0-->Default</th><td c-id=53.137.3.1><code c-id=53.138.4.0><!--t.53.139.5.0-->false</code></td></tr></tbody><thead
-c-id=53.140.1.10><tr c-id=53.141.2.0><th colspan=2 c-id=53.142.3.0><h3 c-id=53.143.4.0><!--t.53.144.5.0-->clearInput</h3></th></tr></thead><tbody
-c-id=53.145.1.11><tr c-id=53.146.2.0><th c-id=53.147.3.0><!--t.53.148.4.0-->Description</th><td c-id=53.149.3.1><div
-c-id=53.150.4.0><p>If <code>true</code>, a clear icon will appear in the input when there is a value. Clicking it clears the input.</p></div></td></tr><tr
-c-id=53.151.2.1><th c-id=53.152.3.0><!--t.53.153.4.0-->Attribute</th><td c-id=53.154.3.1><code c-id=53.155.4.0><!--t.53.156.5.0-->clear-input</code></td></tr><tr
-c-id=53.157.2.2><th c-id=53.158.3.0><!--t.53.159.4.0-->Type</th><td c-id=53.160.3.1><code c-id=53.161.4.0><!--t.53.162.5.0-->boolean</code></td></tr><tr
-c-id=53.163.2.3><th c-id=53.164.3.0><!--t.53.165.4.0-->Default</th><td c-id=53.166.3.1><code c-id=53.167.4.0><!--t.53.168.5.0-->false</code></td></tr></tbody><thead
-c-id=53.169.1.12><tr c-id=53.170.2.0><th colspan=2 c-id=53.171.3.0><h3 c-id=53.172.4.0><!--t.53.173.5.0-->clearOnEdit</h3></th></tr></thead><tbody
-c-id=53.174.1.13><tr c-id=53.175.2.0><th c-id=53.176.3.0><!--t.53.177.4.0-->Description</th><td c-id=53.178.3.1><div
-c-id=53.179.4.0><p>If <code>true</code>, the value will be cleared after focus upon edit. Defaults to <code>true</code> when
+c-id=54.12.2.1><th c-id=54.13.3.0><!--t.54.14.4.0-->Attribute</th><td c-id=54.15.3.1><code c-id=54.16.4.0><!--t.54.17.5.0-->accept</code></td></tr><tr
+c-id=54.18.2.2><th c-id=54.19.3.0><!--t.54.20.4.0-->Type</th><td c-id=54.21.3.1><code c-id=54.22.4.0><!--t.54.23.5.0-->string | undefined</code></td></tr></tbody><thead
+c-id=54.24.1.2><tr c-id=54.25.2.0><th colspan=2 c-id=54.26.3.0><h3 c-id=54.27.4.0><!--t.54.28.5.0-->autocapitalize</h3></th></tr></thead><tbody
+c-id=54.29.1.3><tr c-id=54.30.2.0><th c-id=54.31.3.0><!--t.54.32.4.0-->Description</th><td c-id=54.33.3.1><div
+c-id=54.34.4.0><p>Indicates whether and how the text value should be automatically capitalized as it is entered/edited by the user.</p></div></td></tr><tr
+c-id=54.35.2.1><th c-id=54.36.3.0><!--t.54.37.4.0-->Attribute</th><td c-id=54.38.3.1><code c-id=54.39.4.0><!--t.54.40.5.0-->autocapitalize</code></td></tr><tr
+c-id=54.41.2.2><th c-id=54.42.3.0><!--t.54.43.4.0-->Type</th><td c-id=54.44.3.1><code c-id=54.45.4.0><!--t.54.46.5.0-->string</code></td></tr><tr
+c-id=54.47.2.3><th c-id=54.48.3.0><!--t.54.49.4.0-->Default</th><td c-id=54.50.3.1><code c-id=54.51.4.0><!--t.54.52.5.0-->"off"</code></td></tr></tbody><thead
+c-id=54.53.1.4><tr c-id=54.54.2.0><th colspan=2 c-id=54.55.3.0><h3 c-id=54.56.4.0><!--t.54.57.5.0-->autocomplete</h3></th></tr></thead><tbody
+c-id=54.58.1.5><tr c-id=54.59.2.0><th c-id=54.60.3.0><!--t.54.61.4.0-->Description</th><td c-id=54.62.3.1><div
+c-id=54.63.4.0><p>Indicates whether the value of the control can be automatically completed by the browser.</p></div></td></tr><tr
+c-id=54.64.2.1><th c-id=54.65.3.0><!--t.54.66.4.0-->Attribute</th><td c-id=54.67.3.1><code c-id=54.68.4.0><!--t.54.69.5.0-->autocomplete</code></td></tr><tr
+c-id=54.70.2.2><th c-id=54.71.3.0><!--t.54.72.4.0-->Type</th><td c-id=54.73.3.1><code c-id=54.74.4.0><!--t.54.75.5.0-->"off" | "on" | "name" | "honorific-prefix" | "given-name" | "additional-name" | "family-name" | "honorific-suffix" | "nickname" | "email" | "username" | "new-password" | "current-password" | "one-time-code" | "organization-title" | "organization" | "street-address" | "address-line1" | "address-line2" | "address-line3" | "address-level4" | "address-level3" | "address-level2" | "address-level1" | "country" | "country-name" | "postal-code" | "cc-name" | "cc-given-name" | "cc-additional-name" | "cc-family-name" | "cc-number" | "cc-exp" | "cc-exp-month" | "cc-exp-year" | "cc-csc" | "cc-type" | "transaction-currency" | "transaction-amount" | "language" | "bday" | "bday-day" | "bday-month" | "bday-year" | "sex" | "tel" | "tel-country-code" | "tel-national" | "tel-area-code" | "tel-local" | "tel-extension" | "impp" | "url" | "photo"</code></td></tr><tr
+c-id=54.76.2.3><th c-id=54.77.3.0><!--t.54.78.4.0-->Default</th><td c-id=54.79.3.1><code c-id=54.80.4.0><!--t.54.81.5.0-->"off"</code></td></tr></tbody><thead
+c-id=54.82.1.6><tr c-id=54.83.2.0><th colspan=2 c-id=54.84.3.0><h3 c-id=54.85.4.0><!--t.54.86.5.0-->autocorrect</h3></th></tr></thead><tbody
+c-id=54.87.1.7><tr c-id=54.88.2.0><th c-id=54.89.3.0><!--t.54.90.4.0-->Description</th><td c-id=54.91.3.1><div
+c-id=54.92.4.0><p>Whether auto correction should be enabled when the user is entering/editing the text value.</p></div></td></tr><tr
+c-id=54.93.2.1><th c-id=54.94.3.0><!--t.54.95.4.0-->Attribute</th><td c-id=54.96.3.1><code c-id=54.97.4.0><!--t.54.98.5.0-->autocorrect</code></td></tr><tr
+c-id=54.99.2.2><th c-id=54.100.3.0><!--t.54.101.4.0-->Type</th><td c-id=54.102.3.1><code c-id=54.103.4.0><!--t.54.104.5.0-->"off" | "on"</code></td></tr><tr
+c-id=54.105.2.3><th c-id=54.106.3.0><!--t.54.107.4.0-->Default</th><td c-id=54.108.3.1><code c-id=54.109.4.0><!--t.54.110.5.0-->"off"</code></td></tr></tbody><thead
+c-id=54.111.1.8><tr c-id=54.112.2.0><th colspan=2 c-id=54.113.3.0><h3 c-id=54.114.4.0><!--t.54.115.5.0-->autofocus</h3></th></tr></thead><tbody
+c-id=54.116.1.9><tr c-id=54.117.2.0><th c-id=54.118.3.0><!--t.54.119.4.0-->Description</th><td c-id=54.120.3.1><div
+c-id=54.121.4.0><p>This Boolean attribute lets you specify that a form control should have input focus when the page loads.</p></div></td></tr><tr
+c-id=54.122.2.1><th c-id=54.123.3.0><!--t.54.124.4.0-->Attribute</th><td c-id=54.125.3.1><code c-id=54.126.4.0><!--t.54.127.5.0-->autofocus</code></td></tr><tr
+c-id=54.128.2.2><th c-id=54.129.3.0><!--t.54.130.4.0-->Type</th><td c-id=54.131.3.1><code c-id=54.132.4.0><!--t.54.133.5.0-->boolean</code></td></tr><tr
+c-id=54.134.2.3><th c-id=54.135.3.0><!--t.54.136.4.0-->Default</th><td c-id=54.137.3.1><code c-id=54.138.4.0><!--t.54.139.5.0-->false</code></td></tr></tbody><thead
+c-id=54.140.1.10><tr c-id=54.141.2.0><th colspan=2 c-id=54.142.3.0><h3 c-id=54.143.4.0><!--t.54.144.5.0-->clearInput</h3></th></tr></thead><tbody
+c-id=54.145.1.11><tr c-id=54.146.2.0><th c-id=54.147.3.0><!--t.54.148.4.0-->Description</th><td c-id=54.149.3.1><div
+c-id=54.150.4.0><p>If <code>true</code>, a clear icon will appear in the input when there is a value. Clicking it clears the input.</p></div></td></tr><tr
+c-id=54.151.2.1><th c-id=54.152.3.0><!--t.54.153.4.0-->Attribute</th><td c-id=54.154.3.1><code c-id=54.155.4.0><!--t.54.156.5.0-->clear-input</code></td></tr><tr
+c-id=54.157.2.2><th c-id=54.158.3.0><!--t.54.159.4.0-->Type</th><td c-id=54.160.3.1><code c-id=54.161.4.0><!--t.54.162.5.0-->boolean</code></td></tr><tr
+c-id=54.163.2.3><th c-id=54.164.3.0><!--t.54.165.4.0-->Default</th><td c-id=54.166.3.1><code c-id=54.167.4.0><!--t.54.168.5.0-->false</code></td></tr></tbody><thead
+c-id=54.169.1.12><tr c-id=54.170.2.0><th colspan=2 c-id=54.171.3.0><h3 c-id=54.172.4.0><!--t.54.173.5.0-->clearOnEdit</h3></th></tr></thead><tbody
+c-id=54.174.1.13><tr c-id=54.175.2.0><th c-id=54.176.3.0><!--t.54.177.4.0-->Description</th><td c-id=54.178.3.1><div
+c-id=54.179.4.0><p>If <code>true</code>, the value will be cleared after focus upon edit. Defaults to <code>true</code> when
 <code>type</code> is <code>"password"</code>, <code>false</code> for all other types.</p></div></td></tr><tr
-c-id=53.180.2.1><th c-id=53.181.3.0><!--t.53.182.4.0-->Attribute</th><td c-id=53.183.3.1><code c-id=53.184.4.0><!--t.53.185.5.0-->clear-on-edit</code></td></tr><tr
-c-id=53.186.2.2><th c-id=53.187.3.0><!--t.53.188.4.0-->Type</th><td c-id=53.189.3.1><code c-id=53.190.4.0><!--t.53.191.5.0-->boolean | undefined</code></td></tr></tbody><thead
-c-id=53.192.1.14><tr c-id=53.193.2.0><th colspan=2 c-id=53.194.3.0><h3 c-id=53.195.4.0><!--t.53.196.5.0-->color</h3></th></tr></thead><tbody
-c-id=53.197.1.15><tr c-id=53.198.2.0><th c-id=53.199.3.0><!--t.53.200.4.0-->Description</th><td c-id=53.201.3.1><div
-c-id=53.202.4.0><p>The color to use from your application's color palette.
+c-id=54.180.2.1><th c-id=54.181.3.0><!--t.54.182.4.0-->Attribute</th><td c-id=54.183.3.1><code c-id=54.184.4.0><!--t.54.185.5.0-->clear-on-edit</code></td></tr><tr
+c-id=54.186.2.2><th c-id=54.187.3.0><!--t.54.188.4.0-->Type</th><td c-id=54.189.3.1><code c-id=54.190.4.0><!--t.54.191.5.0-->boolean | undefined</code></td></tr></tbody><thead
+c-id=54.192.1.14><tr c-id=54.193.2.0><th colspan=2 c-id=54.194.3.0><h3 c-id=54.195.4.0><!--t.54.196.5.0-->color</h3></th></tr></thead><tbody
+c-id=54.197.1.15><tr c-id=54.198.2.0><th c-id=54.199.3.0><!--t.54.200.4.0-->Description</th><td c-id=54.201.3.1><div
+c-id=54.202.4.0><p>The color to use from your application's color palette.
 Default options are: <code>"primary"</code>,
 <code>"secondary"</code>, <code>"tertiary"</code>, <code>"success"</code>, <code>"warning"</code>,
 <code>"danger"</code>, <code>"light"</code>, <code>"medium"</code>, and <code>"dark"</code>.
 For more information on colors, see
 <stencil-route-link url="/docs/theming/basics" class=hydrated
-s-id=54><!--r.54--><!--o.0.1--><a class="link-active" c-id=54.0.0.0><!--s.54.1.1.0.--><!--t.0.1-->theming</a></stencil-route-link>.</p></div></td></tr><tr
-c-id=53.203.2.1><th c-id=53.204.3.0><!--t.53.205.4.0-->Attribute</th><td c-id=53.206.3.1><code c-id=53.207.4.0><!--t.53.208.5.0-->color</code></td></tr><tr
-c-id=53.209.2.2><th c-id=53.210.3.0><!--t.53.211.4.0-->Type</th><td c-id=53.212.3.1><code c-id=53.213.4.0><!--t.53.214.5.0-->"danger" | "primary" | "secondary" | "success" | "warning" | undefined</code></td></tr></tbody><thead
-c-id=53.215.1.16><tr c-id=53.216.2.0><th colspan=2 c-id=53.217.3.0><h3 c-id=53.218.4.0><!--t.53.219.5.0-->debounce</h3></th></tr></thead><tbody
-c-id=53.220.1.17><tr c-id=53.221.2.0><th c-id=53.222.3.0><!--t.53.223.4.0-->Description</th><td c-id=53.224.3.1><div
-c-id=53.225.4.0><p>Set the amount of time, in milliseconds, to wait to trigger the <code>ionChange</code> event after each keystroke.</p></div></td></tr><tr
-c-id=53.226.2.1><th c-id=53.227.3.0><!--t.53.228.4.0-->Attribute</th><td c-id=53.229.3.1><code c-id=53.230.4.0><!--t.53.231.5.0-->debounce</code></td></tr><tr
-c-id=53.232.2.2><th c-id=53.233.3.0><!--t.53.234.4.0-->Type</th><td c-id=53.235.3.1><code c-id=53.236.4.0><!--t.53.237.5.0-->number</code></td></tr><tr
-c-id=53.238.2.3><th c-id=53.239.3.0><!--t.53.240.4.0-->Default</th><td c-id=53.241.3.1><code c-id=53.242.4.0><!--t.53.243.5.0-->0</code></td></tr></tbody><thead
-c-id=53.244.1.18><tr c-id=53.245.2.0><th colspan=2 c-id=53.246.3.0><h3 c-id=53.247.4.0><!--t.53.248.5.0-->disabled</h3></th></tr></thead><tbody
-c-id=53.249.1.19><tr c-id=53.250.2.0><th c-id=53.251.3.0><!--t.53.252.4.0-->Description</th><td c-id=53.253.3.1><div
-c-id=53.254.4.0><p>If <code>true</code>, the user cannot interact with the input.</p></div></td></tr><tr
-c-id=53.255.2.1><th c-id=53.256.3.0><!--t.53.257.4.0-->Attribute</th><td c-id=53.258.3.1><code c-id=53.259.4.0><!--t.53.260.5.0-->disabled</code></td></tr><tr
-c-id=53.261.2.2><th c-id=53.262.3.0><!--t.53.263.4.0-->Type</th><td c-id=53.264.3.1><code c-id=53.265.4.0><!--t.53.266.5.0-->boolean</code></td></tr><tr
-c-id=53.267.2.3><th c-id=53.268.3.0><!--t.53.269.4.0-->Default</th><td c-id=53.270.3.1><code c-id=53.271.4.0><!--t.53.272.5.0-->false</code></td></tr></tbody><thead
-c-id=53.273.1.20><tr c-id=53.274.2.0><th colspan=2 c-id=53.275.3.0><h3 c-id=53.276.4.0><!--t.53.277.5.0-->enterkeyhint</h3></th></tr></thead><tbody
-c-id=53.278.1.21><tr c-id=53.279.2.0><th c-id=53.280.3.0><!--t.53.281.4.0-->Description</th><td c-id=53.282.3.1><div
-c-id=53.283.4.0><p>A hint to the browser for which enter key to display.
+s-id=55><!--r.55--><!--o.0.1--><a class="link-active" c-id=55.0.0.0><!--s.55.1.1.0.--><!--t.0.1-->theming</a></stencil-route-link>.</p></div></td></tr><tr
+c-id=54.203.2.1><th c-id=54.204.3.0><!--t.54.205.4.0-->Attribute</th><td c-id=54.206.3.1><code c-id=54.207.4.0><!--t.54.208.5.0-->color</code></td></tr><tr
+c-id=54.209.2.2><th c-id=54.210.3.0><!--t.54.211.4.0-->Type</th><td c-id=54.212.3.1><code c-id=54.213.4.0><!--t.54.214.5.0-->"danger" | "primary" | "secondary" | "success" | "warning" | undefined</code></td></tr></tbody><thead
+c-id=54.215.1.16><tr c-id=54.216.2.0><th colspan=2 c-id=54.217.3.0><h3 c-id=54.218.4.0><!--t.54.219.5.0-->debounce</h3></th></tr></thead><tbody
+c-id=54.220.1.17><tr c-id=54.221.2.0><th c-id=54.222.3.0><!--t.54.223.4.0-->Description</th><td c-id=54.224.3.1><div
+c-id=54.225.4.0><p>Set the amount of time, in milliseconds, to wait to trigger the <code>ionChange</code> event after each keystroke.</p></div></td></tr><tr
+c-id=54.226.2.1><th c-id=54.227.3.0><!--t.54.228.4.0-->Attribute</th><td c-id=54.229.3.1><code c-id=54.230.4.0><!--t.54.231.5.0-->debounce</code></td></tr><tr
+c-id=54.232.2.2><th c-id=54.233.3.0><!--t.54.234.4.0-->Type</th><td c-id=54.235.3.1><code c-id=54.236.4.0><!--t.54.237.5.0-->number</code></td></tr><tr
+c-id=54.238.2.3><th c-id=54.239.3.0><!--t.54.240.4.0-->Default</th><td c-id=54.241.3.1><code c-id=54.242.4.0><!--t.54.243.5.0-->0</code></td></tr></tbody><thead
+c-id=54.244.1.18><tr c-id=54.245.2.0><th colspan=2 c-id=54.246.3.0><h3 c-id=54.247.4.0><!--t.54.248.5.0-->disabled</h3></th></tr></thead><tbody
+c-id=54.249.1.19><tr c-id=54.250.2.0><th c-id=54.251.3.0><!--t.54.252.4.0-->Description</th><td c-id=54.253.3.1><div
+c-id=54.254.4.0><p>If <code>true</code>, the user cannot interact with the input.</p></div></td></tr><tr
+c-id=54.255.2.1><th c-id=54.256.3.0><!--t.54.257.4.0-->Attribute</th><td c-id=54.258.3.1><code c-id=54.259.4.0><!--t.54.260.5.0-->disabled</code></td></tr><tr
+c-id=54.261.2.2><th c-id=54.262.3.0><!--t.54.263.4.0-->Type</th><td c-id=54.264.3.1><code c-id=54.265.4.0><!--t.54.266.5.0-->boolean</code></td></tr><tr
+c-id=54.267.2.3><th c-id=54.268.3.0><!--t.54.269.4.0-->Default</th><td c-id=54.270.3.1><code c-id=54.271.4.0><!--t.54.272.5.0-->false</code></td></tr></tbody><thead
+c-id=54.273.1.20><tr c-id=54.274.2.0><th colspan=2 c-id=54.275.3.0><h3 c-id=54.276.4.0><!--t.54.277.5.0-->enterkeyhint</h3></th></tr></thead><tbody
+c-id=54.278.1.21><tr c-id=54.279.2.0><th c-id=54.280.3.0><!--t.54.281.4.0-->Description</th><td c-id=54.282.3.1><div
+c-id=54.283.4.0><p>A hint to the browser for which enter key to display.
 Possible values: <code>"enter"</code>,
 <code>"done"</code>, <code>"go"</code>, <code>"next"</code>, <code>"previous"</code>, <code>"search"</code>, and
-<code>"send"</code>.</p></div></td></tr><tr c-id=53.284.2.1><th c-id=53.285.3.0><!--t.53.286.4.0-->Attribute</th><td
-c-id=53.287.3.1><code c-id=53.288.4.0><!--t.53.289.5.0-->enterkeyhint</code></td></tr><tr c-id=53.290.2.2><th
-c-id=53.291.3.0><!--t.53.292.4.0-->Type</th><td c-id=53.293.3.1><code c-id=53.294.4.0><!--t.53.295.5.0-->"done" | "enter" | "go" | "next" | "previous" | "search" | "send" | undefined</code></td></tr></tbody><thead
-c-id=53.296.1.22><tr c-id=53.297.2.0><th colspan=2 c-id=53.298.3.0><h3 c-id=53.299.4.0><!--t.53.300.5.0-->inputmode</h3></th></tr></thead><tbody
-c-id=53.301.1.23><tr c-id=53.302.2.0><th c-id=53.303.3.0><!--t.53.304.4.0-->Description</th><td c-id=53.305.3.1><div
-c-id=53.306.4.0><p>A hint to the browser for which keyboard to display.
+<code>"send"</code>.</p></div></td></tr><tr c-id=54.284.2.1><th c-id=54.285.3.0><!--t.54.286.4.0-->Attribute</th><td
+c-id=54.287.3.1><code c-id=54.288.4.0><!--t.54.289.5.0-->enterkeyhint</code></td></tr><tr c-id=54.290.2.2><th
+c-id=54.291.3.0><!--t.54.292.4.0-->Type</th><td c-id=54.293.3.1><code c-id=54.294.4.0><!--t.54.295.5.0-->"done" | "enter" | "go" | "next" | "previous" | "search" | "send" | undefined</code></td></tr></tbody><thead
+c-id=54.296.1.22><tr c-id=54.297.2.0><th colspan=2 c-id=54.298.3.0><h3 c-id=54.299.4.0><!--t.54.300.5.0-->inputmode</h3></th></tr></thead><tbody
+c-id=54.301.1.23><tr c-id=54.302.2.0><th c-id=54.303.3.0><!--t.54.304.4.0-->Description</th><td c-id=54.305.3.1><div
+c-id=54.306.4.0><p>A hint to the browser for which keyboard to display.
 Possible values: <code>"none"</code>,
 <code>"text"</code>, <code>"tel"</code>, <code>"url"</code>, <code>"email"</code>, <code>"numeric"</code>,
-<code>"decimal"</code>, and <code>"search"</code>.</p></div></td></tr><tr c-id=53.307.2.1><th c-id=53.308.3.0><!--t.53.309.4.0-->Attribute</th><td
-c-id=53.310.3.1><code c-id=53.311.4.0><!--t.53.312.5.0-->inputmode</code></td></tr><tr c-id=53.313.2.2><th
-c-id=53.314.3.0><!--t.53.315.4.0-->Type</th><td c-id=53.316.3.1><code c-id=53.317.4.0><!--t.53.318.5.0-->"decimal" | "email" | "none" | "numeric" | "search" | "tel" | "text" | "url" | undefined</code></td></tr></tbody><thead
-c-id=53.319.1.24><tr c-id=53.320.2.0><th colspan=2 c-id=53.321.3.0><h3 c-id=53.322.4.0><!--t.53.323.5.0-->max</h3></th></tr></thead><tbody
-c-id=53.324.1.25><tr c-id=53.325.2.0><th c-id=53.326.3.0><!--t.53.327.4.0-->Description</th><td c-id=53.328.3.1><div
-c-id=53.329.4.0><p>The maximum value, which must not be less than its minimum (min attribute) value.</p></div></td></tr><tr
-c-id=53.330.2.1><th c-id=53.331.3.0><!--t.53.332.4.0-->Attribute</th><td c-id=53.333.3.1><code c-id=53.334.4.0><!--t.53.335.5.0-->max</code></td></tr><tr
-c-id=53.336.2.2><th c-id=53.337.3.0><!--t.53.338.4.0-->Type</th><td c-id=53.339.3.1><code c-id=53.340.4.0><!--t.53.341.5.0-->string | undefined</code></td></tr></tbody><thead
-c-id=53.342.1.26><tr c-id=53.343.2.0><th colspan=2 c-id=53.344.3.0><h3 c-id=53.345.4.0><!--t.53.346.5.0-->maxlength</h3></th></tr></thead><tbody
-c-id=53.347.1.27><tr c-id=53.348.2.0><th c-id=53.349.3.0><!--t.53.350.4.0-->Description</th><td c-id=53.351.3.1><div
-c-id=53.352.4.0><p>If the value of the type attribute is <code>text</code>, <code>email</code>, <code>search</code>,
+<code>"decimal"</code>, and <code>"search"</code>.</p></div></td></tr><tr c-id=54.307.2.1><th c-id=54.308.3.0><!--t.54.309.4.0-->Attribute</th><td
+c-id=54.310.3.1><code c-id=54.311.4.0><!--t.54.312.5.0-->inputmode</code></td></tr><tr c-id=54.313.2.2><th
+c-id=54.314.3.0><!--t.54.315.4.0-->Type</th><td c-id=54.316.3.1><code c-id=54.317.4.0><!--t.54.318.5.0-->"decimal" | "email" | "none" | "numeric" | "search" | "tel" | "text" | "url" | undefined</code></td></tr></tbody><thead
+c-id=54.319.1.24><tr c-id=54.320.2.0><th colspan=2 c-id=54.321.3.0><h3 c-id=54.322.4.0><!--t.54.323.5.0-->max</h3></th></tr></thead><tbody
+c-id=54.324.1.25><tr c-id=54.325.2.0><th c-id=54.326.3.0><!--t.54.327.4.0-->Description</th><td c-id=54.328.3.1><div
+c-id=54.329.4.0><p>The maximum value, which must not be less than its minimum (min attribute) value.</p></div></td></tr><tr
+c-id=54.330.2.1><th c-id=54.331.3.0><!--t.54.332.4.0-->Attribute</th><td c-id=54.333.3.1><code c-id=54.334.4.0><!--t.54.335.5.0-->max</code></td></tr><tr
+c-id=54.336.2.2><th c-id=54.337.3.0><!--t.54.338.4.0-->Type</th><td c-id=54.339.3.1><code c-id=54.340.4.0><!--t.54.341.5.0-->string | undefined</code></td></tr></tbody><thead
+c-id=54.342.1.26><tr c-id=54.343.2.0><th colspan=2 c-id=54.344.3.0><h3 c-id=54.345.4.0><!--t.54.346.5.0-->maxlength</h3></th></tr></thead><tbody
+c-id=54.347.1.27><tr c-id=54.348.2.0><th c-id=54.349.3.0><!--t.54.350.4.0-->Description</th><td c-id=54.351.3.1><div
+c-id=54.352.4.0><p>If the value of the type attribute is <code>text</code>, <code>email</code>, <code>search</code>,
 <code>password</code>, <code>tel</code>, or <code>url</code>, this attribute specifies the maximum number of characters that the user can enter.</p></div></td></tr><tr
-c-id=53.353.2.1><th c-id=53.354.3.0><!--t.53.355.4.0-->Attribute</th><td c-id=53.356.3.1><code c-id=53.357.4.0><!--t.53.358.5.0-->maxlength</code></td></tr><tr
-c-id=53.359.2.2><th c-id=53.360.3.0><!--t.53.361.4.0-->Type</th><td c-id=53.362.3.1><code c-id=53.363.4.0><!--t.53.364.5.0-->number | undefined</code></td></tr></tbody><thead
-c-id=53.365.1.28><tr c-id=53.366.2.0><th colspan=2 c-id=53.367.3.0><h3 c-id=53.368.4.0><!--t.53.369.5.0-->min</h3></th></tr></thead><tbody
-c-id=53.370.1.29><tr c-id=53.371.2.0><th c-id=53.372.3.0><!--t.53.373.4.0-->Description</th><td c-id=53.374.3.1><div
-c-id=53.375.4.0><p>The minimum value, which must not be greater than its maximum (max attribute) value.</p></div></td></tr><tr
-c-id=53.376.2.1><th c-id=53.377.3.0><!--t.53.378.4.0-->Attribute</th><td c-id=53.379.3.1><code c-id=53.380.4.0><!--t.53.381.5.0-->min</code></td></tr><tr
-c-id=53.382.2.2><th c-id=53.383.3.0><!--t.53.384.4.0-->Type</th><td c-id=53.385.3.1><code c-id=53.386.4.0><!--t.53.387.5.0-->string | undefined</code></td></tr></tbody><thead
-c-id=53.388.1.30><tr c-id=53.389.2.0><th colspan=2 c-id=53.390.3.0><h3 c-id=53.391.4.0><!--t.53.392.5.0-->minlength</h3></th></tr></thead><tbody
-c-id=53.393.1.31><tr c-id=53.394.2.0><th c-id=53.395.3.0><!--t.53.396.4.0-->Description</th><td c-id=53.397.3.1><div
-c-id=53.398.4.0><p>If the value of the type attribute is <code>text</code>, <code>email</code>, <code>search</code>,
+c-id=54.353.2.1><th c-id=54.354.3.0><!--t.54.355.4.0-->Attribute</th><td c-id=54.356.3.1><code c-id=54.357.4.0><!--t.54.358.5.0-->maxlength</code></td></tr><tr
+c-id=54.359.2.2><th c-id=54.360.3.0><!--t.54.361.4.0-->Type</th><td c-id=54.362.3.1><code c-id=54.363.4.0><!--t.54.364.5.0-->number | undefined</code></td></tr></tbody><thead
+c-id=54.365.1.28><tr c-id=54.366.2.0><th colspan=2 c-id=54.367.3.0><h3 c-id=54.368.4.0><!--t.54.369.5.0-->min</h3></th></tr></thead><tbody
+c-id=54.370.1.29><tr c-id=54.371.2.0><th c-id=54.372.3.0><!--t.54.373.4.0-->Description</th><td c-id=54.374.3.1><div
+c-id=54.375.4.0><p>The minimum value, which must not be greater than its maximum (max attribute) value.</p></div></td></tr><tr
+c-id=54.376.2.1><th c-id=54.377.3.0><!--t.54.378.4.0-->Attribute</th><td c-id=54.379.3.1><code c-id=54.380.4.0><!--t.54.381.5.0-->min</code></td></tr><tr
+c-id=54.382.2.2><th c-id=54.383.3.0><!--t.54.384.4.0-->Type</th><td c-id=54.385.3.1><code c-id=54.386.4.0><!--t.54.387.5.0-->string | undefined</code></td></tr></tbody><thead
+c-id=54.388.1.30><tr c-id=54.389.2.0><th colspan=2 c-id=54.390.3.0><h3 c-id=54.391.4.0><!--t.54.392.5.0-->minlength</h3></th></tr></thead><tbody
+c-id=54.393.1.31><tr c-id=54.394.2.0><th c-id=54.395.3.0><!--t.54.396.4.0-->Description</th><td c-id=54.397.3.1><div
+c-id=54.398.4.0><p>If the value of the type attribute is <code>text</code>, <code>email</code>, <code>search</code>,
 <code>password</code>, <code>tel</code>, or <code>url</code>, this attribute specifies the minimum number of characters that the user can enter.</p></div></td></tr><tr
-c-id=53.399.2.1><th c-id=53.400.3.0><!--t.53.401.4.0-->Attribute</th><td c-id=53.402.3.1><code c-id=53.403.4.0><!--t.53.404.5.0-->minlength</code></td></tr><tr
-c-id=53.405.2.2><th c-id=53.406.3.0><!--t.53.407.4.0-->Type</th><td c-id=53.408.3.1><code c-id=53.409.4.0><!--t.53.410.5.0-->number | undefined</code></td></tr></tbody><thead
-c-id=53.411.1.32><tr c-id=53.412.2.0><th colspan=2 c-id=53.413.3.0><h3 c-id=53.414.4.0><!--t.53.415.5.0-->multiple</h3></th></tr></thead><tbody
-c-id=53.416.1.33><tr c-id=53.417.2.0><th c-id=53.418.3.0><!--t.53.419.4.0-->Description</th><td c-id=53.420.3.1><div
-c-id=53.421.4.0><p>If <code>true</code>, the user can enter more than one value. This attribute applies when the type attribute is set to
+c-id=54.399.2.1><th c-id=54.400.3.0><!--t.54.401.4.0-->Attribute</th><td c-id=54.402.3.1><code c-id=54.403.4.0><!--t.54.404.5.0-->minlength</code></td></tr><tr
+c-id=54.405.2.2><th c-id=54.406.3.0><!--t.54.407.4.0-->Type</th><td c-id=54.408.3.1><code c-id=54.409.4.0><!--t.54.410.5.0-->number | undefined</code></td></tr></tbody><thead
+c-id=54.411.1.32><tr c-id=54.412.2.0><th colspan=2 c-id=54.413.3.0><h3 c-id=54.414.4.0><!--t.54.415.5.0-->multiple</h3></th></tr></thead><tbody
+c-id=54.416.1.33><tr c-id=54.417.2.0><th c-id=54.418.3.0><!--t.54.419.4.0-->Description</th><td c-id=54.420.3.1><div
+c-id=54.421.4.0><p>If <code>true</code>, the user can enter more than one value. This attribute applies when the type attribute is set to
 <code>"email"</code> or
-<code>"file"</code>, otherwise it is ignored.</p></div></td></tr><tr c-id=53.422.2.1><th c-id=53.423.3.0><!--t.53.424.4.0-->Attribute</th><td
-c-id=53.425.3.1><code c-id=53.426.4.0><!--t.53.427.5.0-->multiple</code></td></tr><tr c-id=53.428.2.2><th
-c-id=53.429.3.0><!--t.53.430.4.0-->Type</th><td c-id=53.431.3.1><code c-id=53.432.4.0><!--t.53.433.5.0-->boolean | undefined</code></td></tr></tbody><thead
-c-id=53.434.1.34><tr c-id=53.435.2.0><th colspan=2 c-id=53.436.3.0><h3 c-id=53.437.4.0><!--t.53.438.5.0-->name</h3></th></tr></thead><tbody
-c-id=53.439.1.35><tr c-id=53.440.2.0><th c-id=53.441.3.0><!--t.53.442.4.0-->Description</th><td c-id=53.443.3.1><div
-c-id=53.444.4.0><p>The name of the control, which is submitted with the form data.</p></div></td></tr><tr
-c-id=53.445.2.1><th c-id=53.446.3.0><!--t.53.447.4.0-->Attribute</th><td c-id=53.448.3.1><code c-id=53.449.4.0><!--t.53.450.5.0-->name</code></td></tr><tr
-c-id=53.451.2.2><th c-id=53.452.3.0><!--t.53.453.4.0-->Type</th><td c-id=53.454.3.1><code c-id=53.455.4.0><!--t.53.456.5.0-->string</code></td></tr><tr
-c-id=53.457.2.3><th c-id=53.458.3.0><!--t.53.459.4.0-->Default</th><td c-id=53.460.3.1><code c-id=53.461.4.0><!--t.53.462.5.0-->this.inputId</code></td></tr></tbody><thead
-c-id=53.463.1.36><tr c-id=53.464.2.0><th colspan=2 c-id=53.465.3.0><h3 c-id=53.466.4.0><!--t.53.467.5.0-->pattern</h3></th></tr></thead><tbody
-c-id=53.468.1.37><tr c-id=53.469.2.0><th c-id=53.470.3.0><!--t.53.471.4.0-->Description</th><td c-id=53.472.3.1><div
-c-id=53.473.4.0><p>A regular expression that the value is checked against. The pattern must match the entire value, not just some subset. Use the title attribute to describe the pattern to help the user. This attribute applies when the value of the type attribute is
+<code>"file"</code>, otherwise it is ignored.</p></div></td></tr><tr c-id=54.422.2.1><th c-id=54.423.3.0><!--t.54.424.4.0-->Attribute</th><td
+c-id=54.425.3.1><code c-id=54.426.4.0><!--t.54.427.5.0-->multiple</code></td></tr><tr c-id=54.428.2.2><th
+c-id=54.429.3.0><!--t.54.430.4.0-->Type</th><td c-id=54.431.3.1><code c-id=54.432.4.0><!--t.54.433.5.0-->boolean | undefined</code></td></tr></tbody><thead
+c-id=54.434.1.34><tr c-id=54.435.2.0><th colspan=2 c-id=54.436.3.0><h3 c-id=54.437.4.0><!--t.54.438.5.0-->name</h3></th></tr></thead><tbody
+c-id=54.439.1.35><tr c-id=54.440.2.0><th c-id=54.441.3.0><!--t.54.442.4.0-->Description</th><td c-id=54.443.3.1><div
+c-id=54.444.4.0><p>The name of the control, which is submitted with the form data.</p></div></td></tr><tr
+c-id=54.445.2.1><th c-id=54.446.3.0><!--t.54.447.4.0-->Attribute</th><td c-id=54.448.3.1><code c-id=54.449.4.0><!--t.54.450.5.0-->name</code></td></tr><tr
+c-id=54.451.2.2><th c-id=54.452.3.0><!--t.54.453.4.0-->Type</th><td c-id=54.454.3.1><code c-id=54.455.4.0><!--t.54.456.5.0-->string</code></td></tr><tr
+c-id=54.457.2.3><th c-id=54.458.3.0><!--t.54.459.4.0-->Default</th><td c-id=54.460.3.1><code c-id=54.461.4.0><!--t.54.462.5.0-->this.inputId</code></td></tr></tbody><thead
+c-id=54.463.1.36><tr c-id=54.464.2.0><th colspan=2 c-id=54.465.3.0><h3 c-id=54.466.4.0><!--t.54.467.5.0-->pattern</h3></th></tr></thead><tbody
+c-id=54.468.1.37><tr c-id=54.469.2.0><th c-id=54.470.3.0><!--t.54.471.4.0-->Description</th><td c-id=54.472.3.1><div
+c-id=54.473.4.0><p>A regular expression that the value is checked against. The pattern must match the entire value, not just some subset. Use the title attribute to describe the pattern to help the user. This attribute applies when the value of the type attribute is
 <code>"text"</code>,
 <code>"search"</code>, <code>"tel"</code>, <code>"url"</code>, <code>"email"</code>, <code>"date"</code>, or
 <code>"password"</code>, otherwise it is ignored. When the type attribute is <code>"date"</code>,
 <code>pattern</code> will only be used in browsers that do not support the <code>"date"</code> input type natively. See
 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date"
 title=undefined>https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date</a> for more information.</p></div></td></tr><tr
-c-id=53.474.2.1><th c-id=53.475.3.0><!--t.53.476.4.0-->Attribute</th><td c-id=53.477.3.1><code c-id=53.478.4.0><!--t.53.479.5.0-->pattern</code></td></tr><tr
-c-id=53.480.2.2><th c-id=53.481.3.0><!--t.53.482.4.0-->Type</th><td c-id=53.483.3.1><code c-id=53.484.4.0><!--t.53.485.5.0-->string | undefined</code></td></tr></tbody><thead
-c-id=53.486.1.38><tr c-id=53.487.2.0><th colspan=2 c-id=53.488.3.0><h3 c-id=53.489.4.0><!--t.53.490.5.0-->placeholder</h3></th></tr></thead><tbody
-c-id=53.491.1.39><tr c-id=53.492.2.0><th c-id=53.493.3.0><!--t.53.494.4.0-->Description</th><td c-id=53.495.3.1><div
-c-id=53.496.4.0><p>Instructional text that shows before the input has a value.</p></div></td></tr><tr
-c-id=53.497.2.1><th c-id=53.498.3.0><!--t.53.499.4.0-->Attribute</th><td c-id=53.500.3.1><code c-id=53.501.4.0><!--t.53.502.5.0-->placeholder</code></td></tr><tr
-c-id=53.503.2.2><th c-id=53.504.3.0><!--t.53.505.4.0-->Type</th><td c-id=53.506.3.1><code c-id=53.507.4.0><!--t.53.508.5.0-->null | string | undefined</code></td></tr></tbody><thead
-c-id=53.509.1.40><tr c-id=53.510.2.0><th colspan=2 c-id=53.511.3.0><h3 c-id=53.512.4.0><!--t.53.513.5.0-->readonly</h3></th></tr></thead><tbody
-c-id=53.514.1.41><tr c-id=53.515.2.0><th c-id=53.516.3.0><!--t.53.517.4.0-->Description</th><td c-id=53.518.3.1><div
-c-id=53.519.4.0><p>If <code>true</code>, the user cannot modify the value.</p></div></td></tr><tr c-id=53.520.2.1><th
-c-id=53.521.3.0><!--t.53.522.4.0-->Attribute</th><td c-id=53.523.3.1><code c-id=53.524.4.0><!--t.53.525.5.0-->readonly</code></td></tr><tr
-c-id=53.526.2.2><th c-id=53.527.3.0><!--t.53.528.4.0-->Type</th><td c-id=53.529.3.1><code c-id=53.530.4.0><!--t.53.531.5.0-->boolean</code></td></tr><tr
-c-id=53.532.2.3><th c-id=53.533.3.0><!--t.53.534.4.0-->Default</th><td c-id=53.535.3.1><code c-id=53.536.4.0><!--t.53.537.5.0-->false</code></td></tr></tbody><thead
-c-id=53.538.1.42><tr c-id=53.539.2.0><th colspan=2 c-id=53.540.3.0><h3 c-id=53.541.4.0><!--t.53.542.5.0-->required</h3></th></tr></thead><tbody
-c-id=53.543.1.43><tr c-id=53.544.2.0><th c-id=53.545.3.0><!--t.53.546.4.0-->Description</th><td c-id=53.547.3.1><div
-c-id=53.548.4.0><p>If <code>true</code>, the user must fill in a value before submitting a form.</p></div></td></tr><tr
-c-id=53.549.2.1><th c-id=53.550.3.0><!--t.53.551.4.0-->Attribute</th><td c-id=53.552.3.1><code c-id=53.553.4.0><!--t.53.554.5.0-->required</code></td></tr><tr
-c-id=53.555.2.2><th c-id=53.556.3.0><!--t.53.557.4.0-->Type</th><td c-id=53.558.3.1><code c-id=53.559.4.0><!--t.53.560.5.0-->boolean</code></td></tr><tr
-c-id=53.561.2.3><th c-id=53.562.3.0><!--t.53.563.4.0-->Default</th><td c-id=53.564.3.1><code c-id=53.565.4.0><!--t.53.566.5.0-->false</code></td></tr></tbody><thead
-c-id=53.567.1.44><tr c-id=53.568.2.0><th colspan=2 c-id=53.569.3.0><h3 c-id=53.570.4.0><!--t.53.571.5.0-->size</h3></th></tr></thead><tbody
-c-id=53.572.1.45><tr c-id=53.573.2.0><th c-id=53.574.3.0><!--t.53.575.4.0-->Description</th><td c-id=53.576.3.1><div
-c-id=53.577.4.0><p>The initial size of the control. This value is in pixels unless the value of the type attribute is
+c-id=54.474.2.1><th c-id=54.475.3.0><!--t.54.476.4.0-->Attribute</th><td c-id=54.477.3.1><code c-id=54.478.4.0><!--t.54.479.5.0-->pattern</code></td></tr><tr
+c-id=54.480.2.2><th c-id=54.481.3.0><!--t.54.482.4.0-->Type</th><td c-id=54.483.3.1><code c-id=54.484.4.0><!--t.54.485.5.0-->string | undefined</code></td></tr></tbody><thead
+c-id=54.486.1.38><tr c-id=54.487.2.0><th colspan=2 c-id=54.488.3.0><h3 c-id=54.489.4.0><!--t.54.490.5.0-->placeholder</h3></th></tr></thead><tbody
+c-id=54.491.1.39><tr c-id=54.492.2.0><th c-id=54.493.3.0><!--t.54.494.4.0-->Description</th><td c-id=54.495.3.1><div
+c-id=54.496.4.0><p>Instructional text that shows before the input has a value.</p></div></td></tr><tr
+c-id=54.497.2.1><th c-id=54.498.3.0><!--t.54.499.4.0-->Attribute</th><td c-id=54.500.3.1><code c-id=54.501.4.0><!--t.54.502.5.0-->placeholder</code></td></tr><tr
+c-id=54.503.2.2><th c-id=54.504.3.0><!--t.54.505.4.0-->Type</th><td c-id=54.506.3.1><code c-id=54.507.4.0><!--t.54.508.5.0-->null | string | undefined</code></td></tr></tbody><thead
+c-id=54.509.1.40><tr c-id=54.510.2.0><th colspan=2 c-id=54.511.3.0><h3 c-id=54.512.4.0><!--t.54.513.5.0-->readonly</h3></th></tr></thead><tbody
+c-id=54.514.1.41><tr c-id=54.515.2.0><th c-id=54.516.3.0><!--t.54.517.4.0-->Description</th><td c-id=54.518.3.1><div
+c-id=54.519.4.0><p>If <code>true</code>, the user cannot modify the value.</p></div></td></tr><tr c-id=54.520.2.1><th
+c-id=54.521.3.0><!--t.54.522.4.0-->Attribute</th><td c-id=54.523.3.1><code c-id=54.524.4.0><!--t.54.525.5.0-->readonly</code></td></tr><tr
+c-id=54.526.2.2><th c-id=54.527.3.0><!--t.54.528.4.0-->Type</th><td c-id=54.529.3.1><code c-id=54.530.4.0><!--t.54.531.5.0-->boolean</code></td></tr><tr
+c-id=54.532.2.3><th c-id=54.533.3.0><!--t.54.534.4.0-->Default</th><td c-id=54.535.3.1><code c-id=54.536.4.0><!--t.54.537.5.0-->false</code></td></tr></tbody><thead
+c-id=54.538.1.42><tr c-id=54.539.2.0><th colspan=2 c-id=54.540.3.0><h3 c-id=54.541.4.0><!--t.54.542.5.0-->required</h3></th></tr></thead><tbody
+c-id=54.543.1.43><tr c-id=54.544.2.0><th c-id=54.545.3.0><!--t.54.546.4.0-->Description</th><td c-id=54.547.3.1><div
+c-id=54.548.4.0><p>If <code>true</code>, the user must fill in a value before submitting a form.</p></div></td></tr><tr
+c-id=54.549.2.1><th c-id=54.550.3.0><!--t.54.551.4.0-->Attribute</th><td c-id=54.552.3.1><code c-id=54.553.4.0><!--t.54.554.5.0-->required</code></td></tr><tr
+c-id=54.555.2.2><th c-id=54.556.3.0><!--t.54.557.4.0-->Type</th><td c-id=54.558.3.1><code c-id=54.559.4.0><!--t.54.560.5.0-->boolean</code></td></tr><tr
+c-id=54.561.2.3><th c-id=54.562.3.0><!--t.54.563.4.0-->Default</th><td c-id=54.564.3.1><code c-id=54.565.4.0><!--t.54.566.5.0-->false</code></td></tr></tbody><thead
+c-id=54.567.1.44><tr c-id=54.568.2.0><th colspan=2 c-id=54.569.3.0><h3 c-id=54.570.4.0><!--t.54.571.5.0-->size</h3></th></tr></thead><tbody
+c-id=54.572.1.45><tr c-id=54.573.2.0><th c-id=54.574.3.0><!--t.54.575.4.0-->Description</th><td c-id=54.576.3.1><div
+c-id=54.577.4.0><p>The initial size of the control. This value is in pixels unless the value of the type attribute is
 <code>"text"</code> or
 <code>"password"</code>, in which case it is an integer number of characters. This attribute applies only when the
 <code>type</code> attribute is set to
 <code>"text"</code>, <code>"search"</code>, <code>"tel"</code>, <code>"url"</code>,
 <code>"email"</code>, or <code>"password"</code>, otherwise it is ignored.</p></div></td></tr><tr
-c-id=53.578.2.1><th c-id=53.579.3.0><!--t.53.580.4.0-->Attribute</th><td c-id=53.581.3.1><code c-id=53.582.4.0><!--t.53.583.5.0-->size</code></td></tr><tr
-c-id=53.584.2.2><th c-id=53.585.3.0><!--t.53.586.4.0-->Type</th><td c-id=53.587.3.1><code c-id=53.588.4.0><!--t.53.589.5.0-->number | undefined</code></td></tr></tbody><thead
-c-id=53.590.1.46><tr c-id=53.591.2.0><th colspan=2 c-id=53.592.3.0><h3 c-id=53.593.4.0><!--t.53.594.5.0-->spellcheck</h3></th></tr></thead><tbody
-c-id=53.595.1.47><tr c-id=53.596.2.0><th c-id=53.597.3.0><!--t.53.598.4.0-->Description</th><td c-id=53.599.3.1><div
-c-id=53.600.4.0><p>If <code>true</code>, the element will have its spelling and grammar checked.</p></div></td></tr><tr
-c-id=53.601.2.1><th c-id=53.602.3.0><!--t.53.603.4.0-->Attribute</th><td c-id=53.604.3.1><code c-id=53.605.4.0><!--t.53.606.5.0-->spellcheck</code></td></tr><tr
-c-id=53.607.2.2><th c-id=53.608.3.0><!--t.53.609.4.0-->Type</th><td c-id=53.610.3.1><code c-id=53.611.4.0><!--t.53.612.5.0-->boolean</code></td></tr><tr
-c-id=53.613.2.3><th c-id=53.614.3.0><!--t.53.615.4.0-->Default</th><td c-id=53.616.3.1><code c-id=53.617.4.0><!--t.53.618.5.0-->false</code></td></tr></tbody><thead
-c-id=53.619.1.48><tr c-id=53.620.2.0><th colspan=2 c-id=53.621.3.0><h3 c-id=53.622.4.0><!--t.53.623.5.0-->step</h3></th></tr></thead><tbody
-c-id=53.624.1.49><tr c-id=53.625.2.0><th c-id=53.626.3.0><!--t.53.627.4.0-->Description</th><td c-id=53.628.3.1><div
-c-id=53.629.4.0><p>Works with the min and max attributes to limit the increments at which a value can be set.
+c-id=54.578.2.1><th c-id=54.579.3.0><!--t.54.580.4.0-->Attribute</th><td c-id=54.581.3.1><code c-id=54.582.4.0><!--t.54.583.5.0-->size</code></td></tr><tr
+c-id=54.584.2.2><th c-id=54.585.3.0><!--t.54.586.4.0-->Type</th><td c-id=54.587.3.1><code c-id=54.588.4.0><!--t.54.589.5.0-->number | undefined</code></td></tr></tbody><thead
+c-id=54.590.1.46><tr c-id=54.591.2.0><th colspan=2 c-id=54.592.3.0><h3 c-id=54.593.4.0><!--t.54.594.5.0-->spellcheck</h3></th></tr></thead><tbody
+c-id=54.595.1.47><tr c-id=54.596.2.0><th c-id=54.597.3.0><!--t.54.598.4.0-->Description</th><td c-id=54.599.3.1><div
+c-id=54.600.4.0><p>If <code>true</code>, the element will have its spelling and grammar checked.</p></div></td></tr><tr
+c-id=54.601.2.1><th c-id=54.602.3.0><!--t.54.603.4.0-->Attribute</th><td c-id=54.604.3.1><code c-id=54.605.4.0><!--t.54.606.5.0-->spellcheck</code></td></tr><tr
+c-id=54.607.2.2><th c-id=54.608.3.0><!--t.54.609.4.0-->Type</th><td c-id=54.610.3.1><code c-id=54.611.4.0><!--t.54.612.5.0-->boolean</code></td></tr><tr
+c-id=54.613.2.3><th c-id=54.614.3.0><!--t.54.615.4.0-->Default</th><td c-id=54.616.3.1><code c-id=54.617.4.0><!--t.54.618.5.0-->false</code></td></tr></tbody><thead
+c-id=54.619.1.48><tr c-id=54.620.2.0><th colspan=2 c-id=54.621.3.0><h3 c-id=54.622.4.0><!--t.54.623.5.0-->step</h3></th></tr></thead><tbody
+c-id=54.624.1.49><tr c-id=54.625.2.0><th c-id=54.626.3.0><!--t.54.627.4.0-->Description</th><td c-id=54.628.3.1><div
+c-id=54.629.4.0><p>Works with the min and max attributes to limit the increments at which a value can be set.
 Possible values are:
 <code>"any"</code> or a positive floating point number.</p></div></td></tr><tr
-c-id=53.630.2.1><th c-id=53.631.3.0><!--t.53.632.4.0-->Attribute</th><td c-id=53.633.3.1><code c-id=53.634.4.0><!--t.53.635.5.0-->step</code></td></tr><tr
-c-id=53.636.2.2><th c-id=53.637.3.0><!--t.53.638.4.0-->Type</th><td c-id=53.639.3.1><code c-id=53.640.4.0><!--t.53.641.5.0-->string | undefined</code></td></tr></tbody><thead
-c-id=53.642.1.50><tr c-id=53.643.2.0><th colspan=2 c-id=53.644.3.0><h3 c-id=53.645.4.0><!--t.53.646.5.0-->type</h3></th></tr></thead><tbody
-c-id=53.647.1.51><tr c-id=53.648.2.0><th c-id=53.649.3.0><!--t.53.650.4.0-->Description</th><td c-id=53.651.3.1><div
-c-id=53.652.4.0><p>The type of control to display. The default type is text.</p></div></td></tr><tr c-id=53.653.2.1><th
-c-id=53.654.3.0><!--t.53.655.4.0-->Attribute</th><td c-id=53.656.3.1><code c-id=53.657.4.0><!--t.53.658.5.0-->type</code></td></tr><tr
-c-id=53.659.2.2><th c-id=53.660.3.0><!--t.53.661.4.0-->Type</th><td c-id=53.662.3.1><code c-id=53.663.4.0><!--t.53.664.5.0-->"date" | "email" | "number" | "password" | "search" | "tel" | "text" | "time" | "url"</code></td></tr><tr
-c-id=53.665.2.3><th c-id=53.666.3.0><!--t.53.667.4.0-->Default</th><td c-id=53.668.3.1><code c-id=53.669.4.0><!--t.53.670.5.0-->"text"</code></td></tr></tbody><thead
-c-id=53.671.1.52><tr c-id=53.672.2.0><th colspan=2 c-id=53.673.3.0><h3 c-id=53.674.4.0><!--t.53.675.5.0-->value</h3></th></tr></thead><tbody
-c-id=53.676.1.53><tr c-id=53.677.2.0><th c-id=53.678.3.0><!--t.53.679.4.0-->Description</th><td c-id=53.680.3.1><div
-c-id=53.681.4.0><p>The value of the input.</p></div></td></tr><tr c-id=53.682.2.1><th c-id=53.683.3.0><!--t.53.684.4.0-->Attribute</th><td
-c-id=53.685.3.1><code c-id=53.686.4.0><!--t.53.687.5.0-->value</code></td></tr><tr c-id=53.688.2.2><th
-c-id=53.689.3.0><!--t.53.690.4.0-->Type</th><td c-id=53.691.3.1><code c-id=53.692.4.0><!--t.53.693.5.0-->null | number | string | undefined</code></td></tr><tr
-c-id=53.694.2.3><th c-id=53.695.3.0><!--t.53.696.4.0-->Default</th><td c-id=53.697.3.1><code c-id=53.698.4.0><!--t.53.699.5.0-->""</code></td></tr></tbody></table></docs-reference></section><section
-c-id=48.16.2.5><h2 id=events c-id=48.17.3.0><a href=#events c-id=48.18.4.0><!--t.48.19.5.0-->Events</a></h2><table
-c-id=48.20.3.1><thead c-id=48.21.4.0><tr c-id=48.22.5.0><th c-id=48.23.6.0><!--t.48.24.7.0-->Name</th><th
-c-id=48.25.6.1><!--t.48.26.7.0-->Description</th></tr></thead><tbody c-id=48.27.4.1><tr c-id=48.28.5.0><td
-c-id=48.29.6.0><code c-id=48.30.7.0><!--t.48.31.8.0-->senChange</code></td><td c-id=48.32.6.1><!--t.48.33.7.0-->Emitted when input is changed</td></tr><tr
-c-id=48.34.5.1><td c-id=48.35.6.0><code c-id=48.36.7.0><!--t.48.37.8.0-->senInput</code></td><td c-id=48.38.6.1><!--t.48.39.7.0-->Emitted when a keyboard input occurred.</td></tr></tbody></table></section><section
-c-id=48.40.2.6><h2 id=methods c-id=48.41.3.0><a href=#methods c-id=48.42.4.0><!--t.48.43.5.0-->Methods</a></h2><docs-reference
-class=hydrated c-id=48.44.3.1 s-id=55><!--r.55--><table c-id=55.0.0.0><thead c-id=55.1.1.0><tr c-id=55.2.2.0><th
-colspan=2 c-id=55.3.3.0><h3 c-id=55.4.4.0><!--t.55.5.5.0-->setFocus</h3></th></tr></thead><tbody c-id=55.6.1.1><tr
-c-id=55.7.2.0><th c-id=55.8.3.0><!--t.55.9.4.0-->Description</th><td c-id=55.10.3.1><div c-id=55.11.4.0><p>Sets focus on the specified
+c-id=54.630.2.1><th c-id=54.631.3.0><!--t.54.632.4.0-->Attribute</th><td c-id=54.633.3.1><code c-id=54.634.4.0><!--t.54.635.5.0-->step</code></td></tr><tr
+c-id=54.636.2.2><th c-id=54.637.3.0><!--t.54.638.4.0-->Type</th><td c-id=54.639.3.1><code c-id=54.640.4.0><!--t.54.641.5.0-->string | undefined</code></td></tr></tbody><thead
+c-id=54.642.1.50><tr c-id=54.643.2.0><th colspan=2 c-id=54.644.3.0><h3 c-id=54.645.4.0><!--t.54.646.5.0-->type</h3></th></tr></thead><tbody
+c-id=54.647.1.51><tr c-id=54.648.2.0><th c-id=54.649.3.0><!--t.54.650.4.0-->Description</th><td c-id=54.651.3.1><div
+c-id=54.652.4.0><p>The type of control to display. The default type is text.</p></div></td></tr><tr c-id=54.653.2.1><th
+c-id=54.654.3.0><!--t.54.655.4.0-->Attribute</th><td c-id=54.656.3.1><code c-id=54.657.4.0><!--t.54.658.5.0-->type</code></td></tr><tr
+c-id=54.659.2.2><th c-id=54.660.3.0><!--t.54.661.4.0-->Type</th><td c-id=54.662.3.1><code c-id=54.663.4.0><!--t.54.664.5.0-->"date" | "email" | "number" | "password" | "search" | "tel" | "text" | "time" | "url"</code></td></tr><tr
+c-id=54.665.2.3><th c-id=54.666.3.0><!--t.54.667.4.0-->Default</th><td c-id=54.668.3.1><code c-id=54.669.4.0><!--t.54.670.5.0-->"text"</code></td></tr></tbody><thead
+c-id=54.671.1.52><tr c-id=54.672.2.0><th colspan=2 c-id=54.673.3.0><h3 c-id=54.674.4.0><!--t.54.675.5.0-->value</h3></th></tr></thead><tbody
+c-id=54.676.1.53><tr c-id=54.677.2.0><th c-id=54.678.3.0><!--t.54.679.4.0-->Description</th><td c-id=54.680.3.1><div
+c-id=54.681.4.0><p>The value of the input.</p></div></td></tr><tr c-id=54.682.2.1><th c-id=54.683.3.0><!--t.54.684.4.0-->Attribute</th><td
+c-id=54.685.3.1><code c-id=54.686.4.0><!--t.54.687.5.0-->value</code></td></tr><tr c-id=54.688.2.2><th
+c-id=54.689.3.0><!--t.54.690.4.0-->Type</th><td c-id=54.691.3.1><code c-id=54.692.4.0><!--t.54.693.5.0-->null | number | string | undefined</code></td></tr><tr
+c-id=54.694.2.3><th c-id=54.695.3.0><!--t.54.696.4.0-->Default</th><td c-id=54.697.3.1><code c-id=54.698.4.0><!--t.54.699.5.0-->""</code></td></tr></tbody></table></docs-reference></section><section
+c-id=49.16.2.5><h2 id=events c-id=49.17.3.0><a href=#events c-id=49.18.4.0><!--t.49.19.5.0-->Events</a></h2><table
+c-id=49.20.3.1><thead c-id=49.21.4.0><tr c-id=49.22.5.0><th c-id=49.23.6.0><!--t.49.24.7.0-->Name</th><th
+c-id=49.25.6.1><!--t.49.26.7.0-->Description</th></tr></thead><tbody c-id=49.27.4.1><tr c-id=49.28.5.0><td
+c-id=49.29.6.0><code c-id=49.30.7.0><!--t.49.31.8.0-->senChange</code></td><td c-id=49.32.6.1><!--t.49.33.7.0-->Emitted when input is changed</td></tr><tr
+c-id=49.34.5.1><td c-id=49.35.6.0><code c-id=49.36.7.0><!--t.49.37.8.0-->senInput</code></td><td c-id=49.38.6.1><!--t.49.39.7.0-->Emitted when a keyboard input occurred.</td></tr></tbody></table></section><section
+c-id=49.40.2.6><h2 id=methods c-id=49.41.3.0><a href=#methods c-id=49.42.4.0><!--t.49.43.5.0-->Methods</a></h2><docs-reference
+class=hydrated c-id=49.44.3.1 s-id=56><!--r.56--><table c-id=56.0.0.0><thead c-id=56.1.1.0><tr c-id=56.2.2.0><th
+colspan=2 c-id=56.3.3.0><h3 c-id=56.4.4.0><!--t.56.5.5.0-->setFocus</h3></th></tr></thead><tbody c-id=56.6.1.1><tr
+c-id=56.7.2.0><th c-id=56.8.3.0><!--t.56.9.4.0-->Description</th><td c-id=56.10.3.1><div c-id=56.11.4.0><p>Sets focus on the specified
 <code>ion-input</code>. Use this method instead of the global <code>input.focus()</code>.</p></div></td></tr><tr
-c-id=55.12.2.1><th c-id=55.13.3.0><!--t.55.14.4.0-->Signature</th><td c-id=55.15.3.1><code c-id=55.16.4.0><!--t.55.17.5.0-->setFocus() =&gt; Promise&lt;void&gt;</code></td></tr></tbody></table></docs-reference></section></article></main></docs-page></stencil-route></stencil-router></docs-root>
+c-id=56.12.2.1><th c-id=56.13.3.0><!--t.56.14.4.0-->Signature</th><td c-id=56.15.3.1><code c-id=56.16.4.0><!--t.56.17.5.0-->setFocus() =&gt; Promise&lt;void&gt;</code></td></tr></tbody></table></docs-reference></section></article></main><docs-demo
+class=hydrated c-id=49.45.0.1 s-id=57><!--r.57--><div class="docs-demo-device" c-id=57.0.0.0><figure c-id=57.1.1.0><svg
+class="docs-demo-device__md-bar" viewBox="0 0 1384.3 40.3" c-id=57.2.2.0><path class=st0 d="M1343 5l18.8 32.3c.8 1.3 2.7 1.3 3.5 0L1384 5c.8-1.3-.2-3-1.7-3h-37.6c-1.5 0-2.5 1.7-1.7 3z"
+c-id=57.3.3.0></path><circle class=st0 cx=1299 cy=20.2 r=20 c-id=57.4.3.1></circle><path class=st0 d="M1213 1.2h30c2.2 0 4 1.8 4 4v30c0 2.2-1.8 4-4 4h-30c-2.2 0-4-1.8-4-4v-30c0-2.3 1.8-4 4-4zM16 4.2h64c8.8 0 16 7.2 16 16s-7.2 16-16 16H16c-8.8 0-16-7.2-16-16s7.2-16 16-16z"
+c-id=57.5.3.2></path></svg><svg class="docs-demo-device__ios-notch" viewBox="0 0 219 31" c-id=57.6.2.1><path
+d="M0 1V0h219v1a5 5 0 0 0-5 5v3c0 12.15-9.85 22-22 22H27C14.85 31 5 21.15 5 9V6a5 5 0 0 0-5-5z"
+fill-rule=evenodd c-id=57.7.3.0></path></svg><iframe loading=lazy importance=low src="https://codepen.io/senna-ui/embed/qBapaVj?height=265&amp;theme-id=light&amp;default-tab=result"
+c-id=57.8.2.2></iframe>
+</figure></div><a href="https://codepen.io/senna-ui/pen/qBapaVj?editors=1000" class="docs-demo-source"
+target=_blank title="Demo Source" c-id=57.9.0.1><ion-icon class="sc-ion-icon-h md hydrated" role=img
+aria-label=open c-id=57.10.1.0 s-id=58><!--r.58--><div class="icon-inner sc-ion-icon" c-id=58.0.0.0></div></ion-icon><!--t.57.11.1.1--> View Source</a></docs-demo></docs-page></stencil-route></stencil-router></docs-root>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXX-1" importance=low></script>
  <script data-m>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date);gtag("config","UA-XXX-1");</script>
  </body>

@@ -18,6 +18,7 @@
  <url><loc>https://senna-ui.com/docs/api/fieldset</loc></url>
  <url><loc>https://senna-ui.com/docs/api/form-field</loc></url>
  <url><loc>https://senna-ui.com/docs/api/grid</loc></url>
+ <url><loc>https://senna-ui.com/docs/api/icon</loc></url>
  <url><loc>https://senna-ui.com/docs/api/input</loc></url>
  <url><loc>https://senna-ui.com/docs/api/loading</loc></url>
  <url><loc>https://senna-ui.com/docs/api/menu</loc></url>
@@ -33,7 +34,6 @@
  <url><loc>https://senna-ui.com/docs/enterprise/camera</loc></url>
  <url><loc>https://senna-ui.com/docs/enterprise/identity-vault</loc></url>
  <url><loc>https://senna-ui.com/docs/intro/cli</loc></url>
- <url><loc>https://senna-ui.com/docs/intro/environment</loc></url>
  <url><loc>https://senna-ui.com/docs/layout/css-utilities</loc></url>
  <url><loc>https://senna-ui.com/docs/layout/global-stylesheets</loc></url>
  <url><loc>https://senna-ui.com/docs/layout/grid</loc></url>

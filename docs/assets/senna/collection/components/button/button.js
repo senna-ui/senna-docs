@@ -1,4 +1,8 @@
 import { Component, Host, h, Prop } from "@stencil/core";
+/**
+ * @docsCodePen { "user": "senna-ui", "id": "YzGYNEW" }
+ * @docsMenu { "group": "buttons" }
+ */
 export class Button {
   constructor() {
     /**
@@ -13,11 +17,14 @@ export class Button {
   render() {
     const classes = {
       btn: true,
-      [`btn-${this.color || 'secondary'}`]: true
+      'btn-icon': !!this.icon,
+      [`btn-${this.color || 'secondary'}`]: true,
     };
     return (h(Host, null,
       h("button", { class: classes, type: this.buttonType, disabled: this.disabled },
-        h("slot", null))));
+        h("span", null,
+          this.icon && h("sen-icon", { name: this.icon }),
+          h("slot", null)))));
   }
   static get is() { return "sen-button"; }
   static get encapsulation() { return "shadow"; }
@@ -85,6 +92,23 @@ export class Button {
       "attribute": "disabled",
       "reflect": true,
       "defaultValue": "false"
+    },
+    "icon": {
+      "type": "string",
+      "mutable": false,
+      "complexType": {
+        "original": "string",
+        "resolved": "string | undefined",
+        "references": {}
+      },
+      "required": false,
+      "optional": true,
+      "docs": {
+        "tags": [],
+        "text": "Icon to show"
+      },
+      "attribute": "icon",
+      "reflect": false
     }
   }; }
 }

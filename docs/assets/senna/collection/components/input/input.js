@@ -1,5 +1,9 @@
 import { Component, Element, Host, Method, Prop, State, Watch, Event, h, } from "@stencil/core";
 let inputIds = 0;
+/**
+ * @docsCodePen { "user": "senna-ui", "id": "qBapaVj" }
+ * @docsMenu { "group": "forms", "subGroup": "input" }
+ */
 export class Input {
   constructor() {
     this.inputId = `sen-input-${inputIds++}`;

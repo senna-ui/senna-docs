@@ -1,4 +1,7 @@
 import { Component, Host, h, Prop, Event } from "@stencil/core";
+/**
+ * @docsMenu { "group": "navigation", "subGroup": "menu" }
+ */
 export class MenuItem {
   constructor() {
     /**

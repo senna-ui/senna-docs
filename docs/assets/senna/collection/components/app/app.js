@@ -1,8 +1,8 @@
 import { Component, Host, Element, h } from "@stencil/core";
+/**
+ * @docsMenu { "group": "app" }
+ */
 export class App {
-  componentWillLoad() {
-    console.log("el", this.el.shadowRoot);
-  }
   render() {
     return (h(Host, null,
       h("slot", null)));

@@ -2,7 +2,7 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-const index = require('./index-77ed5089.js');
+const index = require('./index-6de7b0c3.js');
 
 const formFieldCss = ":host{font-family:var(--sen-font-family, \"Source Sans Pro\", Helvetica, sans-serif);font-size:13px}:host .form-label{margin-top:5px;display:inline-block;white-space:nowrap}";
 

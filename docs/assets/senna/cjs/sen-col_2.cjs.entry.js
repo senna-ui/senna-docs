@@ -2,7 +2,7 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-const index = require('./index-77ed5089.js');
+const index = require('./index-6de7b0c3.js');
 
 const SIZE_TO_MEDIA = {
   'xs': '(min-width: 0px)',

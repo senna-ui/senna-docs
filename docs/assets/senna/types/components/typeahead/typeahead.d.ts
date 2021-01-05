@@ -1,5 +1,8 @@
 import { ComponentInterface, EventEmitter } from "../../stencil-public-runtime";
 import { OptionSelectedEvent, TypeaheadOption } from "../../interface";
+/**
+ * @docsMenu { "group": "forms", "subGroup": "input" }
+ */
 export declare class Typeahead implements ComponentInterface {
   /**
    * Options to display in typeahead

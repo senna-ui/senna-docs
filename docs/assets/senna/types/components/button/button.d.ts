@@ -1,5 +1,9 @@
 import { ComponentInterface } from "../../stencil-public-runtime";
 import { Color } from "../../interface";
+/**
+ * @docsCodePen { "user": "senna-ui", "id": "YzGYNEW" }
+ * @docsMenu { "group": "buttons" }
+ */
 export declare class Button implements ComponentInterface {
   /**
    * Button type
@@ -13,5 +17,9 @@ export declare class Button implements ComponentInterface {
    * Disables the button
    */
   disabled: boolean;
+  /**
+   * Icon to show
+   */
+  icon?: string;
   render(): any;
 }

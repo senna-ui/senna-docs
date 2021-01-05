@@ -2,7 +2,7 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-const index = require('./index-77ed5089.js');
+const index = require('./index-6de7b0c3.js');
 
 const fieldsetCss = ":host{display:block;padding:6px;border:2px solid #F8F6F6;border-radius:0;position:relative;margin-bottom:8px}:host legend{background-color:#fff;position:relative;display:inline-block;font-weight:700;color:#CECBCB;left:0;padding:0 6px;top:-13px}";
 

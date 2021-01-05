@@ -1,4 +1,7 @@
 import { EventEmitter } from "../../stencil-public-runtime";
+/**
+ * @docsMenu { "group": "navigation", "subGroup": "menu" }
+ */
 export declare class MenuItem {
   /**
    * Value to emit when clicked

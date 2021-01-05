@@ -1,196 +1,375 @@
 {
   "title": "sen-card",
   "path": "/docs/api/card",
+  "demo": {
+    "url": "https://codepen.io/senna-ui/embed/wvzpgoe?height=265&theme-id=light&default-tab=result",
+    "source": "https://codepen.io/senna-ui/pen/wvzpgoe?editors=1000"
+  },
   "codePenLinks": [],
-  "menu": null,
+  "menu": {
+    "group": "card"
+  },
   "body": [
     "div",
-    null,
-    [
-      "h2",
-      {
-        "id": "css-custom-properties"
-      },
-      " ",
-      [
-        "a",
-        {
-          "href": "#css-custom-properties"
-        },
-        "CSS Custom Properties"
-      ],
-      " "
-    ],
-    " ",
-    [
-      "table",
+    null
+  ],
+  "usage": {
+    "example": [
+      "div",
       null,
-      " ",
       [
-        "thead",
-        null,
-        " ",
+        "docs-code",
+        {
+          "language": "html"
+        },
+        "\n  ",
         [
-          "tr",
+          "pre",
           null,
-          " ",
           [
-            "th",
+            "code",
             null,
-            "Name"
-          ],
-          " ",
-          [
-            "th",
-            null,
-            "Default"
-          ],
-          " ",
-          [
-            "th",
-            null,
-            "Description"
-          ],
-          " "
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "<"
+                ],
+                "sen-card"
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ],
+            "\n  ",
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "<"
+                ],
+                "sen-card-title"
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ],
+            "\n    Card tryout title\n  ",
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "</"
+                ],
+                "sen-card-title"
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ],
+            "\n  ",
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "<"
+                ],
+                "sen-card-body"
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ],
+            "\n    Some card body content\n  ",
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "</"
+                ],
+                "sen-card-body"
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ],
+            "\n  ",
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "<"
+                ],
+                "sen-card-actions"
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ],
+            "\n    ",
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "<"
+                ],
+                "sen-button"
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ],
+            "A button 1",
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "</"
+                ],
+                "sen-button"
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ],
+            "\n    ",
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "<"
+                ],
+                "sen-button"
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ],
+            "A button 2",
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "</"
+                ],
+                "sen-button"
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ],
+            "\n  ",
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "</"
+                ],
+                "sen-card-actions"
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ],
+            "\n",
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "</"
+                ],
+                "sen-card"
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ]
+          ]
         ],
-        " "
-      ],
-      " ",
-      [
-        "tbody",
-        null,
-        [
-          "tr",
-          null,
-          " ",
-          [
-            "td",
-            null,
-            [
-              "code",
-              null,
-              "--card-border-color"
-            ]
-          ],
-          " ",
-          [
-            "td",
-            null,
-            [
-              "code",
-              null,
-              "#DEDCDC"
-            ]
-          ],
-          " ",
-          [
-            "td",
-            null,
-            "outer border color"
-          ],
-          " "
-        ],
-        " ",
-        [
-          "tr",
-          null,
-          " ",
-          [
-            "td",
-            null,
-            [
-              "code",
-              null,
-              "--card-border-radius"
-            ]
-          ],
-          " ",
-          [
-            "td",
-            null,
-            [
-              "code",
-              null,
-              "0"
-            ]
-          ],
-          " ",
-          [
-            "td",
-            null,
-            "border radius"
-          ],
-          " "
-        ],
-        " ",
-        [
-          "tr",
-          null,
-          " ",
-          [
-            "td",
-            null,
-            [
-              "code",
-              null,
-              "--card-padding"
-            ]
-          ],
-          " ",
-          [
-            "td",
-            null,
-            [
-              "code",
-              null,
-              "8px"
-            ]
-          ],
-          " ",
-          [
-            "td",
-            null,
-            "the inner padding"
-          ],
-          " "
-        ],
-        " ",
-        [
-          "tr",
-          null,
-          " ",
-          [
-            "td",
-            null,
-            [
-              "code",
-              null,
-              "--card-margin"
-            ]
-          ],
-          " ",
-          [
-            "td",
-            null,
-            [
-              "code",
-              null,
-              "8px"
-            ]
-          ],
-          " ",
-          [
-            "td",
-            null,
-            "the outer margin"
-          ],
-          " "
-        ],
-        " "
+        "\n"
       ]
     ]
-  ],
-  "usage": {},
+  },
   "props": [],
   "methods": [],
   "template": "api",
@@ -198,20 +377,45 @@
   "encapsulation": "shadow",
   "tag": "sen-card",
   "docs": "",
-  "docsTags": [],
+  "docsTags": [
+    {
+      "text": "{ \"user\": \"senna-ui\", \"id\": \"wvzpgoe\" }",
+      "name": "docsCodePen"
+    },
+    {
+      "text": "{ \"group\": \"card\" }",
+      "name": "docsMenu"
+    }
+  ],
   "events": [],
   "listeners": [],
-  "styles": [],
+  "styles": [
+    {
+      "name": "--card-border-color",
+      "annotation": "prop",
+      "docs": "The outer border color - default `#DEDCDC`"
+    },
+    {
+      "name": "--card-border-radius",
+      "annotation": "prop",
+      "docs": "The border radius - default `0`"
+    },
+    {
+      "name": "--card-margin",
+      "annotation": "prop",
+      "docs": "The outer margin - default `8px`"
+    },
+    {
+      "name": "--card-padding",
+      "annotation": "prop",
+      "docs": "The inner padding - default `8px`"
+    }
+  ],
   "slots": [],
   "parts": [],
   "dependents": [],
   "dependencies": [],
   "dependencyGraph": {},
-  "headings": [
-    {
-      "text": "CSS Custom Properties",
-      "href": "#css-custom-properties"
-    }
-  ],
+  "headings": [],
   "pageClass": "page--docs-api-card"
 }

@@ -1,8 +1,15 @@
 {
   "title": "sen-grid",
   "path": "/docs/api/grid",
+  "demo": {
+    "url": "https://codepen.io/senna-ui/embed/eYdydGJ?height=265&theme-id=light&default-tab=result",
+    "source": "https://codepen.io/senna-ui/pen/eYdydGJ?editors=1000"
+  },
   "codePenLinks": [],
-  "menu": null,
+  "menu": {
+    "group": "layout",
+    "subGroup": "grid"
+  },
   "body": [
     "div",
     null,
@@ -10728,7 +10735,16 @@
     null,
     "The grid is a powerful mobile-first flexbox system for building custom layouts.\n\nIt is composed of three units — a grid, [row(s)](../row) and [column(s)](../col). Columns will expand to fill the row, and will resize to fit additsenal columns. It is based on a 12 column layout with different breakpoints based on the screen size. The number of columns can be customized using CSS.\n\nSee the [Responsive Grid documentatsen](/docs/layout/grid) for more informatsen."
   ],
-  "docsTags": [],
+  "docsTags": [
+    {
+      "text": "{ \"user\": \"senna-ui\", \"id\": \"eYdydGJ\" }",
+      "name": "docsCodePen"
+    },
+    {
+      "text": "{ \"group\": \"layout\", \"subGroup\": \"grid\" }",
+      "name": "docsMenu"
+    }
+  ],
   "events": [],
   "listeners": [],
   "styles": [

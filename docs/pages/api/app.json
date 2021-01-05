@@ -2,10 +2,25 @@
   "title": "sen-app",
   "path": "/docs/api/app",
   "codePenLinks": [],
-  "menu": null,
+  "menu": {
+    "group": "app"
+  },
   "body": [
     "div",
-    null
+    null,
+    [
+      "p",
+      {
+        "class": "intro"
+      },
+      "Provides basic styling and typography. Every Senna App should be wrapped in ",
+      [
+        "code",
+        null,
+        "sen-app"
+      ],
+      "."
+    ]
   ],
   "usage": {},
   "props": [],
@@ -14,8 +29,17 @@
   "filePath": "./src/components/app/app.tsx",
   "encapsulation": "shadow",
   "tag": "sen-app",
-  "docs": "",
-  "docsTags": [],
+  "docs": [
+    "div",
+    null,
+    "Provides basic styling and typography. Every Senna App should be wrapped in `sen-app`."
+  ],
+  "docsTags": [
+    {
+      "text": "{ \"group\": \"app\" }",
+      "name": "docsMenu"
+    }
+  ],
   "events": [],
   "listeners": [],
   "styles": [],

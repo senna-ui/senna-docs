@@ -5,6 +5,11 @@ const SUPPORTS_VARS = !!(win.CSS &&
   win.CSS.supports &&
   win.CSS.supports("--a: 0"));
 const BREAKPOINTS = ["", "xs", "sm", "md", "lg", "xl"];
+/**
+ *
+ * @docsCodePen { "user": "senna-ui", "id": "eYdydGJ" }
+ * @docsMenu { "group": "layout", "subGroup": "grid" }
+ */
 export class Col {
   onResize() {
     forceUpdate(this);

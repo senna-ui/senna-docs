@@ -1,4 +1,8 @@
 import { Component, Host, Prop, h } from "@stencil/core";
+/**
+ * @docsCodePen { "user": "senna-ui", "id": "qBapaVj" }
+ * @docsMenu { "group": "forms", "subGroup": "formField" }
+ */
 export class FormField {
   constructor() {
     /**

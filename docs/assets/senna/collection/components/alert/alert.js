@@ -1,4 +1,9 @@
 import { Component, Host, h, Prop, Element, } from "@stencil/core";
+/**
+ * Docs page options
+ * @docsCodePen { "user": "senna-ui", "id": "MWjrJEz" }
+ * @docsMenu { "group": "alert" }
+ */
 export class Alert {
   constructor() {
     this.hasTitleSlot = false;
@@ -6,6 +11,9 @@ export class Alert {
   componentWillLoad() {
     this.hasTitleSlot = !!this.el.querySelector('[slot="title"]');
   }
+  /**
+   * @slot title - optional alert title slot
+   */
   render() {
     const classes = {
       ["alert-" + this.color]: true,

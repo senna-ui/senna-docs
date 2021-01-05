@@ -1,4 +1,9 @@
 import { ComponentInterface } from "../../stencil-public-runtime";
+/**
+ *
+ * @docsCodePen { "user": "senna-ui", "id": "eYdydGJ" }
+ * @docsMenu { "group": "layout", "subGroup": "grid" }
+ */
 export declare class Col implements ComponentInterface {
   /**
    * The amount to offset the column, in terms of how many columns it should shift to the end

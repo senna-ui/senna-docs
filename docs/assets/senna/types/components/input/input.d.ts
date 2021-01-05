@@ -1,5 +1,9 @@
 import { ComponentInterface, EventEmitter } from "../../stencil-public-runtime";
 import { AutocompleteTypes, Color, InputChangeEventDetail, TextFieldTypes } from "../../interface";
+/**
+ * @docsCodePen { "user": "senna-ui", "id": "qBapaVj" }
+ * @docsMenu { "group": "forms", "subGroup": "input" }
+ */
 export declare class Input implements ComponentInterface {
   private nativeInput?;
   private inputId;

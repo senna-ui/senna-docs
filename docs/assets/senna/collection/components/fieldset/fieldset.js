@@ -1,4 +1,8 @@
 import { Component, Host, h, Prop } from "@stencil/core";
+/**
+ * @docsCodePen { "user": "senna-ui", "id": "qBapaVj" }
+ * @docsMenu { "group": "forms", "subGroup": "fieldset" }
+ */
 export class Fieldset {
   render() {
     return (h(Host, null,

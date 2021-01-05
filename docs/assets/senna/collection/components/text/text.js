@@ -1,6 +1,6 @@
 import { Component, Host, h, Prop } from "@stencil/core";
 /**
- * Text typography component
+ * @docsMenu { "group": "typography" }
  */
 export class Text {
   constructor() {

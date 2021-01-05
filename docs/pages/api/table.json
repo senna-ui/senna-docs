@@ -2,7 +2,9 @@
   "title": "sen-table",
   "path": "/docs/api/table",
   "codePenLinks": [],
-  "menu": null,
+  "menu": {
+    "group": "table"
+  },
   "body": [
     "div",
     null
@@ -48,7 +50,12 @@
   "encapsulation": "shadow",
   "tag": "sen-table",
   "docs": "",
-  "docsTags": [],
+  "docsTags": [
+    {
+      "text": "{ \"group\": \"table\" }",
+      "name": "docsMenu"
+    }
+  ],
   "events": [],
   "listeners": [],
   "styles": [],

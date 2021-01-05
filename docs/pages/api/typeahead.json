@@ -2,7 +2,10 @@
   "title": "sen-typeahead",
   "path": "/docs/api/typeahead",
   "codePenLinks": [],
-  "menu": null,
+  "menu": {
+    "group": "forms",
+    "subGroup": "input"
+  },
   "body": [
     "div",
     null
@@ -49,7 +52,12 @@
   "encapsulation": "shadow",
   "tag": "sen-typeahead",
   "docs": "",
-  "docsTags": [],
+  "docsTags": [
+    {
+      "text": "{ \"group\": \"forms\", \"subGroup\": \"input\" }",
+      "name": "docsMenu"
+    }
+  ],
   "events": [
     {
       "event": "senChange",

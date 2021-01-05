@@ -1,8 +1,15 @@
 {
   "title": "sen-row",
   "path": "/docs/api/row",
+  "demo": {
+    "url": "https://codepen.io/senna-ui/embed/eYdydGJ?height=265&theme-id=light&default-tab=result",
+    "source": "https://codepen.io/senna-ui/pen/eYdydGJ?editors=1000"
+  },
   "codePenLinks": [],
-  "menu": null,
+  "menu": {
+    "group": "layout",
+    "subGroup": "grid"
+  },
   "body": [
     "div",
     null,
@@ -96,7 +103,16 @@
     null,
     "Rows are horizontal components of the [grid](../grid) system and contain varying numbers of\n[columns](../col). They ensure the columns are positioned properly.\n\nSee [Grid Layout](/docs/layout/grid) for more information."
   ],
-  "docsTags": [],
+  "docsTags": [
+    {
+      "text": "{ \"user\": \"senna-ui\", \"id\": \"eYdydGJ\" }",
+      "name": "docsCodePen"
+    },
+    {
+      "text": "{ \"group\": \"layout\", \"subGroup\": \"grid\" }",
+      "name": "docsMenu"
+    }
+  ],
   "events": [],
   "listeners": [],
   "styles": [],

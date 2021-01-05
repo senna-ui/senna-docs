@@ -1,4 +1,4 @@
-import { r as registerInstance, h, H as Host } from './index-4e24c24c.js';
+import { r as registerInstance, h, H as Host } from './index-b3859636.js';
 
 const menuCss = ":host{display:block}.menu{background:var(--sen-menu-bg, #343030)}";
 

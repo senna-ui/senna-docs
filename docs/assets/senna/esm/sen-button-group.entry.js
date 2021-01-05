@@ -1,6 +1,6 @@
-import { r as registerInstance, h, H as Host } from './index-4e24c24c.js';
+import { r as registerInstance, h, H as Host } from './index-b3859636.js';
 
-const buttonGroupCss = ":host{display:flex}::slotted(sen-button:first-child){--border-right-radius:0}::slotted(sen-button:last-child){--border-left-radius:0}";
+const buttonGroupCss = ":host{--buttons-border-radius:3px;display:flex}::slotted(sen-button){--border-left-radius:0;--border-right-radius:0}::slotted(sen-button:first-child){--border-left-radius:var(--buttons-border-radius)}::slotted(sen-button:last-child){--border-right-radius:var(--buttons-border-radius)}";
 
 const ButtonGroup = class {
   constructor(hostRef) {
