@@ -21,8 +21,8 @@
     "heroku-postbuild": "npm run build.ci"
   },
   "dependencies": {
-    "@senna-ui/core": "0.1.0-dev.202101080634.99a6866",
-    "@senna-ui/docs": "0.1.0-dev.202101080634.99a6866",
+    "@senna-ui/core": "0.1.0-dev.202101081600.8059aa6",
+    "@senna-ui/docs": "0.1.0-dev.202101081600.8059aa6",
     "@sentry/node": "^5.17.0",
     "@stencil/router": "^1.0.1",
     "compression": "^1.7.4",

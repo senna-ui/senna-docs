@@ -55,5 +55,7 @@
   "menu-api-navigation": "Navigation",
   "menu-api-navigation-menu": "Menu",
   "menu-api-table": "Table",
+  "menu-api-table-data-table": "Data Table",
+  "menu-api-table-basic-table": "Basic Table",
   "menu-api-icons": "Icons"
 }

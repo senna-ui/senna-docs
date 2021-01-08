@@ -15,24 +15,26 @@ export default {
 };
 
 export const getAPIPages = async (): Promise<Page[]> => {
-  const pages = components.map(
-    async (component): Promise<Page> => {
-      const title = component.tag;
-      const path = `/docs/api/${title.slice(4)}`;
-      const { readme, usage, props, methods, ...contents } = component;
-      return {
-        title,
-        path,
-        ...getDocsTagsValues(component),
-        body: markdownRenderer(readme || '', path),
-        usage: renderUsage(usage, path),
-        props: renderDocsKey(props, path),
-        methods: renderDocsKey(methods, path),
-        template: 'api',
-        ...contents,
-      };
-    }
-  );
+  const pages = components
+    .filter(c => !c.tag.startsWith('demo')) // Exclude demo pages
+    .map(
+      async (component): Promise<Page> => {
+        const title = component.tag;
+        const path = `/docs/api/${title.slice(4)}`;
+        const { readme, usage, props, methods, ...contents } = component;
+        return {
+          title,
+          path,
+          ...getDocsTagsValues(component),
+          body: markdownRenderer(readme || '', path),
+          usage: renderUsage(usage, path),
+          props: renderDocsKey(props, path),
+          methods: renderDocsKey(methods, path),
+          template: 'api',
+          ...contents,
+        };
+      }
+    );
   const allPages = await Promise.all(pages);
   await fs.promises.writeFile(
     'src/api-menu.json',
