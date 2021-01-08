@@ -473,7 +473,7 @@
     },
     {
       "name": "inputmode",
-      "type": "\"decimal\" | \"email\" | \"none\" | \"numeric\" | \"search\" | \"tel\" | \"text\" | \"url\" | undefined",
+      "type": "\"decimal\" | \"email\" | \"none\" | \"numeric\" | \"radio\" | \"search\" | \"tel\" | \"text\" | \"url\" | undefined",
       "mutable": false,
       "attr": "inputmode",
       "reflectToAttr": false,
@@ -494,6 +494,10 @@
         },
         {
           "value": "numeric",
+          "type": "string"
+        },
+        {
+          "value": "radio",
           "type": "string"
         },
         {
@@ -847,7 +851,7 @@
       },
       "signature": "setFocus() => Promise<void>",
       "parameters": [],
-      "docs": "<p>Sets focus on the specified <code>ion-input</code>. Use this method instead of the global\n<code>input.focus()</code>.</p>\n",
+      "docs": "<p>Sets focus on the specified <code>sen-input</code>. Use this method instead of the global\n<code>input.focus()</code>.</p>\n",
       "docsTags": []
     }
   ],
@@ -891,10 +895,14 @@
   "slots": [],
   "parts": [],
   "dependents": [
+    "demo-form",
     "sen-typeahead"
   ],
   "dependencies": [],
   "dependencyGraph": {
+    "demo-form": [
+      "sen-input"
+    ],
     "sen-typeahead": [
       "sen-input"
     ]

@@ -5,10 +5,16 @@
   box-sizing: border-box;
   padding: 4px 6.4px;
   font-size: 13px;
-  font-family: var(--sen-font-family, "Source Sans Pro", Helvetica, sans-serif);
-  border: 0 solid #E9E6E6;
-  background: #E9E6E6;
+  font-family: var(--sen-font-monospace, "IBM Plex Mono", "Consolas", monospace);
+  border: 0 solid #F8F6F6;
+  background: #F8F6F6;
   line-height: 1em;
+  border-bottom: 1px solid #ADAcAc;
+}
+:host input:focus {
+  box-shadow: 0 0 0 2px #95afd6;
+  outline: none;
+  border-bottom-color: #F8F6F6;
 }
 :host input[type=text] {
   display: block;

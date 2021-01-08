@@ -1,5 +1,9 @@
 {
   "entries": [
+    "./components/radio/radio.js",
+    "./components/select/select.js",
+    "./components/_demo/demo-form/demo-form.js",
+    "./components/_demo/demo-table/demo-table.js",
     "./components/alert/alert.js",
     "./components/app/app.js",
     "./components/button/button.js",
@@ -8,7 +12,9 @@
     "./components/card-actions/card-actions.js",
     "./components/card-body/card-body.js",
     "./components/card-title/card-title.js",
+    "./components/checkbox/checkbox.js",
     "./components/col/col.js",
+    "./components/data-table/data-table.js",
     "./components/fieldset/fieldset.js",
     "./components/form-field/form-field.js",
     "./components/grid/grid.js",
@@ -18,13 +24,17 @@
     "./components/menu-item/menu-item.js",
     "./components/row/row.js",
     "./components/table/table.js",
+    "./components/table-body/table-body.js",
+    "./components/table-cell/table-cell.js",
+    "./components/table-head/table-head.js",
+    "./components/table-row/table-row.js",
     "./components/text/text.js",
     "./components/typeahead/typeahead.js"
   ],
   "compiler": {
     "name": "@stencil/core",
-    "version": "2.0.3",
-    "typescriptVersion": "4.0.2"
+    "version": "2.3.0",
+    "typescriptVersion": "4.0.5"
   },
   "collections": [],
   "bundles": []

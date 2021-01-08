@@ -14,7 +14,7 @@ export class MenuItem {
   }
   render() {
     return (h(Host, null,
-      h("a", { class: this.active ? 'active' : '', onClick: this.onClick },
+      h("a", { class: this.active ? "active" : "", onClick: this.onClick },
         h("slot", null))));
   }
   static get is() { return "sen-menu-item"; }

@@ -1,0 +1,39 @@
+:host .select-wrapper {
+  position: relative;
+}
+:host .select-wrapper:after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 6px);
+  right: 14.4px;
+  display: block;
+  width: 6px;
+  height: 6px;
+  transform: rotate(45deg);
+  border-bottom: 2px solid #6C6A6A;
+  border-right: 2px solid #6C6A6A;
+}
+:host select {
+  appearance: none;
+  box-sizing: border-box;
+  padding: 4px 3.4px;
+  font-size: 13px;
+  font-family: var(--sen-font-monospace, "IBM Plex Mono", "Consolas", monospace);
+  border: 0 solid #F8F6F6;
+  background: #F8F6F6;
+  line-height: 17.5px;
+  border-bottom: 1px solid #ADAcAc;
+  display: block;
+  width: 100%;
+}
+:host select option {
+  font-family: var(--sen-font-family, "IBM Plex Sans", "Source Sans Pro", Helvetica, sans-serif);
+  font-size: 13px;
+  line-height: 20px;
+  padding: 6.4px 4px;
+}
+:host select:focus {
+  box-shadow: 0 0 0 2px #95afd6;
+  outline: none;
+  border-bottom-color: #F8F6F6;
+}

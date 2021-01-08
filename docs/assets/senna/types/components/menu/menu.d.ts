@@ -1,5 +1,5 @@
-import { ComponentInterface } from "../../stencil-public-runtime";
-import { MenuItem } from "../../interface";
+import type { ComponentInterface } from "../../stencil-public-runtime";
+import type { MenuItem } from "../../interface";
 /**
  * @docsMenu { "group": "navigation", "subGroup": "menu" }
  */

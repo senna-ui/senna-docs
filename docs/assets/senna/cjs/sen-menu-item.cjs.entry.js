@@ -2,7 +2,7 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-const index = require('./index-6de7b0c3.js');
+const index = require('./index-a61cd5c3.js');
 
 const menuItemCss = ":host{display:block}a{cursor:pointer;display:block;padding:var(--sen-spacer, 8px);color:var(--sen-menu-item-color, #fff);background:var(--sen-menu-item-bg, #494444);margin-bottom:1px}a:hover{background:var(--sen-menu-item-hover-bg, #6C6A6A)}a.active{color:var(--sen-menu-item-active-color, #DEDCDC)}";
 
@@ -19,7 +19,7 @@ const MenuItem = class {
     };
   }
   render() {
-    return (index.h(index.Host, null, index.h("a", { class: this.active ? 'active' : '', onClick: this.onClick }, index.h("slot", null))));
+    return (index.h(index.Host, null, index.h("a", { class: this.active ? "active" : "", onClick: this.onClick }, index.h("slot", null))));
   }
 };
 MenuItem.style = menuItemCss;

@@ -1,5 +1,5 @@
-import { ComponentInterface } from "../../stencil-public-runtime";
-import { Color } from "../../interface";
+import type { ComponentInterface } from "../../stencil-public-runtime";
+import type { Color } from "../../interface";
 /**
  * @docsCodePen { "user": "senna-ui", "id": "YzGYNEW" }
  * @docsMenu { "group": "buttons" }
@@ -8,7 +8,7 @@ export declare class Button implements ComponentInterface {
   /**
    * Button type
    */
-  buttonType: "button" | "submit" | "reset";
+  type: "button" | "submit" | "reset";
   /**
    * Button variant
    */

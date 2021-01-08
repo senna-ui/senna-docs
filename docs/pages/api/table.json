@@ -3,47 +3,631 @@
   "path": "/docs/api/table",
   "codePenLinks": [],
   "menu": {
-    "group": "table"
+    "group": "table",
+    "subGroup": "basic-table"
   },
   "body": [
     "div",
     null
   ],
-  "usage": {},
-  "props": [
-    {
-      "name": "data",
-      "type": "any[]",
-      "mutable": false,
-      "reflectToAttr": false,
-      "docs": "<p>Table data, array of table rows</p>\n",
-      "docsTags": [],
-      "default": "[]",
-      "values": [
+  "usage": {
+    "javascript": [
+      "div",
+      null,
+      [
+        "docs-code",
         {
-          "type": "any[]"
-        }
-      ],
-      "optional": false,
-      "required": false
-    },
-    {
-      "name": "headers",
-      "type": "TableHeader[]",
-      "mutable": false,
-      "reflectToAttr": false,
-      "docs": "<p>Table headers</p>\n",
-      "docsTags": [],
-      "default": "[]",
-      "values": [
-        {
-          "type": "TableHeader[]"
-        }
-      ],
-      "optional": false,
-      "required": false
-    }
-  ],
+          "language": "html"
+        },
+        "\n  ",
+        [
+          "pre",
+          null,
+          [
+            "code",
+            null,
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "<"
+                ],
+                "sen-table"
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ],
+            "\n  ",
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "<"
+                ],
+                "sen-table-head"
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ],
+            "\n    ",
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "<"
+                ],
+                "sen-table-row"
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ],
+            "\n      ",
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "<"
+                ],
+                "sen-table-cell"
+              ],
+              " ",
+              [
+                "span",
+                {
+                  "class": "token attr-name"
+                },
+                "colspan"
+              ],
+              [
+                "span",
+                {
+                  "class": "token attr-value"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation attr-equals"
+                  },
+                  "="
+                ],
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "\""
+                ],
+                "2",
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "\""
+                ]
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ],
+            "Spans two columns",
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "</"
+                ],
+                "sen-table-cell"
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ],
+            "\n      ",
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "<"
+                ],
+                "sen-table-cell"
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ],
+            "Title for third",
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "</"
+                ],
+                "sen-table-cell"
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ],
+            "\n    ",
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "</"
+                ],
+                "sen-table-row"
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ],
+            "\n  ",
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "</"
+                ],
+                "sen-table-head"
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ],
+            "\n  ",
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "<"
+                ],
+                "sen-table-body"
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ],
+            "\n    ",
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "<"
+                ],
+                "sen-table-row"
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ],
+            "\n      ",
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "<"
+                ],
+                "sen-table-cell"
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ],
+            "1",
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "</"
+                ],
+                "sen-table-cell"
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ],
+            "\n      ",
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "<"
+                ],
+                "sen-table-cell"
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ],
+            "2",
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "</"
+                ],
+                "sen-table-cell"
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ],
+            "\n      ",
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "<"
+                ],
+                "sen-table-cell"
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ],
+            "3",
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "</"
+                ],
+                "sen-table-cell"
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ],
+            "\n    ",
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "</"
+                ],
+                "sen-table-row"
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ],
+            "\n  ",
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "</"
+                ],
+                "sen-table-body"
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ],
+            "\n",
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "</"
+                ],
+                "sen-table"
+              ],
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                ">"
+              ]
+            ]
+          ]
+        ],
+        "\n"
+      ]
+    ]
+  },
+  "props": [],
   "methods": [],
   "template": "api",
   "filePath": "./src/components/table/table.tsx",
@@ -52,7 +636,7 @@
   "docs": "",
   "docsTags": [
     {
-      "text": "{ \"group\": \"table\" }",
+      "text": "{ \"group\": \"table\", \"subGroup\": \"basic-table\" }",
       "name": "docsMenu"
     }
   ],
@@ -61,9 +645,15 @@
   "styles": [],
   "slots": [],
   "parts": [],
-  "dependents": [],
+  "dependents": [
+    "sen-data-table"
+  ],
   "dependencies": [],
-  "dependencyGraph": {},
+  "dependencyGraph": {
+    "sen-data-table": [
+      "sen-table"
+    ]
+  },
   "headings": [],
   "pageClass": "page--docs-api-table"
 }

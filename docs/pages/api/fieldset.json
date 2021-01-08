@@ -57,13 +57,18 @@
   "styles": [],
   "slots": [],
   "parts": [],
-  "dependents": [],
+  "dependents": [
+    "demo-form"
+  ],
   "dependencies": [
     "sen-grid"
   ],
   "dependencyGraph": {
     "sen-fieldset": [
       "sen-grid"
+    ],
+    "demo-form": [
+      "sen-fieldset"
     ]
   },
   "headings": [],

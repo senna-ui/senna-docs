@@ -1,5 +1,5 @@
-import { ComponentInterface } from "../../stencil-public-runtime";
-import { FontWeight, TextAlign, TextTag, TextTransform } from "../../interface";
+import type { ComponentInterface } from "../../stencil-public-runtime";
+import type { FontWeight, TextAlign, TextTag, TextTransform } from "../../interface";
 /**
  * @docsMenu { "group": "typography" }
  */

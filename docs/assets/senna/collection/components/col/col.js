@@ -1,9 +1,8 @@
-import { Component, Host, Listen, Prop, forceUpdate, h, } from "@stencil/core";
+var _a;
+import { Component, Host, Listen, Prop, forceUpdate, h } from "@stencil/core";
 import { matchBreakpoint } from "../../utils/media";
 const win = window;
-const SUPPORTS_VARS = !!(win.CSS &&
-  win.CSS.supports &&
-  win.CSS.supports("--a: 0"));
+const SUPPORTS_VARS = !!((_a = win === null || win === void 0 ? void 0 : win.CSS) === null || _a === void 0 ? void 0 : _a.supports("--a: 0"));
 const BREAKPOINTS = ["", "xs", "sm", "md", "lg", "xl"];
 /**
  *
@@ -36,7 +35,7 @@ export class Col {
     // If size wasn't set for any breakpoint
     // or if the user set the size without a value
     // it means we need to stick with the default and return
-    // e.g. <ion-col size-md>
+    // e.g. <sen-col size-md>
     if (!columns || columns === "") {
       return;
     }

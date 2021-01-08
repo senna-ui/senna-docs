@@ -1,4 +1,4 @@
-import { r as registerInstance, h, H as Host } from './index-b3859636.js';
+import { r as registerInstance, h, H as Host } from './index-7505fb17.js';
 
 const menuCss = ":host{display:block}.menu{background:var(--sen-menu-bg, #343030)}";
 
@@ -11,7 +11,7 @@ const Menu = class {
     this.items = [];
   }
   render() {
-    return (h(Host, null, h("div", { class: "menu" }, this.items.map(item => h("sen-menu-item", { value: item }, item.label)))));
+    return (h(Host, null, h("div", { class: "menu" }, this.items.map((item) => (h("sen-menu-item", { value: item }, item.label))))));
   }
 };
 Menu.style = menuCss;

@@ -1,4 +1,4 @@
-import { ComponentInterface } from "../../stencil-public-runtime";
+import type { ComponentInterface } from "../../stencil-public-runtime";
 /**
  * @docsMenu { "group": "app" }
  */

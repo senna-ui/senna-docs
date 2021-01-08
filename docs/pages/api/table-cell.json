@@ -1,0 +1,127 @@
+{
+  "title": "sen-table-cell",
+  "path": "/docs/api/table-cell",
+  "demo": {
+    "url": "https://codepen.io/senna-ui/embed/QWKBpGd?height=265&theme-id=light&default-tab=result",
+    "source": "https://codepen.io/senna-ui/pen/QWKBpGd?editors=1000"
+  },
+  "codePenLinks": [],
+  "menu": {
+    "group": "table",
+    "subGroup": "basic-table"
+  },
+  "body": [
+    "div",
+    null
+  ],
+  "usage": {},
+  "props": [
+    {
+      "name": "align",
+      "type": "\"center\" | \"left\" | \"right\" | undefined",
+      "mutable": false,
+      "attr": "align",
+      "reflectToAttr": false,
+      "docs": "<p>Alignment of contents</p>\n",
+      "docsTags": [],
+      "default": "undefined",
+      "values": [
+        {
+          "value": "center",
+          "type": "string"
+        },
+        {
+          "value": "left",
+          "type": "string"
+        },
+        {
+          "value": "right",
+          "type": "string"
+        },
+        {
+          "type": "undefined"
+        }
+      ],
+      "optional": true,
+      "required": false
+    },
+    {
+      "name": "colspan",
+      "type": "number | string | undefined",
+      "mutable": false,
+      "attr": "colspan",
+      "reflectToAttr": false,
+      "docs": "<p>How many columns to span</p>\n",
+      "docsTags": [],
+      "default": "undefined",
+      "values": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "undefined"
+        }
+      ],
+      "optional": true,
+      "required": false
+    },
+    {
+      "name": "rowspan",
+      "type": "number | string | undefined",
+      "mutable": false,
+      "attr": "rowspan",
+      "reflectToAttr": false,
+      "docs": "<p>How many rows to span</p>\n",
+      "docsTags": [],
+      "default": "undefined",
+      "values": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "undefined"
+        }
+      ],
+      "optional": true,
+      "required": false
+    }
+  ],
+  "methods": [],
+  "template": "api",
+  "filePath": "./src/components/table-cell/table-cell.tsx",
+  "encapsulation": "shadow",
+  "tag": "sen-table-cell",
+  "docs": "",
+  "docsTags": [
+    {
+      "text": "{ \"group\": \"table\", \"subGroup\": \"basic-table\" }",
+      "name": "docsMenu"
+    },
+    {
+      "text": "{ \"user\": \"senna-ui\", \"id\": \"QWKBpGd\" }",
+      "name": "docsCodePen"
+    }
+  ],
+  "events": [],
+  "listeners": [],
+  "styles": [],
+  "slots": [],
+  "parts": [],
+  "dependents": [
+    "sen-data-table"
+  ],
+  "dependencies": [],
+  "dependencyGraph": {
+    "sen-data-table": [
+      "sen-table-cell"
+    ]
+  },
+  "headings": [],
+  "pageClass": "page--docs-api-table-cell"
+}

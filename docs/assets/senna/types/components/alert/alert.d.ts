@@ -1,5 +1,5 @@
-import { ComponentInterface } from "../../stencil-public-runtime";
-import { Color } from "../../interface";
+import type { ComponentInterface } from "../../stencil-public-runtime";
+import type { Color } from "../../interface";
 /**
  * Docs page options
  * @docsCodePen { "user": "senna-ui", "id": "MWjrJEz" }

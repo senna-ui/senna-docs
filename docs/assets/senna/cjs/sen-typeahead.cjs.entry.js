@@ -2,13 +2,13 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-const index = require('./index-6de7b0c3.js');
+const index = require('./index-a61cd5c3.js');
 
 const typeaheadCss = ":host{background:var(--sen-typeahead-bg, #494444);position:relative;display:block}ul,li{padding:0;margin:0}ul{border:1px solid #E9E6E6}li{list-style-type:none}a{display:block;padding:4px 8px;background-color:var(--sen-select-item-bg, #fff);color:var(--sen-select-item-color, #211010)}.highlight{font-weight:var(--sen-highlight-font-weight, 700);color:var(--sen-hightlight-color, #3B5F97)}.selected a{background:#dfe6f2}";
 
 function getHighlightedText(text, highlight) {
-  const parts = text.split(new RegExp(`(${highlight})`, 'gi'));
-  return index.h("span", null, " ", parts.map((part, i) => index.h("span", { key: i, class: part.toLowerCase() === highlight.toLowerCase() ? 'highlight' : '' }, part)), " ");
+  const parts = text.split(new RegExp(`(${highlight})`, "gi"));
+  return (index.h("span", null, parts.map((part, i) => (index.h("span", { key: i, class: part.toLowerCase() === highlight.toLowerCase() ? "highlight" : "" }, part)))));
 }
 const Typeahead = class {
   constructor(hostRef) {
@@ -43,7 +43,7 @@ const Typeahead = class {
       this.open = false;
     };
     this.handleKeyDown = (ev) => {
-      if (ev.key === 'ArrowDown') {
+      if (ev.key === "ArrowDown") {
         ev.preventDefault();
         this.selectedIndex = Math.min(this.matchedOptions.length - 1, this.selectedIndex + 1);
       }
@@ -53,7 +53,7 @@ const Typeahead = class {
       }
     };
     this.handleKeyboardSelect = (ev) => {
-      if (ev.key === 'Enter' && this.selectedIndex > -1) {
+      if (ev.key === "Enter" && this.selectedIndex > -1) {
         ev.preventDefault();
         const option = this.matchedOptions[this.selectedIndex];
         this.onSelectOption(option);
@@ -64,10 +64,12 @@ const Typeahead = class {
     };
   }
   watchHandler() {
-    this.matchedOptions = !Boolean(this.value) ? [] : this.options.filter(o => o.label.toLowerCase().includes(this.value.toLowerCase()));
+    this.matchedOptions = !this.value
+      ? []
+      : this.options.filter((o) => o.label.toLowerCase().includes(this.value.toLowerCase()));
   }
   render() {
-    return (index.h(index.Host, null, index.h("div", { class: "typeahead", onKeyDown: this.handleKeyboardSelect }, index.h("sen-input", { onFocus: this.handleFocus, onKeyDown: this.handleKeyDown, value: this.value, onSenInput: this.onInput }), this.open && index.h("ul", { class: "typeahead__options" }, this.matchedOptions.map((option, index$1) => (index.h("li", { class: index$1 === this.selectedIndex ? 'selected' : '' }, index.h("a", { onClick: () => this.onSelectOption(option) }, getHighlightedText(option.label, this.value)))))))));
+    return (index.h(index.Host, null, index.h("div", { class: "typeahead", onKeyDown: this.handleKeyboardSelect }, index.h("sen-input", { onFocus: this.handleFocus, onKeyDown: this.handleKeyDown, value: this.value, onSenInput: this.onInput }), this.open && (index.h("ul", { class: "typeahead__options" }, this.matchedOptions.map((option, index$1) => (index.h("li", { class: index$1 === this.selectedIndex ? "selected" : "" }, index.h("a", { onClick: () => this.onSelectOption(option) }, getHighlightedText(option.label, this.value))))))))));
   }
   static get watchers() { return {
     "value": ["watchHandler"]

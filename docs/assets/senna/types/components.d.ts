@@ -6,7 +6,13 @@
  */
 import { HTMLStencilElement, JSXBase } from "./stencil-public-runtime";
 import { AutocompleteTypes, Color, FontWeight, InputChangeEventDetail, MenuItem, OptionSelectedEvent, TableHeaders, TextAlign, TextFieldTypes, TextTag, TextTransform, TypeaheadOption } from "./interface";
+import { RadioOption, RadioValue } from "./components/radio/radio";
+import { SelectOption, SelectValue } from "./components/select/select";
 export namespace Components {
+    interface DemoForm {
+    }
+    interface DemoTable {
+    }
     interface SenAlert {
         /**
           * Button variant
@@ -16,10 +22,6 @@ export namespace Components {
     interface SenApp {
     }
     interface SenButton {
-        /**
-          * Button type
-         */
-        "buttonType": "button" | "submit" | "reset";
         /**
           * Button variant
          */
@@ -32,6 +34,10 @@ export namespace Components {
           * Icon to show
          */
         "icon"?: string;
+        /**
+          * Button type
+         */
+        "type": "button" | "submit" | "reset";
     }
     interface SenButtonGroup {
     }
@@ -42,6 +48,32 @@ export namespace Components {
     interface SenCardBody {
     }
     interface SenCardTitle {
+    }
+    interface SenCheckbox {
+        /**
+          * If `true`, the user cannot interact with the checkbox.
+         */
+        "disabled": boolean;
+        /**
+          * Label for the checkbox
+         */
+        "label": string;
+        /**
+          * The name of the control, which is submitted with the form data.
+         */
+        "name": string;
+        /**
+          * If `true`, the user cannot modify the value.
+         */
+        "readonly": boolean;
+        /**
+          * Sets focus on the specified `ion-input`. Use this method instead of the global `input.focus()`.
+         */
+        "setFocus": () => Promise<void>;
+        /**
+          * The value of the input.
+         */
+        "value"?: boolean;
     }
     interface SenCol {
         /**
@@ -140,6 +172,16 @@ export namespace Components {
           * The size of the column for xs screens, in terms of how many columns it should take up out of the total available. If `"auto"` is passed, the column will be the size of its content.
          */
         "sizeXs"?: string;
+    }
+    interface SenDataTable {
+        /**
+          * Table data, array of table rows
+         */
+        "data": any[];
+        /**
+          * Table headers
+         */
+        "headers": TableHeaders;
     }
     interface SenFieldset {
         /**
@@ -229,6 +271,7 @@ export namespace Components {
           * A hint to the browser for which keyboard to display. Possible values: `"none"`, `"text"`, `"tel"`, `"url"`, `"email"`, `"numeric"`, `"decimal"`, and `"search"`.
          */
         "inputmode"?: | "none"
+    | "radio"
     | "text"
     | "tel"
     | "url"
@@ -277,7 +320,7 @@ export namespace Components {
          */
         "required": boolean;
         /**
-          * Sets focus on the specified `ion-input`. Use this method instead of the global `input.focus()`.
+          * Sets focus on the specified `sen-input`. Use this method instead of the global `input.focus()`.
          */
         "setFocus": () => Promise<void>;
         /**
@@ -317,17 +360,97 @@ export namespace Components {
          */
         "value": any;
     }
+    interface SenRadio {
+        /**
+          * If `true`, the user cannot interact with the radio.
+         */
+        "disabled": boolean;
+        /**
+          * Label for the radio
+         */
+        "label": string;
+        /**
+          * The name of the control, which is submitted with the form data.
+         */
+        "name": string;
+        /**
+          * Radio options to display
+         */
+        "options": RadioOption[];
+        /**
+          * If `true`, the user cannot modify the value.
+         */
+        "readonly": boolean;
+        /**
+          * Sets focus on the specified input. Use this method instead of the global `input.focus()`.
+         */
+        "setFocus": () => Promise<void>;
+        /**
+          * The value of the input.
+         */
+        "value"?: RadioValue;
+    }
     interface SenRow {
     }
+    interface SenSelect {
+        /**
+          * If `true`, the user cannot interact with the select.
+         */
+        "disabled": boolean;
+        /**
+          * Label of empty option
+         */
+        "emptyLabel": string;
+        /**
+          * Label for the select
+         */
+        "label": string;
+        /**
+          * The name of the control, which is submitted with the form data.
+         */
+        "name": string;
+        /**
+          * Select options to display
+         */
+        "options": SelectOption[];
+        /**
+          * If `true`, the user cannot modify the value.
+         */
+        "readonly": boolean;
+        /**
+          * Set to true to disallow empty selections
+         */
+        "required": boolean;
+        /**
+          * Sets focus on the specified input. Use this method instead of the global `input.focus()`.
+         */
+        "setFocus": () => Promise<void>;
+        /**
+          * The value of the input.
+         */
+        "value"?: SelectValue;
+    }
     interface SenTable {
+    }
+    interface SenTableBody {
+    }
+    interface SenTableCell {
         /**
-          * Table data, array of table rows
+          * Alignment of contents
          */
-        "data": any[];
+        "align"?: TextAlign | undefined;
         /**
-          * Table headers
+          * How many columns to span
          */
-        "headers": TableHeaders;
+        "colspan"?: string | number | undefined;
+        /**
+          * How many rows to span
+         */
+        "rowspan"?: string | number | undefined;
+    }
+    interface SenTableHead {
+    }
+    interface SenTableRow {
     }
     interface SenText {
         /**
@@ -363,6 +486,18 @@ export namespace Components {
     }
 }
 declare global {
+    interface HTMLDemoFormElement extends Components.DemoForm, HTMLStencilElement {
+    }
+    var HTMLDemoFormElement: {
+        prototype: HTMLDemoFormElement;
+        new (): HTMLDemoFormElement;
+    };
+    interface HTMLDemoTableElement extends Components.DemoTable, HTMLStencilElement {
+    }
+    var HTMLDemoTableElement: {
+        prototype: HTMLDemoTableElement;
+        new (): HTMLDemoTableElement;
+    };
     interface HTMLSenAlertElement extends Components.SenAlert, HTMLStencilElement {
     }
     var HTMLSenAlertElement: {
@@ -411,11 +546,23 @@ declare global {
         prototype: HTMLSenCardTitleElement;
         new (): HTMLSenCardTitleElement;
     };
+    interface HTMLSenCheckboxElement extends Components.SenCheckbox, HTMLStencilElement {
+    }
+    var HTMLSenCheckboxElement: {
+        prototype: HTMLSenCheckboxElement;
+        new (): HTMLSenCheckboxElement;
+    };
     interface HTMLSenColElement extends Components.SenCol, HTMLStencilElement {
     }
     var HTMLSenColElement: {
         prototype: HTMLSenColElement;
         new (): HTMLSenColElement;
+    };
+    interface HTMLSenDataTableElement extends Components.SenDataTable, HTMLStencilElement {
+    }
+    var HTMLSenDataTableElement: {
+        prototype: HTMLSenDataTableElement;
+        new (): HTMLSenDataTableElement;
     };
     interface HTMLSenFieldsetElement extends Components.SenFieldset, HTMLStencilElement {
     }
@@ -459,17 +606,53 @@ declare global {
         prototype: HTMLSenMenuItemElement;
         new (): HTMLSenMenuItemElement;
     };
+    interface HTMLSenRadioElement extends Components.SenRadio, HTMLStencilElement {
+    }
+    var HTMLSenRadioElement: {
+        prototype: HTMLSenRadioElement;
+        new (): HTMLSenRadioElement;
+    };
     interface HTMLSenRowElement extends Components.SenRow, HTMLStencilElement {
     }
     var HTMLSenRowElement: {
         prototype: HTMLSenRowElement;
         new (): HTMLSenRowElement;
     };
+    interface HTMLSenSelectElement extends Components.SenSelect, HTMLStencilElement {
+    }
+    var HTMLSenSelectElement: {
+        prototype: HTMLSenSelectElement;
+        new (): HTMLSenSelectElement;
+    };
     interface HTMLSenTableElement extends Components.SenTable, HTMLStencilElement {
     }
     var HTMLSenTableElement: {
         prototype: HTMLSenTableElement;
         new (): HTMLSenTableElement;
+    };
+    interface HTMLSenTableBodyElement extends Components.SenTableBody, HTMLStencilElement {
+    }
+    var HTMLSenTableBodyElement: {
+        prototype: HTMLSenTableBodyElement;
+        new (): HTMLSenTableBodyElement;
+    };
+    interface HTMLSenTableCellElement extends Components.SenTableCell, HTMLStencilElement {
+    }
+    var HTMLSenTableCellElement: {
+        prototype: HTMLSenTableCellElement;
+        new (): HTMLSenTableCellElement;
+    };
+    interface HTMLSenTableHeadElement extends Components.SenTableHead, HTMLStencilElement {
+    }
+    var HTMLSenTableHeadElement: {
+        prototype: HTMLSenTableHeadElement;
+        new (): HTMLSenTableHeadElement;
+    };
+    interface HTMLSenTableRowElement extends Components.SenTableRow, HTMLStencilElement {
+    }
+    var HTMLSenTableRowElement: {
+        prototype: HTMLSenTableRowElement;
+        new (): HTMLSenTableRowElement;
     };
     interface HTMLSenTextElement extends Components.SenText, HTMLStencilElement {
     }
@@ -484,6 +667,8 @@ declare global {
         new (): HTMLSenTypeaheadElement;
     };
     interface HTMLElementTagNameMap {
+        "demo-form": HTMLDemoFormElement;
+        "demo-table": HTMLDemoTableElement;
         "sen-alert": HTMLSenAlertElement;
         "sen-app": HTMLSenAppElement;
         "sen-button": HTMLSenButtonElement;
@@ -492,7 +677,9 @@ declare global {
         "sen-card-actions": HTMLSenCardActionsElement;
         "sen-card-body": HTMLSenCardBodyElement;
         "sen-card-title": HTMLSenCardTitleElement;
+        "sen-checkbox": HTMLSenCheckboxElement;
         "sen-col": HTMLSenColElement;
+        "sen-data-table": HTMLSenDataTableElement;
         "sen-fieldset": HTMLSenFieldsetElement;
         "sen-form-field": HTMLSenFormFieldElement;
         "sen-grid": HTMLSenGridElement;
@@ -500,13 +687,23 @@ declare global {
         "sen-input": HTMLSenInputElement;
         "sen-menu": HTMLSenMenuElement;
         "sen-menu-item": HTMLSenMenuItemElement;
+        "sen-radio": HTMLSenRadioElement;
         "sen-row": HTMLSenRowElement;
+        "sen-select": HTMLSenSelectElement;
         "sen-table": HTMLSenTableElement;
+        "sen-table-body": HTMLSenTableBodyElement;
+        "sen-table-cell": HTMLSenTableCellElement;
+        "sen-table-head": HTMLSenTableHeadElement;
+        "sen-table-row": HTMLSenTableRowElement;
         "sen-text": HTMLSenTextElement;
         "sen-typeahead": HTMLSenTypeaheadElement;
     }
 }
 declare namespace LocalJSX {
+    interface DemoForm {
+    }
+    interface DemoTable {
+    }
     interface SenAlert {
         /**
           * Button variant
@@ -516,10 +713,6 @@ declare namespace LocalJSX {
     interface SenApp {
     }
     interface SenButton {
-        /**
-          * Button type
-         */
-        "buttonType"?: "button" | "submit" | "reset";
         /**
           * Button variant
          */
@@ -532,6 +725,10 @@ declare namespace LocalJSX {
           * Icon to show
          */
         "icon"?: string;
+        /**
+          * Button type
+         */
+        "type"?: "button" | "submit" | "reset";
     }
     interface SenButtonGroup {
     }
@@ -542,6 +739,36 @@ declare namespace LocalJSX {
     interface SenCardBody {
     }
     interface SenCardTitle {
+    }
+    interface SenCheckbox {
+        /**
+          * If `true`, the user cannot interact with the checkbox.
+         */
+        "disabled"?: boolean;
+        /**
+          * Label for the checkbox
+         */
+        "label"?: string;
+        /**
+          * The name of the control, which is submitted with the form data.
+         */
+        "name"?: string;
+        /**
+          * Emitted when input is changed
+         */
+        "onSenChange"?: (event: CustomEvent<{ value: boolean }>) => void;
+        /**
+          * Emitted when a keyboard input occurred.
+         */
+        "onSenInput"?: (event: CustomEvent<MouseEvent>) => void;
+        /**
+          * If `true`, the user cannot modify the value.
+         */
+        "readonly"?: boolean;
+        /**
+          * The value of the input.
+         */
+        "value"?: boolean;
     }
     interface SenCol {
         /**
@@ -641,6 +868,16 @@ declare namespace LocalJSX {
          */
         "sizeXs"?: string;
     }
+    interface SenDataTable {
+        /**
+          * Table data, array of table rows
+         */
+        "data"?: any[];
+        /**
+          * Table headers
+         */
+        "headers"?: TableHeaders;
+    }
     interface SenFieldset {
         /**
           * Legend describing the fieldset
@@ -729,6 +966,7 @@ declare namespace LocalJSX {
           * A hint to the browser for which keyboard to display. Possible values: `"none"`, `"text"`, `"tel"`, `"url"`, `"email"`, `"numeric"`, `"decimal"`, and `"search"`.
          */
         "inputmode"?: | "none"
+    | "radio"
     | "text"
     | "tel"
     | "url"
@@ -825,17 +1063,105 @@ declare namespace LocalJSX {
          */
         "value"?: any;
     }
+    interface SenRadio {
+        /**
+          * If `true`, the user cannot interact with the radio.
+         */
+        "disabled"?: boolean;
+        /**
+          * Label for the radio
+         */
+        "label"?: string;
+        /**
+          * The name of the control, which is submitted with the form data.
+         */
+        "name"?: string;
+        /**
+          * Emitted when input is changed
+         */
+        "onSenChange"?: (event: CustomEvent<{ value: RadioValue }>) => void;
+        /**
+          * Emitted when a keyboard input occurred.
+         */
+        "onSenInput"?: (event: CustomEvent<MouseEvent>) => void;
+        /**
+          * Radio options to display
+         */
+        "options"?: RadioOption[];
+        /**
+          * If `true`, the user cannot modify the value.
+         */
+        "readonly"?: boolean;
+        /**
+          * The value of the input.
+         */
+        "value"?: RadioValue;
+    }
     interface SenRow {
     }
+    interface SenSelect {
+        /**
+          * If `true`, the user cannot interact with the select.
+         */
+        "disabled"?: boolean;
+        /**
+          * Label of empty option
+         */
+        "emptyLabel"?: string;
+        /**
+          * Label for the select
+         */
+        "label"?: string;
+        /**
+          * The name of the control, which is submitted with the form data.
+         */
+        "name"?: string;
+        /**
+          * Emitted when input is changed
+         */
+        "onSenChange"?: (event: CustomEvent<{ value: SelectValue }>) => void;
+        /**
+          * Emitted when a keyboard input occurred.
+         */
+        "onSenInput"?: (event: CustomEvent<MouseEvent>) => void;
+        /**
+          * Select options to display
+         */
+        "options"?: SelectOption[];
+        /**
+          * If `true`, the user cannot modify the value.
+         */
+        "readonly"?: boolean;
+        /**
+          * Set to true to disallow empty selections
+         */
+        "required"?: boolean;
+        /**
+          * The value of the input.
+         */
+        "value"?: SelectValue;
+    }
     interface SenTable {
+    }
+    interface SenTableBody {
+    }
+    interface SenTableCell {
         /**
-          * Table data, array of table rows
+          * Alignment of contents
          */
-        "data"?: any[];
+        "align"?: TextAlign | undefined;
         /**
-          * Table headers
+          * How many columns to span
          */
-        "headers"?: TableHeaders;
+        "colspan"?: string | number | undefined;
+        /**
+          * How many rows to span
+         */
+        "rowspan"?: string | number | undefined;
+    }
+    interface SenTableHead {
+    }
+    interface SenTableRow {
     }
     interface SenText {
         /**
@@ -878,6 +1204,8 @@ declare namespace LocalJSX {
         "value"?: string;
     }
     interface IntrinsicElements {
+        "demo-form": DemoForm;
+        "demo-table": DemoTable;
         "sen-alert": SenAlert;
         "sen-app": SenApp;
         "sen-button": SenButton;
@@ -886,7 +1214,9 @@ declare namespace LocalJSX {
         "sen-card-actions": SenCardActions;
         "sen-card-body": SenCardBody;
         "sen-card-title": SenCardTitle;
+        "sen-checkbox": SenCheckbox;
         "sen-col": SenCol;
+        "sen-data-table": SenDataTable;
         "sen-fieldset": SenFieldset;
         "sen-form-field": SenFormField;
         "sen-grid": SenGrid;
@@ -894,8 +1224,14 @@ declare namespace LocalJSX {
         "sen-input": SenInput;
         "sen-menu": SenMenu;
         "sen-menu-item": SenMenuItem;
+        "sen-radio": SenRadio;
         "sen-row": SenRow;
+        "sen-select": SenSelect;
         "sen-table": SenTable;
+        "sen-table-body": SenTableBody;
+        "sen-table-cell": SenTableCell;
+        "sen-table-head": SenTableHead;
+        "sen-table-row": SenTableRow;
         "sen-text": SenText;
         "sen-typeahead": SenTypeahead;
     }
@@ -904,6 +1240,8 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "demo-form": LocalJSX.DemoForm & JSXBase.HTMLAttributes<HTMLDemoFormElement>;
+            "demo-table": LocalJSX.DemoTable & JSXBase.HTMLAttributes<HTMLDemoTableElement>;
             "sen-alert": LocalJSX.SenAlert & JSXBase.HTMLAttributes<HTMLSenAlertElement>;
             "sen-app": LocalJSX.SenApp & JSXBase.HTMLAttributes<HTMLSenAppElement>;
             "sen-button": LocalJSX.SenButton & JSXBase.HTMLAttributes<HTMLSenButtonElement>;
@@ -912,7 +1250,9 @@ declare module "@stencil/core" {
             "sen-card-actions": LocalJSX.SenCardActions & JSXBase.HTMLAttributes<HTMLSenCardActionsElement>;
             "sen-card-body": LocalJSX.SenCardBody & JSXBase.HTMLAttributes<HTMLSenCardBodyElement>;
             "sen-card-title": LocalJSX.SenCardTitle & JSXBase.HTMLAttributes<HTMLSenCardTitleElement>;
+            "sen-checkbox": LocalJSX.SenCheckbox & JSXBase.HTMLAttributes<HTMLSenCheckboxElement>;
             "sen-col": LocalJSX.SenCol & JSXBase.HTMLAttributes<HTMLSenColElement>;
+            "sen-data-table": LocalJSX.SenDataTable & JSXBase.HTMLAttributes<HTMLSenDataTableElement>;
             "sen-fieldset": LocalJSX.SenFieldset & JSXBase.HTMLAttributes<HTMLSenFieldsetElement>;
             "sen-form-field": LocalJSX.SenFormField & JSXBase.HTMLAttributes<HTMLSenFormFieldElement>;
             "sen-grid": LocalJSX.SenGrid & JSXBase.HTMLAttributes<HTMLSenGridElement>;
@@ -920,8 +1260,14 @@ declare module "@stencil/core" {
             "sen-input": LocalJSX.SenInput & JSXBase.HTMLAttributes<HTMLSenInputElement>;
             "sen-menu": LocalJSX.SenMenu & JSXBase.HTMLAttributes<HTMLSenMenuElement>;
             "sen-menu-item": LocalJSX.SenMenuItem & JSXBase.HTMLAttributes<HTMLSenMenuItemElement>;
+            "sen-radio": LocalJSX.SenRadio & JSXBase.HTMLAttributes<HTMLSenRadioElement>;
             "sen-row": LocalJSX.SenRow & JSXBase.HTMLAttributes<HTMLSenRowElement>;
+            "sen-select": LocalJSX.SenSelect & JSXBase.HTMLAttributes<HTMLSenSelectElement>;
             "sen-table": LocalJSX.SenTable & JSXBase.HTMLAttributes<HTMLSenTableElement>;
+            "sen-table-body": LocalJSX.SenTableBody & JSXBase.HTMLAttributes<HTMLSenTableBodyElement>;
+            "sen-table-cell": LocalJSX.SenTableCell & JSXBase.HTMLAttributes<HTMLSenTableCellElement>;
+            "sen-table-head": LocalJSX.SenTableHead & JSXBase.HTMLAttributes<HTMLSenTableHeadElement>;
+            "sen-table-row": LocalJSX.SenTableRow & JSXBase.HTMLAttributes<HTMLSenTableRowElement>;
             "sen-text": LocalJSX.SenText & JSXBase.HTMLAttributes<HTMLSenTextElement>;
             "sen-typeahead": LocalJSX.SenTypeahead & JSXBase.HTMLAttributes<HTMLSenTypeaheadElement>;
         }

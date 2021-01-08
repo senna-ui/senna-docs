@@ -1,0 +1,696 @@
+{
+  "title": "sen-select",
+  "path": "/docs/api/select",
+  "codePenLinks": [],
+  "menu": {
+    "group": "forms",
+    "subGroup": "input"
+  },
+  "body": [
+    "div",
+    null
+  ],
+  "usage": {
+    "react": [
+      "div",
+      null,
+      [
+        "docs-code",
+        {
+          "language": "tsx"
+        },
+        "\n  ",
+        [
+          "pre",
+          null,
+          [
+            "code",
+            null,
+            [
+              "span",
+              {
+                "class": "token keyword"
+              },
+              "import"
+            ],
+            " React ",
+            [
+              "span",
+              {
+                "class": "token keyword"
+              },
+              "from"
+            ],
+            " ",
+            [
+              "span",
+              {
+                "class": "token string"
+              },
+              "\"react\""
+            ],
+            [
+              "span",
+              {
+                "class": "token punctuation"
+              },
+              ";"
+            ],
+            "\n",
+            [
+              "span",
+              {
+                "class": "token keyword"
+              },
+              "import"
+            ],
+            " ",
+            [
+              "span",
+              {
+                "class": "token punctuation"
+              },
+              "{"
+            ],
+            " SenSelect ",
+            [
+              "span",
+              {
+                "class": "token punctuation"
+              },
+              "}"
+            ],
+            " ",
+            [
+              "span",
+              {
+                "class": "token keyword"
+              },
+              "from"
+            ],
+            " ",
+            [
+              "span",
+              {
+                "class": "token string"
+              },
+              "\"@senna/react\""
+            ],
+            [
+              "span",
+              {
+                "class": "token punctuation"
+              },
+              ";"
+            ],
+            "\n\n",
+            [
+              "span",
+              {
+                "class": "token keyword"
+              },
+              "export"
+            ],
+            " ",
+            [
+              "span",
+              {
+                "class": "token keyword"
+              },
+              "const"
+            ],
+            " Example",
+            [
+              "span",
+              {
+                "class": "token operator"
+              },
+              ":"
+            ],
+            " React",
+            [
+              "span",
+              {
+                "class": "token punctuation"
+              },
+              "."
+            ],
+            [
+              "span",
+              {
+                "class": "token function-variable function"
+              },
+              "FC"
+            ],
+            " ",
+            [
+              "span",
+              {
+                "class": "token operator"
+              },
+              "="
+            ],
+            " ",
+            [
+              "span",
+              {
+                "class": "token punctuation"
+              },
+              "("
+            ],
+            [
+              "span",
+              {
+                "class": "token punctuation"
+              },
+              ")"
+            ],
+            " ",
+            [
+              "span",
+              {
+                "class": "token operator"
+              },
+              "=>"
+            ],
+            " ",
+            [
+              "span",
+              {
+                "class": "token punctuation"
+              },
+              "{"
+            ],
+            "\n\n  ",
+            [
+              "span",
+              {
+                "class": "token keyword"
+              },
+              "const"
+            ],
+            " options ",
+            [
+              "span",
+              {
+                "class": "token operator"
+              },
+              "="
+            ],
+            " ",
+            [
+              "span",
+              {
+                "class": "token punctuation"
+              },
+              "["
+            ],
+            "\n    ",
+            [
+              "span",
+              {
+                "class": "token punctuation"
+              },
+              "{"
+            ],
+            "value",
+            [
+              "span",
+              {
+                "class": "token operator"
+              },
+              ":"
+            ],
+            " ",
+            [
+              "span",
+              {
+                "class": "token number"
+              },
+              "1"
+            ],
+            [
+              "span",
+              {
+                "class": "token punctuation"
+              },
+              ","
+            ],
+            " label",
+            [
+              "span",
+              {
+                "class": "token operator"
+              },
+              ":"
+            ],
+            " ",
+            [
+              "span",
+              {
+                "class": "token string"
+              },
+              "\"Option 1\""
+            ],
+            [
+              "span",
+              {
+                "class": "token punctuation"
+              },
+              "}"
+            ],
+            [
+              "span",
+              {
+                "class": "token punctuation"
+              },
+              ","
+            ],
+            "\n    ",
+            [
+              "span",
+              {
+                "class": "token punctuation"
+              },
+              "{"
+            ],
+            "value",
+            [
+              "span",
+              {
+                "class": "token operator"
+              },
+              ":"
+            ],
+            " ",
+            [
+              "span",
+              {
+                "class": "token number"
+              },
+              "2"
+            ],
+            [
+              "span",
+              {
+                "class": "token punctuation"
+              },
+              ","
+            ],
+            " label",
+            [
+              "span",
+              {
+                "class": "token operator"
+              },
+              ":"
+            ],
+            " ",
+            [
+              "span",
+              {
+                "class": "token string"
+              },
+              "\"Option 2\""
+            ],
+            [
+              "span",
+              {
+                "class": "token punctuation"
+              },
+              "}"
+            ],
+            [
+              "span",
+              {
+                "class": "token punctuation"
+              },
+              ","
+            ],
+            "\n    ",
+            [
+              "span",
+              {
+                "class": "token punctuation"
+              },
+              "{"
+            ],
+            "value",
+            [
+              "span",
+              {
+                "class": "token operator"
+              },
+              ":"
+            ],
+            " ",
+            [
+              "span",
+              {
+                "class": "token number"
+              },
+              "3"
+            ],
+            [
+              "span",
+              {
+                "class": "token punctuation"
+              },
+              ","
+            ],
+            " label",
+            [
+              "span",
+              {
+                "class": "token operator"
+              },
+              ":"
+            ],
+            " ",
+            [
+              "span",
+              {
+                "class": "token string"
+              },
+              "\"Option 3\""
+            ],
+            [
+              "span",
+              {
+                "class": "token punctuation"
+              },
+              "}"
+            ],
+            [
+              "span",
+              {
+                "class": "token punctuation"
+              },
+              ","
+            ],
+            "\n  ",
+            [
+              "span",
+              {
+                "class": "token punctuation"
+              },
+              "]"
+            ],
+            "\n\n  ",
+            [
+              "span",
+              {
+                "class": "token keyword"
+              },
+              "return"
+            ],
+            " ",
+            [
+              "span",
+              {
+                "class": "token tag"
+              },
+              [
+                "span",
+                {
+                  "class": "token tag"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "<"
+                ],
+                [
+                  "span",
+                  {
+                    "class": "token class-name"
+                  },
+                  "SenSelect"
+                ]
+              ],
+              " ",
+              [
+                "span",
+                {
+                  "class": "token attr-name"
+                },
+                "options"
+              ],
+              [
+                "span",
+                {
+                  "class": "token script language-javascript"
+                },
+                [
+                  "span",
+                  {
+                    "class": "token script-punctuation punctuation"
+                  },
+                  "="
+                ],
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "{"
+                ],
+                "options",
+                [
+                  "span",
+                  {
+                    "class": "token punctuation"
+                  },
+                  "}"
+                ]
+              ],
+              " ",
+              [
+                "span",
+                {
+                  "class": "token punctuation"
+                },
+                "/>"
+              ]
+            ],
+            "\n",
+            [
+              "span",
+              {
+                "class": "token punctuation"
+              },
+              "}"
+            ]
+          ]
+        ],
+        "\n"
+      ]
+    ]
+  },
+  "props": [
+    {
+      "name": "disabled",
+      "type": "boolean",
+      "mutable": false,
+      "attr": "disabled",
+      "reflectToAttr": false,
+      "docs": "<p>If <code>true</code>, the user cannot interact with the select.</p>\n",
+      "docsTags": [],
+      "default": "false",
+      "values": [
+        {
+          "type": "boolean"
+        }
+      ],
+      "optional": false,
+      "required": false
+    },
+    {
+      "name": "emptyLabel",
+      "type": "string",
+      "mutable": false,
+      "attr": "empty-label",
+      "reflectToAttr": false,
+      "docs": "<p>Label of empty option</p>\n",
+      "docsTags": [],
+      "default": "\"-\"",
+      "values": [
+        {
+          "type": "string"
+        }
+      ],
+      "optional": false,
+      "required": false
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "mutable": false,
+      "attr": "label",
+      "reflectToAttr": false,
+      "docs": "<p>Label for the select</p>\n",
+      "docsTags": [],
+      "default": "\"\"",
+      "values": [
+        {
+          "type": "string"
+        }
+      ],
+      "optional": false,
+      "required": false
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "mutable": false,
+      "attr": "name",
+      "reflectToAttr": false,
+      "docs": "<p>The name of the control, which is submitted with the form data.</p>\n",
+      "docsTags": [],
+      "default": "this.selectId",
+      "values": [
+        {
+          "type": "string"
+        }
+      ],
+      "optional": false,
+      "required": false
+    },
+    {
+      "name": "options",
+      "type": "SelectOption[]",
+      "mutable": false,
+      "reflectToAttr": false,
+      "docs": "<p>Select options to display</p>\n",
+      "docsTags": [],
+      "default": "[]",
+      "values": [
+        {
+          "type": "SelectOption[]"
+        }
+      ],
+      "optional": false,
+      "required": false
+    },
+    {
+      "name": "readonly",
+      "type": "boolean",
+      "mutable": false,
+      "attr": "readonly",
+      "reflectToAttr": false,
+      "docs": "<p>If <code>true</code>, the user cannot modify the value.</p>\n",
+      "docsTags": [],
+      "default": "false",
+      "values": [
+        {
+          "type": "boolean"
+        }
+      ],
+      "optional": false,
+      "required": false
+    },
+    {
+      "name": "required",
+      "type": "boolean",
+      "mutable": false,
+      "attr": "required",
+      "reflectToAttr": false,
+      "docs": "<p>Set to true to disallow empty selections</p>\n",
+      "docsTags": [],
+      "default": "false",
+      "values": [
+        {
+          "type": "boolean"
+        }
+      ],
+      "optional": false,
+      "required": false
+    },
+    {
+      "name": "value",
+      "type": "null | number | string | undefined",
+      "mutable": true,
+      "attr": "value",
+      "reflectToAttr": true,
+      "docs": "<p>The value of the input.</p>\n",
+      "docsTags": [],
+      "values": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "undefined"
+        }
+      ],
+      "optional": true,
+      "required": false
+    }
+  ],
+  "methods": [
+    {
+      "name": "setFocus",
+      "returns": {
+        "type": "Promise<void>",
+        "docs": ""
+      },
+      "signature": "setFocus() => Promise<void>",
+      "parameters": [],
+      "docs": "<p>Sets focus on the specified input. Use this method instead of the global\n<code>input.focus()</code>.</p>\n",
+      "docsTags": []
+    }
+  ],
+  "template": "api",
+  "filePath": "./src/components/select/select.tsx",
+  "encapsulation": "scoped",
+  "tag": "sen-select",
+  "docs": "",
+  "docsTags": [
+    {
+      "text": "{ \"group\": \"forms\", \"subGroup\": \"input\" }",
+      "name": "docsMenu"
+    }
+  ],
+  "events": [
+    {
+      "event": "senChange",
+      "detail": "{ value: RadioValue; }",
+      "bubbles": true,
+      "cancelable": true,
+      "composed": true,
+      "docs": "Emitted when input is changed",
+      "docsTags": []
+    },
+    {
+      "event": "senInput",
+      "detail": "MouseEvent",
+      "bubbles": true,
+      "cancelable": true,
+      "composed": true,
+      "docs": "Emitted when a keyboard input occurred.",
+      "docsTags": []
+    }
+  ],
+  "listeners": [],
+  "styles": [],
+  "slots": [],
+  "parts": [],
+  "dependents": [
+    "demo-form"
+  ],
+  "dependencies": [],
+  "dependencyGraph": {
+    "demo-form": [
+      "sen-select"
+    ]
+  },
+  "headings": [],
+  "pageClass": "page--docs-api-select"
+}

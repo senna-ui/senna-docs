@@ -1,0 +1,8 @@
+:host {
+  display: contents;
+}
+:host td {
+  text-align: left;
+  padding: var(--sen-table-cell-padding-y, 0.4rem) var(--sen-table-cell-padding-x, 0.6rem);
+  font-variant-numeric: tabular-nums;
+}

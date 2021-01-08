@@ -1,7 +1,7 @@
 export default {
   title: "Button",
 };
-export const Default = () => '<sen-button>My Button</sen-button>';
+export const Default = () => "<sen-button>My Button</sen-button>";
 export const Colors = () => `
   <sen-app>
     <sen-button color="primary">Primary</sen-button>

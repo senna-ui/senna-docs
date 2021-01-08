@@ -284,32 +284,6 @@
   },
   "props": [
     {
-      "name": "buttonType",
-      "type": "\"button\" | \"reset\" | \"submit\"",
-      "mutable": false,
-      "attr": "button-type",
-      "reflectToAttr": false,
-      "docs": "<p>Button type</p>\n",
-      "docsTags": [],
-      "default": "\"button\"",
-      "values": [
-        {
-          "value": "button",
-          "type": "string"
-        },
-        {
-          "value": "reset",
-          "type": "string"
-        },
-        {
-          "value": "submit",
-          "type": "string"
-        }
-      ],
-      "optional": false,
-      "required": false
-    },
-    {
       "name": "color",
       "type": "\"danger\" | \"primary\" | \"secondary\" | \"success\" | \"warning\" | undefined",
       "mutable": false,
@@ -380,6 +354,32 @@
       ],
       "optional": true,
       "required": false
+    },
+    {
+      "name": "type",
+      "type": "\"button\" | \"reset\" | \"submit\"",
+      "mutable": false,
+      "attr": "type",
+      "reflectToAttr": false,
+      "docs": "<p>Button type</p>\n",
+      "docsTags": [],
+      "default": "\"button\"",
+      "values": [
+        {
+          "value": "button",
+          "type": "string"
+        },
+        {
+          "value": "reset",
+          "type": "string"
+        },
+        {
+          "value": "submit",
+          "type": "string"
+        }
+      ],
+      "optional": false,
+      "required": false
     }
   ],
   "methods": [],
@@ -414,13 +414,18 @@
   ],
   "slots": [],
   "parts": [],
-  "dependents": [],
+  "dependents": [
+    "demo-form"
+  ],
   "dependencies": [
     "sen-icon"
   ],
   "dependencyGraph": {
     "sen-button": [
       "sen-icon"
+    ],
+    "demo-form": [
+      "sen-button"
     ]
   },
   "headings": [],

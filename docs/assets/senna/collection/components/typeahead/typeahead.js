@@ -1,10 +1,7 @@
 import { Component, Host, h, Prop, Event, State, Watch } from "@stencil/core";
 function getHighlightedText(text, highlight) {
-  const parts = text.split(new RegExp(`(${highlight})`, 'gi'));
-  return h("span", null,
-    " ",
-    parts.map((part, i) => h("span", { key: i, class: part.toLowerCase() === highlight.toLowerCase() ? 'highlight' : '' }, part)),
-    " ");
+  const parts = text.split(new RegExp(`(${highlight})`, "gi"));
+  return (h("span", null, parts.map((part, i) => (h("span", { key: i, class: part.toLowerCase() === highlight.toLowerCase() ? "highlight" : "" }, part)))));
 }
 /**
  * @docsMenu { "group": "forms", "subGroup": "input" }
@@ -39,7 +36,7 @@ export class Typeahead {
       this.open = false;
     };
     this.handleKeyDown = (ev) => {
-      if (ev.key === 'ArrowDown') {
+      if (ev.key === "ArrowDown") {
         ev.preventDefault();
         this.selectedIndex = Math.min(this.matchedOptions.length - 1, this.selectedIndex + 1);
       }
@@ -49,7 +46,7 @@ export class Typeahead {
       }
     };
     this.handleKeyboardSelect = (ev) => {
-      if (ev.key === 'Enter' && this.selectedIndex > -1) {
+      if (ev.key === "Enter" && this.selectedIndex > -1) {
         ev.preventDefault();
         const option = this.matchedOptions[this.selectedIndex];
         this.onSelectOption(option);
@@ -60,14 +57,16 @@ export class Typeahead {
     };
   }
   watchHandler() {
-    this.matchedOptions = !Boolean(this.value) ? [] : this.options.filter(o => o.label.toLowerCase().includes(this.value.toLowerCase()));
+    this.matchedOptions = !this.value
+      ? []
+      : this.options.filter((o) => o.label.toLowerCase().includes(this.value.toLowerCase()));
   }
   render() {
     return (h(Host, null,
       h("div", { class: "typeahead", onKeyDown: this.handleKeyboardSelect },
         h("sen-input", { onFocus: this.handleFocus, onKeyDown: this.handleKeyDown, value: this.value, onSenInput: this.onInput }),
-        this.open && h("ul", { class: "typeahead__options" }, this.matchedOptions.map((option, index) => (h("li", { class: index === this.selectedIndex ? 'selected' : '' },
-          h("a", { onClick: () => this.onSelectOption(option) }, getHighlightedText(option.label, this.value)))))))));
+        this.open && (h("ul", { class: "typeahead__options" }, this.matchedOptions.map((option, index) => (h("li", { class: index === this.selectedIndex ? "selected" : "" },
+          h("a", { onClick: () => this.onSelectOption(option) }, getHighlightedText(option.label, this.value))))))))));
   }
   static get is() { return "sen-typeahead"; }
   static get encapsulation() { return "shadow"; }

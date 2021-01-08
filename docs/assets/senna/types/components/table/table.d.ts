@@ -1,16 +1,7 @@
-import { ComponentInterface } from "../../stencil-public-runtime";
-import { TableHeaders } from "../../interface";
+import type { ComponentInterface } from "../../stencil-public-runtime";
 /**
- * @docsMenu { "group": "table" }
+ * @docsMenu { "group": "table", "subGroup": "basic-table" }
  */
-export declare class Table implements ComponentInterface {
-  /**
-   * Table headers
-   */
-  headers: TableHeaders;
-  /**
-   * Table data, array of table rows
-   */
-  data: any[];
+export declare class SenTable implements ComponentInterface {
   render(): any;
 }

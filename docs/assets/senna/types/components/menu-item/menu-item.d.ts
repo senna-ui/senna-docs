@@ -1,4 +1,4 @@
-import { EventEmitter } from "../../stencil-public-runtime";
+import type { EventEmitter } from "../../stencil-public-runtime";
 /**
  * @docsMenu { "group": "navigation", "subGroup": "menu" }
  */

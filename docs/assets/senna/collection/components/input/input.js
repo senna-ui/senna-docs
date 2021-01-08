@@ -77,7 +77,7 @@ export class Input {
     });
   }
   /**
-   * Sets focus on the specified `ion-input`. Use this method instead of the global
+   * Sets focus on the specified `sen-input`. Use this method instead of the global
    * `input.focus()`.
    */
   async setFocus() {
@@ -313,8 +313,8 @@ export class Input {
       "type": "string",
       "mutable": false,
       "complexType": {
-        "original": "| \"none\"\n    | \"text\"\n    | \"tel\"\n    | \"url\"\n    | \"email\"\n    | \"numeric\"\n    | \"decimal\"\n    | \"search\"",
-        "resolved": "\"decimal\" | \"email\" | \"none\" | \"numeric\" | \"search\" | \"tel\" | \"text\" | \"url\" | undefined",
+        "original": "| \"none\"\n    | \"radio\"\n    | \"text\"\n    | \"tel\"\n    | \"url\"\n    | \"email\"\n    | \"numeric\"\n    | \"decimal\"\n    | \"search\"",
+        "resolved": "\"decimal\" | \"email\" | \"none\" | \"numeric\" | \"radio\" | \"search\" | \"tel\" | \"text\" | \"url\" | undefined",
         "references": {}
       },
       "required": false,
@@ -649,7 +649,7 @@ export class Input {
         "return": "Promise<void>"
       },
       "docs": {
-        "text": "Sets focus on the specified `ion-input`. Use this method instead of the global\n`input.focus()`.",
+        "text": "Sets focus on the specified `sen-input`. Use this method instead of the global\n`input.focus()`.",
         "tags": []
       }
     }

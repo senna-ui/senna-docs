@@ -1,0 +1,51 @@
+{
+  "title": "sen-table-head",
+  "path": "/docs/api/table-head",
+  "demo": {
+    "url": "https://codepen.io/senna-ui/embed/QWKBpGd?height=265&theme-id=light&default-tab=result",
+    "source": "https://codepen.io/senna-ui/pen/QWKBpGd?editors=1000"
+  },
+  "codePenLinks": [],
+  "menu": {
+    "group": "table",
+    "subGroup": "basic-table"
+  },
+  "body": [
+    "div",
+    null
+  ],
+  "usage": {},
+  "props": [],
+  "methods": [],
+  "template": "api",
+  "filePath": "./src/components/table-head/table-head.tsx",
+  "encapsulation": "shadow",
+  "tag": "sen-table-head",
+  "docs": "",
+  "docsTags": [
+    {
+      "text": "{ \"group\": \"table\", \"subGroup\": \"basic-table\" }",
+      "name": "docsMenu"
+    },
+    {
+      "text": "{ \"user\": \"senna-ui\", \"id\": \"QWKBpGd\" }",
+      "name": "docsCodePen"
+    }
+  ],
+  "events": [],
+  "listeners": [],
+  "styles": [],
+  "slots": [],
+  "parts": [],
+  "dependents": [
+    "sen-data-table"
+  ],
+  "dependencies": [],
+  "dependencyGraph": {
+    "sen-data-table": [
+      "sen-table-head"
+    ]
+  },
+  "headings": [],
+  "pageClass": "page--docs-api-table-head"
+}

@@ -1,5 +1,5 @@
-import { ComponentInterface, EventEmitter } from "../../stencil-public-runtime";
-import { AutocompleteTypes, Color, InputChangeEventDetail, TextFieldTypes } from "../../interface";
+import type { ComponentInterface, EventEmitter } from "../../stencil-public-runtime";
+import type { AutocompleteTypes, Color, InputChangeEventDetail, TextFieldTypes } from "../../interface";
 /**
  * @docsCodePen { "user": "senna-ui", "id": "qBapaVj" }
  * @docsMenu { "group": "forms", "subGroup": "input" }
@@ -63,7 +63,7 @@ export declare class Input implements ComponentInterface {
    * Possible values: `"none"`, `"text"`, `"tel"`, `"url"`,
    * `"email"`, `"numeric"`, `"decimal"`, and `"search"`.
    */
-  inputmode?: "none" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search";
+  inputmode?: "none" | "radio" | "text" | "tel" | "url" | "email" | "numeric" | "decimal" | "search";
   /**
    * The maximum value, which must not be less than its minimum (min attribute) value.
    */
@@ -138,7 +138,7 @@ export declare class Input implements ComponentInterface {
    */
   senChange: EventEmitter<InputChangeEventDetail>;
   /**
-   * Sets focus on the specified `ion-input`. Use this method instead of the global
+   * Sets focus on the specified `sen-input`. Use this method instead of the global
    * `input.focus()`.
    */
   setFocus(): Promise<void>;

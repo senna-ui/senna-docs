@@ -8,7 +8,7 @@ export class Button {
     /**
      * Button type
      */
-    this.buttonType = "button";
+    this.type = "button";
     /**
      * Disables the button
      */
@@ -17,11 +17,11 @@ export class Button {
   render() {
     const classes = {
       btn: true,
-      'btn-icon': !!this.icon,
-      [`btn-${this.color || 'secondary'}`]: true,
+      "btn-icon": !!this.icon,
+      [`btn-${this.color || "secondary"}`]: true,
     };
     return (h(Host, null,
-      h("button", { class: classes, type: this.buttonType, disabled: this.disabled },
+      h("button", { class: classes, type: this.type, disabled: this.disabled },
         h("span", null,
           this.icon && h("sen-icon", { name: this.icon }),
           h("slot", null)))));
@@ -35,7 +35,7 @@ export class Button {
     "$": ["button.css"]
   }; }
   static get properties() { return {
-    "buttonType": {
+    "type": {
       "type": "string",
       "mutable": false,
       "complexType": {
@@ -49,7 +49,7 @@ export class Button {
         "tags": [],
         "text": "Button type"
       },
-      "attribute": "button-type",
+      "attribute": "type",
       "reflect": false,
       "defaultValue": "\"button\""
     },

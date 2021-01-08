@@ -1,6 +1,6 @@
 import { Component, Host, h, Prop, State, Watch } from "@stencil/core";
-import { getSvgContent, senIconContent } from './request';
-import { getUrl } from './utils';
+import { getSvgContent, senIconContent } from "./request";
+import { getUrl } from "./utils";
 /**
  * @docsCodePen { "user": "senna-ui", "id": "KKgZgNj" }
  * @docsMenu { "group": "icons" }
@@ -19,7 +19,6 @@ export class Icon {
      */
     this.sanitize = true;
   }
-  ;
   componentWillRender() {
     this.loadIcon();
   }
@@ -118,8 +117,8 @@ export class Icon {
 const createColorClasses = (color) => {
   return color
     ? {
-      'ion-color': true,
-      [`ion-color-${color}`]: true,
+      "sen-color": true,
+      [`sen-color-${color}`]: true,
     }
     : null;
 };

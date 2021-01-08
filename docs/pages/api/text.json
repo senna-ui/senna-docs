@@ -2094,7 +2094,7 @@
       "reflectToAttr": false,
       "docs": "<p>Element Tag</p>\n",
       "docsTags": [],
-      "default": "'p'",
+      "default": "\"p\"",
       "values": [
         {
           "value": "h1",

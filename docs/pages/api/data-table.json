@@ -1,0 +1,89 @@
+{
+  "title": "sen-data-table",
+  "path": "/docs/api/data-table",
+  "codePenLinks": [],
+  "menu": {
+    "group": "table",
+    "subGroup": "data-table"
+  },
+  "body": [
+    "div",
+    null
+  ],
+  "usage": {},
+  "props": [
+    {
+      "name": "data",
+      "type": "any[]",
+      "mutable": false,
+      "reflectToAttr": false,
+      "docs": "<p>Table data, array of table rows</p>\n",
+      "docsTags": [],
+      "default": "[]",
+      "values": [
+        {
+          "type": "any[]"
+        }
+      ],
+      "optional": false,
+      "required": false
+    },
+    {
+      "name": "headers",
+      "type": "TableHeader[]",
+      "mutable": false,
+      "reflectToAttr": false,
+      "docs": "<p>Table headers</p>\n",
+      "docsTags": [],
+      "default": "[]",
+      "values": [
+        {
+          "type": "TableHeader[]"
+        }
+      ],
+      "optional": false,
+      "required": false
+    }
+  ],
+  "methods": [],
+  "template": "api",
+  "filePath": "./src/components/data-table/data-table.tsx",
+  "encapsulation": "shadow",
+  "tag": "sen-data-table",
+  "docs": "",
+  "docsTags": [
+    {
+      "text": "{ \"group\": \"table\", \"subGroup\": \"data-table\" }",
+      "name": "docsMenu"
+    }
+  ],
+  "events": [],
+  "listeners": [],
+  "styles": [],
+  "slots": [],
+  "parts": [],
+  "dependents": [
+    "demo-table"
+  ],
+  "dependencies": [
+    "sen-table",
+    "sen-table-head",
+    "sen-table-row",
+    "sen-table-cell",
+    "sen-table-body"
+  ],
+  "dependencyGraph": {
+    "sen-data-table": [
+      "sen-table",
+      "sen-table-head",
+      "sen-table-row",
+      "sen-table-cell",
+      "sen-table-body"
+    ],
+    "demo-table": [
+      "sen-data-table"
+    ]
+  },
+  "headings": [],
+  "pageClass": "page--docs-api-data-table"
+}

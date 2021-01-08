@@ -8,35 +8,27 @@
   font-weight: 700;
   margin-bottom: 4px;
 }
-
-:host(.alert-primary) {
+:host .alert-primary {
   background: #a8bcdd;
 }
-
-:host(.alert-secondary) {
+:host .alert-secondary {
   background: #c5c4c4;
 }
-
-:host(.alert-success) {
+:host .alert-success {
   background: #9be7ac;
 }
-
-:host(.alert-info) {
+:host .alert-info {
   background: #90e4f1;
 }
-
-:host(.alert-warning) {
+:host .alert-warning {
   background: #ffeeba;
 }
-
-:host(.alert-danger) {
+:host .alert-danger {
   background: #f9cbc3;
 }
-
-:host(.alert-light) {
+:host .alert-light {
   background: white;
 }
-
-:host(.alert-dark) {
+:host .alert-dark {
   background: #908787;
 }

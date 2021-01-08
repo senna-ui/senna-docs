@@ -1,0 +1,8 @@
+:host {
+  display: table-header-group;
+}
+
+::slotted(sen-table-row) {
+  background: var(--sen-table-header-bg, #F8F6F6);
+  font-weight: 700;
+}

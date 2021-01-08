@@ -13,8 +13,10 @@
  <url><loc>https://senna-ui.com/docs/api/card-actions</loc></url>
  <url><loc>https://senna-ui.com/docs/api/card-body</loc></url>
  <url><loc>https://senna-ui.com/docs/api/card-title</loc></url>
+ <url><loc>https://senna-ui.com/docs/api/checkbox</loc></url>
  <url><loc>https://senna-ui.com/docs/api/col</loc></url>
  <url><loc>https://senna-ui.com/docs/api/container</loc></url>
+ <url><loc>https://senna-ui.com/docs/api/data-table</loc></url>
  <url><loc>https://senna-ui.com/docs/api/fieldset</loc></url>
  <url><loc>https://senna-ui.com/docs/api/form-field</loc></url>
  <url><loc>https://senna-ui.com/docs/api/grid</loc></url>
@@ -23,8 +25,14 @@
  <url><loc>https://senna-ui.com/docs/api/loading</loc></url>
  <url><loc>https://senna-ui.com/docs/api/menu</loc></url>
  <url><loc>https://senna-ui.com/docs/api/menu-item</loc></url>
+ <url><loc>https://senna-ui.com/docs/api/radio</loc></url>
  <url><loc>https://senna-ui.com/docs/api/row</loc></url>
+ <url><loc>https://senna-ui.com/docs/api/select</loc></url>
  <url><loc>https://senna-ui.com/docs/api/table</loc></url>
+ <url><loc>https://senna-ui.com/docs/api/table-body</loc></url>
+ <url><loc>https://senna-ui.com/docs/api/table-cell</loc></url>
+ <url><loc>https://senna-ui.com/docs/api/table-head</loc></url>
+ <url><loc>https://senna-ui.com/docs/api/table-row</loc></url>
  <url><loc>https://senna-ui.com/docs/api/tabs</loc></url>
  <url><loc>https://senna-ui.com/docs/api/text</loc></url>
  <url><loc>https://senna-ui.com/docs/api/typeahead</loc></url>

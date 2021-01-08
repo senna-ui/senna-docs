@@ -1,4 +1,4 @@
-import { ComponentInterface } from "../../stencil-public-runtime";
+import type { ComponentInterface } from "../../stencil-public-runtime";
 /**
  * @docsCodePen { "user": "senna-ui", "id": "KKgZgNj" }
  * @docsMenu { "group": "icons" }
@@ -9,8 +9,8 @@ export declare class Icon implements ComponentInterface {
    */
   name: string;
   /**
-    * The color to use for the background of the icon.
-    */
+   * The color to use for the background of the icon.
+   */
   color?: string;
   /**
    * When set to `false`, SVG content that is HTTP fetched will not be checked

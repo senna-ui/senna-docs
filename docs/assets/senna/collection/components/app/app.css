@@ -1,5 +1,5 @@
 :host {
-  font-family: var(--sen-font-family, "Source Sans Pro", Helvetica, sans-serif);
+  font-family: var(--sen-font-family, "IBM Plex Sans", "Source Sans Pro", Helvetica, sans-serif);
   font-size: 13px;
   color: #211010;
 }

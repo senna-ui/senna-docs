@@ -2078,7 +2078,9 @@
   "styles": [],
   "slots": [],
   "parts": [],
-  "dependents": [],
+  "dependents": [
+    "demo-form"
+  ],
   "dependencies": [
     "sen-row",
     "sen-col"
@@ -2087,6 +2089,9 @@
     "sen-form-field": [
       "sen-row",
       "sen-col"
+    ],
+    "demo-form": [
+      "sen-form-field"
     ]
   },
   "headings": [],

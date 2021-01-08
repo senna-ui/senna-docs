@@ -1,7 +1,3 @@
-:host {
-  font-family: var(--sen-font-family, "Source Sans Pro", Helvetica, sans-serif);
-  font-size: 13px;
-}
 :host .form-label {
   margin-top: 5px;
   display: inline-block;

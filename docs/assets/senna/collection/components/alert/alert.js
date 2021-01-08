@@ -1,4 +1,4 @@
-import { Component, Host, h, Prop, Element, } from "@stencil/core";
+import { Component, Host, h, Prop, Element } from "@stencil/core";
 /**
  * Docs page options
  * @docsCodePen { "user": "senna-ui", "id": "MWjrJEz" }
@@ -16,7 +16,7 @@ export class Alert {
    */
   render() {
     const classes = {
-      ["alert-" + this.color]: true,
+      [`alert-${this.color || "secondary"}`]: true,
     };
     return (h(Host, { class: classes },
       this.hasTitleSlot && (h("div", { class: "alert-title" },

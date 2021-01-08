@@ -1,4 +1,4 @@
-import { r as registerInstance, c as createEvent, h, H as Host } from './index-b3859636.js';
+import { r as registerInstance, c as createEvent, h, H as Host } from './index-7505fb17.js';
 
 const menuItemCss = ":host{display:block}a{cursor:pointer;display:block;padding:var(--sen-spacer, 8px);color:var(--sen-menu-item-color, #fff);background:var(--sen-menu-item-bg, #494444);margin-bottom:1px}a:hover{background:var(--sen-menu-item-hover-bg, #6C6A6A)}a.active{color:var(--sen-menu-item-active-color, #DEDCDC)}";
 
@@ -15,7 +15,7 @@ const MenuItem = class {
     };
   }
   render() {
-    return (h(Host, null, h("a", { class: this.active ? 'active' : '', onClick: this.onClick }, h("slot", null))));
+    return (h(Host, null, h("a", { class: this.active ? "active" : "", onClick: this.onClick }, h("slot", null))));
   }
 };
 MenuItem.style = menuItemCss;

@@ -1,5 +1,5 @@
-import { ComponentInterface, EventEmitter } from "../../stencil-public-runtime";
-import { OptionSelectedEvent, TypeaheadOption } from "../../interface";
+import type { ComponentInterface, EventEmitter } from "../../stencil-public-runtime";
+import type { OptionSelectedEvent, TypeaheadOption } from "../../interface";
 /**
  * @docsMenu { "group": "forms", "subGroup": "input" }
  */

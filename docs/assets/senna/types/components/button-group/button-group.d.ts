@@ -1,4 +1,4 @@
-import { ComponentInterface } from "../../stencil-public-runtime";
+import type { ComponentInterface } from "../../stencil-public-runtime";
 /**
  * @docsCodePen { "user": "senna-ui", "id": "wvzpgPP" }
  * @docsMenu { "group": "buttons" }

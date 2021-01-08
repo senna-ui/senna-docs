@@ -2,7 +2,7 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-const index = require('./index-6de7b0c3.js');
+const index = require('./index-a61cd5c3.js');
 
 const cardTitleCss = ":host{flex:0 0 100%}:host h1{font-weight:700;font-size:22.75px}@media (min-width: 768px){:host h1{font-size:26px}}@media (min-width: 992px){:host h1{font-size:32.5px}}";
 

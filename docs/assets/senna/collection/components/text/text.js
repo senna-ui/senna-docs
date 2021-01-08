@@ -7,7 +7,7 @@ export class Text {
     /**
      * Element Tag
      */
-    this.tag = 'p';
+    this.tag = "p";
     /**
      * Font weight
      */
@@ -29,7 +29,7 @@ export class Text {
     const TextTag = this.tag;
     const classes = {
       [`font-weight-${this.weight}`]: true,
-      [`text-align-${this.align}`]: true
+      [`text-align-${this.align}`]: true,
     };
     const { letterSpacing, textTransform } = this;
     return (h(Host, null,
@@ -66,7 +66,7 @@ export class Text {
       },
       "attribute": "tag",
       "reflect": false,
-      "defaultValue": "'p'"
+      "defaultValue": "\"p\""
     },
     "weight": {
       "type": "string",
